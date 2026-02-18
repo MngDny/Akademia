@@ -1,0 +1,876 @@
+[
+  {
+    "type": "TF",
+    "text": "Ioan a venit ca martor, ca sa marturiseasca despre Lumina",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Ioan a marturisit ca nu a vazut Duhul coborandu-se din cer ca un porumbel",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "La inceput era Cuvantul si cerurile",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Ioan a afirmat despre Isus ca este “Mielul lui Dumnezeu care ridica pacatul lumii”",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Andrei a fost ucenicul care a primit numele de Chifa",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "In Ioan se afirma ca fratii lui Isus erau la nunta in Cana din Galileea",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Iudeii au trimis preoti si leviti sa-l intrebe pe Ioan, in timp ce se afla in Betabara",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 75,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "La nunta erau 6 vase de piatra, in care au pus apa",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "La nunta erau 5 vase, in care s-a pus apa transformata in vin",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Templul a fost construit in 26 de ani, Isus afirma ca il va ridica in doar 3 zile",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Nunul nu stia de unde provenea acel vin pe care-l bause la nunta ",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Isus a fost instiintat de catre mama sa cu privire la faptul ca nuntasii nu mai au vin sa bea ",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Dupa nunta din Cana, Isus a coborat la Capernaum, unde a ramas multe zile. ",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 75,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Nicodim era un fruntas al iudeilor. ",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 3,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Nicodim l-a recunoscut pe Isus ca un invatator trimis de Dumnezeu. ",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 3,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Nicodim era dintre farisei",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 3,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Pastele iudeilor erau aproape si Isus S-a suit la Ierihon.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Legea a fost data prin Moise",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": null
+  },
+  {
+    "type": "TF",
+    "text": "Minunea cu transformarea apei in vin a fost un inceput al semnelor lui Isus",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "TF",
+    "text": "Isus le-a zis: „Stricati templul acesta si in trei zile il voi ridica.\"",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "TF",
+    "text": "Isus n-avea trebuinta sa Ii faca cineva marturisiri despre niciun om, pentru ca El stia ce este in om.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 2,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Verificat",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "TF",
+    "text": "Fiul omului s-a coborat din cer ",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 3,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "pop_ana"
+  },
+  {
+    "type": "TF",
+    "text": "Dumnezeu a trimis pe Fiul Sau ca sa judece lumea ",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 3,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "pop_ana"
+  },
+  {
+    "type": "TF",
+    "text": "Moise a inaltat sarpele pe munte",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 3,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "pop_ana"
+  },
+  {
+    "type": "TF",
+    "text": "Oamenii au iubit mai mult lumina decat intunericul ",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 3,
+    "difficulty": 75,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "pop_ana"
+  },
+  {
+    "type": "TF",
+    "text": "Oricine face raul, nu uraste lumina",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 3,
+    "difficulty": 75,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "pop_ana"
+  },
+  {
+    "type": "TF",
+    "text": "Scaldatoarea Betesda era situata in Ierusalim, langa Poarta Oilor",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Scaldatoarea Betesda avea 7 pridvoare",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Slabanogul era paralizat de 20 de ani",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Iudeii sarbatoreau Pastile ziua cand a fost vindecat slabanogul.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Isus a spus: \"Adevarat, adevarat va spun ca Fiul nu poate face nimic de la Sine\".",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Tatal nici nu judeca pe nimeni, ci toata judecata a dat-o Fiului.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Grecii ziceau deci celui ce fusese vindecat: „Este ziua Sabatului, nu-ti este ingaduit sa-ti ridici patul.”",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Isus Se facuse nevazut din norodul care era in locul acela.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Carturarii au spus iudeilor ca Isus este Acela care-l facuse sanatos pe slabanog",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "\"Iudeii au inceput sa urmareasca pe Isus si cautau sa-L omoare, fiindca facea aceste lucruri in ziua Sabatului.\"",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "TF",
+    "text": "Moise da adevarata paine din cer.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 6,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "ungur_mada"
+  },
+  {
+    "type": "TF",
+    "text": "Marea Galileii se mai numea si Marea Moarta.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 6,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "vele_anca"
+  },
+  {
+    "type": "TF",
+    "text": "Isus S-a dus dincolo de Marea Galileii, numita si Marea Tiberiadei.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 6,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "vele_anca"
+  },
+  {
+    "type": "TF",
+    "text": "Apostolii si cativa oamenii mergeau dupa El.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 6,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "vele_anca"
+  },
+  {
+    "type": "TF",
+    "text": "O mare gloata mergea dupa El, pentru ca vedea semnele pe care le facea cu cei bolnavi.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 6,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "vele_anca"
+  },
+  {
+    "type": "TF",
+    "text": "Isus S-a suit pe munte si sedea acolo cu ucenicii Sai.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 6,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "vele_anca"
+  },
+  {
+    "type": "TF",
+    "text": "Dincolo de paraul Chedron era o gradina in care a intrat Isus cu ucenicii Lui.",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 18,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "TF",
+    "text": "Petru a scos sabia si a lovit pe marele preot si i-a taiat urechea dreapta",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 18,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "TF",
+    "text": "Petru a scos sabia si a lovit pe robul marelui preot si i-a taiat urechea stanga",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": false
+      },
+      {
+        "text": "Fals",
+        "correct": true
+      }
+    ],
+    "chapter": 18,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "TF",
+    "text": "Robul marelui preot a carui ureche a fost taiata se numea Malhu",
+    "options": [
+      {
+        "text": "Adevarat",
+        "correct": true
+      },
+      {
+        "text": "Fals",
+        "correct": false
+      }
+    ],
+    "chapter": 18,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  }
+]

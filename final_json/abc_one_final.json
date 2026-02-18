@@ -1,0 +1,370 @@
+[
+  {
+    "type": "ABC_ONE",
+    "text": "Iudeii cautau sa omoare pe Isus, pentru ca:",
+    "options": [
+      {
+        "text": "dezlega ziua Sabatului",
+        "correct": true
+      },
+      {
+        "text": "ratacea poporul",
+        "correct": false
+      },
+      {
+        "text": "se credea mai mare ca si ei",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Isus a spus:\"Daca Eu marturisesc despre Mine Insumi:...\"",
+    "options": [
+      {
+        "text": "marturia Mea nu este adevarata",
+        "correct": true
+      },
+      {
+        "text": "marturia Mea este adevarata",
+        "correct": false
+      },
+      {
+        "text": "marturia Mea nu este clara",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Domnul Isus a afirmat: \"Eu nu pot face nimic de la Mine Insumi: judec dupa cum aud si..\"",
+    "options": [
+      {
+        "text": "judecata Mea este dreapta",
+        "correct": true
+      },
+      {
+        "text": "raspund cererilor",
+        "correct": false
+      },
+      {
+        "text": "caut sa fac voia Mea",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "\"Adevarat, adevarat va spun ca vine ceasul, si acum a si venit, cand cei ... vor auzi glasul Fiului lui Dumnezeu\" ",
+    "options": [
+      {
+        "text": "morti",
+        "correct": true
+      },
+      {
+        "text": "vii",
+        "correct": false
+      },
+      {
+        "text": "pacatosi",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "\"Caci, daca ati crede pe ...., M-ati crede si pe Mine, pentru ca el a scris despre Mine.\"",
+    "options": [
+      {
+        "text": "Moise",
+        "correct": true
+      },
+      {
+        "text": "Avraam",
+        "correct": false
+      },
+      {
+        "text": "Ioan",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "De cati ani era bolnav omul de la scaldatoare, pe care la vindecat Isus?",
+    "options": [
+      {
+        "text": "38 de ani",
+        "correct": true
+      },
+      {
+        "text": "30 de ani",
+        "correct": false
+      },
+      {
+        "text": "40 de ani",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "In ce zi a fost vindecat slabanogul?\n",
+    "options": [
+      {
+        "text": "in ziua de Sabat",
+        "correct": true
+      },
+      {
+        "text": "Duminica",
+        "correct": false
+      },
+      {
+        "text": "in ziua Sarbatorii Corturilor",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Unde la intalnit Isus pe slabanog dupa ce a l-a vindecat?\t",
+    "options": [
+      {
+        "text": "in Templu",
+        "correct": true
+      },
+      {
+        "text": "la poarta cetatii",
+        "correct": false
+      },
+      {
+        "text": "in sinagoga",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Domnul Isus a spus ca: \"Eu nu umblu dupa .... care vine de la oameni. :\n",
+    "options": [
+      {
+        "text": "slava",
+        "correct": true
+      },
+      {
+        "text": "gloria",
+        "correct": false
+      },
+      {
+        "text": "faima",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Cine tulbura apa din scaldatoare?\n",
+    "options": [
+      {
+        "text": "un inger",
+        "correct": true
+      },
+      {
+        "text": "Isus",
+        "correct": false
+      },
+      {
+        "text": "un sutas",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Cate stadii au vaslit ucenicii inainte ca sa-L vada pe Isus umbland pe mare?",
+    "options": [
+      {
+        "text": "25 sau 30 de stadii",
+        "correct": true
+      },
+      {
+        "text": "25 sau 35 de stadii",
+        "correct": false
+      },
+      {
+        "text": "20 sau 30 de stadii",
+        "correct": false
+      }
+    ],
+    "chapter": 6,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "ungur_mada"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Cui a spus Isus \"De unde avem sa cumparam paini ca sa manance oamenii acestia?\" ?",
+    "options": [
+      {
+        "text": " Filip",
+        "correct": true
+      },
+      {
+        "text": "Petru",
+        "correct": false
+      },
+      {
+        "text": "Iuda",
+        "correct": false
+      }
+    ],
+    "chapter": 6,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "ungur_mada"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Unde se afla fantana lui Iacov?",
+    "options": [
+      {
+        "text": "Sihar",
+        "correct": true
+      },
+      {
+        "text": "Betabara",
+        "correct": false
+      },
+      {
+        "text": "Capernaum",
+        "correct": false
+      }
+    ],
+    "chapter": 4,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "ungur_mada"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Din ce cetate era Filip?",
+    "options": [
+      {
+        "text": "Betsaida",
+        "correct": true
+      },
+      {
+        "text": "Galileea",
+        "correct": false
+      },
+      {
+        "text": "Sihar",
+        "correct": false
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "ungur_mada"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Care dintre urechile robului marelui preot a fost taiata de catre Petru cu sabia?",
+    "options": [
+      {
+        "text": "dreapta",
+        "correct": true
+      },
+      {
+        "text": "stanga",
+        "correct": false
+      },
+      {
+        "text": "nu este precizat",
+        "correct": false
+      }
+    ],
+    "chapter": 18,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "ABC_ONE",
+    "text": "Cum se numea robul marelui preot a carui ureche a fost taiata de catre Simon Petru?",
+    "options": [
+      {
+        "text": "Malhu",
+        "correct": true
+      },
+      {
+        "text": "Mardoheu",
+        "correct": false
+      },
+      {
+        "text": "Caiafa",
+        "correct": false
+      }
+    ],
+    "chapter": 18,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  }
+]

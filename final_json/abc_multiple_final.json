@@ -1,0 +1,255 @@
+[
+  {
+    "type": "ABC_MULTI",
+    "text": "In cele 5 pridvoare ale Scaldatoarei Betesda este mentionat ca erau:",
+    "options": [
+      {
+        "text": "orbi",
+        "correct": true
+      },
+      {
+        "text": "uscati",
+        "correct": true
+      },
+      {
+        "text": "ologi",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 75,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Ce i-a spus Isus, bolnavului de la scaldatoarea Betesda?",
+    "options": [
+      {
+        "text": "\"Vrei sa te faci sanatos?\"",
+        "correct": true
+      },
+      {
+        "text": "„Scoala-te!”",
+        "correct": true
+      },
+      {
+        "text": "„Ridica-ti patul si umbla.”",
+        "correct": true
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Cercetati Scripturile:",
+    "options": [
+      {
+        "text": "\"Pentru ca socotiti ca in ele aveti viata vesnica\"",
+        "correct": true
+      },
+      {
+        "text": "\"Tocmai ele marturisesc despre Mine\"",
+        "correct": true
+      },
+      {
+        "text": "\"Pentru ca sa fiti uniti\"",
+        "correct": false
+      }
+    ],
+    "chapter": 5,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "jonny"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "La inceput",
+    "options": [
+      {
+        "text": "Era Cuvantul",
+        "correct": true
+      },
+      {
+        "text": "Cuvantul era cu Dumnezeu",
+        "correct": true
+      },
+      {
+        "text": "Cuvantul era Dumnezeu",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Despre Ioan este mentionat in capitolul 1 ca:",
+    "options": [
+      {
+        "text": "A venit ca martor",
+        "correct": true
+      },
+      {
+        "text": "Nu era el Lumina",
+        "correct": true
+      },
+      {
+        "text": "Nu a venit sa marturiseasca despre Lumina",
+        "correct": false
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Dar tuturor celor ce L-au primit, adica celor ce cred in Numele Lui, le-a dat dreptul sa se faca copii ai lui Dumnezeu; nascuti...",
+    "options": [
+      {
+        "text": "nu din sange",
+        "correct": true
+      },
+      {
+        "text": "nici din voia vreunui om",
+        "correct": true
+      },
+      {
+        "text": "ci din voia firii lor",
+        "correct": false
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 75,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Ce a fost dat prin Moise?",
+    "options": [
+      {
+        "text": "Harul",
+        "correct": false
+      },
+      {
+        "text": "Adevarul",
+        "correct": false
+      },
+      {
+        "text": "Legea",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Ce l-au intrebat oamenii pe Ioan?",
+    "options": [
+      {
+        "text": "Daca el este Hristosul",
+        "correct": true
+      },
+      {
+        "text": "Daca el este Ilie",
+        "correct": true
+      },
+      {
+        "text": "Daca el este prorocul",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Ce este mentionat ca a zis Ioan despre el insusi?",
+    "options": [
+      {
+        "text": "Ca este glasul celui ce striga in pustie \"Neteziti calea Domnului\"",
+        "correct": true
+      },
+      {
+        "text": "Eu sunt Ilie",
+        "correct": false
+      },
+      {
+        "text": "Eu botez cu apa",
+        "correct": true
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Unde boteza Ioan?",
+    "options": [
+      {
+        "text": "In Betabara",
+        "correct": true
+      },
+      {
+        "text": "Dincolo de Iordan",
+        "correct": true
+      },
+      {
+        "text": "In pustie",
+        "correct": false
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "ABC_MULTI",
+    "text": "Cu ce au venit Iuda cu ceata ostasilor si aprozii trimisi de preotii cei mai de seama si de farisei?",
+    "options": [
+      {
+        "text": "felinare",
+        "correct": true
+      },
+      {
+        "text": "faclii",
+        "correct": true
+      },
+      {
+        "text": "arme",
+        "correct": true
+      }
+    ],
+    "chapter": 18,
+    "difficulty": 25,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  }
+]

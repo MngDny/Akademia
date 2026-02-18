@@ -1,0 +1,62 @@
+[
+  {
+    "type": "MATCH",
+    "pairs": [
+      {
+        "left": "Ioan",
+        "right": "Martor"
+      },
+      {
+        "left": "Legea",
+        "right": "Moise"
+      },
+      {
+        "left": "Trimisi",
+        "right": "Preoti si leviti"
+      },
+      {
+        "left": "Simon",
+        "right": "Petru"
+      },
+      {
+        "left": "Filip",
+        "right": "Betsaida"
+      }
+    ],
+    "chapter": 1,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  },
+  {
+    "type": "MATCH",
+    "pairs": [
+      {
+        "left": "Petru",
+        "right": "Sabie"
+      },
+      {
+        "left": "Ureche",
+        "right": "Malhu"
+      },
+      {
+        "left": "Iuda",
+        "right": "Vanzator"
+      },
+      {
+        "left": "Caiafa",
+        "right": "Mare preot"
+      },
+      {
+        "left": "Baraba",
+        "right": "Talhar"
+      }
+    ],
+    "chapter": 18,
+    "difficulty": 50,
+    "book": "Ioan",
+    "status": "Nou",
+    "added_by": "olaru_daniel"
+  }
+]

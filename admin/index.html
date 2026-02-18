@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin – Akademia</title>
+
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <h1>Admin Portal</h1>
+  <button id="logout">Logout</button>
+
+  <script type="module">
+    const supabase = window.supabase.createClient(
+      "https://pdkfqytododevpilpxet.supabase.co",
+      "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z"
+    );
+
+    const { data: { session } } = await supabase.auth.getSession();
+
+    if (!session) {
+      window.location.href = "/login.html";
+    }
+
+    document.getElementById("logout").onclick = async () => {
+      await supabase.auth.signOut();
+      window.location.href = "/login.html";
+    };
+  </script>
+</body>
+</html>
