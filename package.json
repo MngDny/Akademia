@@ -1,0 +1,24 @@
+{
+  "name": "akademia",
+  "version": "1.0.0",
+  "description": "Aplicatie pentru exersare pentru concursul biblic <Talantul in negot>",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MngDny/Akademia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MngDny/Akademia/issues"
+  },
+  "homepage": "https://github.com/MngDny/Akademia#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.96.0"
+  }
+}

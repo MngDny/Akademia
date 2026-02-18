@@ -1,31 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
-<head>
-  <meta charset="UTF-8" />
-  <title>Admin – Akademia</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin – Akademia</title>
 
-  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-</head>
-<body>
-  <h1>Admin Portal</h1>
-  <button id="logout">Logout</button>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  </head>
+  <body>
+    <h1>Admin Portal</h1>
+    <h2>Create User</h2>
 
-  <script type="module">
-    const supabase = window.supabase.createClient(
-      "https://pdkfqytododevpilpxet.supabase.co",
-      "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z"
-    );
+    <input id="email" placeholder="Email" />
+    <input id="password" placeholder="Password" />
+    <input id="username" placeholder="Username" />
 
-    const { data: { session } } = await supabase.auth.getSession();
+    <select id="role">
+      <option value="participant">Participant</option>
+      <option value="indrumator">Indrumator</option>
+      <option value="admin">Admin</option>
+    </select>
 
-    if (!session) {
-      window.location.href = "/login.html";
-    }
+    <button id="createUserBtn">Create User</button>
 
-    document.getElementById("logout").onclick = async () => {
-      await supabase.auth.signOut();
-      window.location.href = "/login.html";
-    };
-  </script>
-</body>
+    <p id="result"></p>
+
+    <button id="logout">Logout</button>
+
+    <script type="module">
+      const supabase = window.supabase.createClient(
+        "https://pdkfqytododevpilpxet.supabase.co",
+        "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z",
+      );
+
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+
+      if (!session) {
+        window.location.href = "/login.html";
+      }
+
+      document.getElementById("logout").onclick = async () => {
+        await supabase.auth.signOut();
+        window.location.href = "/login.html";
+      };
+      document
+        .getElementById("createUserBtn")
+        .addEventListener("click", createUser);
+
+      async function createUser() {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const username = document.getElementById("username").value;
+        const role = document.getElementById("role").value;
+
+        const res = await fetch("/.netlify/functions/create-user", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, password, username, role }),
+        });
+
+        const data = await res.json();
+
+        if (res.ok) {
+          document.getElementById("result").innerText = "User creat!";
+        } else {
+          document.getElementById("result").innerText = data.error;
+        }
+      }
+    </script>
+  </body>
 </html>
