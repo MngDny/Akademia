@@ -1,5 +1,63 @@
-const { data: { session } } = await supabase.auth.getSession();
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Participant – Akademia</title>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  </head>
 
-if (!session) {
-  window.location.href = "/login.html";
-}
+  <body>
+    <h1>Portal Participant</h1>
+    <p>Bine ai venit! (doar rol: <b>participant</b>)</p>
+
+    <button id="logout">Logout</button>
+
+    <p id="status"></p>
+
+    <script type="module">
+      const supabase = window.supabase.createClient(
+        "https://pdkfqytododevpilpxet.supabase.co",
+        "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z"
+      );
+
+      const statusEl = document.getElementById("status");
+
+      // 1) Check session
+      const { data: { session } } = await supabase.auth.getSession();
+
+      if (!session) {
+        window.location.href = "/login.html";
+        throw new Error("No session");
+      }
+
+      // 2) Check username in metadata
+      const username = session.user.user_metadata?.username;
+      if (!username) {
+        await supabase.auth.signOut();
+        window.location.href = "/login.html";
+        throw new Error("Missing username in metadata");
+      }
+
+      // 3) Check role in accounts table
+      const { data: account, error } = await supabase
+        .from("accounts")
+        .select("role")
+        .eq("username", username)
+        .single();
+
+      if (error || !account || account.role !== "participant") {
+        await supabase.auth.signOut();
+        window.location.href = "/login.html";
+        throw new Error("Not allowed");
+      }
+
+      statusEl.innerText = `Autentificat ca: ${username} (role: ${account.role})`;
+
+      // Logout
+      document.getElementById("logout").onclick = async () => {
+        await supabase.auth.signOut();
+        window.location.href = "/login.html";
+      };
+    </script>
+  </body>
+</html>

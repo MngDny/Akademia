@@ -20,10 +20,11 @@ exports.handler = async (event) => {
 
     if (userError) throw userError
 
-    // 2️⃣ Inserează în accounts
+    // 2️⃣ Inserează în accounts cu ID identic
     const { error: accError } = await supabase
       .from('accounts')
       .insert({
+        id: userData.user.id,
         username,
         role
       })
