@@ -175,82 +175,8 @@
       <a href="/" class="back">← Înapoi la pagina principală</a>
     </div>
 
-    <script type="module">
-      const supabase = window.supabase.createClient(
-        "https://pdkfqytododevpilpxet.supabase.co",
-        "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z",
-      );
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script type="module" src="/assets/js/modules/auth/login.js"></script>
 
-      const errorEl = document.getElementById("error");
-
-      document.getElementById("loginBtn").addEventListener("click", login);
-
-      async function login() {
-        errorEl.innerText = "";
-
-        const button = document.getElementById("loginBtn");
-        const btnText = document.getElementById("btnText");
-        const spinner = document.getElementById("spinner");
-
-        // 🔄 Activăm loading
-        button.disabled = true;
-        btnText.innerText = "Se autentifică...";
-        spinner.classList.remove("hidden");
-
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-
-        const { data, error } = await supabase.auth.signInWithPassword({
-          email,
-          password,
-        });
-
-        if (error) {
-          errorEl.innerText = "Email sau parolă incorectă.";
-
-          // 🔁 Reset button
-          button.disabled = false;
-          btnText.innerText = "Autentificare";
-          spinner.classList.add("hidden");
-          return;
-        }
-
-        const user = data.user;
-        const username = user.user_metadata?.username;
-
-        if (!username) {
-          errorEl.innerText = "Profil invalid.";
-
-          button.disabled = false;
-          btnText.innerText = "Autentificare";
-          spinner.classList.add("hidden");
-          return;
-        }
-
-        const { data: account } = await supabase
-          .from("accounts")
-          .select("role")
-          .eq("username", username)
-          .single();
-
-        if (!account) {
-          errorEl.innerText = "Contul nu este configurat.";
-
-          button.disabled = false;
-          btnText.innerText = "Autentificare";
-          spinner.classList.add("hidden");
-          return;
-        }
-
-        // 🚀 Redirect
-        if (account.role === "admin") {
-          window.location.href = "/admin/index.html";
-        } else if (account.role === "indrumator") {
-          window.location.href = "/indrumator/index.html";
-        } else {
-          window.location.href = "/participant/index.html";
-        }
-      }
-    </script>
   </body>
 </html>
