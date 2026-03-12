@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student - Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/student/student.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <p class="title-eyebrow">Concurs Biblic Talantul in Negot</p>
+              <h1 class="header">Sesiune quiz</h1>
+              <p class="page-help">Configureaza sesiunea, raspunde la intrebari si trimite testul la final.</p>
+            </div>
+          </div>
+
+          <div class="quiz-shell">
+            <section class="quiz-panel">
+              <h3>Setari sesiune</h3>
+
+              <label class="label" for="quizMode">Mod</label>
+              <select id="quizMode" class="input">
+                <option value="single">Un tip de intrebari</option>
+                <option value="mixed">Mixt (toate tipurile)</option>
+              </select>
+
+              <label class="label" for="quizType">Tip intrebari</label>
+              <select id="quizType" class="input">
+                <option value="tf">Adevărat / Fals</option>
+                <option value="abc_one">ABC One</option>
+                <option value="abc_multi">ABC Multi</option>
+                <option value="match">Asociere</option>
+              </select>
+
+              <label class="label" for="questionCount">Numar intrebari</label>
+              <input id="questionCount" class="input" type="number" min="5" max="60" value="20" />
+
+              <label class="label" for="timerMinutes">Timp (minute)</label>
+              <input id="timerMinutes" class="input" type="number" min="5" max="120" value="30" />
+
+              <button id="startBtn" class="btn primary" style="width: 100%;">Porneste quiz</button>
+              <p id="setupMessage" class="muted" style="margin-top: 8px;"></p>
+            </section>
+
+            <section class="quiz-board">
+              <div class="meta-line" id="quizMeta">Configureaza quiz-ul pentru a incepe.</div>
+              <h2 class="question-text" id="questionText">Quiz-ul nu a pornit inca.</h2>
+
+              <div id="answerHost"></div>
+
+              <div class="quiz-actions">
+                <button id="prevBtn" class="btn" disabled>Anterior</button>
+                <button id="nextBtn" class="btn" disabled>Urmator</button>
+                <button id="submitBtn" class="btn primary" disabled>Trimite testul</button>
+              </div>
+
+              <div id="resultHost" style="margin-top: 16px;"></div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/student/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/student/quiz.js"></script>
+  </body>
+</html>

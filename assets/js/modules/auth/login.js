@@ -1,4 +1,5 @@
 import { supabase } from "../../core/supabaseClient.js";
+import { normalizeRole } from "../../core/authGuard.js";
 
 const errorEl = document.getElementById("error");
 const button = document.getElementById("loginBtn");
@@ -58,11 +59,13 @@ function showError(message) {
 }
 
 function redirectByRole(role) {
-  if (role === "admin") {
+  const normalizedRole = normalizeRole(role);
+
+  if (normalizedRole === "admin") {
     window.location.href = "/portal/admin/dashboard.html";
-  } else if (role === "indrumator") {
-    window.location.href = "/portal/indrumator/dashboard.html";
+  } else if (normalizedRole === "instructor") {
+    window.location.href = "/portal/instructor/dashboard.html";
   } else {
-    window.location.href = "/portal/participant/dashboard.html";
+    window.location.href = "/portal/student/dashboard.html";
   }
 }

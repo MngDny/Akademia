@@ -3,10 +3,15 @@
 }
 
 body {
+  display: flex;
+  min-height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   background: #0f172a;
   color: white;
+}
+
+.layout {
   display: flex;
   min-height: 100vh;
 }
@@ -105,4 +110,47 @@ body {
   .main {
     padding: 70px 20px 20px 20px;
   }
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-item,
+.nav-subitem {
+  text-decoration: none;
+  color: white;
+  opacity: 0.85;
+  padding: 6px 4px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.nav-item:hover,
+.nav-subitem:hover {
+  background: #334155;
+  opacity: 1;
+}
+
+.nav-group-title {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+.main {
+  flex: 1;
+  padding: 40px;
+}
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }

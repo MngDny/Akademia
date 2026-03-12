@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Îndrumător - Întrebări</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <!-- Global shared styles -->
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/instructor/instructor.css" />
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="/portal/instructor/questions/list.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="quick-links">
+          <a class="quick-link" href="/portal/instructor/dashboard.html">Înapoi la tablou de bord</a>
+          <a class="quick-link" href="/portal/instructor/questions/add.html?type=tf">Adaugă Adevărat / Fals</a>
+          <a class="quick-link" href="/portal/instructor/questions/add.html?type=abc_one">Adaugă ABC One</a>
+          <a class="quick-link" href="/portal/instructor/questions/add.html?type=abc_multi">Adaugă ABC Multi</a>
+          <a class="quick-link" href="/portal/instructor/questions/add.html?type=match">Adaugă Asociere</a>
+        </div>
+
+        <div class="page-header">
+          <div>
+            <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
+            <h1 id="pageTitle" class="header">Întrebări</h1>
+            <p id="pageSubtitle" class="muted"></p>
+          </div>
+
+          <div class="header-actions">
+            <a id="addBtn" class="btn primary" href="#">Adaugă întrebare</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="table-header">
+            <input id="searchInput" class="input" placeholder="Caută întrebări..." autocomplete="off" />
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th style="width: 120px;">ID</th>
+                  <th>Întrebare</th>
+                  <th style="width: 220px;">Acțiuni</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </div>
+
+          <div id="emptyState" class="empty-state" style="display:none;">
+            Nu există întrebări pentru această categorie.
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/instructor/questions/listQuestions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student - Tablou de bord</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/student/student.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <p class="title-eyebrow">Concurs Biblic Talantul in Negot</p>
+              <h1 class="header">Bine ai venit, <span id="studentName">student</span></h1>
+              <p id="studentStatus" class="page-help">Se incarca datele...</p>
+            </div>
+          </div>
+
+          <div class="quick-links">
+            <a class="quick-link" href="/portal/student/quiz.html?mode=mixed">Start concurs mixt</a>
+            <a class="quick-link" href="/portal/student/results.html">Vezi rezultate</a>
+            <a class="quick-link" href="/portal/student/quiz.html?type=tf">Antrenament Adevărat / Fals</a>
+            <a class="quick-link" href="/portal/student/quiz.html?type=abc_one">Antrenament ABC One</a>
+          </div>
+
+          <div class="student-grid">
+            <div class="stat-card" data-type="tf">
+              <h3>Adevărat / Fals</h3>
+              <p class="card-meta">Intrebari active disponibile</p>
+              <p id="count_tf" class="count">...</p>
+            </div>
+
+            <div class="stat-card" data-type="abc_one">
+              <h3>ABC One</h3>
+              <p class="card-meta">Intrebari active disponibile</p>
+              <p id="count_abc_one" class="count">...</p>
+            </div>
+
+            <div class="stat-card" data-type="abc_multi">
+              <h3>ABC Multi</h3>
+              <p class="card-meta">Intrebari active disponibile</p>
+              <p id="count_abc_multi" class="count">...</p>
+            </div>
+
+            <div class="stat-card" data-type="match">
+              <h3>Asociere</h3>
+              <p class="card-meta">Intrebari active disponibile</p>
+              <p id="count_match" class="count">...</p>
+            </div>
+          </div>
+
+          <div class="card summary-card">
+            <h3>Ultimul rezultat</h3>
+            <p id="lastResult" class="muted">Nu ai inca un rezultat salvat.</p>
+            <div class="actions-row">
+              <a class="btn primary" href="/portal/student/quiz.html?mode=mixed">Incepe acum</a>
+              <a class="btn" href="/portal/student/results.html">Istoric rezultate</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/student/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/student/dashboard.js"></script>
+  </body>
+</html>

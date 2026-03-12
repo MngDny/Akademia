@@ -48,15 +48,15 @@ async function init() {
 
       this.classList.add("active");
 
-      const text = this.innerText;
+      const section = this.dataset.section;
 
       document.getElementById("createUserSection").style.display =
-        text === "Create User" ? "block" : "none";
+        section === "create-user" ? "block" : "none";
 
       document.getElementById("manageUsersSection").style.display =
-        text === "Manage Users" ? "block" : "none";
+        section === "manage-users" ? "block" : "none";
 
-      if (text === "Manage Users") {
+      if (section === "manage-users") {
         loadUsers();
       }
     });
@@ -78,7 +78,7 @@ async function createUser() {
   const data = await res.json();
 
   if (res.ok) {
-    document.getElementById("result").innerText = "User creat!";
+    document.getElementById("result").innerText = "Utilizator creat!";
   } else {
     document.getElementById("result").innerText = data.error;
   }
@@ -105,7 +105,7 @@ async function loadUsers() {
         <strong>${user.username}</strong>
         <span class="user-role">${user.role}</span>
       </div>
-      <button class="delete-btn" onclick="deleteUser('${user.id}')">Delete</button>
+      <button class="delete-btn" onclick="deleteUser('${user.id}')">Șterge</button>
     `;
 
     container.appendChild(row);
