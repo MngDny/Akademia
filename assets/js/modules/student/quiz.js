@@ -1,19 +1,22 @@
 import { supabase } from "../../core/supabaseClient.js";
 import { requireRole } from "../../core/authGuard.js";
+import {
+  ATTEMPTS_TABLE,
+  OFFICIAL_BONUS_POINTS,
+  POINTS,
+  TEST_STRUCTURE,
+  TYPE_ORDER,
+  getTestMaxPoints,
+} from "./contestConfig.js";
 
-const RESULT_KEY_PREFIX = "akademia_student_results_";
-
-const TYPE_MAP = {
+const TYPE_META = {
   tf: { table: "questions_tf", title: "Adevărat / Fals" },
   abc_one: { table: "questions_abc_one", title: "ABC One" },
-  abc_multi: { table: "questions_abc_multi", title: "ABC Multi" },
   match: { table: "questions_match", title: "Asociere" },
+  abc_multi: { table: "questions_abc_multi", title: "ABC Multi" },
 };
 
 const els = {
-  quizMode: document.getElementById("quizMode"),
-  quizType: document.getElementById("quizType"),
-  count: document.getElementById("questionCount"),
   timer: document.getElementById("timerMinutes"),
   startBtn: document.getElementById("startBtn"),
   setupMessage: document.getElementById("setupMessage"),
@@ -27,16 +30,25 @@ const els = {
 };
 
 const state = {
+  studentId: "",
   username: "",
-  mode: "single",
-  type: "tf",
   questions: [],
   answers: {},
   current: 0,
   deadline: 0,
+  startTime: 0,
   timerId: null,
   finished: false,
 };
+
+function shuffle(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
 function parseOptions(options) {
   if (!Array.isArray(options)) return [];
@@ -76,74 +88,87 @@ function normalizeRow(type, row) {
   };
 }
 
-async function fetchByType(type, limit) {
-  const table = TYPE_MAP[type].table;
+async function fetchQuestions(type, needCount) {
+  const table = TYPE_META[type].table;
 
-  let query = supabase
+  const { data: activeRows, error: activeError } = await supabase
     .from(table)
     .select("*")
+    .eq("status", "active")
     .order("created_at", { ascending: false })
-    .limit(limit);
+    .limit(300);
 
-  const { data: activeRows, error: activeError } = await query.eq("status", "active");
+  let rows = activeRows || [];
 
-  if (!activeError && (activeRows || []).length) {
-    return (activeRows || []).map((row) => normalizeRow(type, row));
+  if (activeError || rows.length < needCount) {
+    const { data, error } = await supabase
+      .from(table)
+      .select("*")
+      .order("created_at", { ascending: false })
+      .limit(300);
+
+    if (error) throw error;
+    rows = data || [];
   }
 
-  const { data, error } = await supabase
-    .from(table)
-    .select("*")
-    .order("created_at", { ascending: false })
-    .limit(limit);
+  if (rows.length < needCount) {
+    throw new Error(`Nu există suficiente întrebări pentru ${TYPE_META[type].title}. Necesare: ${needCount}, disponibile: ${rows.length}.`);
+  }
 
-  if (error) throw error;
-  return (data || []).map((row) => normalizeRow(type, row));
+  return shuffle(rows).slice(0, needCount).map((row) => normalizeRow(type, row));
 }
 
-function shuffle(array) {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
+async function buildOfficialTest() {
+  const chunks = [];
 
-async function loadQuestions(mode, type, count) {
-  if (mode === "mixed") {
-    const perType = Math.max(1, Math.ceil(count / 4));
-    const chunks = await Promise.all(Object.keys(TYPE_MAP).map((t) => fetchByType(t, perType)));
-    return shuffle(chunks.flat()).slice(0, count);
+  for (const type of TYPE_ORDER) {
+    const need = TEST_STRUCTURE[type];
+    const questions = await fetchQuestions(type, need);
+    chunks.push(...questions);
   }
 
-  return fetchByType(type, count);
-}
-
-function setModeFromUrl() {
-  const url = new URL(window.location.href);
-  const mode = url.searchParams.get("mode");
-  const type = url.searchParams.get("type");
-
-  if (mode === "mixed") {
-    els.quizMode.value = "mixed";
-  }
-
-  if (type && TYPE_MAP[type]) {
-    els.quizType.value = type;
-  }
-
-  toggleTypeVisibility();
-}
-
-function toggleTypeVisibility() {
-  const isMixed = els.quizMode.value === "mixed";
-  els.quizType.disabled = isMixed;
-  els.quizType.style.opacity = isMixed ? "0.6" : "1";
+  return chunks;
 }
 
 function saveAnswer(questionIndex, value) {
   state.answers[questionIndex] = value;
+  updateSubmitState();
+}
+
+function getOptionText(question, index) {
+  const opt = question.options?.[Number(index)];
+  return opt?.text || `Opțiunea ${Number(index) + 1}`;
+}
+
+function getUserAnswerLabel(question, answer) {
+  if (question.kind === "pairs") {
+    if (!answer || typeof answer !== "object") return "(fără răspuns)";
+    return question.pairs
+      .map((pair, i) => `${pair.left} -> ${answer[String(i)] || "(necompletat)"}`)
+      .join("; ");
+  }
+
+  if (question.multi) {
+    if (!Array.isArray(answer) || !answer.length) return "(fără răspuns)";
+    return answer.map((idx) => getOptionText(question, idx)).join(", ");
+  }
+
+  if (!Number.isInteger(answer)) return "(fără răspuns)";
+  return getOptionText(question, answer);
+}
+
+function getCorrectAnswerLabel(question) {
+  if (question.kind === "pairs") {
+    return question.pairs.map((pair) => `${pair.left} -> ${pair.right}`).join("; ");
+  }
+
+  const correctIndexes = question.options
+    .map((opt, index) => ({ index, correct: Boolean(opt.correct) }))
+    .filter((item) => item.correct)
+    .map((item) => item.index);
+
+  if (!correctIndexes.length) return "(nespecificat)";
+  return correctIndexes.map((idx) => getOptionText(question, idx)).join(", ");
 }
 
 function renderOptionsQuestion(question, idx) {
@@ -155,7 +180,7 @@ function renderOptionsQuestion(question, idx) {
         ? `<input type="checkbox" data-index="${i}" ${Array.isArray(saved) && saved.includes(i) ? "checked" : ""} />`
         : `<input type="radio" name="currentAnswer" value="${i}" ${saved === i ? "checked" : ""} />`;
 
-      return `<label class="option-item">${input} ${opt.text || `Opțiune ${i + 1}`}</label>`;
+      return `<label class="option-item">${input} ${opt.text || `Opțiunea ${i + 1}`}</label>`;
     })
     .join("");
 
@@ -214,7 +239,7 @@ function renderCurrentQuestion() {
   const question = state.questions[state.current];
   if (!question) return;
 
-  els.meta.textContent = `Întrebarea ${state.current + 1} din ${state.questions.length} | Tip: ${TYPE_MAP[question.type].title}`;
+  els.meta.textContent = `Întrebarea ${state.current + 1} din ${state.questions.length} | Tip: ${TYPE_META[question.type].title}`;
   els.questionText.textContent = question.prompt;
 
   if (question.kind === "pairs") {
@@ -225,7 +250,7 @@ function renderCurrentQuestion() {
 
   els.prevBtn.disabled = state.current === 0 || state.finished;
   els.nextBtn.disabled = state.current >= state.questions.length - 1 || state.finished;
-  els.submitBtn.disabled = state.finished || !state.questions.length;
+  updateSubmitState();
 }
 
 function isEqualSet(a, b) {
@@ -234,12 +259,7 @@ function isEqualSet(a, b) {
   return b.every((item) => setA.has(item));
 }
 
-function evaluateQuestion(question, answer) {
-  if (question.kind === "pairs") {
-    if (!answer || typeof answer !== "object") return false;
-    return question.pairs.every((pair, index) => answer[String(index)] === pair.right);
-  }
-
+function evaluateOptionsQuestion(question, answer) {
   const correctIndexes = question.options
     .map((opt, index) => ({ correct: Boolean(opt.correct), index }))
     .filter((item) => item.correct)
@@ -247,10 +267,77 @@ function evaluateQuestion(question, answer) {
 
   if (question.multi) {
     const selected = Array.isArray(answer) ? answer : [];
-    return isEqualSet(correctIndexes, selected);
+    const isCorrect = isEqualSet(correctIndexes, selected);
+    return { isCorrect, points: isCorrect ? POINTS.abc_multi : 0, correctPairs: 0 };
   }
 
-  return correctIndexes.length ? Number(answer) === correctIndexes[0] : false;
+  const isCorrect = correctIndexes.length ? Number(answer) === correctIndexes[0] : false;
+  const points = question.type === "tf" ? (isCorrect ? POINTS.tf : 0) : (isCorrect ? POINTS.abc_one : 0);
+  return { isCorrect, points, correctPairs: 0 };
+}
+
+function evaluatePairsQuestion(question, answer) {
+  if (!answer || typeof answer !== "object") {
+    return { isCorrect: false, points: 0, correctPairs: 0 };
+  }
+
+  const correctPairs = question.pairs.reduce((acc, pair, index) => {
+    return acc + (answer[String(index)] === pair.right ? 1 : 0);
+  }, 0);
+
+  const points = Math.min(POINTS.matchMax, correctPairs * POINTS.matchPair);
+  return {
+    isCorrect: correctPairs === question.pairs.length,
+    points,
+    correctPairs,
+  };
+}
+
+function isQuestionAnswered(question, index) {
+  const answer = state.answers[index];
+
+  if (question.kind === "pairs") {
+    if (!answer || typeof answer !== "object") return false;
+    const filled = question.pairs.filter((_, pairIndex) => {
+      const value = answer[String(pairIndex)] ?? answer[pairIndex];
+      return typeof value === "string" && value.trim().length > 0;
+    }).length;
+
+    return filled === question.pairs.length;
+  }
+
+  if (question.multi) {
+    return Array.isArray(answer) && answer.length > 0;
+  }
+
+  return Number.isInteger(answer);
+}
+
+function getUnansweredCount() {
+  return state.questions.reduce((count, question, index) => {
+    return count + (isQuestionAnswered(question, index) ? 0 : 1);
+  }, 0);
+}
+
+function updateSubmitState() {
+  const hasQuestions = state.questions.length > 0;
+  const unanswered = hasQuestions ? getUnansweredCount() : 0;
+  const canSubmit = hasQuestions && !state.finished && unanswered === 0;
+
+  els.submitBtn.disabled = !canSubmit;
+  if (state.finished) {
+    els.submitBtn.textContent = "Test trimis";
+  } else if (!hasQuestions) {
+    els.submitBtn.textContent = "Trimite testul";
+  } else if (canSubmit) {
+    els.submitBtn.textContent = "Trimite testul";
+  } else {
+    els.submitBtn.textContent = `Completează toate întrebările (${unanswered} rămase)`;
+  }
+
+  els.submitBtn.title = canSubmit
+    ? "Toate întrebările sunt completate."
+    : (hasQuestions ? `Completează toate întrebările. Rămase: ${unanswered}` : "Pornește testul mai întâi.");
 }
 
 function stopTimer() {
@@ -260,54 +347,159 @@ function stopTimer() {
   }
 }
 
-function storeResult(correct) {
-  const total = state.questions.length;
-  const secondsSpent = Math.max(0, Math.round((Date.now() - (state.deadline - Number(els.timer.value) * 60000)) / 1000));
-
-  const result = {
-    id: crypto.randomUUID(),
-    date: new Date().toISOString(),
-    mode: state.mode,
-    type: state.mode === "mixed" ? "mixt" : TYPE_MAP[state.type].title,
-    total,
-    correct,
-    secondsSpent,
+async function persistAttempt(summary) {
+  const payload = {
+    student_auth_id: state.studentId,
+    student_username: state.username,
+    total_questions: summary.totalQuestions,
+    total_correct_answers: summary.totalCorrect,
+    points_total: summary.pointsTotal,
+    max_points: summary.maxPoints,
+    duration_seconds: summary.durationSeconds,
+    tf_total: summary.tfTotal,
+    tf_correct: summary.tfCorrect,
+    abc_one_total: summary.abcOneTotal,
+    abc_one_correct: summary.abcOneCorrect,
+    abc_multi_total: summary.abcMultiTotal,
+    abc_multi_correct: summary.abcMultiCorrect,
+    match_pairs_total: summary.matchPairsTotal,
+    match_pairs_correct: summary.matchPairsCorrect,
+    breakdown: summary.breakdown,
   };
 
-  const key = `${RESULT_KEY_PREFIX}${state.username}`;
-  const existing = JSON.parse(localStorage.getItem(key) || "[]");
-  localStorage.setItem(key, JSON.stringify([result, ...existing].slice(0, 200)));
+  const { error } = await supabase.from(ATTEMPTS_TABLE).insert(payload);
+  if (error) throw error;
 }
 
-function finishQuiz(reason = "manual") {
+async function finishQuiz(reason = "manual") {
   if (state.finished) return;
+
   state.finished = true;
   stopTimer();
 
-  const correct = state.questions.reduce((acc, question, index) => acc + (evaluateQuestion(question, state.answers[index]) ? 1 : 0), 0);
-  const pct = state.questions.length ? Math.round((correct / state.questions.length) * 100) : 0;
+  const summary = {
+    totalQuestions: state.questions.length,
+    totalCorrect: 0,
+    pointsTotal: 0,
+    maxPoints: getTestMaxPoints(5),
+    durationSeconds: Math.max(0, Math.round((Date.now() - state.startTime) / 1000)),
+    tfTotal: TEST_STRUCTURE.tf,
+    tfCorrect: 0,
+    abcOneTotal: TEST_STRUCTURE.abc_one,
+    abcOneCorrect: 0,
+    abcMultiTotal: TEST_STRUCTURE.abc_multi,
+    abcMultiCorrect: 0,
+    matchPairsTotal: 5,
+    matchPairsCorrect: 0,
+    breakdown: [],
+  };
 
-  storeResult(correct);
+  state.questions.forEach((question, index) => {
+    const answer = state.answers[index];
+    const evaluation = question.kind === "pairs"
+      ? evaluatePairsQuestion(question, answer)
+      : evaluateOptionsQuestion(question, answer);
 
+    if (evaluation.isCorrect) {
+      summary.totalCorrect += 1;
+    }
+
+    summary.pointsTotal += evaluation.points;
+
+    if (question.type === "tf" && evaluation.isCorrect) summary.tfCorrect += 1;
+    if (question.type === "abc_one" && evaluation.isCorrect) summary.abcOneCorrect += 1;
+    if (question.type === "abc_multi" && evaluation.isCorrect) summary.abcMultiCorrect += 1;
+    if (question.type === "match") {
+      summary.matchPairsTotal = Math.max(summary.matchPairsTotal, question.pairs.length);
+      summary.matchPairsCorrect = evaluation.correctPairs;
+    }
+
+    summary.breakdown.push({
+      question_id: question.id,
+      question_prompt: question.prompt,
+      type: question.type,
+      is_correct: evaluation.isCorrect,
+      points: evaluation.points,
+      correct_pairs: evaluation.correctPairs,
+      user_answer: getUserAnswerLabel(question, answer),
+      correct_answer: getCorrectAnswerLabel(question),
+    });
+  });
+
+  const wrongAnswers = summary.breakdown.filter((item) => !item.is_correct);
+
+  summary.maxPoints = (TEST_STRUCTURE.tf * POINTS.tf)
+    + (TEST_STRUCTURE.abc_one * POINTS.abc_one)
+    + (TEST_STRUCTURE.abc_multi * POINTS.abc_multi)
+    + Math.min(POINTS.matchMax, summary.matchPairsTotal * POINTS.matchPair)
+    + OFFICIAL_BONUS_POINTS;
+
+  summary.pointsTotal += OFFICIAL_BONUS_POINTS;
+
+  const pct = summary.maxPoints ? Math.round((summary.pointsTotal / summary.maxPoints) * 100) : 0;
   const klass = pct >= 80 ? "result-good" : pct >= 50 ? "result-mid" : "result-bad";
   const reasonText = reason === "timeout" ? "Timpul a expirat." : "Test trimis.";
+
+  let persistMessage = "Rezultatul a fost salvat în baza de date.";
+  try {
+    await persistAttempt(summary);
+  } catch (error) {
+    console.error(error);
+    persistMessage = "Rezultatul nu a putut fi salvat. Verifică SQL-ul pentru tabela student_test_attempts.";
+  }
 
   els.resultHost.innerHTML = `
     <div class="card" style="max-width:100%;">
       <h3>Rezultat final</h3>
-      <p class="${klass}">${reasonText} Ai obținut ${correct} din ${state.questions.length} (${pct}%).</p>
+      <p class="${klass}">${reasonText} Ai obținut ${summary.pointsTotal}/${summary.maxPoints} puncte (${pct}%).</p>
+      <p class="muted">Include bonus din oficiu: +${OFFICIAL_BONUS_POINTS} puncte.</p>
+      <p class="muted">Corecte: ${summary.totalCorrect}/${summary.totalQuestions} | TF: ${summary.tfCorrect}/${summary.tfTotal}, ABC One: ${summary.abcOneCorrect}/${summary.abcOneTotal}, ABC Multi: ${summary.abcMultiCorrect}/${summary.abcMultiTotal}, Asociere: ${summary.matchPairsCorrect}/${summary.matchPairsTotal} perechi.</p>
+      <p class="muted">${persistMessage}</p>
+      ${wrongAnswers.length > 0 ? `
+        <button id="toggleWrongBtn" class="btn danger" type="button">Vezi întrebări greșite (${wrongAnswers.length})</button>
+        <div id="wrongReview" class="wrong-review" hidden>
+          <p class="card-meta">Întrebări la care ai greșit:</p>
+          <div class="wrong-list">
+            ${wrongAnswers.map((item, idx) => `
+              <div class="wrong-item">
+                <p class="wrong-item-title">#${idx + 1} · ${TYPE_META[item.type]?.title || item.type}</p>
+                <p class="wrong-item-text">${item.question_prompt}</p>
+                <p class="wrong-answer-line"><strong>Răspunsul tău:</strong> ${item.user_answer}</p>
+                <p class="wrong-answer-line"><strong>Răspuns corect:</strong> ${item.correct_answer}</p>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      ` : ""}
       <div class="actions-row">
         <a class="btn" href="/portal/student/results.html">Vezi istoric</a>
-        <a class="btn primary" href="/portal/student/quiz.html?mode=${state.mode}${state.mode === "single" ? `&type=${state.type}` : ""}">Încearcă din nou</a>
+        <a class="btn" href="/portal/student/leaderboard.html">Vezi clasament</a>
+        <a class="btn primary" href="/portal/student/quiz.html">Încearcă din nou</a>
       </div>
     </div>
   `;
 
   renderCurrentQuestion();
+
+  const toggleWrongBtn = document.getElementById("toggleWrongBtn");
+  const wrongReview = document.getElementById("wrongReview");
+  if (toggleWrongBtn && wrongReview) {
+    toggleWrongBtn.addEventListener("click", () => {
+      const isHidden = wrongReview.hasAttribute("hidden");
+      if (isHidden) {
+        wrongReview.removeAttribute("hidden");
+        toggleWrongBtn.textContent = "Ascunde întrebări greșite";
+      } else {
+        wrongReview.setAttribute("hidden", "hidden");
+        toggleWrongBtn.textContent = `Vezi întrebări greșite (${wrongAnswers.length})`;
+      }
+    });
+  }
 }
 
 function startCountdown(minutes) {
-  state.deadline = Date.now() + minutes * 60 * 1000;
+  state.startTime = Date.now();
+  state.deadline = state.startTime + minutes * 60 * 1000;
 
   stopTimer();
 
@@ -323,7 +515,7 @@ function startCountdown(minutes) {
     const mins = String(Math.floor(diff / 60000)).padStart(2, "0");
     const secs = String(Math.floor((diff % 60000) / 1000)).padStart(2, "0");
     const current = state.questions[state.current];
-    els.meta.textContent = `Întrebarea ${state.current + 1} din ${state.questions.length} | Tip: ${current ? TYPE_MAP[current.type].title : "-"} | Timp rămas: ${mins}:${secs}`;
+    els.meta.textContent = `Întrebarea ${state.current + 1} din ${state.questions.length} | Tip: ${current ? TYPE_META[current.type].title : "-"} | Timp rămas: ${mins}:${secs}`;
   }, 500);
 }
 
@@ -331,33 +523,18 @@ async function startQuiz() {
   els.setupMessage.textContent = "";
   els.resultHost.innerHTML = "";
 
-  const mode = els.quizMode.value;
-  const type = els.quizType.value;
-  const count = Number.parseInt(els.count.value || "20", 10);
-  const minutes = Number.parseInt(els.timer.value || "30", 10);
+  const minutes = Number.parseInt(els.timer.value || "45", 10);
 
-  if (!Number.isInteger(count) || count < 5 || count > 60) {
-    els.setupMessage.textContent = "Numărul de întrebări trebuie să fie între 5 și 60.";
+  if (!Number.isInteger(minutes) || minutes < 10 || minutes > 120) {
+    els.setupMessage.textContent = "Timpul trebuie să fie între 10 și 120 minute.";
     return;
   }
 
-  if (!Number.isInteger(minutes) || minutes < 5 || minutes > 120) {
-    els.setupMessage.textContent = "Timpul trebuie să fie între 5 și 120 minute.";
-    return;
-  }
-
-  els.setupMessage.textContent = "Se încarcă întrebările...";
+  els.setupMessage.textContent = "Se încarcă întrebările testului oficial...";
 
   try {
-    const questions = await loadQuestions(mode, type, count);
+    const questions = await buildOfficialTest();
 
-    if (!questions.length) {
-      els.setupMessage.textContent = "Nu există întrebări disponibile pentru această configurare.";
-      return;
-    }
-
-    state.mode = mode;
-    state.type = type;
     state.questions = questions;
     state.answers = {};
     state.current = 0;
@@ -366,15 +543,14 @@ async function startQuiz() {
     renderCurrentQuestion();
     startCountdown(minutes);
 
-    els.setupMessage.textContent = `Quiz pornit: ${questions.length} întrebări.`;
+    els.setupMessage.textContent = `Test pornit: ${questions.length} întrebări în ordinea oficială.`;
   } catch (error) {
     console.error(error);
-    els.setupMessage.textContent = "Eroare la încărcarea întrebărilor.";
+    els.setupMessage.textContent = error?.message || "Eroare la încărcarea întrebărilor.";
   }
 }
 
 function bindActions() {
-  els.quizMode.addEventListener("change", toggleTypeVisibility);
   els.startBtn.addEventListener("click", startQuiz);
 
   els.prevBtn.addEventListener("click", () => {
@@ -391,14 +567,26 @@ function bindActions() {
     }
   });
 
-  els.submitBtn.addEventListener("click", () => finishQuiz("manual"));
+  els.submitBtn.addEventListener("click", () => {
+    if (!state.questions.length || state.finished || els.submitBtn.disabled) return;
+
+    const unanswered = getUnansweredCount();
+    const confirmText = unanswered > 0
+      ? `Ești sigur că vrei să trimiți testul? Nu ai răspuns la ${unanswered} întrebări.`
+      : "Ești sigur că vrei să trimiți testul?";
+
+    const ok = window.confirm(confirmText);
+    if (!ok) return;
+
+    finishQuiz("manual");
+  });
 }
 
 async function init() {
   const { session } = await requireRole("student");
+  state.studentId = session.user.id;
   state.username = session?.user?.user_metadata?.username || "student";
 
-  setModeFromUrl();
   bindActions();
 }
 

@@ -16,8 +16,9 @@ sidebar.innerHTML = `
   <div class="nav-section-title">Navigare</div>
   <nav class="nav">
     <a class="${navClass(currentPath.includes("/portal/student/dashboard.html"))}" href="/portal/student/dashboard.html">Tablou de bord</a>
-    <a class="${navClass(currentPath.includes("/portal/student/quiz.html"))}" href="/portal/student/quiz.html?mode=mixed">Quiz</a>
+    <a class="${navClass(currentPath.includes("/portal/student/quiz.html"))}" href="/portal/student/quiz.html">Test nou</a>
     <a class="${navClass(currentPath.includes("/portal/student/results.html"))}" href="/portal/student/results.html">Rezultate</a>
+    <a class="${navClass(currentPath.includes("/portal/student/leaderboard.html"))}" href="/portal/student/leaderboard.html">Clasament</a>
   </nav>
 
   <div class="sidebar-footer">

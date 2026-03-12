@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Student - Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 
     <link rel="stylesheet" href="/assets/css/layout.css" />
@@ -20,36 +21,26 @@
           <div class="page-header">
             <div>
               <p class="title-eyebrow">Concurs Biblic Talantul in Negot</p>
-              <h1 class="header">Sesiune quiz</h1>
-              <p class="page-help">Configureaza sesiunea, raspunde la intrebari si trimite testul la final.</p>
+              <h1 class="header">Test oficial</h1>
+              <p class="page-help">Structură fixă: 10 TF, 10 ABC One, 1 Asociere, 3 ABC Multi.</p>
             </div>
           </div>
 
           <div class="quiz-shell">
             <section class="quiz-panel">
-              <h3>Setari sesiune</h3>
-
-              <label class="label" for="quizMode">Mod</label>
-              <select id="quizMode" class="input">
-                <option value="single">Un tip de intrebari</option>
-                <option value="mixed">Mixt (toate tipurile)</option>
-              </select>
-
-              <label class="label" for="quizType">Tip intrebari</label>
-              <select id="quizType" class="input">
-                <option value="tf">Adevărat / Fals</option>
-                <option value="abc_one">ABC One</option>
-                <option value="abc_multi">ABC Multi</option>
-                <option value="match">Asociere</option>
-              </select>
-
-              <label class="label" for="questionCount">Numar intrebari</label>
-              <input id="questionCount" class="input" type="number" min="5" max="60" value="20" />
+              <h3>Structura și punctaj</h3>
+              <ul class="quiz-rules">
+                <li>10 întrebări Adevărat/Fals x 2p</li>
+                <li>10 întrebări ABC One x 4p</li>
+                <li>1 întrebare Asociere x max 10p (2p/pereche)</li>
+                <li>3 întrebări ABC Multi x 5p</li>
+                <li>Bonus din oficiu: +15p</li>
+              </ul>
 
               <label class="label" for="timerMinutes">Timp (minute)</label>
-              <input id="timerMinutes" class="input" type="number" min="5" max="120" value="30" />
+              <input id="timerMinutes" class="input" type="number" min="10" max="120" value="45" />
 
-              <button id="startBtn" class="btn primary" style="width: 100%;">Porneste quiz</button>
+              <button id="startBtn" class="btn primary" style="width: 100%;">Pornește testul</button>
               <p id="setupMessage" class="muted" style="margin-top: 8px;"></p>
             </section>
 
@@ -60,8 +51,8 @@
               <div id="answerHost"></div>
 
               <div class="quiz-actions">
-                <button id="prevBtn" class="btn" disabled>Anterior</button>
-                <button id="nextBtn" class="btn" disabled>Urmator</button>
+                <button id="prevBtn" class="btn nav-btn" disabled>◀ Întrebarea anterioară</button>
+                <button id="nextBtn" class="btn nav-btn" disabled>Întrebarea următoare ▶</button>
                 <button id="submitBtn" class="btn primary" disabled>Trimite testul</button>
               </div>
 

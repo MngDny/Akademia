@@ -1,6 +1,6 @@
+import { supabase } from "../../core/supabaseClient.js";
 import { requireRole } from "../../core/authGuard.js";
-
-const RESULT_KEY_PREFIX = "akademia_student_results_";
+import { ATTEMPTS_TABLE, getEffectiveMaxPoints, getEffectivePoints } from "./contestConfig.js";
 
 const els = {
   subtitle: document.getElementById("resultsSubtitle"),
@@ -11,7 +11,6 @@ const els = {
 };
 
 let allRows = [];
-let username = "";
 
 function formatDuration(seconds) {
   const mins = Math.floor(seconds / 60);
@@ -30,14 +29,16 @@ function render(rows) {
   els.empty.style.display = "none";
 
   rows.forEach((row) => {
-    const pct = row.total ? Math.round((row.correct / row.total) * 100) : 0;
+    const pointsTotal = getEffectivePoints(row);
+    const maxPoints = getEffectiveMaxPoints(row);
+    const pct = maxPoints ? Math.round((pointsTotal / maxPoints) * 100) : 0;
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td>${new Date(row.date).toLocaleString("ro-RO")}</td>
-      <td>${row.mode === "mixed" ? "Mixt" : "Single"}</td>
-      <td>${row.type}</td>
-      <td>${row.correct}/${row.total} (${pct}%)</td>
-      <td>${formatDuration(row.secondsSpent || 0)}</td>
+      <td>${new Date(row.created_at).toLocaleString("ro-RO")}</td>
+      <td>${pointsTotal}/${maxPoints} (${pct}%)</td>
+      <td>${row.total_correct_answers}/${row.total_questions}</td>
+      <td>${formatDuration(row.duration_seconds || 0)}</td>
+      <td>TF ${row.tf_correct}/${row.tf_total}, ABC1 ${row.abc_one_correct}/${row.abc_one_total}, Asociere ${row.match_pairs_correct} perechi, ABCM ${row.abc_multi_correct}/${row.abc_multi_total}</td>
     `;
 
     els.body.appendChild(tr);
@@ -52,16 +53,27 @@ function applySearch() {
   }
 
   const filtered = allRows.filter((row) => {
-    const mode = row.mode === "mixed" ? "mixt" : "single";
-    return mode.includes(term) || String(row.type || "").toLowerCase().includes(term);
+    const created = new Date(row.created_at).toLocaleString("ro-RO").toLowerCase();
+    return created.includes(term) || String(getEffectivePoints(row)).includes(term);
   });
 
   render(filtered);
 }
 
-function loadResults() {
-  const key = `${RESULT_KEY_PREFIX}${username}`;
-  allRows = JSON.parse(localStorage.getItem(key) || "[]");
+async function loadResults(studentId) {
+  const { data, error } = await supabase
+    .from(ATTEMPTS_TABLE)
+    .select("*")
+    .eq("student_auth_id", studentId)
+    .order("created_at", { ascending: false });
+
+  if (error) {
+    console.error(error);
+    els.subtitle.textContent = "Eroare la încărcarea rezultatelor. Verifică setup-ul tabelei.";
+    return;
+  }
+
+  allRows = data || [];
 
   els.subtitle.textContent = allRows.length
     ? `${allRows.length} rezultate salvate`
@@ -71,21 +83,15 @@ function loadResults() {
 }
 
 function clearResults() {
-  const ok = confirm("Sigur vrei sa stergi tot istoricul de rezultate?");
+  const ok = confirm("Sigur vrei să ștergi tot istoricul de rezultate?");
   if (!ok) return;
 
-  const key = `${RESULT_KEY_PREFIX}${username}`;
-  localStorage.removeItem(key);
-  allRows = [];
-  render(allRows);
-  els.subtitle.textContent = "Istoricul a fost șters.";
+  els.subtitle.textContent = "Ștergerea completă se face din Supabase (control administrativ).";
 }
 
 async function init() {
   const { session } = await requireRole("student");
-  username = session?.user?.user_metadata?.username || "student";
-
-  loadResults();
+  await loadResults(session.user.id);
 
   els.search.addEventListener("input", applySearch);
   els.clearBtn.addEventListener("click", clearResults);
