@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student - Tablou de bord</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/student/student.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <p class="title-eyebrow">Concurs Biblic Talantul in Negot</p>
+              <h1 class="header">Profil student: <span id="studentName">student</span></h1>
+              <p id="studentStatus" class="page-help">Se incarca datele profilului...</p>
+            </div>
+          </div>
+
+          <div class="quick-links">
+            <a class="quick-link" href="/portal/student/quiz.html">Incepe test nou</a>
+            <a class="quick-link" href="/portal/student/results.html">Vezi rezultate</a>
+            <a class="quick-link" href="/portal/student/leaderboard.html">Clasament</a>
+          </div>
+
+          <div class="section-head">
+            <h2>Rezumat general</h2>
+            <p>Indicatori cheie pentru progresul tău în concurs.</p>
+          </div>
+
+          <div class="student-grid stats-grid">
+            <div class="stat-card">
+              <h3>Teste efectuate</h3>
+              <p class="card-meta">Total teste finalizate</p>
+              <p id="testsCount" class="count">0</p>
+            </div>
+
+            <div class="stat-card">
+              <h3>Puncte totale</h3>
+              <p class="card-meta">Puncte acumulate din toate testele</p>
+              <p id="totalPoints" class="count">0</p>
+            </div>
+
+            <div class="stat-card">
+              <h3>Puncte săptămâna aceasta</h3>
+              <p class="card-meta">Rezultate începând cu luni 00:00</p>
+              <p id="weekPoints" class="count">0</p>
+            </div>
+
+            <div class="stat-card">
+              <h3>Puncte luna aceasta</h3>
+              <p class="card-meta">Rezultate din luna calendaristică</p>
+              <p id="monthPoints" class="count">0</p>
+            </div>
+          </div>
+
+          <div class="dashboard-columns">
+            <div class="dashboard-main">
+              <div class="card performance-card">
+                <h3>Performanță generală</h3>
+                <div class="mini-metrics">
+                  <div class="mini-card">
+                    <p class="mini-label">Medie puncte / test</p>
+                    <p id="avgPoints" class="mini-value">0</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <p class="mini-label">Cel mai bun scor</p>
+                    <p id="bestPercent" class="mini-value">0%</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <p class="mini-label">Teste săptămâna aceasta</p>
+                    <p id="weekTests" class="mini-value">0</p>
+                  </div>
+
+                  <div class="mini-card">
+                    <p class="mini-label">Teste luna aceasta</p>
+                    <p id="monthTests" class="mini-value">0</p>
+                  </div>
+                </div>
+
+                <div class="hint-box">
+                  <p class="mini-label">Recomandare</p>
+                  <p id="studyHint" class="hint-text muted">Finalizează primul test pentru recomandări personalizate.</p>
+                </div>
+              </div>
+
+              <div class="card summary-card">
+                <h3>Ultimul rezultat</h3>
+                <div class="result-grid">
+                  <div class="result-item">
+                    <p class="mini-label">Data</p>
+                    <p id="lastResultDate" class="result-value">-</p>
+                  </div>
+
+                  <div class="result-item">
+                    <p class="mini-label">Punctaj</p>
+                    <p id="lastResultScore" class="result-value">-</p>
+                  </div>
+
+                  <div class="result-item">
+                    <p class="mini-label">Răspunsuri corecte</p>
+                    <p id="lastResultCorrect" class="result-value">-</p>
+                  </div>
+
+                  <div class="result-item">
+                    <p class="mini-label">Durată</p>
+                    <p id="lastResultDuration" class="result-value">-</p>
+                  </div>
+                </div>
+
+                <div class="actions-row">
+                  <a class="btn primary" href="/portal/student/quiz.html">Începe acum</a>
+                  <a class="btn" href="/portal/student/results.html">Istoric rezultate</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-side">
+              <div class="card leaderboard-card">
+                <div class="leaderboard-head">
+                  <h3>Clasament săptămânal</h3>
+                  <span id="weekRank" class="rank-chip">-</span>
+                </div>
+                <div id="weekLeaderboard" class="leaderboard-list muted">Se încarcă...</div>
+              </div>
+
+              <div class="card leaderboard-card">
+                <div class="leaderboard-head">
+                  <h3>Clasament lunar</h3>
+                  <span id="monthRank" class="rank-chip">-</span>
+                </div>
+                <div id="monthLeaderboard" class="leaderboard-list muted">Se încarcă...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/student/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/student/dashboard.js"></script>
+  </body>
+</html>

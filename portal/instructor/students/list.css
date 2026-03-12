@@ -1,0 +1,45 @@
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mini-stat {
+  background: rgba(30, 58, 138, 0.35);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.card {
+  max-width: 100%;
+}
+
+.mini-label {
+  display: block;
+  font-size: 12px;
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+
+.table-header .input {
+  margin: 0;
+}
+
+.table-wrapper {
+  overflow: auto;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 12px;
+}
+
+.table th {
+  background: rgba(15, 23, 42, 0.75);
+  text-align: left;
+}
+
+@media (max-width: 860px) {
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student - Clasament</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/student/student.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <p class="title-eyebrow">Concurs Biblic Talantul in Negot</p>
+              <h1 class="header">Clasament</h1>
+              <p id="leaderboardSubtitle" class="page-help">Se încarcă datele clasamentului...</p>
+            </div>
+          </div>
+
+          <div class="leaderboards-grid">
+            <div class="card leaderboard-card" style="max-width:100%;">
+              <h3>Top săptămâna curentă</h3>
+              <div id="weekLeaderboard" class="leaderboard-list muted">Se încarcă...</div>
+            </div>
+
+            <div class="card leaderboard-card" style="max-width:100%;">
+              <h3>Top luna curentă</h3>
+              <div id="monthLeaderboard" class="leaderboard-list muted">Se încarcă...</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/student/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/student/leaderboard.js"></script>
+  </body>
+</html>

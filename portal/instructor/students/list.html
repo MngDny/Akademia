@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Îndrumător - Studenți</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/instructor/instructor.css" />
+    <link rel="stylesheet" href="/portal/instructor/students/list.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="quick-links">
+          <a class="quick-link" href="/portal/instructor/dashboard.html">Înapoi la tablou de bord</a>
+          <a class="quick-link" href="/portal/instructor/questions/list.html?type=tf">Întrebări Adevărat / Fals</a>
+          <a class="quick-link" href="/portal/instructor/questions/list.html?type=abc_one">Întrebări ABC One</a>
+          <a class="quick-link" href="/portal/instructor/questions/list.html?type=abc_multi">Întrebări ABC Multi</a>
+        </div>
+
+        <div class="page-header">
+          <div>
+            <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
+            <h1 class="header">Studenți înscriși</h1>
+            <p id="studentsSubtitle" class="muted">Se încarcă...</p>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="mini-stat">
+            <span class="mini-label">Total studenți</span>
+            <strong id="totalStudents">0</strong>
+          </div>
+          <div class="mini-stat">
+            <span class="mini-label">Înregistrați azi</span>
+            <strong id="todayStudents">0</strong>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="table-header">
+            <input id="searchInput" class="input" placeholder="Caută după username..." autocomplete="off" />
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th style="width: 60px;">#</th>
+                  <th>Username</th>
+                  <th style="width: 160px;">Rol</th>
+                  <th style="width: 220px;">Data creării</th>
+                </tr>
+              </thead>
+              <tbody id="studentsBody"></tbody>
+            </table>
+          </div>
+
+          <div id="emptyState" class="empty-state" style="display:none;">
+            Nu există studenți care să corespundă filtrului.
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/instructor/students/listStudents.js"></script>
+  </body>
+</html>

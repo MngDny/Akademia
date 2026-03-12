@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin – Akademia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="./dashboard.css" />
+
+  </head>
+
+  <body>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="sidebar">
+      <h2>AKADEMIA</h2>
+
+      <div class="menu-item active" data-section="create-user">Creează utilizator</div>
+      <div class="menu-item" data-section="manage-users">Gestionează utilizatori</div>
+      <div class="menu-item" data-section="settings">Setări</div>
+
+      <div class="sidebar-footer">
+        <button id="logout" class="logout-btn">Deconectare</button>
+      </div>
+    </div>
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <div class="main">
+      <div class="header">Panou administrator</div>
+
+      <div class="card" id="createUserSection">
+        <h3>Creează utilizator</h3>
+
+        <form autocomplete="off">
+          <input id="email" placeholder="E-mail" autocomplete="off" />
+
+          <div class="password-wrapper">
+            <input
+              id="password"
+              placeholder="Parolă"
+              type="password"
+              autocomplete="new-password"
+            />
+            <span class="toggle-password" onclick="togglePassword()">👁</span>
+          </div>
+
+          <input id="username" placeholder="Nume utilizator" autocomplete="off" />
+
+          <select id="role">
+            <option value="student">Student</option>
+            <option value="instructor">Îndrumător</option>
+            <option value="admin">Administrator</option>
+          </select>
+
+          <button id="createUserBtn" class="primary">Creează utilizator</button>
+        </form>
+
+        <div id="result"></div>
+      </div>
+
+      <div class="card" id="manageUsersSection" style="display: none">
+        <h3>Gestionează utilizatori</h3>
+        <div id="usersList"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/assets/js/modules/admin/adminDashboard.js"></script>
+  </body>
+</html>

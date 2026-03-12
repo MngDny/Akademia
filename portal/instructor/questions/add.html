@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Îndrumător - Adaugă întrebare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/instructor/instructor.css" />
+    <link rel="stylesheet" href="/portal/instructor/questions/add.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="quick-links">
+          <a class="quick-link" href="/portal/instructor/dashboard.html">Înapoi la tablou de bord</a>
+          <a class="quick-link" href="/portal/instructor/questions/list.html?type=tf">Adevărat / Fals</a>
+          <a class="quick-link" href="/portal/instructor/questions/list.html?type=abc_one">ABC One</a>
+          <a class="quick-link" href="/portal/instructor/questions/list.html?type=abc_multi">ABC Multi</a>
+          <a class="quick-link" href="/portal/instructor/questions/list.html?type=match">Asociere</a>
+        </div>
+
+        <div class="page-header">
+          <div>
+            <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
+            <h1 id="pageTitle" class="header">Adaugă întrebare</h1>
+            <p id="pageSubtitle" class="muted"></p>
+          </div>
+
+          <div class="header-actions">
+            <a id="backBtn" class="btn" href="#">Înapoi la listă</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Dynamic form will be injected here -->
+          <div id="formHost"></div>
+
+          <div class="form-actions">
+            <button id="saveBtn" class="btn primary">Salvează</button>
+          </div>
+
+          <div id="result" class="muted" style="margin-top:10px;"></div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/instructor/questions/addQuestion.js"></script>
+  </body>
+</html>

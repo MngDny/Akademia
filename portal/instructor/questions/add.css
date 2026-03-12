@@ -1,0 +1,74 @@
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.card {
+  max-width: 860px;
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.textarea {
+  min-height: 170px;
+  resize: vertical;
+}
+
+.options-grid,
+.pairs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.answer-chip-group {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.answer-chip {
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  background: rgba(15, 23, 42, 0.35);
+  color: #dbeafe;
+  border-radius: 10px;
+  min-height: 42px;
+  padding: 8px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.answer-chip:hover {
+  border-color: rgba(125, 211, 252, 0.55);
+}
+
+.answer-chip.is-selected {
+  background: linear-gradient(135deg, rgba(14, 116, 144, 0.65), rgba(37, 99, 235, 0.52));
+  border-color: rgba(125, 211, 252, 0.65);
+  color: #fff;
+}
+
+.form-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 860px) {
+  .metadata-grid,
+  .options-grid,
+  .pairs-grid,
+  .answer-chip-group {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,19 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
-<head>
-  <meta charset="UTF-8" />
-  <title>Akademia – Login</title>
-  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-</head>
-<body>
-  <h2>Autentificare Akademia</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Akademia – Autentificare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
 
-  <input id="email" type="email" placeholder="Email" />
-  <input id="password" type="password" placeholder="Parola" />
-  <button onclick="login()">Login</button>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 
-  <p id="error"></p>
+    <link rel="stylesheet" href="/login.css" />
+  </head>
 
-  <script src="login.js"></script>
-</body>
+  <body>
+    <div class="login-card">
+      <h1>AKADEMIA</h1>
+      <div class="subtitle">Autentificare în platformă</div>
+
+      <input id="email" type="email" placeholder="Email" />
+      <input id="password" type="password" placeholder="Parolă" />
+
+      <button id="loginBtn">
+        <span id="btnText">Autentificare</span>
+        <span id="spinner" class="spinner hidden"></span>
+      </button>
+
+      <div id="error" class="error"></div>
+
+      <a href="/" class="back">← Înapoi la pagina principală</a>
+    </div>
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script type="module" src="/assets/js/modules/auth/login.js"></script>
+
+  </body>
 </html>
