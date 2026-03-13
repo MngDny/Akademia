@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/MngDny/Akademia#readme",
   "dependencies": {
-    "@supabase/supabase-js": "^2.96.0"
+    "@supabase/supabase-js": "^2.96.0",
+    "pdf-parse": "^2.4.5"
   }
 }
