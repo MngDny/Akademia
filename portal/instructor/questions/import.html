@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Îndrumător - Import AI întrebări</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/instructor/instructor.css" />
+    <link rel="stylesheet" href="/portal/instructor/questions/import.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="quick-links">
+          <a class="quick-link" href="/portal/instructor/dashboard.html">Înapoi la tablou de bord</a>
+          <a class="quick-link" href="/portal/instructor/questions/add.html?type=tf">Adaugă manual</a>
+          <a class="quick-link" href="/portal/instructor/questions/list.html?type=tf">Listă întrebări</a>
+        </div>
+
+        <div class="page-header">
+          <div>
+            <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
+            <h1 class="header">Import întrebări cu AI</h1>
+            <p class="muted">Paste text, încarcă PDF sau imagine, apoi verifică și adaugă în baza de date.</p>
+          </div>
+        </div>
+
+        <div class="card stack">
+          <div class="source-tabs" id="sourceTabs">
+            <button class="btn sm source-tab is-active" type="button" data-source="text">Text</button>
+            <button class="btn sm source-tab" type="button" data-source="file">PDF / Imagine</button>
+          </div>
+
+          <div id="textPanel">
+            <label class="label" for="sourceText">Text sursă</label>
+            <textarea id="sourceText" class="textarea" rows="8" placeholder="Lipește aici materialul din care vrei să extragi întrebări..."></textarea>
+          </div>
+
+          <div id="filePanel" class="hidden">
+            <label class="label" for="sourceFile">Fișier (PDF, PNG, JPG, JPEG, WEBP)</label>
+            <input id="sourceFile" class="input" type="file" accept=".pdf,image/png,image/jpeg,image/jpg,image/webp" />
+            <p id="fileInfo" class="muted"></p>
+          </div>
+
+          <div class="actions">
+            <button id="extractBtn" class="btn primary" type="button">Extrage întrebări</button>
+            <button id="saveSelectedBtn" class="btn" type="button" disabled>Adaugă întrebările selectate</button>
+          </div>
+
+          <div id="statusMsg" class="muted"></div>
+        </div>
+
+        <div class="card">
+          <div class="result-header">
+            <h2 class="section-title">Review întrebări generate</h2>
+            <p id="groupSummary" class="muted">Nicio întrebare încă.</p>
+          </div>
+          <div id="reviewHost" class="review-host"></div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/instructor/questions/importQuestions.js"></script>
+  </body>
+</html>

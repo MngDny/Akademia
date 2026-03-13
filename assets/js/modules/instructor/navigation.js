@@ -12,6 +12,7 @@ const currentType = new URLSearchParams(window.location.search).get("type") || "
 const isDashboard = currentPath.includes("/portal/instructor/dashboard.html");
 const isQuestionsListPage = currentPath.includes("/portal/instructor/questions/list.html");
 const isQuestionsAddPage = currentPath.includes("/portal/instructor/questions/add.html");
+const isQuestionsImportPage = currentPath.includes("/portal/instructor/questions/import.html");
 const isStudentsPage = currentPath.includes("/portal/instructor/students/");
 
 const navLinkClass = (isActive) => (isActive ? "nav-item active" : "nav-item");
@@ -35,13 +36,14 @@ sidebar.innerHTML = `
       </div>
     </details>
 
-    <details id="questionsAddMenu" class="menu-dropdown ${isQuestionsAddPage ? "active" : ""}" ${isQuestionsAddPage ? "open" : ""}>
+    <details id="questionsAddMenu" class="menu-dropdown ${isQuestionsAddPage || isQuestionsImportPage ? "active" : ""}" ${isQuestionsAddPage || isQuestionsImportPage ? "open" : ""}>
       <summary class="nav-item nav-summary">Adaugă întrebări</summary>
       <div class="submenu-wrap">
         <a class="${navSubLinkClass(isQuestionsAddPage && currentType === "tf")}" href="/portal/instructor/questions/add.html?type=tf">Adevărat / Fals</a>
         <a class="${navSubLinkClass(isQuestionsAddPage && currentType === "abc_one")}" href="/portal/instructor/questions/add.html?type=abc_one">ABC One</a>
         <a class="${navSubLinkClass(isQuestionsAddPage && currentType === "abc_multi")}" href="/portal/instructor/questions/add.html?type=abc_multi">ABC Multi</a>
         <a class="${navSubLinkClass(isQuestionsAddPage && currentType === "match")}" href="/portal/instructor/questions/add.html?type=match">Asociere</a>
+        <a class="${navSubLinkClass(isQuestionsImportPage)}" href="/portal/instructor/questions/import.html">Import cu AI</a>
       </div>
     </details>
 
@@ -89,7 +91,7 @@ const addMenu = document.getElementById("questionsAddMenu");
 // avoiding browser-restored open states where both groups appear active.
 if (listMenu && addMenu) {
   listMenu.open = isQuestionsListPage;
-  addMenu.open = isQuestionsAddPage;
+  addMenu.open = isQuestionsAddPage || isQuestionsImportPage;
 }
 
 const dropdowns = Array.from(document.querySelectorAll(".menu-dropdown"));
