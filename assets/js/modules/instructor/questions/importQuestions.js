@@ -32,6 +32,7 @@ const els = {
 let activeSource = "text";
 let currentItems = [];
 let activeUsername = "";
+const REQUIRED_MATCH_PAIRS = 5;
 
 function setStatus(text) {
   els.statusMsg.textContent = text || "";
@@ -430,15 +431,15 @@ function buildInsertPayload(item) {
       }))
       .filter((pair) => pair.left && pair.right);
 
-    if (pairs.length < 2) {
-      throw new Error("Întrebarea de asociere trebuie să aibă minim 2 perechi.");
+    if (pairs.length < REQUIRED_MATCH_PAIRS) {
+      throw new Error(`Întrebarea de asociere trebuie să aibă minim ${REQUIRED_MATCH_PAIRS} perechi.`);
     }
 
     return {
       table: tableByType[item.type],
       payload: {
         ...basePayload,
-        pairs,
+        pairs: pairs.slice(0, REQUIRED_MATCH_PAIRS),
       },
     };
   }

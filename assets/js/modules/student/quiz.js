@@ -16,6 +16,8 @@ const TYPE_META = {
   abc_multi: { table: "questions_abc_multi", title: "ABC Multi" },
 };
 
+const REQUIRED_MATCH_PAIRS = 5;
+
 const els = {
   timer: document.getElementById("timerMinutes"),
   startBtn: document.getElementById("startBtn"),
@@ -69,7 +71,7 @@ function normalizeRow(type, row) {
       type,
       prompt: `Asociază corect perechile (capitol ${row.chapter ?? "-"})`,
       kind: "pairs",
-      pairs: pairs.map((p) => ({
+      pairs: pairs.slice(0, REQUIRED_MATCH_PAIRS).map((p) => ({
         left: p.left ?? p.stanga ?? "",
         right: p.right ?? p.dreapta ?? "",
       })),
@@ -91,6 +93,16 @@ function normalizeRow(type, row) {
 async function fetchQuestions(type, needCount) {
   const table = TYPE_META[type].table;
 
+  const normalizeRowsByType = (rows) => {
+    const safeRows = Array.isArray(rows) ? rows : [];
+    if (type !== "match") return safeRows;
+
+    return safeRows.filter((row) => {
+      const pairs = Array.isArray(row?.pairs) ? row.pairs : [];
+      return pairs.length >= REQUIRED_MATCH_PAIRS;
+    });
+  };
+
   const { data: activeRows, error: activeError } = await supabase
     .from(table)
     .select("*")
@@ -98,7 +110,7 @@ async function fetchQuestions(type, needCount) {
     .order("created_at", { ascending: false })
     .limit(300);
 
-  let rows = activeRows || [];
+  let rows = normalizeRowsByType(activeRows);
 
   if (activeError || rows.length < needCount) {
     const { data, error } = await supabase
@@ -108,7 +120,7 @@ async function fetchQuestions(type, needCount) {
       .limit(300);
 
     if (error) throw error;
-    rows = data || [];
+    rows = normalizeRowsByType(data);
   }
 
   if (rows.length < needCount) {
@@ -172,34 +184,59 @@ function getCorrectAnswerLabel(question) {
 }
 
 function renderOptionsQuestion(question, idx) {
-  const saved = state.answers[idx] || (question.multi ? [] : null);
+  const hasSavedAnswer = Object.prototype.hasOwnProperty.call(state.answers, idx);
+  const saved = hasSavedAnswer ? state.answers[idx] : (question.multi ? [] : null);
+
+  if (question.multi && !hasSavedAnswer) {
+    saveAnswer(idx, []);
+  }
 
   const items = question.options
     .map((opt, i) => {
-      const input = question.multi
-        ? `<input type="checkbox" data-index="${i}" ${Array.isArray(saved) && saved.includes(i) ? "checked" : ""} />`
-        : `<input type="radio" name="currentAnswer" value="${i}" ${saved === i ? "checked" : ""} />`;
+      const isChecked = question.multi
+        ? Array.isArray(saved) && saved.includes(i)
+        : saved === i;
 
-      return `<label class="option-item">${input} ${opt.text || `Opțiunea ${i + 1}`}</label>`;
+      const input = question.multi
+        ? `<input class="option-input is-multi" type="checkbox" data-index="${i}" ${isChecked ? "checked" : ""} />`
+        : `<input class="option-input is-single" type="radio" name="currentAnswer" value="${i}" ${isChecked ? "checked" : ""} />`;
+
+      return `
+        <label class="option-item${isChecked ? " is-selected" : ""}">
+          ${input}
+          <span class="option-content">${opt.text || `Opțiunea ${i + 1}`}</span>
+        </label>
+      `;
     })
     .join("");
 
   els.answerHost.innerHTML = `<div class="option-list">${items}</div>`;
+
+  const updateSelectedClasses = () => {
+    els.answerHost.querySelectorAll(".option-item").forEach((label) => {
+      const input = label.querySelector(".option-input");
+      label.classList.toggle("is-selected", Boolean(input?.checked));
+    });
+  };
 
   if (question.multi) {
     els.answerHost.querySelectorAll("input[type='checkbox']").forEach((el) => {
       el.addEventListener("change", () => {
         const selected = Array.from(els.answerHost.querySelectorAll("input[type='checkbox']:checked")).map((c) => Number(c.dataset.index));
         saveAnswer(idx, selected);
+        updateSelectedClasses();
       });
     });
   } else {
     els.answerHost.querySelectorAll("input[type='radio']").forEach((el) => {
       el.addEventListener("change", () => {
         saveAnswer(idx, Number(el.value));
+        updateSelectedClasses();
       });
     });
   }
+
+  updateSelectedClasses();
 }
 
 function renderPairsQuestion(question, idx) {
@@ -214,9 +251,9 @@ function renderPairsQuestion(question, idx) {
 
       return `
         <div class="pair-item">
-          <strong>${pair.left}</strong>
-          <select class="input pair-select" data-index="${i}">
-            <option value="">Selectează...</option>
+          <p class="pair-left">${pair.left}</p>
+          <select class="pair-select" data-index="${i}">
+            <option value="">Alege varianta...</option>
             ${options}
           </select>
         </div>
@@ -307,7 +344,8 @@ function isQuestionAnswered(question, index) {
   }
 
   if (question.multi) {
-    return Array.isArray(answer) && answer.length > 0;
+    return Object.prototype.hasOwnProperty.call(state.answers, index)
+      && Array.isArray(answer);
   }
 
   return Number.isInteger(answer);

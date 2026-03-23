@@ -13,6 +13,8 @@ const els = {
   result: document.getElementById("result"),
 };
 
+const REQUIRED_MATCH_PAIRS = 5;
+
 let activeType = "tf";
 let activeCfg = null;
 let activeUsername = "";
@@ -61,7 +63,10 @@ function renderTypeSpecificFields(type) {
         <input class="input pair-right" data-index="2" placeholder="Dreapta 3" />
         <input class="input pair-left" data-index="3" placeholder="Stânga 4" />
         <input class="input pair-right" data-index="3" placeholder="Dreapta 4" />
+        <input class="input pair-left" data-index="4" placeholder="Stânga 5" />
+        <input class="input pair-right" data-index="4" placeholder="Dreapta 5" />
       </div>
+      <p class="muted">Sunt necesare exact ${REQUIRED_MATCH_PAIRS} perechi pentru întrebarea de asociere.</p>
     `;
   }
 
@@ -356,8 +361,8 @@ function readPairsPayload() {
     }))
     .filter((pair) => pair.left && pair.right);
 
-  if (pairs.length < 2) {
-    throw new Error("Completează cel puțin două perechi.");
+  if (pairs.length !== REQUIRED_MATCH_PAIRS) {
+    throw new Error(`Completează exact ${REQUIRED_MATCH_PAIRS} perechi.`);
   }
 
   return { pairs };
