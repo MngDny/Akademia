@@ -3,6 +3,8 @@ const supabase = window.supabase.createClient(
   "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z",
 );
 
+let isCreatingUser = false;
+
 async function init() {
   const {
     data: { session },
@@ -32,9 +34,10 @@ async function init() {
     window.location.href = "/login.html";
   };
 
-  document
-    .getElementById("createUserBtn")
-    .addEventListener("click", createUser);
+  const createUserForm = document.querySelector("#createUserSection form");
+  if (createUserForm) {
+    createUserForm.addEventListener("submit", createUser);
+  }
 
   document.querySelectorAll(".menu-item").forEach((item) => {
     item.addEventListener("click", function () {
@@ -63,24 +66,46 @@ async function init() {
   });
 }
 
-async function createUser() {
-  const email = document.getElementById("email").value;
+async function createUser(event) {
+  if (event) {
+    event.preventDefault();
+  }
+
+  if (isCreatingUser) {
+    return;
+  }
+
+  const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
-  const username = document.getElementById("username").value;
+  const username = document.getElementById("username").value.trim();
   const role = document.getElementById("role").value;
+  const result = document.getElementById("result");
+  const createBtn = document.getElementById("createUserBtn");
 
-  const res = await fetch("/.netlify/functions/create-user", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, password, username, role }),
-  });
+  isCreatingUser = true;
+  createBtn.disabled = true;
+  result.innerText = "Se creează utilizatorul...";
 
-  const data = await res.json();
+  try {
+    const res = await fetch("/.netlify/functions/create-user", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password, username, role }),
+    });
 
-  if (res.ok) {
-    document.getElementById("result").innerText = "Utilizator creat!";
-  } else {
-    document.getElementById("result").innerText = data.error;
+    const data = await res.json();
+
+    if (res.ok) {
+      result.innerText = "Utilizator creat!";
+    } else {
+      result.innerText = data.error || "Eroare la creare utilizator";
+    }
+  } catch (error) {
+    console.error(error);
+    result.innerText = "Eroare de rețea. Încearcă din nou.";
+  } finally {
+    isCreatingUser = false;
+    createBtn.disabled = false;
   }
 }
 async function loadUsers() {

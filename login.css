@@ -80,6 +80,25 @@
         min-height: 18px;
       }
 
+      .success {
+        margin-top: 15px;
+        font-size: 13px;
+        color: #86efac;
+        min-height: 18px;
+      }
+
+      .auth-link {
+        margin-top: 14px;
+        font-size: 13px;
+        color: #c7d2fe;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .auth-link:hover {
+        color: #ffffff;
+      }
+
       .back {
         margin-top: 25px;
         font-size: 13px;

@@ -37,6 +37,21 @@ p {
   display: inline-block;
 }
 
+.cta-group {
+  display: inline-flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn.btn-secondary {
+  background: #0ea5e9;
+}
+
+.btn.btn-secondary:hover {
+  background: #0284c7;
+}
+
 .btn:hover {
   background: #4f46e5;
   transform: translateY(-2px);
@@ -48,4 +63,15 @@ p {
   width: 100%;
   font-size: 14px;
   opacity: 0.5;
+}
+
+@media (max-width: 560px) {
+  .cta-group {
+    display: grid;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
