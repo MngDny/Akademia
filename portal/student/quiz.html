@@ -40,6 +40,15 @@
               <label class="label" for="timerMinutes">Timp (minute)</label>
               <input id="timerMinutes" class="input" type="number" min="10" max="120" value="45" />
 
+              <label class="label" for="booksSearch">Cărți incluse în quiz (multiselect)</label>
+              <input id="booksSearch" class="input" type="text" placeholder="Caută carte..." autocomplete="off" />
+              <div id="booksChecklist" class="books-checklist" aria-label="Selectează una sau mai multe cărți"></div>
+              <div class="book-filter-actions">
+                <button id="selectAllBooksBtn" class="btn" type="button">Selectează toate</button>
+                <button id="clearBooksBtn" class="btn" type="button">Curăță selecția</button>
+              </div>
+              <p id="booksInfo" class="muted">Bifează una sau mai multe cărți.</p>
+
               <button id="startBtn" class="btn primary" style="width: 100%;">Pornește testul</button>
               <p id="setupMessage" class="muted" style="margin-top: 8px;"></p>
             </section>

@@ -1,3 +1,8 @@
+.main {
+  padding-top: 48px;
+  padding-bottom: 46px;
+}
+
 .page-header {
   display: flex;
   align-items: flex-start;
@@ -15,6 +20,74 @@
   grid-template-columns: repeat(2, minmax(180px, 1fr));
   gap: 12px;
   margin-bottom: 8px;
+}
+
+.book-combobox {
+  position: relative;
+}
+
+.book-combobox #bookInput {
+  padding-right: 42px;
+  margin-bottom: 0;
+}
+
+.book-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #e2e8f0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.book-combobox.is-open .book-toggle-btn {
+  transform: rotate(180deg);
+}
+
+.book-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 40;
+  max-height: min(260px, 42vh);
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(125, 211, 252, 0.45);
+  background: rgba(2, 6, 23, 0.96);
+  box-shadow: 0 18px 34px rgba(2, 6, 23, 0.45);
+  padding: 6px;
+}
+
+.book-option {
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #e2e8f0;
+  padding: 9px 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.book-option:hover {
+  background: rgba(14, 116, 144, 0.42);
+}
+
+.book-dropdown-empty {
+  margin: 0;
+  padding: 10px;
+  color: #cbd5e1;
+  font-size: 13px;
 }
 
 .textarea {
@@ -65,6 +138,15 @@
 }
 
 @media (max-width: 860px) {
+  .main {
+    padding-top: 84px;
+    padding-bottom: 30px;
+  }
+
+  .book-dropdown {
+    max-height: min(220px, 34vh);
+  }
+
   .metadata-grid,
   .options-grid,
   .pairs-grid,
