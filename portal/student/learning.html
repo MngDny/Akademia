@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student - Mediu de invatare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/student/student.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <p class="title-eyebrow">Antrenament personalizat</p>
+              <h1 class="header">Mediu de invatare</h1>
+              <p class="page-help">Exerseaza pe o carte biblica, vezi progresul si revino la intrebarile gresite.</p>
+            </div>
+          </div>
+
+          <div class="learning-shell">
+            <section class="learning-panel card">
+              <h3>Setari sesiune</h3>
+
+              <label class="label" for="learningBookSearch">Carte biblica</label>
+              <input id="learningBookSearch" class="input" type="text" placeholder="Cauta carte..." autocomplete="off" />
+              <div id="learningBookList" class="learning-book-list"></div>
+              <p id="learningBookInfo" class="muted">Selecteaza o carte ca sa incepi.</p>
+
+              <div class="learning-mode-actions">
+                <button class="btn learning-mode-btn is-active" data-mode="all" type="button">Toate</button>
+                <button class="btn learning-mode-btn" data-mode="wrong" type="button">Gresite</button>
+                <button class="btn learning-mode-btn" data-mode="unanswered" type="button">Neraspunse</button>
+                <button class="btn learning-mode-btn" data-mode="correct" type="button">Corecte</button>
+              </div>
+
+              <div class="learning-progress-box">
+                <div class="learning-progress-head">
+                  <strong>Progres</strong>
+                  <span id="learningProgressText">0/0 raspunse</span>
+                </div>
+                <div class="district-progress-track">
+                  <div id="learningProgressFill" class="district-progress-fill" style="width: 0%;"></div>
+                </div>
+                <p id="learningStats" class="muted" style="margin-top: 8px;">Corecte: 0 · Gresite: 0 · Neraspunse: 0</p>
+              </div>
+
+              <button id="learningStartBtn" class="btn primary" type="button" style="width: 100%;">Incarca intrebarile</button>
+              <p id="learningStatus" class="muted" style="margin-top: 8px;"></p>
+            </section>
+
+            <section class="learning-board card">
+              <div class="meta-line" id="learningMeta">Alege o carte si incarca intrebarile pentru a incepe.</div>
+              <h2 class="question-text" id="learningQuestionText">Nicio intrebare incarcata.</h2>
+
+              <div id="learningAnswerHost"></div>
+
+              <div class="learning-actions">
+                <button id="learningCheckBtn" class="btn primary" type="button" disabled>Verifica raspunsul</button>
+                <button id="learningPrevBtn" class="btn nav-btn" type="button" disabled>◀ Anterioara</button>
+                <button id="learningNextBtn" class="btn nav-btn" type="button" disabled>Urmatoarea ▶</button>
+              </div>
+
+              <div id="learningNavigator" class="learning-navigator"></div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/student/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/student/learning.js"></script>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+import { initPasswordVisibility } from "../../core/passwordVisibility.js";
+
 const errorEl = document.getElementById("error");
 const successEl = document.getElementById("success");
 const button = document.getElementById("registerBtn");
@@ -7,6 +9,8 @@ const spinner = document.getElementById("spinner");
 const USERNAME_RE = /^[a-z0-9._-]{3,24}$/;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PASSWORD_RE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{10,72}$/;
+
+initPasswordVisibility();
 
 button.addEventListener("click", onRegister);
 document.addEventListener("keydown", (event) => {

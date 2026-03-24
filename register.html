@@ -17,8 +17,14 @@
 
       <input id="username" type="text" placeholder="Nume utilizator (3-24, litere mici/cifre)" />
       <input id="email" type="email" placeholder="Email" />
-      <input id="password" type="password" placeholder="Parolă (minim 10 caractere)" />
-      <input id="confirmPassword" type="password" placeholder="Confirmă parola" />
+      <div class="password-wrapper">
+        <input id="password" type="password" placeholder="Parolă (minim 10 caractere)" />
+        <button class="toggle-password" type="button" aria-label="Arată parola">👁</button>
+      </div>
+      <div class="password-wrapper">
+        <input id="confirmPassword" type="password" placeholder="Confirmă parola" />
+        <button class="toggle-password" type="button" aria-label="Arată parola">👁</button>
+      </div>
 
       <button id="registerBtn">
         <span id="btnText">Creează cont student</span>

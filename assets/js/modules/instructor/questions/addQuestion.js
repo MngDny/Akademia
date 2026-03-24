@@ -19,6 +19,84 @@ let activeType = "tf";
 let activeCfg = null;
 let activeUsername = "";
 let editId = null;
+let bookDropdownOpen = false;
+let bookOutsideClickBound = false;
+
+const BIBLE_BOOK_OPTIONS = [
+  "Geneza",
+  "Exodul",
+  "Leviticul",
+  "Numeri",
+  "Deuteronomul",
+  "Iosua",
+  "Judecatori",
+  "Rut",
+  "1 Samuel",
+  "2 Samuel",
+  "1 Regi",
+  "2 Regi",
+  "1 Cronici",
+  "2 Cronici",
+  "Ezra",
+  "Neemia",
+  "Estera",
+  "Iov",
+  "Psalmii",
+  "Proverbele",
+  "Eclesiastul",
+  "Cantarea Cantarilor",
+  "Isaia",
+  "Ieremia",
+  "Plangerile lui Ieremia",
+  "Ezechiel",
+  "Daniel",
+  "Osea",
+  "Ioel",
+  "Amos",
+  "Obadia",
+  "Iona",
+  "Mica",
+  "Naum",
+  "Habacuc",
+  "Tefania",
+  "Hagai",
+  "Zaharia",
+  "Maleahi",
+  "Matei",
+  "Marcu",
+  "Luca",
+  "Ioan",
+  "Faptele Apostolilor",
+  "Romani",
+  "1 Corinteni",
+  "2 Corinteni",
+  "Galateni",
+  "Efeseni",
+  "Filipeni",
+  "Coloseni",
+  "1 Tesaloniceni",
+  "2 Tesaloniceni",
+  "1 Timotei",
+  "2 Timotei",
+  "Tit",
+  "Filimon",
+  "Evrei",
+  "Iacov",
+  "1 Petru",
+  "2 Petru",
+  "1 Ioan",
+  "2 Ioan",
+  "3 Ioan",
+  "Iuda",
+  "Apocalipsa",
+];
+
+function normalizeSearchText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
 
 function renderMetadataFields() {
   return `
@@ -35,7 +113,11 @@ function renderMetadataFields() {
 
       <div>
         <label class="label" for="bookInput">Carte</label>
-        <input id="bookInput" class="input" type="text" placeholder="Ex: Manual clasa a XII-a" />
+        <div class="book-combobox" id="bookCombobox">
+          <input id="bookInput" class="input" type="text" placeholder="Alege cartea biblică" autocomplete="off" />
+          <button id="bookToggleBtn" class="book-toggle-btn" type="button" aria-label="Deschide lista de cărți">▼</button>
+          <div id="bookDropdown" class="book-dropdown" hidden></div>
+        </div>
       </div>
 
       <div>
@@ -122,7 +204,101 @@ function renderForm(type) {
     ${renderTypeSpecificFields(type)}
   `;
 
+  bindBookComboboxInteractions();
   bindAnswerInteractions(type);
+}
+
+function renderBookDropdown(filterText = "") {
+  const dropdown = document.getElementById("bookDropdown");
+  if (!dropdown) return;
+
+  const needle = normalizeSearchText(filterText);
+  const options = needle
+    ? BIBLE_BOOK_OPTIONS.filter((book) => normalizeSearchText(book).includes(needle))
+    : BIBLE_BOOK_OPTIONS;
+
+  if (!options.length) {
+    dropdown.innerHTML = '<p class="book-dropdown-empty">Nicio carte găsită.</p>';
+    return;
+  }
+
+  dropdown.innerHTML = options
+    .map((book) => `<button type="button" class="book-option" data-book="${book}">${book}</button>`)
+    .join("");
+
+  dropdown.querySelectorAll(".book-option").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const input = document.getElementById("bookInput");
+      if (input) {
+        input.value = btn.dataset.book || "";
+      }
+      closeBookDropdown();
+    });
+  });
+}
+
+function openBookDropdown() {
+  const dropdown = document.getElementById("bookDropdown");
+  const combobox = document.getElementById("bookCombobox");
+  const input = document.getElementById("bookInput");
+  if (!dropdown || !combobox || !input) return;
+
+  renderBookDropdown(input.value || "");
+  dropdown.hidden = false;
+  combobox.classList.add("is-open");
+  bookDropdownOpen = true;
+}
+
+function closeBookDropdown() {
+  const dropdown = document.getElementById("bookDropdown");
+  const combobox = document.getElementById("bookCombobox");
+  if (!dropdown || !combobox) return;
+
+  dropdown.hidden = true;
+  combobox.classList.remove("is-open");
+  bookDropdownOpen = false;
+}
+
+function bindBookComboboxInteractions() {
+  const input = document.getElementById("bookInput");
+  const toggle = document.getElementById("bookToggleBtn");
+  const combobox = document.getElementById("bookCombobox");
+
+  if (!input || !toggle || !combobox) return;
+
+  input.addEventListener("focus", () => {
+    openBookDropdown();
+  });
+
+  input.addEventListener("input", () => {
+    openBookDropdown();
+    renderBookDropdown(input.value || "");
+  });
+
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeBookDropdown();
+    }
+  });
+
+  toggle.addEventListener("click", () => {
+    if (bookDropdownOpen) {
+      closeBookDropdown();
+      return;
+    }
+    openBookDropdown();
+  });
+
+  if (!bookOutsideClickBound) {
+    document.addEventListener("click", (event) => {
+      const currentCombobox = document.getElementById("bookCombobox");
+      if (!currentCombobox) return;
+      if (!currentCombobox.contains(event.target)) {
+        closeBookDropdown();
+      }
+    });
+    bookOutsideClickBound = true;
+  }
 }
 
 function setSingleChipSelection(selector, value) {
@@ -183,7 +359,13 @@ function bindAnswerInteractions(type) {
 function setCommonValues(row) {
   document.getElementById("chapterInput").value = row.chapter ?? "";
   document.getElementById("difficultyInput").value = row.difficulty ?? "";
-  document.getElementById("bookInput").value = row.book ?? "";
+  const rowBook = String(row.book || "").trim();
+  document.getElementById("bookInput").value = rowBook;
+
+  if (rowBook && !BIBLE_BOOK_OPTIONS.some((book) => book.toLowerCase() === rowBook.toLowerCase())) {
+    BIBLE_BOOK_OPTIONS.push(rowBook);
+  }
+
   document.getElementById("statusInput").value = row.status || "active";
 }
 
@@ -262,8 +444,12 @@ async function loadForEdit() {
 function readCommonPayload() {
   const chapter = Number.parseInt(document.getElementById("chapterInput")?.value || "", 10);
   const difficulty = Number.parseInt(document.getElementById("difficultyInput")?.value || "", 10);
-  const book = (document.getElementById("bookInput")?.value || "").trim();
+  const bookRaw = (document.getElementById("bookInput")?.value || "").trim();
   const status = (document.getElementById("statusInput")?.value || "active").trim();
+
+  const matchedBook = BIBLE_BOOK_OPTIONS.find(
+    (item) => item.toLowerCase() === bookRaw.toLowerCase(),
+  );
 
   if (!Number.isInteger(chapter) || chapter <= 0) {
     throw new Error("Capitolul trebuie să fie un număr întreg mai mare decât 0.");
@@ -273,14 +459,14 @@ function readCommonPayload() {
     throw new Error("Dificultatea trebuie să fie un număr întreg mai mare decât 0.");
   }
 
-  if (!book) {
-    throw new Error("Completează câmpul carte.");
+  if (!matchedBook) {
+    throw new Error("Selectează o carte validă din lista de sugestii.");
   }
 
   const payload = {
     chapter,
     difficulty,
-    book,
+    book: matchedBook,
     status,
     added_by: activeUsername || "necunoscut",
   };

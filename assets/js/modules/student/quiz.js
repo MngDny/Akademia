@@ -17,9 +17,15 @@ const TYPE_META = {
 };
 
 const REQUIRED_MATCH_PAIRS = 5;
+const BOOK_SELECTION_STORAGE_KEY = "akademia.quiz.selectedBooks.v1";
 
 const els = {
   timer: document.getElementById("timerMinutes"),
+  booksSearch: document.getElementById("booksSearch"),
+  booksChecklist: document.getElementById("booksChecklist"),
+  selectAllBooksBtn: document.getElementById("selectAllBooksBtn"),
+  clearBooksBtn: document.getElementById("clearBooksBtn"),
+  booksInfo: document.getElementById("booksInfo"),
   startBtn: document.getElementById("startBtn"),
   setupMessage: document.getElementById("setupMessage"),
   meta: document.getElementById("quizMeta"),
@@ -41,6 +47,8 @@ const state = {
   startTime: 0,
   timerId: null,
   finished: false,
+  availableBooks: [],
+  selectedBooks: new Set(),
 };
 
 function shuffle(array) {
@@ -90,7 +98,185 @@ function normalizeRow(type, row) {
   };
 }
 
-async function fetchQuestions(type, needCount) {
+function normalizeBookName(value) {
+  return String(value || "").trim();
+}
+
+function loadStoredSelectedBooks() {
+  try {
+    const raw = window.localStorage.getItem(BOOK_SELECTION_STORAGE_KEY);
+    if (!raw) return [];
+
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+
+    return parsed
+      .map((value) => normalizeBookName(value))
+      .filter(Boolean);
+  } catch (_error) {
+    return [];
+  }
+}
+
+function persistSelectedBooks() {
+  try {
+    window.localStorage.setItem(
+      BOOK_SELECTION_STORAGE_KEY,
+      JSON.stringify([...state.selectedBooks]),
+    );
+  } catch (_error) {
+    // localStorage may be blocked; continue without persistence
+  }
+}
+
+function isValidBookName(value) {
+  const v = normalizeBookName(value);
+  if (!v) return false;
+  if (/^\d+$/.test(v)) return false;
+  if (v.length < 2) return false;
+  return /[A-Za-zĂÂÎȘȚăâîșț]/.test(v);
+}
+
+function applyBookFilter(query, selectedBooks) {
+  const safeBooks = Array.isArray(selectedBooks)
+    ? selectedBooks.map(normalizeBookName).filter(Boolean)
+    : [];
+
+  if (!safeBooks.length) {
+    return query;
+  }
+
+  return query.in("book", safeBooks);
+}
+
+function getSelectedBooks() {
+  return [...state.selectedBooks];
+}
+
+function updateBooksInfo() {
+  if (!els.booksInfo) return;
+
+  const selected = getSelectedBooks();
+  const total = state.availableBooks.length;
+
+  if (!total) {
+    els.booksInfo.textContent = "Nu există cărți disponibile în baza de întrebări.";
+    return;
+  }
+
+  if (!selected.length) {
+    els.booksInfo.textContent = `Nicio carte selectată. Selectează cel puțin una din ${total}.`;
+    return;
+  }
+
+  const preview = selected.slice(0, 4).join(", ");
+  const more = selected.length > 4 ? ` +${selected.length - 4} altele` : "";
+  els.booksInfo.textContent = `Selectate ${selected.length}/${total}: ${preview}${more}`;
+}
+
+function renderBooksChecklist() {
+  const host = els.booksChecklist;
+  if (!host) return;
+
+  const allBooks = state.availableBooks;
+  const query = normalizeBookName(els.booksSearch?.value || "").toLowerCase();
+  const filtered = query
+    ? allBooks.filter((book) => book.toLowerCase().includes(query))
+    : allBooks;
+
+  host.innerHTML = "";
+
+  if (!allBooks.length) {
+    const empty = document.createElement("p");
+    empty.className = "books-checklist-empty";
+    empty.textContent = "Nu există cărți disponibile.";
+    host.appendChild(empty);
+    updateBooksInfo();
+    return;
+  }
+
+  if (!filtered.length) {
+    const empty = document.createElement("p");
+    empty.className = "books-checklist-empty";
+    empty.textContent = "Nicio carte nu corespunde căutării.";
+    host.appendChild(empty);
+    updateBooksInfo();
+    return;
+  }
+
+  filtered.forEach((book) => {
+    const label = document.createElement("label");
+    label.className = "book-check-item";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.checked = state.selectedBooks.has(book);
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        state.selectedBooks.add(book);
+      } else {
+        state.selectedBooks.delete(book);
+      }
+      persistSelectedBooks();
+      updateBooksInfo();
+    });
+
+    const text = document.createElement("span");
+    text.textContent = book;
+
+    label.appendChild(checkbox);
+    label.appendChild(text);
+    host.appendChild(label);
+  });
+
+  updateBooksInfo();
+}
+
+async function fetchBooksForType(type) {
+  const table = TYPE_META[type].table;
+
+  const { data: activeRows, error: activeError } = await supabase
+    .from(table)
+    .select("book")
+    .eq("status", "active")
+    .limit(500);
+
+  let rows = Array.isArray(activeRows) ? activeRows : [];
+
+  if (activeError || rows.length === 0) {
+    const { data, error } = await supabase
+      .from(table)
+      .select("book")
+      .limit(500);
+
+    if (error) throw error;
+    rows = Array.isArray(data) ? data : [];
+  }
+
+  return rows
+    .map((row) => normalizeBookName(row?.book))
+    .filter(isValidBookName);
+}
+
+async function loadAvailableBooks() {
+  if (els.booksChecklist) {
+    els.booksChecklist.innerHTML = '<p class="books-checklist-empty">Se încarcă lista de cărți...</p>';
+  }
+
+  const groups = await Promise.all(TYPE_ORDER.map((type) => fetchBooksForType(type)));
+  const allBooks = groups.flat();
+
+  const uniqueBooks = [...new Set(allBooks)]
+    .sort((a, b) => a.localeCompare(b, "ro"));
+
+  state.availableBooks = uniqueBooks;
+  const stored = loadStoredSelectedBooks();
+  const validStored = stored.filter((book) => uniqueBooks.includes(book));
+  state.selectedBooks = new Set(validStored);
+  renderBooksChecklist();
+}
+
+async function fetchQuestions(type, needCount, selectedBooks = []) {
   const table = TYPE_META[type].table;
 
   const normalizeRowsByType = (rows) => {
@@ -103,39 +289,50 @@ async function fetchQuestions(type, needCount) {
     });
   };
 
-  const { data: activeRows, error: activeError } = await supabase
+  let activeQuery = supabase
     .from(table)
     .select("*")
     .eq("status", "active")
     .order("created_at", { ascending: false })
     .limit(300);
 
+  activeQuery = applyBookFilter(activeQuery, selectedBooks);
+
+  const { data: activeRows, error: activeError } = await activeQuery;
+
   let rows = normalizeRowsByType(activeRows);
 
   if (activeError || rows.length < needCount) {
-    const { data, error } = await supabase
+    let fallbackQuery = supabase
       .from(table)
       .select("*")
       .order("created_at", { ascending: false })
       .limit(300);
+
+    fallbackQuery = applyBookFilter(fallbackQuery, selectedBooks);
+
+    const { data, error } = await fallbackQuery;
 
     if (error) throw error;
     rows = normalizeRowsByType(data);
   }
 
   if (rows.length < needCount) {
-    throw new Error(`Nu există suficiente întrebări pentru ${TYPE_META[type].title}. Necesare: ${needCount}, disponibile: ${rows.length}.`);
+    const filterLabel = Array.isArray(selectedBooks) && selectedBooks.length
+      ? ` (filtru cărți: ${selectedBooks.join(", ")})`
+      : "";
+    throw new Error(`Nu există suficiente întrebări pentru ${TYPE_META[type].title}. Necesare: ${needCount}, disponibile: ${rows.length}.${filterLabel}`);
   }
 
   return shuffle(rows).slice(0, needCount).map((row) => normalizeRow(type, row));
 }
 
-async function buildOfficialTest() {
+async function buildOfficialTest(selectedBooks) {
   const chunks = [];
 
   for (const type of TYPE_ORDER) {
     const need = TEST_STRUCTURE[type];
-    const questions = await fetchQuestions(type, need);
+    const questions = await fetchQuestions(type, need, selectedBooks);
     chunks.push(...questions);
   }
 
@@ -568,10 +765,16 @@ async function startQuiz() {
     return;
   }
 
-  els.setupMessage.textContent = "Se încarcă întrebările testului oficial...";
+  const selectedBooks = getSelectedBooks();
+  if (!selectedBooks.length) {
+    els.setupMessage.textContent = "Selectează cel puțin o carte înainte să pornești testul.";
+    return;
+  }
+
+  els.setupMessage.textContent = "Se încarcă întrebările testului oficial după cărțile selectate...";
 
   try {
-    const questions = await buildOfficialTest();
+    const questions = await buildOfficialTest(selectedBooks);
 
     state.questions = questions;
     state.answers = {};
@@ -581,7 +784,7 @@ async function startQuiz() {
     renderCurrentQuestion();
     startCountdown(minutes);
 
-    els.setupMessage.textContent = `Test pornit: ${questions.length} întrebări în ordinea oficială.`;
+    els.setupMessage.textContent = `Test pornit: ${questions.length} întrebări în ordinea oficială, filtrate după ${selectedBooks.length} cărți.`;
   } catch (error) {
     console.error(error);
     els.setupMessage.textContent = error?.message || "Eroare la încărcarea întrebărilor.";
@@ -590,6 +793,22 @@ async function startQuiz() {
 
 function bindActions() {
   els.startBtn.addEventListener("click", startQuiz);
+
+  els.booksSearch?.addEventListener("input", () => {
+    renderBooksChecklist();
+  });
+
+  els.selectAllBooksBtn?.addEventListener("click", () => {
+    state.selectedBooks = new Set(state.availableBooks);
+    persistSelectedBooks();
+    renderBooksChecklist();
+  });
+
+  els.clearBooksBtn?.addEventListener("click", () => {
+    state.selectedBooks = new Set();
+    persistSelectedBooks();
+    renderBooksChecklist();
+  });
 
   els.prevBtn.addEventListener("click", () => {
     if (state.current > 0) {
@@ -624,6 +843,15 @@ async function init() {
   const { session } = await requireRole("student");
   state.studentId = session.user.id;
   state.username = session?.user?.user_metadata?.username || "student";
+
+  try {
+    await loadAvailableBooks();
+  } catch (error) {
+    console.error(error);
+    if (els.setupMessage) {
+      els.setupMessage.textContent = "Nu am putut încărca lista de cărți. Reîncarcă pagina.";
+    }
+  }
 
   bindActions();
 }

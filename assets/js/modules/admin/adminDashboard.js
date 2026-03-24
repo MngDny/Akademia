@@ -1,3 +1,5 @@
+import { initPasswordVisibility } from "../../core/passwordVisibility.js";
+
 const supabase = window.supabase.createClient(
   "https://pdkfqytododevpilpxet.supabase.co",
   "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z",
@@ -38,6 +40,8 @@ async function init() {
   if (createUserForm) {
     createUserForm.addEventListener("submit", createUser);
   }
+
+  initPasswordVisibility();
 
   document.querySelectorAll(".menu-item").forEach((item) => {
     item.addEventListener("click", function () {
@@ -159,14 +163,4 @@ window.deleteUser = async function (id) {
     alert("Eroare la ștergere");
   }
 };
-window.togglePassword = function () {
-  const passwordInput = document.getElementById("password");
-
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-  } else {
-    passwordInput.type = "password";
-  }
-};
-
 init();
