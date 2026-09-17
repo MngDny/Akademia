@@ -1,198 +1,32 @@
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Arial, sans-serif;
-        background: radial-gradient(circle at top, #1e293b, #0f172a);
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        color: white;
-      }
-
-      .login-card {
-        background: #1e293b;
-        width: 100%;
-        max-width: 420px;
-        padding: 40px 30px;
-        border-radius: 16px;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-        text-align: center;
-      }
-
-      .login-card h1 {
-        margin: 0;
-        font-size: 32px;
-        letter-spacing: 2px;
-      }
-
-      .subtitle {
-        margin-top: 8px;
-        margin-bottom: 35px;
-        font-size: 14px;
-        opacity: 0.7;
-      }
-
-      input {
-        width: 100%;
-        padding: 14px;
-        margin-bottom: 18px;
-        border-radius: 8px;
-        border: none;
-        outline: none;
-        font-size: 14px;
-        background: #334155;
-        color: white;
-        transition: 0.2s;
-      }
-
-      input:focus {
-        background: #3b4a63;
-        box-shadow: 0 0 0 2px #6366f1;
-      }
-
-      .password-wrapper {
-        position: relative;
-      }
-
-      .password-wrapper input {
-        padding-right: 44px;
-      }
-
-      .toggle-password {
-        position: absolute;
-        right: 10px;
-        top: 0;
-        height: 46px;
-        width: 32px;
-        border: none;
-        background: transparent;
-        color: #cbd5e1;
-        cursor: pointer;
-        font-size: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        transform: none;
-        box-shadow: none;
-      }
-
-      .toggle-password:hover {
-        color: #ffffff;
-        transform: none;
-        box-shadow: none;
-      }
-
-      button {
-        width: 100%;
-        padding: 14px;
-        border-radius: 8px;
-        border: none;
-        font-size: 15px;
-        font-weight: 500;
-        cursor: pointer;
-        background: linear-gradient(135deg, #6366f1, #8b5cf6);
-        color: white;
-        transition: 0.3s;
-      }
-
-      button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
-      }
-
-      .error {
-        margin-top: 15px;
-        font-size: 13px;
-        color: #f87171;
-        min-height: 18px;
-      }
-
-      .success {
-        margin-top: 15px;
-        font-size: 13px;
-        color: #86efac;
-        min-height: 18px;
-      }
-
-      .auth-link {
-        margin-top: 14px;
-        font-size: 13px;
-        color: #c7d2fe;
-        text-decoration: none;
-        display: inline-block;
-      }
-
-      .auth-link:hover {
-        color: #ffffff;
-      }
-
-      .back {
-        margin-top: 25px;
-        font-size: 13px;
-        opacity: 0.6;
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        transition: 0.2s;
-      }
-
-      .back:hover {
-        opacity: 1;
-      }
-
-      @media (max-width: 480px) {
-        .login-card {
-          padding: 30px 20px;
-        }
-
-        .login-card h1 {
-          font-size: 26px;
-        }
-      }
-      button {
-        width: 100%;
-        padding: 14px;
-        border-radius: 8px;
-        border: none;
-        font-size: 15px;
-        font-weight: 500;
-        cursor: pointer;
-        background: linear-gradient(135deg, #6366f1, #8b5cf6);
-        color: white;
-        transition: 0.3s;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-      }
-
-      button:disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
-      }
-
-      .spinner {
-        width: 18px;
-        height: 18px;
-        border: 3px solid rgba(255, 255, 255, 0.3);
-        border-top: 3px solid white;
-        border-radius: 50%;
-        animation: spin 0.8s linear infinite;
-      }
-
-      .hidden {
-        display: none;
-      }
-
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
+@import url('/assets/css/layout.css');
+@import url('/assets/css/components.css');
+body { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 40px; }
+.auth-layout { display: grid; grid-template-columns: 1fr 1fr; width: min(1060px, 100%); min-height: 640px; background: white; border: 1px solid var(--line); border-radius: 26px; overflow: hidden; box-shadow: 0 16px 70px #26244308; }
+.auth-story { display: flex; flex-direction: column; padding: 48px; background: #eeecfc; }
+.auth-story .brand { padding: 0; }
+.auth-story-copy { margin: auto 0; padding: 48px 0; }
+.auth-story h2 { font-size: clamp(32px, 3.5vw, 46px); line-height: 1.2; letter-spacing: -1.8px; color: #30266f; margin: 16px 0 24px; }
+.auth-story p { color: #665c91; font-size: 14px; max-width: 340px; }
+.auth-story .title-eyebrow { font-size: 10px; color: var(--accent); }
+.auth-story-footer { font-size: 11px; color: #665c91; border-top: 1px solid #d9d3f3; padding-top: 22px; }
+.auth-story-steps { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.auth-story-steps span { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: #ffffff80; border-radius: 8px; font-size: 11px; color: #514877; }
+.login-card { padding: 46px 48px; width: 100%; align-self: center; }
+.login-card h1 { margin: 0 0 9px; font-size: 29px; font-weight: 750; }
+.subtitle { margin: 0 0 30px; color: var(--muted); font-size: 13px; }
+.login-card .primary { width: 100%; margin-top: 6px; }
+.auth-link { display: block; margin-top: 17px; font-size: 13px; text-align: center; text-decoration: none; }
+.auth-link:hover, .back:hover { text-decoration: underline; }
+.back { display: block; margin-top: 24px; text-align: center; font-size: 12px; text-decoration: none; color: var(--muted); }
+.error:not(:empty), .success:not(:empty) { margin-top: 18px; font-size: 13px; padding: 12px 14px; border-radius: 9px; }
+.error:not(:empty) { background: var(--danger-soft); } .success:not(:empty) { background: var(--success-soft); }
+.spinner { width: 17px; height: 17px; border: 2px solid #ffffff55; border-top-color: white; border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 760px) {
+  body { padding: 20px; }
+  .auth-layout { grid-template-columns: 1fr; max-width: 480px; min-height: auto; }
+  .auth-story { padding: 25px 28px; }
+  .auth-story-copy, .auth-story-footer { display: none; }
+  .login-card { padding: 30px 28px; }
+}
+@media (max-width: 400px) { body { padding: 12px; } .login-card { padding: 26px 22px; } }

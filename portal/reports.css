@@ -1,0 +1,40 @@
+.question-report-dialog { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; padding: 20px; background: #1d203a66; }
+.question-report-card { width: min(560px, 100%); max-height: min(720px, calc(100dvh - 40px)); overflow: auto; padding: 26px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: 0 22px 70px #20243c33; }
+.question-report-card .section-head { margin: 0 0 16px; align-items: center; }
+.question-report-card .section-head h2 { margin: 0; font-size: 20px; }
+.question-report-card .section-head .btn { min-width: 38px; padding: 7px; font-size: 20px; line-height: 1; }
+.report-question-preview { margin: 0 0 20px; padding: 12px 14px; border: 1px solid #d2ccf5; border-radius: 10px; background: var(--accent-soft); color: var(--ink); font-size: 13px; }
+.report-form-status { min-height: 22px; margin: 12px 0 0; font-size: 13px; }
+.report-form-status.success { color: var(--success); }
+.report-form-status.error { color: var(--danger); }
+.report-question-btn { margin-left: auto; }
+.reports-toolbar { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; margin-bottom: 18px; }
+.reports-toolbar .report-search { flex: 1 1 280px; min-width: 180px; }
+.reports-toolbar .report-status-filter { flex: 0 1 190px; }
+.reports-toolbar .input { margin: 0; }
+.reports-list { display: grid; gap: 16px; }
+.report-card { padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+.report-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.report-card-header h2, .report-card-header h3 { margin: 0; font-size: 16px; }
+.report-card-meta { display: flex; flex-wrap: wrap; gap: 7px 12px; margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+.report-status { flex-shrink: 0; padding: 4px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+.report-status-open { background: var(--danger-soft); color: var(--danger); }
+.report-status-in_review { background: #fff4dc; color: var(--warning); }
+.report-status-resolved { background: var(--success-soft); color: var(--success); }
+.report-status-rejected { background: var(--surface-soft); color: var(--muted); }
+.report-question-text { margin: 0; padding: 13px 14px; border-left: 3px solid var(--accent); background: var(--surface-soft); font-size: 14px; }
+.report-message { margin: 14px 0 0; color: var(--muted); font-size: 13px; white-space: pre-wrap; }
+.report-review-form { display: grid; grid-template-columns: minmax(150px, .45fr) minmax(0, 1fr); gap: 12px; align-items: end; margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.report-review-form .field { min-width: 0; }
+.report-review-form textarea { min-height: 86px; margin: 0; }
+.report-review-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.report-review-actions .btn { min-height: 38px; font-size: 12px; }
+.report-empty { padding: 52px 20px; text-align: center; color: var(--muted); }
+.report-empty strong { display: block; margin-bottom: 7px; color: var(--ink); font-size: 17px; }
+@media (max-width: 600px) {
+  .question-report-card { padding: 20px; }
+  .report-review-form { grid-template-columns: 1fr; }
+  .report-review-actions { grid-column: auto; justify-content: stretch; }
+  .report-review-actions .btn { flex: 1 1 100%; }
+  .report-card-header { flex-direction: column; }
+}

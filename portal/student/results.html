@@ -20,27 +20,29 @@
         <div class="main-content">
           <div class="page-header">
             <div>
-              <p class="title-eyebrow">Concurs Biblic Talantul in Negot</p>
+              <p class="title-eyebrow">Talantul în negoț</p>
               <h1 class="header">Istoric rezultate</h1>
-              <p id="resultsSubtitle" class="page-help">Se încarcă rezultatele din tabelul oficial...</p>
+              <p id="resultsSubtitle" role="status" class="page-help">Se încarcă rezultatele tale…</p>
             </div>
           </div>
 
           <div class="card" style="max-width: 100%;">
             <div class="table-header" style="display:flex; justify-content:space-between; gap:10px; margin-bottom:10px;">
-              <input id="searchInput" class="input" placeholder="Cautare dupa tip/mod..." autocomplete="off" style="margin:0;" />
-              <button id="clearBtn" class="btn danger">Sterge istoric</button>
+              <input id="searchInput" type="search" aria-label="Caută în listă" class="input" placeholder="Caută după dată sau punctaj…" autocomplete="off" style="margin:0;" />
+              <label class="sr-only" for="bookFilter">Filtrează după carte</label>
+              <input id="bookFilter" class="input" type="search" placeholder="Toate cărțile" aria-label="Filtrează rezultatele după carte" autocomplete="off" />
+              <a class="btn primary" href="/portal/student/quiz.html">Începe un test nou</a>
             </div>
 
-            <div class="table-wrapper">
+            <div class="table-wrapper" tabindex="0" role="region" aria-label="Tabel cu rezultate">
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Data</th>
-                    <th>Puncte</th>
-                    <th>Corecte</th>
-                    <th>Durata</th>
-                    <th>Detalii</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Puncte</th>
+                    <th scope="col">Corecte</th>
+                    <th scope="col">Durată</th>
+                    <th scope="col">Detalii</th>
                   </tr>
                 </thead>
                 <tbody id="resultsBody"></tbody>
@@ -48,7 +50,7 @@
             </div>
 
             <div id="emptyState" class="empty-state" style="display:none;">
-              Nu ai rezultate salvate inca.
+              Rezultatele tale vor apărea aici după primul test.
             </div>
           </div>
         </div>

@@ -18,18 +18,13 @@
       <aside class="sidebar" id="sidebar"></aside>
 
       <main class="main">
-        <div class="quick-links">
-          <a class="quick-link" href="/portal/instructor/dashboard.html">Înapoi la tablou de bord</a>
-          <a class="quick-link" href="/portal/instructor/questions/list.html?type=tf">Întrebări Adevărat / Fals</a>
-          <a class="quick-link" href="/portal/instructor/questions/list.html?type=abc_one">Întrebări ABC One</a>
-          <a class="quick-link" href="/portal/instructor/questions/list.html?type=abc_multi">Întrebări ABC Multi</a>
-        </div>
+        <div class="quick-links"><a class="quick-link" href="/portal/instructor/dashboard.html">← Privire de ansamblu</a></div>
 
         <div class="page-header">
           <div>
             <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
             <h1 class="header">Studenți înscriși</h1>
-            <p id="studentsSubtitle" class="muted">Se încarcă...</p>
+            <p id="studentsSubtitle" role="status" class="muted">Se încarcă...</p>
           </div>
         </div>
 
@@ -46,17 +41,17 @@
 
         <div class="card">
           <div class="table-header">
-            <input id="searchInput" class="input" placeholder="Caută după username..." autocomplete="off" />
+            <input id="searchInput" type="search" aria-label="Caută în listă" class="input" placeholder="Caută un student după nume…" autocomplete="off" />
           </div>
 
-          <div class="table-wrapper">
+          <div class="table-wrapper" tabindex="0" role="region" aria-label="Tabel cu rezultate">
             <table class="table">
               <thead>
                 <tr>
-                  <th style="width: 60px;">#</th>
-                  <th>Username</th>
-                  <th style="width: 160px;">Rol</th>
-                  <th style="width: 220px;">Data creării</th>
+                  <th scope="col" style="width: 60px;">#</th>
+                  <th scope="col">Nume utilizator</th>
+                  <th scope="col" style="width: 160px;">Rol</th>
+                  <th scope="col" style="width: 220px;">Data creării</th>
                 </tr>
               </thead>
               <tbody id="studentsBody"></tbody>

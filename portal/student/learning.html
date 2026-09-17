@@ -2,7 +2,7 @@
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
-    <title>Student - Mediu de invatare</title>
+    <title>Student - Mediu de învățare</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/layout.css" />
     <link rel="stylesheet" href="/assets/css/components.css" />
     <link rel="stylesheet" href="/portal/student/student.css" />
+    <link rel="stylesheet" href="/portal/reports.css" />
   </head>
 
   <body>
@@ -21,52 +22,64 @@
           <div class="page-header">
             <div>
               <p class="title-eyebrow">Antrenament personalizat</p>
-              <h1 class="header">Mediu de invatare</h1>
-              <p class="page-help">Exerseaza pe o carte biblica, vezi progresul si revino la intrebarile gresite.</p>
+              <h1 class="header">Mediu de învățare</h1>
+              <p class="page-help">Învață în ritmul tău. Alege una sau mai multe cărți, exersează și revino la întrebările greșite.</p>
             </div>
           </div>
 
-          <div class="learning-shell">
+          <ol class="step-list" aria-label="Cum funcționează"><li>Alege cărțile</li><li>Exersează</li><li>Urmărește progresul</li></ol>
+<div class="learning-shell">
             <section class="learning-panel card">
-              <h3>Setari sesiune</h3>
+              <h3>Alege ce vrei să repeți</h3>
 
-              <label class="label" for="learningBookSearch">Carte biblica</label>
-              <input id="learningBookSearch" class="input" type="text" placeholder="Cauta carte..." autocomplete="off" />
-              <div id="learningBookList" class="learning-book-list"></div>
-              <p id="learningBookInfo" class="muted">Selecteaza o carte ca sa incepi.</p>
+              <label class="label" for="learningBookSearch">Cărți biblice</label>
+              <input id="learningBookSearch" class="input" type="search" placeholder="Caută în cele 66 de cărți…" autocomplete="off" />
+              <div class="selected-books-panel" aria-labelledby="selectedLearningBooksTitle">
+                <div class="selected-books-header">
+                  <strong id="selectedLearningBooksTitle">Cărți selectate</strong>
+                  <span id="learningBookInfo" class="selected-books-count">Niciuna</span>
+                </div>
+                <div id="selectedLearningBookChips" class="selected-books-chips" aria-live="polite"></div>
+              </div>
+              <div id="learningBookList" class="learning-book-list" role="group" aria-label="Selectează una sau mai multe cărți"></div>
+              <div class="book-filter-actions">
+                <button id="learningSelectAllBtn" class="btn" type="button">Selectează toate</button>
+                <button id="learningClearBtn" class="btn" type="button">Deselectează</button>
+              </div>
 
               <div class="learning-mode-actions">
                 <button class="btn learning-mode-btn is-active" data-mode="all" type="button">Toate</button>
-                <button class="btn learning-mode-btn" data-mode="wrong" type="button">Gresite</button>
-                <button class="btn learning-mode-btn" data-mode="unanswered" type="button">Neraspunse</button>
+                <button class="btn learning-mode-btn" data-mode="wrong" type="button">Greșite</button>
+                <button class="btn learning-mode-btn" data-mode="unanswered" type="button">Nerăspunse</button>
                 <button class="btn learning-mode-btn" data-mode="correct" type="button">Corecte</button>
               </div>
 
               <div class="learning-progress-box">
                 <div class="learning-progress-head">
                   <strong>Progres</strong>
-                  <span id="learningProgressText">0/0 raspunse</span>
+                  <span id="learningProgressText">0/0 răspunse</span>
                 </div>
                 <div class="district-progress-track">
                   <div id="learningProgressFill" class="district-progress-fill" style="width: 0%;"></div>
                 </div>
-                <p id="learningStats" class="muted" style="margin-top: 8px;">Corecte: 0 · Gresite: 0 · Neraspunse: 0</p>
+                <p id="learningStats" class="muted" style="margin-top: 8px;">Corecte: 0 · Greșite: 0 · Nerăspunse: 0</p>
               </div>
 
-              <button id="learningStartBtn" class="btn primary" type="button" style="width: 100%;">Incarca intrebarile</button>
-              <p id="learningStatus" class="muted" style="margin-top: 8px;"></p>
+              <button id="learningStartBtn" class="btn primary" type="button" style="width: 100%;">Începe să exersezi</button>
+              <p id="learningStatus" role="status" class="muted" style="margin-top: 8px;"></p>
             </section>
 
             <section class="learning-board card">
-              <div class="meta-line" id="learningMeta">Alege o carte si incarca intrebarile pentru a incepe.</div>
-              <h2 class="question-text" id="learningQuestionText">Nicio intrebare incarcata.</h2>
+              <div class="meta-line" id="learningMeta">Primul pas: alege o carte din lista alăturată.</div>
+              <h2 class="question-text" id="learningQuestionText">Pregătit să descoperi ceva nou?</h2>
 
               <div id="learningAnswerHost"></div>
 
               <div class="learning-actions">
-                <button id="learningCheckBtn" class="btn primary" type="button" disabled>Verifica raspunsul</button>
-                <button id="learningPrevBtn" class="btn nav-btn" type="button" disabled>◀ Anterioara</button>
-                <button id="learningNextBtn" class="btn nav-btn" type="button" disabled>Urmatoarea ▶</button>
+                <button id="learningCheckBtn" class="btn primary" type="button" disabled>Verifică răspunsul</button>
+                <button id="learningPrevBtn" class="btn nav-btn" type="button" disabled>Înapoi</button>
+                <button id="learningNextBtn" class="btn nav-btn" type="button" disabled>Următoarea</button>
+                <button id="reportQuestionBtn" class="btn report-question-btn" type="button" disabled>Raportează</button>
               </div>
 
               <div id="learningNavigator" class="learning-navigator"></div>
@@ -74,6 +87,32 @@
           </div>
         </div>
       </main>
+    </div>
+
+    <div id="questionReportDialog" class="question-report-dialog" hidden role="dialog" aria-modal="true" aria-labelledby="questionReportTitle">
+      <div class="question-report-card">
+        <div class="section-head">
+          <h2 id="questionReportTitle">Raportează întrebarea</h2>
+          <button id="closeQuestionReportBtn" class="btn sm" type="button" aria-label="Închide raportarea">×</button>
+        </div>
+        <p id="questionReportQuestion" class="report-question-preview"></p>
+        <form id="questionReportForm">
+          <label class="label" for="questionReportReason">Ce este în neregulă?</label>
+          <select id="questionReportReason" required>
+            <option value="incorrect">Răspuns sau informație greșită</option>
+            <option value="ambiguous">Întrebarea este neclară</option>
+            <option value="typo">Greșeală de scriere</option>
+            <option value="other">Altă problemă</option>
+          </select>
+          <label class="label" for="questionReportMessage">Mesaj pentru echipă (opțional)</label>
+          <textarea id="questionReportMessage" rows="4" maxlength="1000" placeholder="Descrie problema pe scurt..."></textarea>
+          <p id="questionReportStatus" class="report-form-status" role="status"></p>
+          <div class="form-actions">
+            <button id="cancelQuestionReportBtn" class="btn" type="button">Renunță</button>
+            <button class="btn primary" type="submit">Trimite raportul</button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script type="module" src="/assets/js/modules/student/navigation.js"></script>

@@ -1,11 +1,18 @@
 import { supabase } from "../../core/supabaseClient.js";
 import { requireRole } from "../../core/authGuard.js";
+import {
+  BIBLE_BOOKS,
+  mergeBookOptions,
+  normalizeBookKey,
+  readBooksFromUrl,
+} from "../../core/bibleBooks.js";
+import { mountQuestionReport } from "../../core/questionReports.js";
 
 const TYPE_META = {
   tf: { table: "questions_tf", title: "Adevărat / Fals" },
-  abc_one: { table: "questions_abc_one", title: "ABC One" },
+  abc_one: { table: "questions_abc_one", title: "Un singur răspuns" },
   match: { table: "questions_match", title: "Asociere" },
-  abc_multi: { table: "questions_abc_multi", title: "ABC Multi" },
+  abc_multi: { table: "questions_abc_multi", title: "Răspunsuri multiple" },
 };
 
 const TYPE_ORDER = ["tf", "abc_one", "match", "abc_multi"];
@@ -16,6 +23,9 @@ const els = {
   learningBookSearch: document.getElementById("learningBookSearch"),
   learningBookList: document.getElementById("learningBookList"),
   learningBookInfo: document.getElementById("learningBookInfo"),
+  selectedLearningBookChips: document.getElementById("selectedLearningBookChips"),
+  learningSelectAllBtn: document.getElementById("learningSelectAllBtn"),
+  learningClearBtn: document.getElementById("learningClearBtn"),
   learningStartBtn: document.getElementById("learningStartBtn"),
   learningStatus: document.getElementById("learningStatus"),
   learningMeta: document.getElementById("learningMeta"),
@@ -24,6 +34,15 @@ const els = {
   learningCheckBtn: document.getElementById("learningCheckBtn"),
   learningPrevBtn: document.getElementById("learningPrevBtn"),
   learningNextBtn: document.getElementById("learningNextBtn"),
+  reportQuestionBtn: document.getElementById("reportQuestionBtn"),
+  questionReportDialog: document.getElementById("questionReportDialog"),
+  closeQuestionReportBtn: document.getElementById("closeQuestionReportBtn"),
+  cancelQuestionReportBtn: document.getElementById("cancelQuestionReportBtn"),
+  questionReportForm: document.getElementById("questionReportForm"),
+  questionReportQuestion: document.getElementById("questionReportQuestion"),
+  questionReportReason: document.getElementById("questionReportReason"),
+  questionReportMessage: document.getElementById("questionReportMessage"),
+  questionReportStatus: document.getElementById("questionReportStatus"),
   learningNavigator: document.getElementById("learningNavigator"),
   learningProgressText: document.getElementById("learningProgressText"),
   learningProgressFill: document.getElementById("learningProgressFill"),
@@ -32,8 +51,10 @@ const els = {
 };
 
 const state = {
+  studentId: "",
+  username: "",
   accessToken: "",
-  selectedBook: "",
+  selectedBooks: new Set(),
   books: [],
   questions: [],
   answers: {},
@@ -41,6 +62,8 @@ const state = {
   currentKey: "",
   mode: "all",
 };
+
+let reportControl = { refresh: () => {} };
 
 function questionKey(question) {
   return `${question.type}:${question.id}`;
@@ -51,7 +74,11 @@ function normalizeBookName(value) {
 }
 
 async function fetchLearningData(action, params = {}) {
-  const qs = new URLSearchParams({ action, ...params }).toString();
+  const query = new URLSearchParams({ action });
+  for (const [key, value] of Object.entries(params)) {
+    query.set(key, Array.isArray(value) ? JSON.stringify(value) : value);
+  }
+  const qs = query.toString();
   const response = await fetch(`/.netlify/functions/learning-data?${qs}`, {
     method: "GET",
     headers: {
@@ -152,10 +179,10 @@ function saveStoredProgress(progress) {
 }
 
 function persistCurrentBookProgress() {
-  if (!state.selectedBook) return;
+  if (!state.selectedBooks.size) return;
 
   const progress = getStoredProgress();
-  progress[state.selectedBook] = {
+  progress[sessionBookKey()] = {
     answers: state.answers,
     statuses: state.statuses,
     updatedAt: new Date().toISOString(),
@@ -166,7 +193,7 @@ function persistCurrentBookProgress() {
 
 function restoreCurrentBookProgress() {
   const progress = getStoredProgress();
-  const entry = progress[state.selectedBook];
+  const entry = progress[sessionBookKey()];
 
   if (!entry || typeof entry !== "object") {
     state.answers = {};
@@ -180,6 +207,12 @@ function restoreCurrentBookProgress() {
 
   state.answers = Object.fromEntries(Object.entries(answers).filter(([key]) => validKeys.has(key)));
   state.statuses = Object.fromEntries(Object.entries(statuses).filter(([key]) => validKeys.has(key)));
+}
+
+function sessionBookKey() {
+  return [...state.selectedBooks]
+    .sort((a, b) => normalizeBookKey(a).localeCompare(normalizeBookKey(b)))
+    .join("|");
 }
 
 function getFilteredQuestions() {
@@ -241,7 +274,7 @@ function evaluateQuestion(question, answer) {
 }
 
 function getOptionText(question, idx) {
-  return question.options?.[idx]?.text || `Optiunea ${idx + 1}`;
+  return question.options?.[idx]?.text || `Opțiunea ${idx + 1}`;
 }
 
 function renderBooks() {
@@ -256,34 +289,104 @@ function renderBooks() {
   host.innerHTML = "";
 
   if (!state.books.length) {
-    host.innerHTML = '<p class="learning-empty">Nu exista carti disponibile.</p>';
+    host.innerHTML = '<p class="learning-empty">Nu există cărți disponibile.</p>';
     return;
   }
 
   if (!filtered.length) {
-    host.innerHTML = '<p class="learning-empty">Nicio carte potrivita cu cautarea.</p>';
+    host.innerHTML = '<p class="learning-empty">Nicio carte găsită. Încearcă altă căutare.</p>';
     return;
   }
 
   filtered.forEach((book) => {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = `learning-book-btn${state.selectedBook === book ? " is-active" : ""}`;
-    btn.textContent = book;
-    btn.addEventListener("click", () => {
-      state.selectedBook = book;
+    const label = document.createElement("label");
+    label.className = "book-check-item";
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.checked = state.selectedBooks.has(book);
+    checkbox.setAttribute("aria-label", `Selectează ${book}`);
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) state.selectedBooks.add(book);
+      else state.selectedBooks.delete(book);
+      persistSelectedBooks();
       renderBooks();
       updateBookInfo();
     });
-    host.appendChild(btn);
+    const text = document.createElement("span");
+    text.textContent = book;
+    label.append(checkbox, text);
+    host.appendChild(label);
   });
 }
 
 function updateBookInfo() {
-  if (!els.learningBookInfo) return;
-  els.learningBookInfo.textContent = state.selectedBook
-    ? `Carte selectata: ${state.selectedBook}`
-    : "Selecteaza o carte ca sa incepi.";
+  const selected = [...state.selectedBooks];
+  if (els.learningBookInfo) {
+    els.learningBookInfo.textContent = selected.length
+      ? `${selected.length} ${selected.length === 1 ? "carte" : "cărți"}`
+      : "Niciuna";
+  }
+  renderSelectedBookChips();
+}
+
+function renderSelectedBookChips() {
+  const host = els.selectedLearningBookChips;
+  if (!host) return;
+
+  host.replaceChildren();
+  const selected = [...state.selectedBooks];
+  if (!selected.length) {
+    const empty = document.createElement("span");
+    empty.className = "selected-books-empty";
+    empty.textContent = "Alege cel puțin o carte.";
+    host.append(empty);
+    return;
+  }
+
+  selected.forEach((book) => {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "selected-book-chip";
+    chip.setAttribute("aria-label", `Elimină ${book}`);
+
+    const label = document.createElement("span");
+    label.textContent = book;
+    const remove = document.createElement("span");
+    remove.className = "selected-book-remove";
+    remove.setAttribute("aria-hidden", "true");
+    remove.textContent = "×";
+
+    chip.append(label, remove);
+    chip.addEventListener("click", () => {
+      state.selectedBooks.delete(book);
+      persistSelectedBooks();
+      renderBooks();
+      updateBookInfo();
+    });
+    host.append(chip);
+  });
+}
+
+function persistSelectedBooks() {
+  try {
+    window.localStorage.setItem("akademia.learning.selectedBooks.v1", JSON.stringify([...state.selectedBooks]));
+  } catch {
+    // Storage is optional; the selection still works for the current session.
+  }
+}
+
+function restoreSelectedBooks(availableBooks) {
+  let stored = [];
+  try {
+    stored = JSON.parse(window.localStorage.getItem("akademia.learning.selectedBooks.v1") || "[]");
+  } catch {
+    stored = [];
+  }
+  const urlBooks = readBooksFromUrl();
+  const requested = urlBooks.length ? urlBooks : (Array.isArray(stored) ? stored : []);
+  state.selectedBooks = new Set(requested
+    .map((book) => availableBooks.find((item) => normalizeBookKey(item) === normalizeBookKey(book)))
+    .filter(Boolean));
 }
 
 function renderProgress() {
@@ -295,13 +398,13 @@ function renderProgress() {
   const percent = total ? Math.round((answered / total) * 100) : 0;
 
   if (els.learningProgressText) {
-    els.learningProgressText.textContent = `${answered}/${total} raspunse`;
+    els.learningProgressText.textContent = `${answered}/${total} răspunse`;
   }
   if (els.learningProgressFill) {
     els.learningProgressFill.style.width = `${percent}%`;
   }
   if (els.learningStats) {
-    els.learningStats.textContent = `Corecte: ${correct} · Gresite: ${wrong} · Neraspunse: ${unanswered}`;
+    els.learningStats.textContent = `Corecte: ${correct} · Greșite: ${wrong} · Nerăspunse: ${unanswered}`;
   }
 }
 
@@ -313,12 +416,12 @@ function renderNavigator() {
   host.innerHTML = "";
 
   if (!state.questions.length) {
-    host.innerHTML = '<p class="learning-empty">Inca nu ai incarcat intrebari.</p>';
+    host.innerHTML = '<p class="learning-empty">Întrebările vor apărea aici după ce începi sesiunea.</p>';
     return;
   }
 
   if (!filtered.length) {
-    host.innerHTML = '<p class="learning-empty">Nu exista intrebari pentru filtrul curent.</p>';
+    host.innerHTML = '<p class="learning-empty">Nu există întrebări pentru filtrul curent.</p>';
     return;
   }
 
@@ -330,7 +433,10 @@ function renderNavigator() {
     btn.type = "button";
     btn.className = `learning-nav-chip is-${status}${state.currentKey === key ? " is-current" : ""}`;
     btn.textContent = String(idx + 1);
-    btn.title = `${TYPE_META[question.type]?.title || question.type} · ${status}`;
+    const statusLabel = { correct: "răspuns corect", wrong: "răspuns greșit", unanswered: "fără răspuns" }[status];
+    btn.setAttribute("aria-label", `Întrebarea ${idx + 1}, ${statusLabel}`);
+    if (state.currentKey === key) btn.setAttribute("aria-current", "step");
+    btn.title = `${TYPE_META[question.type]?.title || question.type} · ${({ correct: "Corect", wrong: "Greșit", unanswered: "Fără răspuns" })[status]}`;
     btn.addEventListener("click", () => {
       state.currentKey = key;
       renderAll();
@@ -401,7 +507,7 @@ function renderAnswerHost(question) {
       return `
         <label class="option-item${checked ? " is-selected" : ""}">
           ${input}
-          <span class="option-content">${opt.text || `Optiunea ${idx + 1}`}</span>
+          <span class="option-content">${opt.text || `Opțiunea ${idx + 1}`}</span>
         </label>
       `;
     })
@@ -443,12 +549,13 @@ function renderCurrentQuestion() {
   const current = getCurrentQuestion();
 
   if (!current) {
-    els.learningMeta.textContent = "Nu exista intrebari pentru filtrul selectat.";
-    els.learningQuestionText.textContent = "Schimba filtrul sau cartea pentru a continua.";
+    els.learningMeta.textContent = state.questions.length ? "Nu există întrebări pentru filtrul selectat." : "Alege una sau mai multe cărți și apasă Începe să exersezi.";
+    els.learningQuestionText.textContent = state.questions.length ? "Schimbă filtrul pentru a continua." : "Pregătit să descoperi ceva nou?";
     els.learningAnswerHost.innerHTML = "";
     els.learningCheckBtn.disabled = true;
     els.learningPrevBtn.disabled = true;
     els.learningNextBtn.disabled = true;
+    reportControl.refresh();
     return;
   }
 
@@ -456,7 +563,8 @@ function renderCurrentQuestion() {
   const idx = filtered.findIndex((q) => questionKey(q) === state.currentKey);
   const status = getQuestionStatus(current);
 
-  els.learningMeta.textContent = `Intrebarea ${idx + 1} din ${filtered.length} · ${TYPE_META[current.type].title} · Status: ${status}`;
+  const statusLabel = { correct: "Corect", wrong: "Greșit", unanswered: "Fără răspuns" }[status];
+  els.learningMeta.textContent = `Întrebarea ${idx + 1} din ${filtered.length} · ${TYPE_META[current.type].title} · ${statusLabel}`;
   els.learningQuestionText.textContent = current.prompt;
 
   renderAnswerHost(current);
@@ -464,6 +572,7 @@ function renderCurrentQuestion() {
   els.learningCheckBtn.disabled = false;
   els.learningPrevBtn.disabled = idx <= 0;
   els.learningNextBtn.disabled = idx >= filtered.length - 1;
+  reportControl.refresh();
 }
 
 function renderAll() {
@@ -473,6 +582,7 @@ function renderAll() {
 
   els.learningModeBtns.forEach((btn) => {
     btn.classList.toggle("is-active", btn.dataset.mode === state.mode);
+    btn.setAttribute("aria-pressed", String(btn.dataset.mode === state.mode));
   });
 }
 
@@ -504,7 +614,7 @@ function checkCurrentAnswer() {
       : Number.isInteger(answer);
 
   if (!hasAnswer) {
-    els.learningStatus.textContent = "Raspunde la intrebare inainte de verificare.";
+    els.learningStatus.textContent = "Alege un răspuns înainte de verificare.";
     return;
   }
 
@@ -514,36 +624,51 @@ function checkCurrentAnswer() {
 
   els.learningStatus.textContent = isCorrect
     ? "Corect. Foarte bine!"
-    : "Incorect. Revino la aceasta intrebare in filtrul Gresite.";
+    : "Încă un pas de învățare. Revino la această întrebare în filtrul Greșite.";
 
   renderAll();
 }
 
 async function loadBooks() {
-  els.learningStatus.textContent = "Se incarca lista de carti...";
+  els.learningStatus.textContent = "Se încarcă lista de cărți…";
 
-  const data = await fetchLearningData("books");
-  state.books = (Array.isArray(data?.books) ? data.books : [])
-    .map((book) => normalizeBookName(book))
-    .filter(Boolean);
+  try {
+    const data = await fetchLearningData("books");
+    state.books = (Array.isArray(data?.books) ? data.books : [])
+      .map((book) => normalizeBookName(book))
+      .filter(Boolean);
+    state.books = mergeBookOptions(state.books);
+  } catch (error) {
+    console.error(error);
+    state.books = [...BIBLE_BOOKS];
+    els.learningStatus.textContent = "Lista locală cu cele 66 de cărți este disponibilă.";
+  }
+
+  restoreSelectedBooks(state.books);
 
   renderBooks();
   updateBookInfo();
-  els.learningStatus.textContent = "";
+  if (!els.learningStatus.textContent.includes("Lista locală")) {
+    els.learningStatus.textContent = "";
+  }
 }
 
 async function startLearning() {
+  if (els.learningStartBtn.disabled) return;
   els.learningStatus.textContent = "";
 
-  if (!state.selectedBook) {
-    els.learningStatus.textContent = "Selecteaza o carte inainte sa incarci intrebarile.";
+  const selectedBooks = [...state.selectedBooks];
+  if (!selectedBooks.length) {
+    els.learningStatus.textContent = "Alege cel puțin o carte înainte de a începe.";
     return;
   }
 
-  els.learningStatus.textContent = "Se incarca intrebarile pentru cartea selectata...";
+  els.learningStatus.textContent = "Se pregătesc întrebările…";
+  els.learningStartBtn.disabled = true;
+  els.learningStartBtn.textContent = "Se pregătește sesiunea…";
 
   try {
-    const data = await fetchLearningData("questions", { book: state.selectedBook });
+    const data = await fetchLearningData("questions", { books: selectedBooks });
     const rowsByType = data?.rowsByType || {};
 
     const all = TYPE_ORDER.flatMap((type) => {
@@ -560,7 +685,7 @@ async function startLearning() {
       state.statuses = {};
       state.currentKey = "";
       renderAll();
-      els.learningStatus.textContent = "Nu exista intrebari pentru aceasta carte.";
+      els.learningStatus.textContent = "Nu există întrebări pentru cărțile selectate.";
       return;
     }
 
@@ -569,16 +694,35 @@ async function startLearning() {
     ensureCurrentQuestion();
     renderAll();
 
-    els.learningStatus.textContent = `Sesiune pornita: ${state.questions.length} intrebari pentru ${state.selectedBook}.`;
+    els.learningQuestionText.tabIndex = -1;
+    els.learningQuestionText.focus();
+    els.learningStatus.textContent = `Sesiune începută: ${state.questions.length} întrebări din ${selectedBooks.length} ${selectedBooks.length === 1 ? "carte" : "cărți"}.`;
   } catch (error) {
     console.error(error);
-    els.learningStatus.textContent = error?.message || "Eroare la incarcare.";
+    els.learningStatus.textContent = error?.message || "Întrebările nu s-au încărcat. Încearcă din nou.";
+  } finally {
+    els.learningStartBtn.disabled = false;
+    els.learningStartBtn.textContent = "Începe să exersezi";
   }
 }
 
 function bindActions() {
   els.learningBookSearch?.addEventListener("input", () => {
     renderBooks();
+  });
+
+  els.learningSelectAllBtn?.addEventListener("click", () => {
+    state.selectedBooks = new Set(state.books);
+    persistSelectedBooks();
+    renderBooks();
+    updateBookInfo();
+  });
+
+  els.learningClearBtn?.addEventListener("click", () => {
+    state.selectedBooks.clear();
+    persistSelectedBooks();
+    renderBooks();
+    updateBookInfo();
   });
 
   els.learningStartBtn?.addEventListener("click", startLearning);
@@ -596,11 +740,28 @@ function bindActions() {
 
 async function init() {
   const { session } = await requireRole("student");
+  state.studentId = session?.user?.id || "";
+  state.username = session?.user?.user_metadata?.username || "student";
   state.accessToken = session?.access_token || "";
+
+  reportControl = mountQuestionReport({
+    supabase,
+    button: els.reportQuestionBtn,
+    dialog: els.questionReportDialog,
+    form: els.questionReportForm,
+    questionLabel: els.questionReportQuestion,
+    reason: els.questionReportReason,
+    message: els.questionReportMessage,
+    status: els.questionReportStatus,
+    closeButton: els.closeQuestionReportBtn,
+    cancelButton: els.cancelQuestionReportBtn,
+    getQuestion: () => getCurrentQuestion(),
+    getStudent: () => ({ id: state.studentId, username: state.username }),
+  });
 
   bindActions();
   await loadBooks();
   renderAll();
 }
 
-init();
+init().catch(() => { els.learningStatus.textContent = "Nu am putut încărca sesiunea. Reîncarcă pagina pentru a încerca din nou."; });

@@ -1,8 +1,9 @@
 // addQuestion.js
 
 import { supabase } from "../../../core/supabaseClient.js";
-import { requireRole } from "../../../core/authGuard.js";
+import { requireAnyRole } from "../../../core/authGuard.js";
 import { getTypeFromUrl, mustGetConfig } from "./config.js";
+import { BIBLE_BOOKS as BIBLE_BOOK_OPTIONS } from "../../../core/bibleBooks.js";
 
 const els = {
   pageTitle: document.getElementById("pageTitle"),
@@ -21,75 +22,6 @@ let activeUsername = "";
 let editId = null;
 let bookDropdownOpen = false;
 let bookOutsideClickBound = false;
-
-const BIBLE_BOOK_OPTIONS = [
-  "Geneza",
-  "Exodul",
-  "Leviticul",
-  "Numeri",
-  "Deuteronomul",
-  "Iosua",
-  "Judecatori",
-  "Rut",
-  "1 Samuel",
-  "2 Samuel",
-  "1 Regi",
-  "2 Regi",
-  "1 Cronici",
-  "2 Cronici",
-  "Ezra",
-  "Neemia",
-  "Estera",
-  "Iov",
-  "Psalmii",
-  "Proverbele",
-  "Eclesiastul",
-  "Cantarea Cantarilor",
-  "Isaia",
-  "Ieremia",
-  "Plangerile lui Ieremia",
-  "Ezechiel",
-  "Daniel",
-  "Osea",
-  "Ioel",
-  "Amos",
-  "Obadia",
-  "Iona",
-  "Mica",
-  "Naum",
-  "Habacuc",
-  "Tefania",
-  "Hagai",
-  "Zaharia",
-  "Maleahi",
-  "Matei",
-  "Marcu",
-  "Luca",
-  "Ioan",
-  "Faptele Apostolilor",
-  "Romani",
-  "1 Corinteni",
-  "2 Corinteni",
-  "Galateni",
-  "Efeseni",
-  "Filipeni",
-  "Coloseni",
-  "1 Tesaloniceni",
-  "2 Tesaloniceni",
-  "1 Timotei",
-  "2 Timotei",
-  "Tit",
-  "Filimon",
-  "Evrei",
-  "Iacov",
-  "1 Petru",
-  "2 Petru",
-  "1 Ioan",
-  "2 Ioan",
-  "3 Ioan",
-  "Iuda",
-  "Apocalipsa",
-];
 
 function normalizeSearchText(value) {
   return String(value || "")
@@ -200,10 +132,18 @@ function renderTypeSpecificFields(type) {
 
 function renderForm(type) {
   els.formHost.innerHTML = `
-    ${renderMetadataFields()}
     ${renderTypeSpecificFields(type)}
+    ${renderMetadataFields()}
   `;
 
+  els.formHost.querySelectorAll('input[placeholder]:not([id])').forEach((input, index) => {
+    input.id = 'questionField' + index;
+    const field = document.createElement('div');
+    const label = document.createElement('label');
+    label.className = 'label'; label.htmlFor = input.id; label.textContent = input.placeholder;
+    input.before(field); field.append(label, input);
+  });
+  els.formHost.querySelectorAll('.answer-chip').forEach(chip => chip.setAttribute('aria-pressed', String(chip.classList.contains('is-selected'))));
   bindBookComboboxInteractions();
   bindAnswerInteractions(type);
 }
@@ -305,6 +245,7 @@ function setSingleChipSelection(selector, value) {
   const chips = Array.from(document.querySelectorAll(selector));
   chips.forEach((chip) => {
     chip.classList.toggle("is-selected", chip.dataset.value === String(value) || chip.dataset.index === String(value));
+    chip.setAttribute("aria-pressed", String(chip.classList.contains("is-selected")));
   });
 }
 
@@ -352,6 +293,7 @@ function bindAnswerInteractions(type) {
   document.querySelectorAll("#correctMultiGroup .answer-chip").forEach((chip) => {
     chip.addEventListener("click", () => {
       chip.classList.toggle("is-selected");
+      chip.setAttribute("aria-pressed", String(chip.classList.contains("is-selected")));
     });
   });
 }
@@ -361,10 +303,6 @@ function setCommonValues(row) {
   document.getElementById("difficultyInput").value = row.difficulty ?? "";
   const rowBook = String(row.book || "").trim();
   document.getElementById("bookInput").value = rowBook;
-
-  if (rowBook && !BIBLE_BOOK_OPTIONS.some((book) => book.toLowerCase() === rowBook.toLowerCase())) {
-    BIBLE_BOOK_OPTIONS.push(rowBook);
-  }
 
   document.getElementById("statusInput").value = row.status || "active";
 }
@@ -402,6 +340,7 @@ function setOptionsValues(row, type) {
   const chips = Array.from(document.querySelectorAll("#correctMultiGroup .answer-chip"));
   chips.forEach((chip, index) => {
     chip.classList.toggle("is-selected", Boolean(options[index]?.correct));
+    chip.setAttribute("aria-pressed", String(chip.classList.contains("is-selected")));
   });
 }
 
@@ -555,7 +494,9 @@ function readPairsPayload() {
 }
 
 async function save() {
+  if (els.saveBtn.disabled) return;
   els.result.textContent = "";
+  els.saveBtn.disabled = true;
 
   try {
     const basePayload = readCommonPayload();
@@ -584,11 +525,13 @@ async function save() {
   } catch (error) {
     console.error(error);
     els.result.textContent = error?.message || "Eroare la salvare.";
+  } finally {
+    els.saveBtn.disabled = false;
   }
 }
 
 async function init() {
-  const { session } = await requireRole("instructor");
+  const { session } = await requireAnyRole(["instructor", "admin"]);
 
   const url = new URL(window.location.href);
   activeType = getTypeFromUrl() || "tf";
@@ -599,7 +542,7 @@ async function init() {
   els.pageTitle.textContent = editId
     ? `Editează întrebare - ${activeCfg.title}`
     : `Adaugă întrebare - ${activeCfg.title}`;
-  els.pageSubtitle.textContent = `Tabel: ${activeCfg.table}${activeUsername ? ` | Autor: ${activeUsername}` : ""}`;
+  els.pageSubtitle.textContent = "Completează întrebarea, alege răspunsul corect și adaugă detaliile care îi ajută pe studenți.";
 
   els.saveBtn.textContent = editId ? "Actualizează" : "Salvează";
 

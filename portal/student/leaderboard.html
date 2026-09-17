@@ -20,23 +20,38 @@
         <div class="main-content">
           <div class="page-header">
             <div>
-              <p class="title-eyebrow">Concurs Biblic Talantul in Negot</p>
+              <p class="title-eyebrow">Portal student</p>
               <h1 class="header">Clasament</h1>
-              <p id="leaderboardSubtitle" class="page-help">Se încarcă datele clasamentului...</p>
+              <p id="leaderboardSubtitle" role="status" class="page-help">Se încarcă clasamentul...</p>
             </div>
           </div>
 
-          <div class="leaderboards-grid">
-            <div class="card leaderboard-card" style="max-width:100%;">
-              <h3>Top săptămâna curentă</h3>
-              <div id="weekLeaderboard" class="leaderboard-list muted">Se încarcă...</div>
+          <section class="card leaderboard-card leaderboard-page-card" aria-labelledby="leaderboardTitle">
+            <div class="section-head compact-section-head">
+              <h2 id="leaderboardTitle">Clasament</h2>
+              <span id="leaderboardUpdated" class="muted">-</span>
             </div>
-
-            <div class="card leaderboard-card" style="max-width:100%;">
-              <h3>Top luna curentă</h3>
-              <div id="monthLeaderboard" class="leaderboard-list muted">Se încarcă...</div>
+            <div class="leaderboard-toolbar" aria-label="Filtre clasament">
+              <div class="leaderboard-filter">
+                <label class="label" for="leaderboardMetric">Sortează după</label>
+                <select id="leaderboardMetric" class="input">
+                  <option value="points">Puncte</option>
+                  <option value="tests">Număr de teste</option>
+                </select>
+              </div>
+              <div class="leaderboard-filter">
+                <label class="label" for="leaderboardPeriod">Perioada</label>
+                <select id="leaderboardPeriod" class="input">
+                  <option value="today">Astăzi</option>
+                  <option value="week">Săptămâna curentă</option>
+                  <option value="month">Luna curentă</option>
+                  <option value="year" selected>Anul curent</option>
+                  <option value="all">Total</option>
+                </select>
+              </div>
             </div>
-          </div>
+            <div id="leaderboard" class="leaderboard-list muted">Se încarcă...</div>
+          </section>
         </div>
       </main>
     </div>

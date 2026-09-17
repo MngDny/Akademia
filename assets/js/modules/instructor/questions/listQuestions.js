@@ -3,6 +3,8 @@
 import { supabase } from "../../../core/supabaseClient.js";
 import { requireRole } from "../../../core/authGuard.js";
 import { getPreviewText, getTypeFromUrl, mustGetConfig } from "./config.js";
+import { BIBLE_BOOKS, mergeBookOptions, normalizeBookKey } from "../../../core/bibleBooks.js";
+import { mountBookAutocomplete } from "../../../core/bookAutocomplete.js";
 
 const els = {
   pageTitle: document.getElementById("pageTitle"),
@@ -11,9 +13,19 @@ const els = {
   tableBody: document.getElementById("tableBody"),
   emptyState: document.getElementById("emptyState"),
   searchInput: document.getElementById("searchInput"),
+  bookFilter: document.getElementById("bookFilter"),
 };
 
 let allRows = [];
+let bookAutocomplete = null;
+
+function normalizeSearch(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
 
 function render(rows, cfg) {
   els.tableBody.innerHTML = "";
@@ -55,16 +67,18 @@ function render(rows, cfg) {
 
 function applySearch(cfg) {
   const q = (els.searchInput.value || "").toLowerCase().trim();
-  if (!q) return render(allRows, cfg);
+  const bookQuery = normalizeSearch(els.bookFilter?.value || "");
+  const selectedBook = normalizeBookKey(bookAutocomplete?.getSelectedValue() || "");
+  if (!q && !bookQuery) return render(allRows, cfg);
 
   const filtered = allRows.filter((r) => {
     const preview = getPreviewText(r, cfg).toLowerCase();
-    const book = String(r.book || "").toLowerCase();
+    const book = normalizeSearch(r.book);
     const status = String(r.status || "").toLowerCase();
     const chapter = String(r.chapter || "");
     const difficulty = String(r.difficulty || "");
 
-    return (
+    return (!bookQuery || (selectedBook ? normalizeBookKey(r.book) === selectedBook : book.includes(bookQuery))) && (
       preview.includes(q)
       || book.includes(q)
       || status.includes(q)
@@ -91,8 +105,13 @@ async function load(cfg) {
   }
 
   allRows = data || [];
+  bookAutocomplete?.setOptions(mergeBookOptions([
+    ...BIBLE_BOOKS,
+    ...allRows.map((row) => row.book),
+  ]));
   els.pageSubtitle.textContent = `${allRows.length} întrebări`;
-  render(allRows, cfg);
+  if (els.bookFilter?.value) applySearch(cfg);
+  else render(allRows, cfg);
 }
 
 async function deleteRow(cfg, id) {
@@ -121,6 +140,14 @@ async function init() {
   els.addBtn.href = `/portal/instructor/questions/add.html?type=${type}`;
 
   els.searchInput.addEventListener("input", () => applySearch(cfg));
+  bookAutocomplete = mountBookAutocomplete({
+    input: els.bookFilter,
+    options: BIBLE_BOOKS,
+    onInput: () => applySearch(cfg),
+    onSelect: () => applySearch(cfg),
+  });
+  const initialBook = new URL(window.location.href).searchParams.get("book");
+  if (initialBook) bookAutocomplete.setValue(initialBook);
 
   els.tableBody.addEventListener("click", async (e) => {
     const btn = e.target.closest("button");

@@ -1,11 +1,10 @@
-#createUserSection {
-  margin-bottom: 30px;
-}
-
-#manageUsersSection {
-  margin-top: 20px;
-}
-
-.card h3 {
-  margin-top: 0;
-}
+.admin-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(260px, .8fr); gap: 26px; align-items: start; }
+.admin-guide { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: white; }
+.admin-guide h3 { margin: 0 0 8px; }
+.admin-guide p { color: var(--muted); font-size: 13px; }
+.role-description { border-top: 1px solid var(--line); padding-top: 18px; margin-top: 18px; }
+.role-description strong { font-size: 13px; }
+.role-description p { margin: 5px 0; }
+#createUserBtn { width: 100%; }
+#result { margin-top: 16px; font-size: 13px; }
+@media (max-width: 760px) { .admin-grid { grid-template-columns: 1fr; } }

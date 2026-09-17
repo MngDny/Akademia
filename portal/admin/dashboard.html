@@ -1,71 +1,64 @@
 <!doctype html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Admin – Akademia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-    <link rel="stylesheet" href="/assets/css/layout.css" />
-    <link rel="stylesheet" href="/assets/css/components.css" />
-    <link rel="stylesheet" href="./dashboard.css" />
-
-  </head>
-
-  <body>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <div class="sidebar">
-      <h2>AKADEMIA</h2>
-
-      <div class="menu-item active" data-section="create-user">Creează utilizator</div>
-      <div class="menu-item" data-section="manage-users">Gestionează utilizatori</div>
-      <div class="menu-item" data-section="settings">Setări</div>
-
-      <div class="sidebar-footer">
-        <button id="logout" class="logout-btn">Deconectare</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrator · Akademia</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main">
+      <div class="main-content">
+        <div class="page-header">
+          <div><p class="title-eyebrow">Spațiu de administrare</p><h1 class="header">Oameni, roluri și posibilități.</h1><p class="page-help">Oferă acces la învățare și gestionează simplu comunitatea Akademia.</p></div>
+        </div>
+        <div class="admin-grid">
+          <section class="card" id="createUserSection" aria-labelledby="createTitle">
+            <h2 id="createTitle">Creează un cont nou</h2>
+            <p class="muted">Completează datele și alege rolul potrivit.</p>
+            <form autocomplete="off">
+              <label class="label" for="username">Nume utilizator</label>
+              <input id="username" placeholder="ex. andrei.popescu" required autocomplete="off">
+              <label class="label" for="email">Adresă de e-mail</label>
+              <input id="email" type="email" placeholder="nume@exemplu.ro" required autocomplete="off">
+              <label class="label" for="password">Parolă</label>
+              <div class="password-wrapper">
+                <input id="password" type="password" placeholder="Alege o parolă sigură" minlength="6" required autocomplete="new-password">
+                <button class="toggle-password" type="button" aria-label="Arată parola"><img class="icon" src="/assets/icons/eye.svg" alt=""></button>
+              </div>
+              <label class="label" for="role">Rol în platformă</label>
+              <select id="role"><option value="student">Student</option><option value="instructor">Îndrumător</option><option value="admin">Administrator</option></select>
+              <button id="createUserBtn" class="primary" type="submit">Creează utilizator</button>
+            </form>
+            <div id="result" role="status"></div>
+          </section>
+          <section class="card" id="manageUsersSection" hidden aria-labelledby="usersTitle">
+            <h2 id="usersTitle">Utilizatorii platformei</h2>
+            <p id="usersSummary" class="muted" role="status">Se încarcă utilizatorii…</p>
+            <label class="label" for="userSearch">Caută un utilizator</label>
+            <input id="userSearch" type="search" placeholder="Nume utilizator…">
+            <label class="label" for="roleFilter">Filtrează după rol</label>
+            <select id="roleFilter"><option value="">Toate rolurile</option><option value="student">Studenți</option><option value="instructor">Îndrumători</option><option value="admin">Administratori</option></select>
+            <div id="usersList"></div>
+          </section>
+          <aside class="admin-guide" aria-label="Ghidul rolurilor">
+            <span class="stat-icon"><img class="icon" src="/assets/icons/shield-check.svg" alt=""></span>
+            <h3 style="margin-top:18px">Accesul potrivit, pentru fiecare.</h3>
+            <p>Alege rolul în funcție de activitatea persoanei în platformă.</p>
+            <div class="role-description"><strong>Student</strong><p>Exersează, rezolvă teste și își urmărește rezultatele.</p></div>
+            <div class="role-description"><strong>Îndrumător</strong><p>Pregătește întrebările, importă materiale și consultă lista studenților.</p></div>
+            <div class="role-description"><strong>Administrator</strong><p>Creează și gestionează conturile din platformă.</p></div>
+          </aside>
+        </div>
       </div>
-    </div>
-    <div class="overlay" onclick="toggleMenu()"></div>
-
-    <div class="main">
-      <div class="header">Panou administrator</div>
-
-      <div class="card" id="createUserSection">
-        <h3>Creează utilizator</h3>
-
-        <form autocomplete="off">
-          <input id="email" placeholder="E-mail" autocomplete="off" />
-
-          <div class="password-wrapper">
-            <input
-              id="password"
-              placeholder="Parolă"
-              type="password"
-              autocomplete="new-password"
-            />
-            <button class="toggle-password" type="button" aria-label="Arată parola">👁</button>
-          </div>
-
-          <input id="username" placeholder="Nume utilizator" autocomplete="off" />
-
-          <select id="role">
-            <option value="student">Student</option>
-            <option value="instructor">Îndrumător</option>
-            <option value="admin">Administrator</option>
-          </select>
-
-          <button id="createUserBtn" class="primary">Creează utilizator</button>
-        </form>
-
-        <div id="result"></div>
-      </div>
-
-      <div class="card" id="manageUsersSection" style="display: none">
-        <h3>Gestionează utilizatori</h3>
-        <div id="usersList"></div>
-      </div>
-    </div>
-
-    <script type="module" src="/assets/js/modules/admin/adminDashboard.js"></script>
-  </body>
+    </main>
+  </div>
+  <script type="module" src="/assets/js/modules/admin/adminDashboard.js"></script>
+</body>
 </html>

@@ -12,11 +12,9 @@ const PASSWORD_RE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{10,72}$/;
 
 initPasswordVisibility();
 
-button.addEventListener("click", onRegister);
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    onRegister();
-  }
+document.getElementById("authForm").addEventListener("submit", event => {
+  event.preventDefault();
+  if (!button.disabled) onRegister();
 });
 
 async function onRegister() {

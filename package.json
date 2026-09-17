@@ -4,7 +4,8 @@
   "description": "Aplicatie pentru exersare pentru concursul biblic <Talantul in negot>",
   "main": "login.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules --test tests/*.test.cjs",
+    "dev": "node scripts/dev.cjs"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.96.0",
     "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.0"
   }
 }

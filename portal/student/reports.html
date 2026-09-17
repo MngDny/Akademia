@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student - Raportările mele</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/student/student.css" />
+    <link rel="stylesheet" href="/portal/reports.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <p class="title-eyebrow">Ajutor și feedback</p>
+              <h1 class="header">Raportările mele</h1>
+              <p id="reportsSubtitle" class="page-help" role="status">Se încarcă raportările...</p>
+            </div>
+          </div>
+
+          <section class="card">
+            <div class="reports-toolbar">
+              <div class="report-status-filter">
+                <label class="label" for="reportStatusFilter">Status</label>
+                <select id="reportStatusFilter" class="input">
+                  <option value="">Toate</option>
+                  <option value="open">Deschise</option>
+                  <option value="in_review">În verificare</option>
+                  <option value="resolved">Rezolvate</option>
+                  <option value="rejected">Respins</option>
+                </select>
+              </div>
+            </div>
+            <div id="studentReportsList" class="reports-list"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/student/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/student/reports.js"></script>
+  </body>
+</html>

@@ -11,13 +11,11 @@ initPasswordVisibility();
 
 const PASSWORD_RE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{10,72}$/;
 
-button?.addEventListener("click", onResetPassword);
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    onResetPassword();
-  }
+document.getElementById("authForm").addEventListener("submit", event => {
+  event.preventDefault();
+  if (!button.disabled) onResetPassword();
 });
+
 
 async function onResetPassword() {
   clearMessages();

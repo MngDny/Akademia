@@ -12,14 +12,14 @@ export const questionConfig = {
     listColumns: [...baseListColumns, "text", "options"],
   },
   abc_one: {
-    title: "ABC One",
+    title: "Un singur răspuns",
     table: "questions_abc_one",
     textColumn: "text",
     dataKind: "options",
     listColumns: [...baseListColumns, "text", "options"],
   },
   abc_multi: {
-    title: "ABC Multi",
+    title: "Răspunsuri multiple",
     table: "questions_abc_multi",
     textColumn: "text",
     dataKind: "options",
@@ -36,7 +36,7 @@ export const questionConfig = {
 
 export function getTypeFromUrl() {
   const url = new URL(window.location.href);
-  return url.searchParams.get("type");
+  return url.searchParams.get("type") || "tf";
 }
 
 export function mustGetConfig(type) {

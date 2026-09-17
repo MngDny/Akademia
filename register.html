@@ -11,33 +11,20 @@
   </head>
 
   <body>
-    <div class="login-card">
-      <h1>AKADEMIA</h1>
-      <div class="subtitle">Înregistrare cont student</div>
-
-      <input id="username" type="text" placeholder="Nume utilizator (3-24, litere mici/cifre)" />
-      <input id="email" type="email" placeholder="Email" />
-      <div class="password-wrapper">
-        <input id="password" type="password" placeholder="Parolă (minim 10 caractere)" />
-        <button class="toggle-password" type="button" aria-label="Arată parola">👁</button>
-      </div>
-      <div class="password-wrapper">
-        <input id="confirmPassword" type="password" placeholder="Confirmă parola" />
-        <button class="toggle-password" type="button" aria-label="Arată parola">👁</button>
-      </div>
-
-      <button id="registerBtn">
-        <span id="btnText">Creează cont student</span>
-        <span id="spinner" class="spinner hidden"></span>
-      </button>
-
-      <div id="error" class="error"></div>
-      <div id="success" class="success"></div>
-
-      <a href="/login.html" class="auth-link">Ai deja cont? Autentifică-te</a>
-      <a href="/" class="back">← Înapoi la pagina principală</a>
-    </div>
-
-    <script type="module" src="/assets/js/modules/auth/register.js"></script>
-  </body>
+  <main class="auth-layout">
+    <aside class="auth-story"><a class="brand" href="/"><img src="/assets/favicon.svg" alt="" width="36" height="36">akademia</a>
+      <div class="auth-story-copy"><p class="title-eyebrow">Talantul în negoț</p><h2>Cunoașterea crește.<br>Cu fiecare pas.</h2><p>Un loc pentru curiozitate, pregătire și bucuria de a descoperi mai mult din Biblie.</p><div class="auth-story-steps"><span><img class="icon" src="/assets/icons/book-open.svg" alt="" aria-hidden="true">Învață</span><span><img class="icon" src="/assets/icons/clipboard-check.svg" alt="" aria-hidden="true">Exersează</span><span><img class="icon" src="/assets/icons/chart-no-axes-combined.svg" alt="" aria-hidden="true">Progresează</span></div></div>
+      <div class="auth-story-footer">Pregătirea de azi. Încrederea de mâine.</div>
+    </aside>
+    <section class="login-card"><h1>Începe cu un pas mic.</h1><p class="subtitle">Creează un cont de student. Pregătirea începe aici.</p>
+      <form id="authForm"><label class="label" for="username">Nume utilizator</label><input id="username" name="username" type="text" autocomplete="username" placeholder="ex. andrei.popescu" required minlength="3" maxlength="24" pattern="[a-z0-9._\-]{3,24}" aria-describedby="usernameHelp"><p class="field-help" id="usernameHelp">3–24 de caractere: litere mici, cifre, punct, _ sau -.</p>
+<label class="label" for="email">Adresă de e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="nume@exemplu.ro" required>
+<label class="label" for="password">Parolă</label><div class="password-wrapper"><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Alege o parolă sigură" required minlength="10" maxlength="72" aria-describedby="passwordHelp"><button class="toggle-password" type="button" aria-label="Arată parola"><img class="icon" src="/assets/icons/eye.svg" alt="" aria-hidden="true"></button></div><p class="field-help" id="passwordHelp">10–72 de caractere, cu literă mare, literă mică, cifră și simbol.</p>
+<label class="label" for="confirmPassword">Confirmă parola</label><div class="password-wrapper"><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Repetă parola" required minlength="10" maxlength="72"><button class="toggle-password" type="button" aria-label="Arată parola"><img class="icon" src="/assets/icons/eye.svg" alt="" aria-hidden="true"></button></div><button id="registerBtn" class="primary" type="submit"><span id="btnText">Creează cont student</span><span id="spinner" class="spinner hidden" aria-hidden="true"></span></button></form>
+      <div id="error" class="error" role="alert"></div><div id="success" class="success" role="status"></div>
+      <a href="/login.html" class="auth-link">Înapoi la autentificare</a><a href="/" class="back">← Înapoi la pagina principală</a>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/modules/auth/register.js"></script>
+</body>
 </html>

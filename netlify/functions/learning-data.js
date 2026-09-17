@@ -1,4 +1,5 @@
 const { createClient } = require("@supabase/supabase-js");
+const { BIBLE_BOOKS, normalizeBookKey } = require("./bibleBooks.cjs");
 
 const TABLES = {
   tf: "questions_tf",
@@ -55,16 +56,10 @@ function normalizeBookDisplay(value) {
   return String(value || "").trim();
 }
 
-function normalizeBookKey(value) {
-  return normalizeBookDisplay(value)
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s+/g, " ");
-}
-
 async function getBooks(supabase) {
   const byKey = new Map();
+
+  for (const book of BIBLE_BOOKS) byKey.set(normalizeBookKey(book), book);
 
   for (const table of Object.values(TABLES)) {
     const { data, error } = await supabase
@@ -83,12 +78,13 @@ async function getBooks(supabase) {
     }
   }
 
-  const unique = [...byKey.values()].sort((a, b) => a.localeCompare(b, "ro"));
-  return unique;
+  const canonical = BIBLE_BOOKS.filter((book) => byKey.has(normalizeBookKey(book)));
+  const extras = [...byKey.values()].filter((book) => !BIBLE_BOOKS.some((canonicalBook) => normalizeBookKey(canonicalBook) === normalizeBookKey(book)));
+  return [...canonical, ...extras.sort((a, b) => a.localeCompare(b, "ro"))];
 }
 
-async function getQuestionsByBook(supabase, book) {
-  const bookKey = normalizeBookKey(book);
+async function getQuestionsByBooks(supabase, books) {
+  const bookKeys = new Set(books.map(normalizeBookKey));
   const rowsByType = {};
 
   for (const [type, table] of Object.entries(TABLES)) {
@@ -106,7 +102,7 @@ async function getQuestionsByBook(supabase, book) {
     if (error) throw error;
 
     const rows = Array.isArray(data) ? data : [];
-    rowsByType[type] = rows.filter((row) => normalizeBookKey(row?.book) === bookKey);
+    rowsByType[type] = rows.filter((row) => bookKeys.has(normalizeBookKey(row?.book)));
   }
 
   return rowsByType;
@@ -140,13 +136,21 @@ exports.handler = async (event) => {
     }
 
     if (action === "questions") {
-      const book = normalizeBookDisplay(query.book);
-      if (!book) {
-        return respond(400, { error: "Parametrul book este obligatoriu." });
+      let books = [];
+      try {
+        const parsed = query.books ? JSON.parse(query.books) : [];
+        books = Array.isArray(parsed) ? parsed : [];
+      } catch {
+        books = String(query.books || "").split(",");
+      }
+      if (!books.length && query.book) books = [query.book];
+      books = books.map(normalizeBookDisplay).filter(Boolean);
+      if (!books.length) {
+        return respond(400, { error: "Selectează cel puțin o carte." });
       }
 
-      const rowsByType = await getQuestionsByBook(supabase, book);
-      return respond(200, { book, rowsByType });
+      const rowsByType = await getQuestionsByBooks(supabase, books);
+      return respond(200, { books, rowsByType });
     }
 
     return respond(400, { error: "Action invalid. Folosește action=books sau action=questions." });

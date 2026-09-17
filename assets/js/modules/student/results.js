@@ -1,16 +1,27 @@
 import { supabase } from "../../core/supabaseClient.js";
 import { requireRole } from "../../core/authGuard.js";
 import { ATTEMPTS_TABLE, getEffectiveMaxPoints, getEffectivePoints } from "./contestConfig.js";
+import { BIBLE_BOOKS, mergeBookOptions, normalizeBookKey } from "../../core/bibleBooks.js";
+import { mountBookAutocomplete } from "../../core/bookAutocomplete.js";
 
 const els = {
   subtitle: document.getElementById("resultsSubtitle"),
   search: document.getElementById("searchInput"),
-  clearBtn: document.getElementById("clearBtn"),
+  bookFilter: document.getElementById("bookFilter"),
   body: document.getElementById("resultsBody"),
   empty: document.getElementById("emptyState"),
 };
 
 let allRows = [];
+let bookAutocomplete = null;
+
+function normalizeSearch(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+}
 
 function formatDuration(seconds) {
   const mins = Math.floor(seconds / 60);
@@ -22,6 +33,13 @@ function render(rows) {
   els.body.innerHTML = "";
 
   if (!rows.length) {
+    if (els.bookFilter?.value) {
+      els.empty.textContent = "Nu există rezultate pentru cartea selectată.";
+    } else if (els.search.value.trim()) {
+      els.empty.textContent = "Niciun rezultat pentru această căutare. Încearcă altă dată sau alt punctaj.";
+    } else {
+      els.empty.textContent = "Rezultatele tale vor apărea aici după primul test.";
+    }
     els.empty.style.display = "block";
     return;
   }
@@ -47,14 +65,18 @@ function render(rows) {
 
 function applySearch() {
   const term = (els.search.value || "").toLowerCase().trim();
-  if (!term) {
+  const bookQuery = normalizeSearch(els.bookFilter?.value || "");
+  const selectedBook = normalizeBookKey(bookAutocomplete?.getSelectedValue() || "");
+  if (!term && !bookQuery) {
     render(allRows);
     return;
   }
 
   const filtered = allRows.filter((row) => {
     const created = new Date(row.created_at).toLocaleString("ro-RO").toLowerCase();
-    return created.includes(term) || String(getEffectivePoints(row)).includes(term);
+    const rowBooks = Array.isArray(row.breakdown) ? row.breakdown.map((item) => normalizeSearch(item.book)) : [];
+    const hasBook = !bookQuery || rowBooks.some((book) => selectedBook ? normalizeBookKey(book) === selectedBook : book.includes(bookQuery));
+    return hasBook && (!term || created.includes(term) || String(getEffectivePoints(row)).includes(term));
   });
 
   render(filtered);
@@ -69,11 +91,16 @@ async function loadResults(studentId) {
 
   if (error) {
     console.error(error);
-    els.subtitle.textContent = "Eroare la încărcarea rezultatelor. Verifică setup-ul tabelei.";
+    els.subtitle.textContent = "Eroare la încărcarea rezultatelor. Reîncarcă pagina pentru a încerca din nou.";
     return;
   }
 
   allRows = data || [];
+
+  bookAutocomplete?.setOptions(mergeBookOptions([
+    ...BIBLE_BOOKS,
+    ...allRows.flatMap((row) => Array.isArray(row.breakdown) ? row.breakdown.map((item) => item.book) : []),
+  ]));
 
   els.subtitle.textContent = allRows.length
     ? `${allRows.length} rezultate salvate`
@@ -82,19 +109,17 @@ async function loadResults(studentId) {
   render(allRows);
 }
 
-function clearResults() {
-  const ok = confirm("Sigur vrei să ștergi tot istoricul de rezultate?");
-  if (!ok) return;
-
-  els.subtitle.textContent = "Ștergerea completă se face din Supabase (control administrativ).";
-}
-
 async function init() {
   const { session } = await requireRole("student");
+  bookAutocomplete = mountBookAutocomplete({
+    input: els.bookFilter,
+    options: BIBLE_BOOKS,
+    onInput: applySearch,
+    onSelect: applySearch,
+  });
   await loadResults(session.user.id);
 
   els.search.addEventListener("input", applySearch);
-  els.clearBtn.addEventListener("click", clearResults);
 }
 
 init();

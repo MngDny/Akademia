@@ -1,166 +1,163 @@
+import { supabase } from "../../core/supabaseClient.js";
+import { normalizeRole } from "../../core/authGuard.js";
 import { initPasswordVisibility } from "../../core/passwordVisibility.js";
-
-const supabase = window.supabase.createClient(
-  "https://pdkfqytododevpilpxet.supabase.co",
-  "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z",
-);
+import { mountPortal } from "../../core/portalShell.js";
 
 let isCreatingUser = false;
+let users = [];
+let currentUserId;
+const roleNames = { student: "Student", instructor: "Îndrumător", admin: "Administrator" };
+
+mountPortal("admin", { onLogout: async () => {
+  const { error } = await supabase.auth.signOut();
+  if (error) throw error;
+  window.location.href = "/login.html";
+} });
+initPasswordVisibility();
 
 async function init() {
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-
-  if (!session) {
-    window.location.href = "/login.html";
-    return;
-  }
-
-  const username = session.user.user_metadata?.username;
-
-  const { data: account } = await supabase
-    .from("accounts")
-    .select("role")
-    .eq("username", username)
-    .single();
-
+  const { data: { session } } = await supabase.auth.getSession();
+  if (!session) { window.location.href = "/login.html"; return; }
+  const { data: account } = await supabase.from("accounts").select("role")
+    .eq("username", session.user.user_metadata?.username).single();
   if (!account || account.role !== "admin") {
     await supabase.auth.signOut();
     window.location.href = "/login.html";
     return;
   }
-
-  document.getElementById("logout").onclick = async () => {
-    await supabase.auth.signOut();
-    window.location.href = "/login.html";
-  };
-
-  const createUserForm = document.querySelector("#createUserSection form");
-  if (createUserForm) {
-    createUserForm.addEventListener("submit", createUser);
-  }
-
-  initPasswordVisibility();
-
-  document.querySelectorAll(".menu-item").forEach((item) => {
-    item.addEventListener("click", function () {
-      if (window.innerWidth <= 768) {
-        toggleMenu();
-      }
-
-      document
-        .querySelectorAll(".menu-item")
-        .forEach((i) => i.classList.remove("active"));
-
-      this.classList.add("active");
-
-      const section = this.dataset.section;
-
-      document.getElementById("createUserSection").style.display =
-        section === "create-user" ? "block" : "none";
-
-      document.getElementById("manageUsersSection").style.display =
-        section === "manage-users" ? "block" : "none";
-
-      if (section === "manage-users") {
-        loadUsers();
-      }
+  currentUserId = session.user.id;
+  document.querySelector("#createUserSection form").addEventListener("submit", createUser);
+  document.querySelectorAll(".menu-item").forEach(item => {
+    item.addEventListener("click", () => {
+      document.querySelectorAll(".menu-item").forEach(other => {
+        other.classList.toggle("active", other === item);
+        if (other === item) other.setAttribute("aria-current", "page");
+        else other.removeAttribute("aria-current");
+      });
+      const manage = item.dataset.section === "manage-users";
+      document.getElementById("createUserSection").hidden = manage;
+      document.getElementById("manageUsersSection").hidden = !manage;
+      const heading = document.getElementById(manage ? "usersTitle" : "createTitle");
+      heading.tabIndex = -1;
+      heading.focus();
+      if (manage) loadUsers();
     });
   });
+  document.getElementById("userSearch").addEventListener("input", renderUsers);
+  document.getElementById("roleFilter").addEventListener("change", renderUsers);
 }
 
 async function createUser(event) {
-  if (event) {
-    event.preventDefault();
-  }
-
-  if (isCreatingUser) {
-    return;
-  }
-
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;
-  const username = document.getElementById("username").value.trim();
-  const role = document.getElementById("role").value;
+  event.preventDefault();
+  if (isCreatingUser) return;
   const result = document.getElementById("result");
-  const createBtn = document.getElementById("createUserBtn");
-
+  const button = document.getElementById("createUserBtn");
   isCreatingUser = true;
-  createBtn.disabled = true;
-  result.innerText = "Se creează utilizatorul...";
-
+  button.disabled = true;
+  button.textContent = "Se creează contul…";
+  result.className = "muted";
+  result.textContent = "";
   try {
-    const res = await fetch("/.netlify/functions/create-user", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password, username, role }),
+    const response = await fetch("/.netlify/functions/create-user", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: document.getElementById("email").value.trim(),
+        password: document.getElementById("password").value,
+        username: document.getElementById("username").value.trim(),
+        role: document.getElementById("role").value,
+      }),
     });
-
-    const data = await res.json();
-
-    if (res.ok) {
-      result.innerText = "Utilizator creat!";
-    } else {
-      result.innerText = data.error || "Eroare la creare utilizator";
+    const data = await response.json();
+    result.className = response.ok ? "success" : "error";
+    result.textContent = response.ok ? "Cont creat cu succes. Îl găsești în lista de utilizatori." : (data.error || "Contul nu a putut fi creat. Încearcă din nou.");
+    if (response.ok) {
+      event.target.reset();
+      document.getElementById("password").type = "password";
+      initPasswordVisibility();
     }
-  } catch (error) {
-    console.error(error);
-    result.innerText = "Eroare de rețea. Încearcă din nou.";
+  } catch {
+    result.className = "error";
+    result.textContent = "Conexiunea nu a reușit. Datele completate au fost păstrate. Încearcă din nou.";
   } finally {
     isCreatingUser = false;
-    createBtn.disabled = false;
+    button.disabled = false;
+    button.textContent = "Creează utilizator";
   }
 }
+
 async function loadUsers() {
-  const { data, error } = await supabase
-    .from("accounts")
-    .select("id, username, role");
-
-  if (error) {
-    console.error(error);
-    return;
+  const summary = document.getElementById("usersSummary");
+  summary.textContent = "Se încarcă utilizatorii…";
+  try {
+    const { data, error } = await supabase.from("accounts").select("id, username, role");
+    if (error) throw error;
+    users = data || [];
+    renderUsers();
+  } catch {
+    summary.textContent = "Nu am putut încărca utilizatorii. Redeschide această secțiune pentru a încerca din nou.";
   }
+}
 
+function renderUsers() {
+  const term = document.getElementById("userSearch").value.trim().toLocaleLowerCase("ro");
+  const role = document.getElementById("roleFilter").value;
+  const filtered = users.filter(user => String(user.username || "").toLocaleLowerCase("ro").includes(term) && (!role || normalizeRole(user.role) === role));
   const container = document.getElementById("usersList");
-  container.innerHTML = "";
-
-  data.forEach((user) => {
+  container.replaceChildren();
+  document.getElementById("usersSummary").textContent = `${filtered.length} din ${users.length} utilizatori`;
+  if (!filtered.length) {
+    const empty = document.createElement("p");
+    empty.className = "empty-state";
+    empty.textContent = users.length ? "Niciun utilizator găsit. Încearcă alt nume sau alt rol." : "Comunitatea începe aici. Creează primul cont.";
+    container.append(empty);
+  }
+  filtered.forEach(user => {
     const row = document.createElement("div");
     row.className = "user-row";
-
-    row.innerHTML = `
-      <div class="user-info">
-        <strong>${user.username}</strong>
-        <span class="user-role">${user.role}</span>
-      </div>
-      <button class="delete-btn" onclick="deleteUser('${user.id}')">Șterge</button>
-    `;
-
-    container.appendChild(row);
+    const info = document.createElement("div");
+    info.className = "user-info";
+    const name = document.createElement("strong");
+    name.textContent = user.username;
+    const badge = document.createElement("span");
+    badge.className = "user-role";
+    badge.textContent = roleNames[normalizeRole(user.role)] || user.role;
+    info.append(name, badge);
+    row.append(info);
+    if (user.id === currentUserId) {
+      const self = document.createElement("span");
+      self.className = "muted";
+      self.textContent = "Contul tău";
+      row.append(self);
+    } else {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "delete-btn";
+      button.textContent = "Șterge";
+      button.setAttribute("aria-label", `Șterge utilizatorul ${user.username}`);
+      button.addEventListener("click", () => deleteUser(user, button));
+      row.append(button);
+    }
+    container.append(row);
   });
 }
 
-window.toggleMenu = function () {
-  const sidebar = document.querySelector(".sidebar");
-  const overlay = document.querySelector(".overlay");
-
-  sidebar.classList.toggle("open");
-  overlay.classList.toggle("active");
-};
-window.deleteUser = async function (id) {
-  if (!confirm("Sigur vrei să ștergi userul?")) return;
-
-  const res = await fetch("/.netlify/functions/delete-user", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ userId: id }),
-  });
-
-  if (res.ok) {
-    loadUsers();
-  } else {
-    alert("Eroare la ștergere");
+async function deleteUser(user, button) {
+  if (!confirm(`Ștergi definitiv contul „${user.username}”? Această acțiune nu poate fi anulată.`)) return;
+  button.disabled = true;
+  button.textContent = "Se șterge…";
+  try {
+    const response = await fetch("/.netlify/functions/delete-user", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userId: user.id }),
+    });
+    if (!response.ok) throw new Error("delete");
+    users = users.filter(item => item.id !== user.id);
+    renderUsers();
+    document.getElementById("userSearch").focus();
+  } catch {
+    document.getElementById("usersSummary").textContent = "Contul nu a putut fi șters. Încearcă din nou.";
+    button.disabled = false;
+    button.textContent = "Șterge";
   }
-};
-init();
+}
+init().catch(() => { document.getElementById("result").textContent = "Conexiunea nu a reușit. Reîncarcă pagina pentru a încerca din nou."; });

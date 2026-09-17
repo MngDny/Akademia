@@ -1,71 +1,67 @@
 <!doctype html>
 <html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <title>Îndrumător - Tablou de bord</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Îndrumător - Bibliotecă</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 
-  <link rel="stylesheet" href="/assets/css/layout.css">
-  <link rel="stylesheet" href="/assets/css/components.css">
-  <link rel="stylesheet" href="/portal/instructor/instructor.css">
-  <link rel="stylesheet" href="./dashboard.css">
-</head>
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/instructor/instructor.css" />
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
 
-<body>
-<div class="layout">
-  <aside class="sidebar" id="sidebar"></aside>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
 
-  <main class="main">
-    <div class="main-content">
-      <div class="page-header">
-        <div>
-          <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
-          <h1 class="header">Tablou de bord întrebări</h1>
-          <p class="page-help">Vezi totalurile pe tipuri și intră rapid în editarea fiecărei categorii.</p>
+      <main class="main">
+        <div class="main-content instructor-dashboard">
+          <div class="page-header instructor-dashboard-header">
+            <div>
+              <p class="title-eyebrow">Portal îndrumător</p>
+              <h1 class="header">Biblioteca de întrebări</h1>
+            </div>
+
+            <div class="instructor-book-filter-inline">
+              <label class="label" for="instructorBookFilter">Filtrare după carte</label>
+              <input id="instructorBookFilter" class="input" type="search" placeholder="Toate cărțile" autocomplete="off" />
+              <span id="instructorBookFilterInfo" class="dashboard-filter-status" role="status">Toate cărțile</span>
+            </div>
+          </div>
+
+          <div class="dashboard-grid" aria-label="Număr de întrebări pe categorie">
+            <a class="stat-card" data-type="tf" href="/portal/instructor/questions/list.html?type=tf" aria-label="Vezi întrebările Adevărat / Fals">
+              <span class="stat-icon"><img class="icon" src="/assets/icons/circle-check.svg" alt="" aria-hidden="true" width="19" height="19" /></span>
+              <h2>Adevărat / Fals</h2>
+              <p class="count" id="count_tf">...</p>
+            </a>
+
+            <a class="stat-card" data-type="abc_one" href="/portal/instructor/questions/list.html?type=abc_one" aria-label="Vezi întrebările cu un singur răspuns">
+              <span class="stat-icon"><img class="icon" src="/assets/icons/list-checks.svg" alt="" aria-hidden="true" width="19" height="19" /></span>
+              <h2>Un singur răspuns</h2>
+              <p class="count" id="count_abc_one">...</p>
+            </a>
+
+            <a class="stat-card" data-type="abc_multi" href="/portal/instructor/questions/list.html?type=abc_multi" aria-label="Vezi întrebările cu răspunsuri multiple">
+              <span class="stat-icon"><img class="icon" src="/assets/icons/check-check.svg" alt="" aria-hidden="true" width="19" height="19" /></span>
+              <h2>Răspunsuri multiple</h2>
+              <p class="count" id="count_abc_multi">...</p>
+            </a>
+
+            <a class="stat-card" data-type="match" href="/portal/instructor/questions/list.html?type=match" aria-label="Vezi întrebările de asociere">
+              <span class="stat-icon"><img class="icon" src="/assets/icons/book-open.svg" alt="" aria-hidden="true" width="19" height="19" /></span>
+              <h2>Asociere</h2>
+              <p class="count" id="count_match">...</p>
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div class="quick-links">
-        <a class="quick-link" href="/portal/instructor/questions/list.html?type=tf">Deschide Adevărat / Fals</a>
-        <a class="quick-link" href="/portal/instructor/questions/list.html?type=abc_one">Deschide ABC One</a>
-        <a class="quick-link" href="/portal/instructor/questions/list.html?type=abc_multi">Deschide ABC Multi</a>
-        <a class="quick-link" href="/portal/instructor/questions/list.html?type=match">Deschide Asociere</a>
-        <a class="quick-link" href="/portal/instructor/students/list.html">Vezi studenți</a>
-      </div>
-
-      <div class="dashboard-grid">
-        <div class="stat-card" data-type="tf">
-          <h3>Adevărat / Fals</h3>
-          <p class="card-meta">Răsfoiește și actualizează întrebările existente</p>
-          <p class="count" id="count_tf">...</p>
-        </div>
-
-        <div class="stat-card" data-type="abc_one">
-          <h3>ABC One</h3>
-          <p class="card-meta">Bancă de întrebări cu un singur răspuns</p>
-          <p class="count" id="count_abc_one">...</p>
-        </div>
-
-        <div class="stat-card" data-type="abc_multi">
-          <h3>ABC Multi</h3>
-          <p class="card-meta">Bancă de întrebări cu răspunsuri multiple</p>
-          <p class="count" id="count_abc_multi">...</p>
-        </div>
-
-        <div class="stat-card" data-type="match">
-          <h3>Asociere</h3>
-          <p class="card-meta">Întrebări de potrivire și asociere</p>
-          <p class="count" id="count_match">...</p>
-        </div>
-      </div>
+      </main>
     </div>
-  </main>
-  </div>
 
-<script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
-<script type="module" src="/assets/js/modules/instructor/dashboard/loadCounts.js"></script>
-
-</body>
+    <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/instructor/dashboard/loadCounts.js"></script>
+  </body>
 </html>

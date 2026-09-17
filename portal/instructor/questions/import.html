@@ -18,21 +18,18 @@
       <aside class="sidebar" id="sidebar"></aside>
 
       <main class="main">
-        <div class="quick-links">
-          <a class="quick-link" href="/portal/instructor/dashboard.html">Înapoi la tablou de bord</a>
-          <a class="quick-link" href="/portal/instructor/questions/add.html?type=tf">Adaugă manual</a>
-          <a class="quick-link" href="/portal/instructor/questions/list.html?type=tf">Listă întrebări</a>
-        </div>
+        <div class="quick-links"><a class="quick-link" href="/portal/instructor/dashboard.html">← Privire de ansamblu</a></div>
 
         <div class="page-header">
           <div>
             <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
             <h1 class="header">Import întrebări cu AI</h1>
-            <p class="muted">Paste text, încarcă PDF sau imagine, apoi verifică și adaugă în baza de date.</p>
+            <p class="muted">Transformă materialele în întrebări. Adaugă sursa, verifică propunerile și salvează ce este relevant.</p>
           </div>
         </div>
 
-        <div class="card stack">
+        <ol class="step-list" aria-label="Cum funcționează"><li>Adaugă materialul</li><li>Verifică întrebările</li><li>Salvează selecția</li></ol>
+<div class="card stack">
           <div class="source-tabs" id="sourceTabs">
             <button class="btn sm source-tab is-active" type="button" data-source="text">Text</button>
             <button class="btn sm source-tab" type="button" data-source="file">PDF / Imagine</button>
@@ -54,13 +51,13 @@
             <button id="saveSelectedBtn" class="btn" type="button" disabled>Adaugă întrebările selectate</button>
           </div>
 
-          <div id="statusMsg" class="muted"></div>
+          <div id="statusMsg" role="status" class="muted"></div>
         </div>
 
         <div class="card">
           <div class="result-header">
-            <h2 class="section-title">Review întrebări generate</h2>
-            <p id="groupSummary" class="muted">Nicio întrebare încă.</p>
+            <h2 class="section-title">Verifică întrebările propuse</h2>
+            <p id="groupSummary" role="status" class="muted">Nicio întrebare încă.</p>
           </div>
           <div id="reviewHost" class="review-host"></div>
         </div>

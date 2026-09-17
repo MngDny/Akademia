@@ -10,8 +10,8 @@ const tableByType = {
 
 const typeLabel = {
   tf: "Adevărat / Fals",
-  abc_one: "ABC One",
-  abc_multi: "ABC Multi",
+  abc_one: "Un singur răspuns",
+  abc_multi: "Răspunsuri multiple",
   match: "Asociere",
 };
 
@@ -52,6 +52,7 @@ function setSource(source) {
   const tabs = Array.from(els.sourceTabs.querySelectorAll(".source-tab"));
   tabs.forEach((tab) => {
     tab.classList.toggle("is-active", tab.dataset.source === source);
+    tab.setAttribute("aria-pressed", String(tab.dataset.source === source));
   });
 
   els.textPanel.classList.toggle("hidden", source !== "text");

@@ -8,16 +8,24 @@ import {
   TYPE_ORDER,
   getTestMaxPoints,
 } from "./contestConfig.js";
+import {
+  BIBLE_BOOKS,
+  mergeBookOptions,
+  normalizeBookKey,
+  readBooksFromUrl,
+} from "../../core/bibleBooks.js";
+import { mountQuestionReport } from "../../core/questionReports.js";
 
 const TYPE_META = {
   tf: { table: "questions_tf", title: "Adevărat / Fals" },
-  abc_one: { table: "questions_abc_one", title: "ABC One" },
+  abc_one: { table: "questions_abc_one", title: "Un singur răspuns" },
   match: { table: "questions_match", title: "Asociere" },
-  abc_multi: { table: "questions_abc_multi", title: "ABC Multi" },
+  abc_multi: { table: "questions_abc_multi", title: "Răspunsuri multiple" },
 };
 
 const REQUIRED_MATCH_PAIRS = 5;
 const BOOK_SELECTION_STORAGE_KEY = "akademia.quiz.selectedBooks.v1";
+const ACTIVE_QUIZ_STORAGE_KEY = "akademia.quiz.active.v1";
 
 const els = {
   timer: document.getElementById("timerMinutes"),
@@ -26,6 +34,7 @@ const els = {
   selectAllBooksBtn: document.getElementById("selectAllBooksBtn"),
   clearBooksBtn: document.getElementById("clearBooksBtn"),
   booksInfo: document.getElementById("booksInfo"),
+  selectedBooksChips: document.getElementById("selectedBooksChips"),
   startBtn: document.getElementById("startBtn"),
   setupMessage: document.getElementById("setupMessage"),
   meta: document.getElementById("quizMeta"),
@@ -33,8 +42,18 @@ const els = {
   answerHost: document.getElementById("answerHost"),
   prevBtn: document.getElementById("prevBtn"),
   nextBtn: document.getElementById("nextBtn"),
+  reportQuestionBtn: document.getElementById("reportQuestionBtn"),
+  abandonBtn: document.getElementById("abandonBtn"),
   submitBtn: document.getElementById("submitBtn"),
   resultHost: document.getElementById("resultHost"),
+  questionReportDialog: document.getElementById("questionReportDialog"),
+  closeQuestionReportBtn: document.getElementById("closeQuestionReportBtn"),
+  cancelQuestionReportBtn: document.getElementById("cancelQuestionReportBtn"),
+  questionReportForm: document.getElementById("questionReportForm"),
+  questionReportQuestion: document.getElementById("questionReportQuestion"),
+  questionReportReason: document.getElementById("questionReportReason"),
+  questionReportMessage: document.getElementById("questionReportMessage"),
+  questionReportStatus: document.getElementById("questionReportStatus"),
 };
 
 const state = {
@@ -50,6 +69,8 @@ const state = {
   availableBooks: [],
   selectedBooks: new Set(),
 };
+
+let reportControl = { refresh: () => {} };
 
 function shuffle(array) {
   const arr = [...array];
@@ -102,6 +123,11 @@ function normalizeBookName(value) {
   return String(value || "").trim();
 }
 
+function canonicalBook(value) {
+  const key = normalizeBookKey(value);
+  return BIBLE_BOOKS.find((book) => normalizeBookKey(book) === key) || normalizeBookName(value);
+}
+
 function loadStoredSelectedBooks() {
   try {
     const raw = window.localStorage.getItem(BOOK_SELECTION_STORAGE_KEY);
@@ -111,7 +137,7 @@ function loadStoredSelectedBooks() {
     if (!Array.isArray(parsed)) return [];
 
     return parsed
-      .map((value) => normalizeBookName(value))
+      .map((value) => canonicalBook(value))
       .filter(Boolean);
   } catch (_error) {
     return [];
@@ -129,6 +155,73 @@ function persistSelectedBooks() {
   }
 }
 
+function saveActiveQuizState() {
+  if (!state.studentId || !state.questions.length || state.finished) return;
+
+  const snapshot = {
+    studentId: state.studentId,
+    username: state.username,
+    questions: state.questions,
+    answers: state.answers,
+    current: state.current,
+    deadline: state.deadline,
+    startTime: state.startTime,
+    selectedBooks: [...state.selectedBooks],
+    timerMinutes: Number.parseInt(els.timer?.value || "45", 10),
+  };
+
+  try {
+    window.localStorage.setItem(ACTIVE_QUIZ_STORAGE_KEY, JSON.stringify(snapshot));
+  } catch (_error) {
+    // localStorage may be blocked or full; the quiz can continue in memory
+  }
+}
+
+function clearActiveQuizState() {
+  try {
+    window.localStorage.removeItem(ACTIVE_QUIZ_STORAGE_KEY);
+  } catch (_error) {
+    // localStorage may be blocked; nothing else is required here
+  }
+}
+
+function loadActiveQuizState() {
+  let snapshot;
+  try {
+    snapshot = JSON.parse(window.localStorage.getItem(ACTIVE_QUIZ_STORAGE_KEY) || "null");
+  } catch (_error) {
+    snapshot = null;
+  }
+
+  if (!snapshot || snapshot.studentId !== state.studentId || !Array.isArray(snapshot.questions) || !snapshot.questions.length) {
+    return false;
+  }
+
+  if (!Number.isFinite(Number(snapshot.deadline)) || Number(snapshot.deadline) <= Date.now()) {
+    clearActiveQuizState();
+    return false;
+  }
+
+  const validBooks = Array.isArray(snapshot.selectedBooks)
+    ? snapshot.selectedBooks.map(canonicalBook).filter((book) => state.availableBooks.some((item) => normalizeBookKey(item) === normalizeBookKey(book)))
+    : [];
+
+  state.questions = snapshot.questions;
+  state.answers = snapshot.answers && typeof snapshot.answers === "object" ? snapshot.answers : {};
+  state.current = Math.max(0, Math.min(Number(snapshot.current) || 0, state.questions.length - 1));
+  state.deadline = Number(snapshot.deadline);
+  state.startTime = Number(snapshot.startTime) || Date.now();
+  state.finished = false;
+  if (validBooks.length) {
+    state.selectedBooks = new Set(validBooks);
+  }
+  if (Number.isInteger(Number(snapshot.timerMinutes))) {
+    els.timer.value = String(snapshot.timerMinutes);
+  }
+
+  return true;
+}
+
 function isValidBookName(value) {
   const v = normalizeBookName(value);
   if (!v) return false;
@@ -137,41 +230,53 @@ function isValidBookName(value) {
   return /[A-Za-zĂÂÎȘȚăâîșț]/.test(v);
 }
 
-function applyBookFilter(query, selectedBooks) {
-  const safeBooks = Array.isArray(selectedBooks)
-    ? selectedBooks.map(normalizeBookName).filter(Boolean)
-    : [];
-
-  if (!safeBooks.length) {
-    return query;
-  }
-
-  return query.in("book", safeBooks);
-}
-
 function getSelectedBooks() {
   return [...state.selectedBooks];
 }
 
-function updateBooksInfo() {
-  if (!els.booksInfo) return;
+function renderSelectedBooks() {
+  const host = els.selectedBooksChips;
+  if (!host) return;
 
+  host.replaceChildren();
   const selected = getSelectedBooks();
-  const total = state.availableBooks.length;
-
-  if (!total) {
-    els.booksInfo.textContent = "Nu există cărți disponibile în baza de întrebări.";
-    return;
-  }
-
   if (!selected.length) {
-    els.booksInfo.textContent = `Nicio carte selectată. Selectează cel puțin una din ${total}.`;
+    const empty = document.createElement("span");
+    empty.className = "selected-books-empty";
+    empty.textContent = "Alege cel puțin o carte.";
+    host.append(empty);
     return;
   }
 
-  const preview = selected.slice(0, 4).join(", ");
-  const more = selected.length > 4 ? ` +${selected.length - 4} altele` : "";
-  els.booksInfo.textContent = `Selectate ${selected.length}/${total}: ${preview}${more}`;
+  selected.forEach((book) => {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "selected-book-chip";
+    chip.setAttribute("aria-label", `Elimină ${book}`);
+    const label = document.createElement("span");
+    label.textContent = book;
+    const remove = document.createElement("span");
+    remove.className = "selected-book-remove";
+    remove.setAttribute("aria-hidden", "true");
+    remove.textContent = "×";
+    chip.append(label, remove);
+    chip.addEventListener("click", () => {
+      state.selectedBooks.delete(book);
+      persistSelectedBooks();
+      renderBooksChecklist();
+    });
+    host.append(chip);
+  });
+}
+
+function updateBooksInfo() {
+  const selected = getSelectedBooks();
+  if (els.booksInfo) {
+    els.booksInfo.textContent = selected.length
+      ? `${selected.length} ${selected.length === 1 ? "carte" : "cărți"}`
+      : "Niciuna";
+  }
+  renderSelectedBooks();
 }
 
 function renderBooksChecklist() {
@@ -179,9 +284,9 @@ function renderBooksChecklist() {
   if (!host) return;
 
   const allBooks = state.availableBooks;
-  const query = normalizeBookName(els.booksSearch?.value || "").toLowerCase();
+  const query = normalizeBookKey(els.booksSearch?.value || "");
   const filtered = query
-    ? allBooks.filter((book) => book.toLowerCase().includes(query))
+    ? allBooks.filter((book) => normalizeBookKey(book).includes(query))
     : allBooks;
 
   host.innerHTML = "";
@@ -266,12 +371,13 @@ async function loadAvailableBooks() {
   const groups = await Promise.all(TYPE_ORDER.map((type) => fetchBooksForType(type)));
   const allBooks = groups.flat();
 
-  const uniqueBooks = [...new Set(allBooks)]
-    .sort((a, b) => a.localeCompare(b, "ro"));
+  const uniqueBooks = mergeBookOptions(allBooks);
 
   state.availableBooks = uniqueBooks;
   const stored = loadStoredSelectedBooks();
-  const validStored = stored.filter((book) => uniqueBooks.includes(book));
+  const fromUrl = readBooksFromUrl();
+  const selected = fromUrl.length ? fromUrl : stored;
+  const validStored = selected.map(canonicalBook).filter((book) => uniqueBooks.some((item) => normalizeBookKey(item) === normalizeBookKey(book)));
   state.selectedBooks = new Set(validStored);
   renderBooksChecklist();
 }
@@ -296,11 +402,9 @@ async function fetchQuestions(type, needCount, selectedBooks = []) {
     .order("created_at", { ascending: false })
     .limit(300);
 
-  activeQuery = applyBookFilter(activeQuery, selectedBooks);
-
   const { data: activeRows, error: activeError } = await activeQuery;
 
-  let rows = normalizeRowsByType(activeRows);
+  let rows = normalizeRowsByType(activeRows).filter((row) => selectedBooks.some((book) => normalizeBookKey(row?.book) === normalizeBookKey(book)));
 
   if (activeError || rows.length < needCount) {
     let fallbackQuery = supabase
@@ -309,12 +413,10 @@ async function fetchQuestions(type, needCount, selectedBooks = []) {
       .order("created_at", { ascending: false })
       .limit(300);
 
-    fallbackQuery = applyBookFilter(fallbackQuery, selectedBooks);
-
     const { data, error } = await fallbackQuery;
 
     if (error) throw error;
-    rows = normalizeRowsByType(data);
+    rows = normalizeRowsByType(data).filter((row) => selectedBooks.some((book) => normalizeBookKey(row?.book) === normalizeBookKey(book)));
   }
 
   if (rows.length < needCount) {
@@ -341,6 +443,7 @@ async function buildOfficialTest(selectedBooks) {
 
 function saveAnswer(questionIndex, value) {
   state.answers[questionIndex] = value;
+  saveActiveQuizState();
   updateSubmitState();
 }
 
@@ -484,6 +587,7 @@ function renderCurrentQuestion() {
 
   els.prevBtn.disabled = state.current === 0 || state.finished;
   els.nextBtn.disabled = state.current >= state.questions.length - 1 || state.finished;
+  reportControl.refresh();
   updateSubmitState();
 }
 
@@ -582,6 +686,44 @@ function stopTimer() {
   }
 }
 
+function setSetupControlsDisabled(disabled) {
+  document.querySelectorAll(".quiz-panel input, .quiz-panel button").forEach((control) => {
+    control.disabled = disabled;
+  });
+}
+
+function resetQuizToSetup(message = "") {
+  stopTimer();
+  clearActiveQuizState();
+  state.questions = [];
+  state.answers = {};
+  state.current = 0;
+  state.deadline = 0;
+  state.startTime = 0;
+  state.finished = false;
+
+  setSetupControlsDisabled(false);
+  els.abandonBtn.disabled = true;
+  els.startBtn.textContent = "Pornește testul";
+  els.meta.textContent = "Alege cărțile și timpul, apoi pornește testul.";
+  els.questionText.textContent = "Următorul tău progres începe aici.";
+  els.answerHost.replaceChildren();
+  els.resultHost.replaceChildren();
+  els.prevBtn.disabled = true;
+  els.nextBtn.disabled = true;
+  els.reportQuestionBtn.disabled = true;
+  els.submitBtn.disabled = true;
+  els.submitBtn.textContent = "Trimite testul";
+  els.setupMessage.textContent = message;
+}
+
+function abandonQuiz() {
+  if (!state.questions.length || state.finished) return;
+  const ok = window.confirm("Abandonezi testul? Progresul și răspunsurile nesalvate vor fi șterse.");
+  if (!ok) return;
+  resetQuizToSetup("Testul a fost abandonat. Poți începe unul nou.");
+}
+
 async function persistAttempt(summary) {
   const payload = {
     student_auth_id: state.studentId,
@@ -610,6 +752,9 @@ async function finishQuiz(reason = "manual") {
   if (state.finished) return;
 
   state.finished = true;
+  clearActiveQuizState();
+  els.abandonBtn.disabled = true;
+  els.startBtn.textContent = "Test încheiat";
   stopTimer();
 
   const summary = {
@@ -652,6 +797,7 @@ async function finishQuiz(reason = "manual") {
     summary.breakdown.push({
       question_id: question.id,
       question_prompt: question.prompt,
+      book: question.meta?.book || "",
       type: question.type,
       is_correct: evaluation.isCorrect,
       points: evaluation.points,
@@ -732,11 +878,14 @@ async function finishQuiz(reason = "manual") {
   }
 }
 
-function startCountdown(minutes) {
-  state.startTime = Date.now();
-  state.deadline = state.startTime + minutes * 60 * 1000;
+function startCountdown(minutes, preserveDeadline = false) {
+  if (!preserveDeadline || !state.deadline) {
+    state.startTime = Date.now();
+    state.deadline = state.startTime + minutes * 60 * 1000;
+  }
 
   stopTimer();
+  saveActiveQuizState();
 
   state.timerId = setInterval(() => {
     const diff = state.deadline - Date.now();
@@ -755,6 +904,7 @@ function startCountdown(minutes) {
 }
 
 async function startQuiz() {
+  if (els.startBtn.disabled) return;
   els.setupMessage.textContent = "";
   els.resultHost.innerHTML = "";
 
@@ -772,6 +922,8 @@ async function startQuiz() {
   }
 
   els.setupMessage.textContent = "Se încarcă întrebările testului oficial după cărțile selectate...";
+  els.startBtn.disabled = true;
+  els.startBtn.textContent = "Se pregătește testul…";
 
   try {
     const questions = await buildOfficialTest(selectedBooks);
@@ -783,11 +935,18 @@ async function startQuiz() {
 
     renderCurrentQuestion();
     startCountdown(minutes);
+    els.startBtn.textContent = "Test în desfășurare";
+    els.abandonBtn.disabled = false;
+    document.querySelectorAll(".quiz-panel input, .quiz-panel button").forEach(control => { control.disabled = true; });
+    els.questionText.tabIndex = -1;
+    els.questionText.focus();
 
     els.setupMessage.textContent = `Test pornit: ${questions.length} întrebări în ordinea oficială, filtrate după ${selectedBooks.length} cărți.`;
   } catch (error) {
     console.error(error);
     els.setupMessage.textContent = error?.message || "Eroare la încărcarea întrebărilor.";
+    els.startBtn.disabled = false;
+    els.startBtn.textContent = "Pornește testul";
   }
 }
 
@@ -813,6 +972,7 @@ function bindActions() {
   els.prevBtn.addEventListener("click", () => {
     if (state.current > 0) {
       state.current -= 1;
+      saveActiveQuizState();
       renderCurrentQuestion();
     }
   });
@@ -820,9 +980,12 @@ function bindActions() {
   els.nextBtn.addEventListener("click", () => {
     if (state.current < state.questions.length - 1) {
       state.current += 1;
+      saveActiveQuizState();
       renderCurrentQuestion();
     }
   });
+
+  els.abandonBtn.addEventListener("click", abandonQuiz);
 
   els.submitBtn.addEventListener("click", () => {
     if (!state.questions.length || state.finished || els.submitBtn.disabled) return;
@@ -843,17 +1006,45 @@ async function init() {
   const { session } = await requireRole("student");
   state.studentId = session.user.id;
   state.username = session?.user?.user_metadata?.username || "student";
+  reportControl = mountQuestionReport({
+    supabase,
+    button: els.reportQuestionBtn,
+    dialog: els.questionReportDialog,
+    form: els.questionReportForm,
+    questionLabel: els.questionReportQuestion,
+    reason: els.questionReportReason,
+    message: els.questionReportMessage,
+    status: els.questionReportStatus,
+    closeButton: els.closeQuestionReportBtn,
+    cancelButton: els.cancelQuestionReportBtn,
+    getQuestion: () => (state.finished ? null : state.questions[state.current]),
+    getStudent: () => ({ id: state.studentId, username: state.username }),
+  });
 
   try {
     await loadAvailableBooks();
   } catch (error) {
     console.error(error);
+    state.availableBooks = [...BIBLE_BOOKS];
+    state.selectedBooks = new Set(loadStoredSelectedBooks());
+    renderBooksChecklist();
     if (els.setupMessage) {
       els.setupMessage.textContent = "Nu am putut încărca lista de cărți. Reîncarcă pagina.";
     }
   }
 
+  const restored = loadActiveQuizState();
   bindActions();
+
+  if (restored) {
+    renderBooksChecklist();
+    renderCurrentQuestion();
+    setSetupControlsDisabled(true);
+    els.startBtn.textContent = "Test în desfășurare";
+    els.abandonBtn.disabled = false;
+    startCountdown(Number.parseInt(els.timer.value || "45", 10), true);
+    els.setupMessage.textContent = "Test restaurat automat după refresh. Răspunsurile sunt păstrate.";
+  }
 }
 
 init();

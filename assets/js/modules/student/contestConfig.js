@@ -59,6 +59,17 @@ export function getStartOfMonthISO(now = new Date()) {
   return d.toISOString();
 }
 
+export function getStartOfTodayISO(now = new Date()) {
+  const d = new Date(now);
+  d.setHours(0, 0, 0, 0);
+  return d.toISOString();
+}
+
+export function getStartOfYearISO(now = new Date()) {
+  const d = new Date(now.getFullYear(), 0, 1, 0, 0, 0, 0);
+  return d.toISOString();
+}
+
 export function aggregateLeaderboard(rows) {
   const map = new Map();
 

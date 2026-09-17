@@ -22,13 +22,7 @@
 
       <!-- Main -->
       <main class="main">
-        <div class="quick-links">
-          <a class="quick-link" href="/portal/instructor/dashboard.html">Înapoi la tablou de bord</a>
-          <a class="quick-link" href="/portal/instructor/questions/add.html?type=tf">Adaugă Adevărat / Fals</a>
-          <a class="quick-link" href="/portal/instructor/questions/add.html?type=abc_one">Adaugă ABC One</a>
-          <a class="quick-link" href="/portal/instructor/questions/add.html?type=abc_multi">Adaugă ABC Multi</a>
-          <a class="quick-link" href="/portal/instructor/questions/add.html?type=match">Adaugă Asociere</a>
-        </div>
+        <div class="quick-links"><a class="quick-link" href="/portal/instructor/dashboard.html">← Privire de ansamblu</a></div>
 
         <div class="page-header">
           <div>
@@ -44,16 +38,18 @@
 
         <div class="card">
           <div class="table-header">
-            <input id="searchInput" class="input" placeholder="Caută întrebări..." autocomplete="off" />
+            <input id="searchInput" type="search" aria-label="Caută în listă" class="input" placeholder="Caută întrebări..." autocomplete="off" />
+            <label class="sr-only" for="bookFilter">Filtrează după carte</label>
+            <input id="bookFilter" class="input" type="search" placeholder="Toate cărțile" aria-label="Filtrează după carte" autocomplete="off" />
           </div>
 
-          <div class="table-wrapper">
+          <div class="table-wrapper" tabindex="0" role="region" aria-label="Tabel cu rezultate">
             <table class="table">
               <thead>
                 <tr>
-                  <th style="width: 120px;">ID</th>
-                  <th>Întrebare</th>
-                  <th style="width: 220px;">Acțiuni</th>
+                  <th scope="col" style="width: 120px;">ID</th>
+                  <th scope="col">Întrebare</th>
+                  <th scope="col" style="width: 220px;">Acțiuni</th>
                 </tr>
               </thead>
               <tbody id="tableBody"></tbody>

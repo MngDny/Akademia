@@ -36,6 +36,32 @@ export async function requireRole(role) {
   };
 }
 
+export async function requireAnyRole(roles = []) {
+  const allowed = Array.isArray(roles) ? roles.map(normalizeRole) : [normalizeRole(roles)];
+  const { data: { session } } = await supabase.auth.getSession();
+
+  if (!session) {
+    window.location.href = "/login.html";
+    return;
+  }
+
+  const username = session.user.user_metadata?.username;
+  const { data: account } = await supabase
+    .from("accounts")
+    .select("role")
+    .eq("username", username)
+    .single();
+  const normalizedRole = normalizeRole(account?.role);
+
+  if (!account || !allowed.includes(normalizedRole)) {
+    await supabase.auth.signOut();
+    window.location.href = "/login.html";
+    return;
+  }
+
+  return { session, account: { ...account, role: normalizedRole } };
+}
+
 export async function requireInstructor() {
   return requireRole("instructor");
 }

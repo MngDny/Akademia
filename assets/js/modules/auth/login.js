@@ -11,7 +11,10 @@ const forgotPasswordLink = document.getElementById("forgotPasswordLink");
 
 initPasswordVisibility();
 
-button.addEventListener("click", login);
+document.getElementById("authForm").addEventListener("submit", event => {
+  event.preventDefault();
+  if (!button.disabled) login();
+});
 forgotPasswordLink?.addEventListener("click", onForgotPassword);
 
 async function login() {
@@ -25,40 +28,45 @@ async function login() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
-  const { data, error } = await supabase.auth.signInWithPassword({
-    email,
-    password
-  });
+  try {
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password
+    });
 
-  if (error) {
-    showError("Email sau parolă incorectă.");
-    return;
+    if (error) {
+      showError("Email sau parolă incorectă.");
+      return;
+    }
+
+    const user = data.user;
+    const username = user.user_metadata?.username;
+
+    if (!username) {
+      showError("Profil invalid.");
+      return;
+    }
+
+    const { data: account, error: accError } = await supabase
+      .from("accounts")
+      .select("role")
+      .eq("username", username)
+      .single();
+
+    if (accError || !account) {
+      showError("Contul nu este configurat.");
+      return;
+    }
+
+    redirectByRole(account.role);
+  } catch {
+    showError("Conexiunea nu a reușit. Încearcă din nou.");
   }
-
-  const user = data.user;
-  const username = user.user_metadata?.username;
-
-  if (!username) {
-    showError("Profil invalid.");
-    return;
-  }
-
-  const { data: account, error: accError } = await supabase
-    .from("accounts")
-    .select("role")
-    .eq("username", username)
-    .single();
-
-  if (accError || !account) {
-    showError("Contul nu este configurat.");
-    return;
-  }
-
-  redirectByRole(account.role);
 }
 
 async function onForgotPassword(event) {
   event.preventDefault();
+  if (button.disabled) return;
   clearMessages();
 
   const email = String(document.getElementById("email")?.value || "").trim().toLowerCase();

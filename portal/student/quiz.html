@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/layout.css" />
     <link rel="stylesheet" href="/assets/css/components.css" />
     <link rel="stylesheet" href="/portal/student/student.css" />
+    <link rel="stylesheet" href="/portal/reports.css" />
   </head>
 
   <body>
@@ -20,48 +21,57 @@
         <div class="main-content">
           <div class="page-header">
             <div>
-              <p class="title-eyebrow">Concurs Biblic Talantul in Negot</p>
+              <p class="title-eyebrow">Talantul în negoț</p>
               <h1 class="header">Test oficial</h1>
-              <p class="page-help">Structură fixă: 10 TF, 10 ABC One, 1 Asociere, 3 ABC Multi.</p>
+              <p class="page-help">24 de întrebări. 100 de puncte posibile. Un nou pas în pregătirea ta.</p>
             </div>
           </div>
 
-          <div class="quiz-shell">
+          <ol class="step-list" aria-label="Cum funcționează"><li>Alege cărțile</li><li>Răspunde la întrebări</li><li>Descoperă rezultatul</li></ol>
+<div class="quiz-shell">
             <section class="quiz-panel">
               <h3>Structura și punctaj</h3>
               <ul class="quiz-rules">
                 <li>10 întrebări Adevărat/Fals x 2p</li>
-                <li>10 întrebări ABC One x 4p</li>
+                <li>10 întrebări Un singur răspuns x 4p</li>
                 <li>1 întrebare Asociere x max 10p (2p/pereche)</li>
-                <li>3 întrebări ABC Multi x 5p</li>
+                <li>3 întrebări Răspunsuri multiple x 5p</li>
                 <li>Bonus din oficiu: +15p</li>
               </ul>
 
               <label class="label" for="timerMinutes">Timp (minute)</label>
               <input id="timerMinutes" class="input" type="number" min="10" max="120" value="45" />
 
-              <label class="label" for="booksSearch">Cărți incluse în quiz (multiselect)</label>
-              <input id="booksSearch" class="input" type="text" placeholder="Caută carte..." autocomplete="off" />
+              <label class="label" for="booksSearch">Din ce cărți vrei să exersezi?</label>
+              <input id="booksSearch" class="input" type="search" placeholder="Caută în cele 66 de cărți…" autocomplete="off" />
+              <div class="selected-books-panel" aria-labelledby="selectedBooksTitle">
+                <div class="selected-books-header">
+                  <strong id="selectedBooksTitle">Cărți selectate</strong>
+                  <span id="booksInfo" class="selected-books-count">Niciuna</span>
+                </div>
+                <div id="selectedBooksChips" class="selected-books-chips" aria-live="polite"></div>
+              </div>
               <div id="booksChecklist" class="books-checklist" aria-label="Selectează una sau mai multe cărți"></div>
               <div class="book-filter-actions">
                 <button id="selectAllBooksBtn" class="btn" type="button">Selectează toate</button>
-                <button id="clearBooksBtn" class="btn" type="button">Curăță selecția</button>
+                <button id="clearBooksBtn" class="btn" type="button">Deselectează</button>
               </div>
-              <p id="booksInfo" class="muted">Bifează una sau mai multe cărți.</p>
 
               <button id="startBtn" class="btn primary" style="width: 100%;">Pornește testul</button>
-              <p id="setupMessage" class="muted" style="margin-top: 8px;"></p>
+              <p id="setupMessage" role="status" class="muted" style="margin-top: 8px;"></p>
             </section>
 
             <section class="quiz-board">
-              <div class="meta-line" id="quizMeta">Configureaza quiz-ul pentru a incepe.</div>
-              <h2 class="question-text" id="questionText">Quiz-ul nu a pornit inca.</h2>
+              <div class="meta-line" id="quizMeta">Alege cărțile și timpul, apoi pornește testul.</div>
+              <h2 class="question-text" id="questionText">Următorul tău progres începe aici.</h2>
 
               <div id="answerHost"></div>
 
               <div class="quiz-actions">
-                <button id="prevBtn" class="btn nav-btn" disabled>◀ Întrebarea anterioară</button>
-                <button id="nextBtn" class="btn nav-btn" disabled>Întrebarea următoare ▶</button>
+                <button id="abandonBtn" class="btn danger quiz-abandon-btn" type="button" disabled>Abandonează testul</button>
+                <button id="prevBtn" class="btn nav-btn" disabled>Înapoi</button>
+                <button id="nextBtn" class="btn nav-btn" disabled>Următoarea</button>
+                <button id="reportQuestionBtn" class="btn report-question-btn" type="button" disabled>Raportează</button>
                 <button id="submitBtn" class="btn primary" disabled>Trimite testul</button>
               </div>
 
@@ -70,6 +80,32 @@
           </div>
         </div>
       </main>
+    </div>
+
+    <div id="questionReportDialog" class="question-report-dialog" hidden role="dialog" aria-modal="true" aria-labelledby="questionReportTitle">
+      <div class="question-report-card">
+        <div class="section-head">
+          <h2 id="questionReportTitle">Raportează întrebarea</h2>
+          <button id="closeQuestionReportBtn" class="btn sm" type="button" aria-label="Închide raportarea">×</button>
+        </div>
+        <p id="questionReportQuestion" class="report-question-preview"></p>
+        <form id="questionReportForm">
+          <label class="label" for="questionReportReason">Ce este în neregulă?</label>
+          <select id="questionReportReason" required>
+            <option value="incorrect">Răspuns sau informație greșită</option>
+            <option value="ambiguous">Întrebarea este neclară</option>
+            <option value="typo">Greșeală de scriere</option>
+            <option value="other">Altă problemă</option>
+          </select>
+          <label class="label" for="questionReportMessage">Mesaj pentru echipă (opțional)</label>
+          <textarea id="questionReportMessage" rows="4" maxlength="1000" placeholder="Descrie problema pe scurt..."></textarea>
+          <p id="questionReportStatus" class="report-form-status" role="status"></p>
+          <div class="form-actions">
+            <button id="cancelQuestionReportBtn" class="btn" type="button">Renunță</button>
+            <button class="btn primary" type="submit">Trimite raportul</button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script type="module" src="/assets/js/modules/student/navigation.js"></script>

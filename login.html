@@ -12,32 +12,18 @@
   </head>
 
   <body>
-    <div class="login-card">
-      <h1>AKADEMIA</h1>
-      <div class="subtitle">Autentificare în platformă</div>
-
-      <input id="email" type="email" placeholder="Email" />
-      <div class="password-wrapper">
-        <input id="password" type="password" placeholder="Parolă" />
-        <button class="toggle-password" type="button" aria-label="Arată parola">👁</button>
-      </div>
-
-      <button id="loginBtn">
-        <span id="btnText">Autentificare</span>
-        <span id="spinner" class="spinner hidden"></span>
-      </button>
-
-      <div id="error" class="error"></div>
-      <div id="success" class="success"></div>
-
-      <a href="#" id="forgotPasswordLink" class="auth-link">Ai uitat parola?</a>
-
-      <a href="/register.html" class="auth-link">Nu ai cont? Creează cont student</a>
-
-      <a href="/" class="back">← Înapoi la pagina principală</a>
-    </div>
-
-    <script type="module" src="/assets/js/modules/auth/login.js"></script>
-
-  </body>
+  <main class="auth-layout">
+    <aside class="auth-story"><a class="brand" href="/"><img src="/assets/favicon.svg" alt="" width="36" height="36">akademia</a>
+      <div class="auth-story-copy"><p class="title-eyebrow">Talantul în negoț</p><h2>Cunoașterea crește.<br>Cu fiecare pas.</h2><p>Un loc pentru curiozitate, pregătire și bucuria de a descoperi mai mult din Biblie.</p><div class="auth-story-steps"><span><img class="icon" src="/assets/icons/book-open.svg" alt="" aria-hidden="true">Învață</span><span><img class="icon" src="/assets/icons/clipboard-check.svg" alt="" aria-hidden="true">Exersează</span><span><img class="icon" src="/assets/icons/chart-no-axes-combined.svg" alt="" aria-hidden="true">Progresează</span></div></div>
+      <div class="auth-story-footer">Pregătirea de azi. Încrederea de mâine.</div>
+    </aside>
+    <section class="login-card"><h1>Bine ai revenit.</h1><p class="subtitle">Intră în cont și continuă de unde ai rămas.</p>
+      <form id="authForm"><label class="label" for="email">Adresă de e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="nume@exemplu.ro" required>
+<label class="label" for="password">Parolă</label><div class="password-wrapper"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Parola contului tău" required><button class="toggle-password" type="button" aria-label="Arată parola"><img class="icon" src="/assets/icons/eye.svg" alt="" aria-hidden="true"></button></div><button id="loginBtn" class="primary" type="submit"><span id="btnText">Autentificare</span><span id="spinner" class="spinner hidden" aria-hidden="true"></span></button></form>
+      <div id="error" class="error" role="alert"></div><div id="success" class="success" role="status"></div>
+      <a href="#" id="forgotPasswordLink" class="auth-link">Ai uitat parola?</a><a href="/register.html" class="auth-link">Ești nou aici? Creează un cont</a><a href="/" class="back">← Înapoi la pagina principală</a>
+    </section>
+  </main>
+  <script type="module" src="/assets/js/modules/auth/login.js"></script>
+</body>
 </html>

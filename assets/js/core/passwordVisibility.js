@@ -6,19 +6,20 @@ export function initPasswordVisibility(root = document) {
     const toggle = wrapper.querySelector(".toggle-password");
 
     if (!input || !toggle) return;
-    if (toggle.dataset.bound === "true") return;
-
-    toggle.dataset.bound = "true";
     toggle.setAttribute("type", "button");
 
     const sync = () => {
       const isHidden = input.type === "password";
-      toggle.textContent = isHidden ? "👁" : "🙈";
+      toggle.innerHTML = `<img class="icon" src="/assets/icons/${isHidden ? "eye" : "eye-off"}.svg" alt="" aria-hidden="true">`;
       toggle.setAttribute("aria-label", isHidden ? "Arată parola" : "Ascunde parola");
       toggle.setAttribute("title", isHidden ? "Arată parola" : "Ascunde parola");
+      toggle.setAttribute("aria-pressed", String(!isHidden));
     };
 
     sync();
+
+    if (toggle.dataset.bound === "true") return;
+    toggle.dataset.bound = "true";
 
     toggle.addEventListener("click", () => {
       input.type = input.type === "password" ? "text" : "password";
