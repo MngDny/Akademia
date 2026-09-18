@@ -12,6 +12,7 @@
     "packageJson": {
       "dependencies": [
         "npm:@supabase/supabase-js@^2.96.0",
+        "npm:docx@^9.5.1",
         "npm:pdf-parse@^2.4.5"
       ]
     }

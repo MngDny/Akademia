@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Îndrumător - Generează test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/instructor/instructor.css" />
+    <link rel="stylesheet" href="./create.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <div class="main-content">
+          <div class="page-header">
+            <div>
+              <p class="title-eyebrow">Instrument pentru îndrumător</p>
+              <h1 class="header">Generează un test nou</h1>
+              <p class="page-help">Alege una sau mai multe cărți, filtrează capitolele când lucrezi cu o singură carte și descarcă testul în format Word sau PDF.</p>
+            </div>
+          </div>
+
+          <div class="test-builder-grid">
+            <section class="card test-builder-card" aria-labelledby="selectionTitle">
+              <div class="section-head test-builder-heading">
+                <div>
+                  <h2 id="selectionTitle">Sursa întrebărilor</h2>
+                  <p>Testul folosește structura oficială Akademia.</p>
+                </div>
+                <span id="selectionSummary" class="selection-summary">Nicio carte selectată</span>
+              </div>
+
+              <label class="label" for="bookSearch">Cărți biblice</label>
+              <input id="bookSearch" class="input" type="search" placeholder="Caută printre cele 66 de cărți…" autocomplete="off" />
+              <div id="selectedBookChips" class="selected-books-chips" aria-live="polite"></div>
+              <div id="bookList" class="test-book-list" role="group" aria-label="Selectează una sau mai multe cărți"></div>
+              <div class="test-filter-actions">
+                <button id="selectAllBooksBtn" class="btn" type="button">Selectează toate</button>
+                <button id="clearBooksBtn" class="btn" type="button">Deselectează</button>
+              </div>
+
+              <div id="chaptersSection" class="chapters-section" hidden>
+                <div class="section-head compact-section-head">
+                  <div>
+                    <h3>Capitole</h3>
+                    <p id="chaptersHelp">Selectează capitolele dorite sau păstrează toate capitolele.</p>
+                  </div>
+                  <div class="test-filter-actions compact-actions">
+                    <button id="selectAllChaptersBtn" class="btn sm" type="button">Toate</button>
+                    <button id="clearChaptersBtn" class="btn sm" type="button">Niciunul</button>
+                  </div>
+                </div>
+                <div id="chapterList" class="chapter-list" role="group" aria-label="Selectează capitolele"></div>
+              </div>
+              <p id="builderStatus" class="form-status" role="status"></p>
+            </section>
+
+            <aside class="card test-summary-card" aria-labelledby="summaryTitle">
+              <span class="stat-icon"><img class="icon" src="/assets/icons/clipboard-check.svg" alt="" aria-hidden="true" /></span>
+              <h2 id="summaryTitle">Testul descărcat</h2>
+              <p class="muted">Documentul păstrează aspectul testului de referință și nu conține răspunsurile corecte.</p>
+              <ul class="test-structure-list">
+                <li><strong>10</strong><span>Adevărat / Fals</span></li>
+                <li><strong>10</strong><span>Un singur răspuns</span></li>
+                <li><strong>5</strong><span>Perechi de asociere</span></li>
+                <li><strong>3</strong><span>Răspunsuri multiple</span></li>
+              </ul>
+              <div class="availability-panel" aria-live="polite">
+                <div class="availability-heading">
+                  <span class="label">Disponibilitate</span>
+                  <span id="availabilityBadge" class="availability-badge">Așteaptă selecția</span>
+                </div>
+                <p id="availabilityStatus" class="availability-status">Selectează cel puțin o carte pentru a verifica întrebările.</p>
+                <ul id="availabilityList" class="availability-list"></ul>
+              </div>
+              <div class="difficulty-control">
+                <div class="difficulty-heading">
+                  <label class="label" for="difficultyRange">Dificultatea testului</label>
+                  <output id="difficultyValue" for="difficultyRange">50 / 100</output>
+                </div>
+                <input id="difficultyRange" class="difficulty-range" type="range" min="0" max="100" step="1" value="50" />
+                <div class="difficulty-scale" aria-hidden="true"><span>Mai ușor</span><span>Echilibrat</span><span>Mai greu</span></div>
+                <p id="difficultyHint" class="difficulty-hint">Întrebările apropiate de dificultatea 50 vor fi prioritizate.</p>
+              </div>
+              <label class="label" for="testTitle">Titlul documentului</label>
+              <input id="testTitle" class="input" value="Test 1 Talantul în negoț" maxlength="120" />
+              <div class="download-actions">
+                <button id="generateTestBtn" class="btn primary" type="button" disabled>Descarcă Word (.docx)</button>
+                <button id="generateDocBtn" class="btn" type="button" disabled>Descarcă Word (.doc)</button>
+                <button id="generatePdfBtn" class="btn" type="button" disabled>Descarcă PDF</button>
+              </div>
+              <p id="downloadStatus" class="form-status" role="status"></p>
+            </aside>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/instructor/tests/createTest.js"></script>
+  </body>
+</html>

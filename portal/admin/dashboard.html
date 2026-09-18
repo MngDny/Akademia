@@ -40,6 +40,7 @@
           </section>
           <section class="card" id="manageUsersSection" hidden aria-labelledby="usersTitle">
             <h2 id="usersTitle">Utilizatorii platformei</h2>
+            <p class="section-intro">Vezi profilul, activitatea și statisticile fiecărui membru al comunității.</p>
             <p id="usersSummary" class="muted" role="status">Se încarcă utilizatorii…</p>
             <label class="label" for="userSearch">Caută un utilizator</label>
             <input id="userSearch" type="search" placeholder="Nume utilizator…">
@@ -58,6 +59,34 @@
         </div>
       </div>
     </main>
+  </div>
+  <div id="userDialog" class="profile-dialog" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="userDialogTitle">
+    <div class="profile-dialog-card">
+      <div class="profile-dialog-header">
+        <div>
+          <p class="title-eyebrow">Profil utilizator</p>
+          <h2 id="userDialogTitle">Detalii utilizator</h2>
+          <p id="userDialogMeta" class="muted"></p>
+        </div>
+        <button id="closeUserDialog" class="icon-btn" type="button" aria-label="Închide profilul">×</button>
+      </div>
+      <div id="userDialogStats" class="profile-stats" aria-live="polite"></div>
+      <div class="profile-details">
+        <div><span>Username</span><strong id="userDialogUsername">-</strong></div>
+        <div><span>Rol</span><strong id="userDialogRole">-</strong></div>
+        <div><span>Cont creat</span><strong id="userDialogCreated">-</strong></div>
+      </div>
+      <form id="userEditForm" class="profile-edit-form" hidden>
+        <div class="field"><label class="label" for="editUsername">Nume utilizator</label><input id="editUsername" required minlength="3" maxlength="40" autocomplete="off"></div>
+        <div class="field"><label class="label" for="editRole">Rol în platformă</label><select id="editRole"><option value="student">Student</option><option value="instructor">Îndrumător</option><option value="admin">Administrator</option></select></div>
+      </form>
+      <div class="profile-dialog-actions">
+        <button id="editUserBtn" class="btn" type="button">Editează</button>
+        <button id="cancelEditBtn" class="btn" type="button" hidden>Anulează</button>
+        <button id="saveUserBtn" class="btn primary" type="button" hidden>Salvează modificările</button>
+      </div>
+      <p id="userDialogStatus" class="form-status" role="status"></p>
+    </div>
   </div>
   <script type="module" src="/assets/js/modules/admin/adminDashboard.js"></script>
 </body>

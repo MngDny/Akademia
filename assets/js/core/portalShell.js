@@ -37,12 +37,18 @@ export function mountPortal(role, { onLogout } = {}) {
     navigation = link("/portal/instructor/dashboard.html", "Privire de ansamblu", "layout-dashboard") +
       group("list", "Biblioteca de întrebări", "book-open") + group("add", "Adaugă întrebare", "plus") +
       link("/portal/instructor/questions/import.html", "Import cu AI", "upload") +
+      link("/portal/instructor/tests/create.html", "Generează test", "clipboard-check") +
       link("/portal/instructor/students/list.html", "Studenți", "users") +
+      link("/portal/student/leaderboard.html", "Clasament", "trophy") +
       link("/portal/instructor/reports.html", "Raportări", "shield-check");
   } else {
-    const createActive = path === "/portal/admin/dashboard.html";
-    navigation = `<button type="button" class="menu-item${createActive ? " active" : ""}" data-section="create-user" aria-controls="createUserSection"${createActive ? ' aria-current="page"' : ""}>${icon("plus")}<span>Creează utilizator</span></button>
-      <button type="button" class="menu-item" data-section="manage-users" aria-controls="manageUsersSection">${icon("users")}<span>Utilizatori</span></button>
+    const adminSection = new URLSearchParams(window.location.hash.slice(1)).get("section") || "create-user";
+    const dashboardPath = "/portal/admin/dashboard.html";
+    const createActive = path === dashboardPath && adminSection === "create-user";
+    const manageActive = path === dashboardPath && adminSection === "manage-users";
+    navigation = `<a class="menu-item${createActive ? " active" : ""}" data-section="create-user" href="${dashboardPath}#section=create-user" aria-controls="createUserSection"${createActive ? ' aria-current="page"' : ""}>${icon("plus")}<span>Creează utilizator</span></a>
+      <a class="menu-item${manageActive ? " active" : ""}" data-section="manage-users" href="${dashboardPath}#section=manage-users" aria-controls="manageUsersSection"${manageActive ? ' aria-current="page"' : ""}>${icon("users")}<span>Utilizatori</span></a>
+      ${link("/portal/student/leaderboard.html", "Clasament", "trophy")}
       ${link("/portal/admin/reports.html", "Raportări", "shield-check")}`;
   }
   sidebar.setAttribute("aria-label", `Navigare ${roles[role]}`);

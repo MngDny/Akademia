@@ -1,5 +1,5 @@
 import { supabase } from "../../core/supabaseClient.js";
-import { requireRole } from "../../core/authGuard.js";
+import { requireAnyRole } from "../../core/authGuard.js";
 import {
   aggregateLeaderboard,
   ATTEMPTS_TABLE,
@@ -87,7 +87,7 @@ function refresh() {
 }
 
 async function init() {
-  await requireRole("student");
+  await requireAnyRole(["student", "instructor", "admin"]);
 
   const { data, error } = await supabase
     .from(ATTEMPTS_TABLE)

@@ -54,7 +54,7 @@ async function page(file, { role = file.includes('instructor') ? 'instructor' : 
 
 const htmlFiles=['index.html','login.html','register.html','reset-password.html',...walk('portal').filter(p=>p.endsWith('.html'))];
 test('All portal pages have valid landmarks, unique IDs, labels and local resource targets',()=>{
-  assert.equal(htmlFiles.length,18);
+  assert.equal(htmlFiles.length,19);
   for(const file of htmlFiles) {
     const dom=new JSDOM(read(file)); const d=dom.window.document;
     assert.equal(d.querySelectorAll('main').length,1,file);
@@ -389,4 +389,53 @@ test('Instructor dashboard book filter updates all category counters and links',
     assert.match(p.d.querySelector('a.stat-card[data-type="tf"]').href,/book=psal/);
     assert.equal(p.errors.length,0);
   } finally {p.close();}
+});
+
+test('Instructor test generator reveals chapters only for one selected book',async()=>{
+  const p=await page('portal/instructor/tests/create.html');
+  try {
+    const first=p.d.querySelector('#bookList input');
+    first.click(); await flush();
+    assert.equal(p.d.querySelector('#chaptersSection').hidden,false);
+    assert.ok(p.d.querySelectorAll('#chapterList input').length >= 1);
+    p.d.querySelectorAll('#bookList input')[1].click(); await flush();
+    assert.equal(p.d.querySelector('#chaptersSection').hidden,true);
+    assert.equal(p.d.querySelector('#generateTestBtn').disabled,false);
+    assert.equal(p.errors.length,0);
+  } finally {p.close();}
+});
+
+test('Instructor test generator warns about shortages and prioritizes difficulty',async()=>{
+  const shortageRecords={};
+  for(const table of ['questions_tf','questions_abc_one','questions_abc_multi','questions_match']) shortageRecords[table]=rows.slice(0,1);
+  shortageRecords.questions_match=[{...rows[0],status:'Nou',pairs:[],options:rows[0].pairs}];
+  const shortage=await page('portal/instructor/tests/create.html',{records:shortageRecords});
+  try {
+    shortage.d.querySelector('#bookList input').click(); await flush();
+    assert.match(shortage.d.querySelector('#availabilityStatus').textContent,/Nu sunt suficiente/);
+    assert.equal(shortage.d.querySelector('#generateTestBtn').disabled,true);
+    assert.match(shortage.d.querySelector('#availabilityList').textContent,/1\/10/);
+    assert.match(shortage.d.querySelector('#availabilityList').textContent,/Asociere\s*1\/1/);
+  } finally {shortage.close();}
+
+  const varied=Array.from({length:12},(_,index)=>({...rows[index],difficulty:(index%5)+1}));
+  const records={questions_tf:varied,questions_abc_one:varied,questions_abc_multi:varied,questions_match:varied};
+  let requestBody;
+  let ready;
+  ready=await page('portal/instructor/tests/create.html',{records,fetcher:async(_,options)=>{
+    requestBody=JSON.parse(options.body);
+    return {ok:true,blob:async()=>new ready.w.Blob(['test'])};
+  }});
+  try {
+    ready.w.URL.createObjectURL=()=> 'blob:test'; ready.w.URL.revokeObjectURL=()=>{};
+    ready.d.querySelector('#bookList input').click(); await flush();
+    const difficulty=ready.d.querySelector('#difficultyRange'); difficulty.value='100'; difficulty.dispatchEvent(new ready.w.Event('input'));
+    assert.equal(ready.d.querySelector('#difficultyValue').textContent,'100 / 100');
+    assert.match(ready.d.querySelector('#difficultyHint').textContent,/mai dificile/);
+    ready.d.querySelector('#generateTestBtn').click(); await flush();
+    assert.equal(requestBody.difficulty,100);
+    assert.equal(requestBody.sections.tf[0].difficulty,5);
+    assert.equal(requestBody.sections.abc_one[0].difficulty,5);
+    assert.equal(ready.d.querySelector('#generateTestBtn').disabled,false);
+  } finally {ready.close();}
 });

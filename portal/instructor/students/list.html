@@ -52,6 +52,7 @@
                   <th scope="col">Nume utilizator</th>
                   <th scope="col" style="width: 160px;">Rol</th>
                   <th scope="col" style="width: 220px;">Data creării</th>
+                  <th scope="col" style="width: 130px;">Acțiuni</th>
                 </tr>
               </thead>
               <tbody id="studentsBody"></tbody>
@@ -63,6 +64,25 @@
           </div>
         </div>
       </main>
+    </div>
+    <div id="studentDialog" class="profile-dialog" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="studentDialogTitle">
+      <div class="profile-dialog-card">
+        <div class="profile-dialog-header">
+          <div>
+            <p class="title-eyebrow">Profil student</p>
+            <h2 id="studentDialogTitle">Detalii student</h2>
+            <p id="studentDialogMeta" class="muted"></p>
+          </div>
+          <button id="closeStudentDialog" class="icon-btn" type="button" aria-label="Închide profilul">×</button>
+        </div>
+        <div id="studentDialogStats" class="profile-stats" aria-live="polite"></div>
+        <div class="profile-details">
+          <div><span>Username</span><strong id="studentDialogUsername">-</strong></div>
+          <div><span>Rol</span><strong id="studentDialogRole">Student</strong></div>
+          <div><span>Cont creat</span><strong id="studentDialogCreated">-</strong></div>
+        </div>
+        <p id="studentDialogStatus" class="form-status" role="status"></p>
+      </div>
     </div>
 
     <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>

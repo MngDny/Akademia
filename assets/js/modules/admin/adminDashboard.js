@@ -2,11 +2,12 @@ import { supabase } from "../../core/supabaseClient.js";
 import { normalizeRole } from "../../core/authGuard.js";
 import { initPasswordVisibility } from "../../core/passwordVisibility.js";
 import { mountPortal } from "../../core/portalShell.js";
+import { closeProfileDialog, fetchUserStats, formatProfileDate, openProfileDialog, renderUserStats, roleNames } from "../../core/userStats.js";
 
 let isCreatingUser = false;
 let users = [];
 let currentUserId;
-const roleNames = { student: "Student", instructor: "Îndrumător", admin: "Administrator" };
+let profileUser = null;
 
 mountPortal("admin", { onLogout: async () => {
   const { error } = await supabase.auth.signOut();
@@ -28,23 +29,42 @@ async function init() {
   currentUserId = session.user.id;
   document.querySelector("#createUserSection form").addEventListener("submit", createUser);
   document.querySelectorAll(".menu-item").forEach(item => {
-    item.addEventListener("click", () => {
-      document.querySelectorAll(".menu-item").forEach(other => {
-        other.classList.toggle("active", other === item);
-        if (other === item) other.setAttribute("aria-current", "page");
-        else other.removeAttribute("aria-current");
-      });
-      const manage = item.dataset.section === "manage-users";
-      document.getElementById("createUserSection").hidden = manage;
-      document.getElementById("manageUsersSection").hidden = !manage;
-      const heading = document.getElementById(manage ? "usersTitle" : "createTitle");
-      heading.tabIndex = -1;
-      heading.focus();
-      if (manage) loadUsers();
+    item.addEventListener("click", (event) => {
+      event.preventDefault();
+      const section = item.dataset.section;
+      history.replaceState(null, "", `${window.location.pathname}#section=${section}`);
+      switchSection(section);
     });
   });
   document.getElementById("userSearch").addEventListener("input", renderUsers);
   document.getElementById("roleFilter").addEventListener("change", renderUsers);
+  document.getElementById("closeUserDialog").addEventListener("click", closeProfile);
+  document.getElementById("userDialog").addEventListener("click", (event) => {
+    if (event.target.id === "userDialog") closeProfile();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !document.getElementById("userDialog").hidden) closeProfile();
+  });
+  document.getElementById("editUserBtn").addEventListener("click", () => setEditMode(true));
+  document.getElementById("cancelEditBtn").addEventListener("click", () => setEditMode(false));
+  document.getElementById("saveUserBtn").addEventListener("click", saveProfile);
+  const initialSection = new URLSearchParams(window.location.hash.slice(1)).get("section") || "create-user";
+  switchSection(initialSection, false);
+}
+
+function switchSection(section, focus = true) {
+  const manage = section === "manage-users";
+  document.querySelectorAll(".menu-item").forEach((item) => {
+    const active = item.dataset.section === section;
+    item.classList.toggle("active", active);
+    if (active) item.setAttribute("aria-current", "page");
+    else item.removeAttribute("aria-current");
+  });
+  document.getElementById("createUserSection").hidden = manage;
+  document.getElementById("manageUsersSection").hidden = !manage;
+  const heading = document.getElementById(manage ? "usersTitle" : "createTitle");
+  if (focus) { heading.tabIndex = -1; heading.focus(); }
+  if (manage && !users.length) loadUsers();
 }
 
 async function createUser(event) {
@@ -89,7 +109,7 @@ async function loadUsers() {
   const summary = document.getElementById("usersSummary");
   summary.textContent = "Se încarcă utilizatorii…";
   try {
-    const { data, error } = await supabase.from("accounts").select("id, username, role");
+    const { data, error } = await supabase.from("accounts").select("id, username, role, created_at");
     if (error) throw error;
     users = data || [];
     renderUsers();
@@ -123,22 +143,110 @@ function renderUsers() {
     badge.textContent = roleNames[normalizeRole(user.role)] || user.role;
     info.append(name, badge);
     row.append(info);
-    if (user.id === currentUserId) {
-      const self = document.createElement("span");
-      self.className = "muted";
-      self.textContent = "Contul tău";
-      row.append(self);
-    } else {
+    const actions = document.createElement("div");
+    actions.className = "user-actions";
+    const view = document.createElement("button");
+    view.type = "button";
+    view.className = "btn sm";
+    view.textContent = "Vezi info";
+    view.addEventListener("click", () => showProfile(user));
+    actions.append(view);
+    if (user.id !== currentUserId) {
+      const edit = document.createElement("button");
+      edit.type = "button";
+      edit.className = "btn sm";
+      edit.textContent = "Editează";
+      edit.addEventListener("click", () => showProfile(user, true));
+      actions.append(edit);
       const button = document.createElement("button");
       button.type = "button";
       button.className = "delete-btn";
       button.textContent = "Șterge";
       button.setAttribute("aria-label", `Șterge utilizatorul ${user.username}`);
       button.addEventListener("click", () => deleteUser(user, button));
-      row.append(button);
+      actions.append(button);
+    } else {
+      const self = document.createElement("span");
+      self.className = "muted user-self-label";
+      self.textContent = "Contul tău";
+      actions.append(self);
     }
+    row.append(actions);
     container.append(row);
   });
+}
+
+function setEditMode(editing) {
+  document.getElementById("userEditForm").hidden = !editing;
+  document.getElementById("editUserBtn").hidden = editing;
+  document.getElementById("cancelEditBtn").hidden = !editing;
+  document.getElementById("saveUserBtn").hidden = !editing;
+  if (editing) document.getElementById("editUsername").focus();
+}
+
+async function showProfile(user, editing = false) {
+  profileUser = { ...user, role: normalizeRole(user.role) };
+  document.getElementById("userDialogTitle").textContent = user.username || "Utilizator";
+  document.getElementById("userDialogMeta").textContent = roleNames[profileUser.role] || profileUser.role || "-";
+  document.getElementById("userDialogUsername").textContent = user.username || "-";
+  document.getElementById("userDialogRole").textContent = roleNames[profileUser.role] || profileUser.role || "-";
+  document.getElementById("userDialogCreated").textContent = formatProfileDate(user.created_at);
+  document.getElementById("editUsername").value = user.username || "";
+  document.getElementById("editRole").value = profileUser.role;
+  document.getElementById("userDialogStatus").textContent = "Se încarcă statisticile…";
+  document.getElementById("userDialogStats").replaceChildren();
+  setEditMode(editing);
+  openProfileDialog(document.getElementById("userDialog"));
+  try {
+    const stats = await fetchUserStats(profileUser);
+    renderUserStats(document.getElementById("userDialogStats"), profileUser, stats);
+    document.getElementById("userDialogStatus").textContent = "Statisticile sunt actualizate.";
+  } catch (error) {
+    console.error(error);
+    document.getElementById("userDialogStatus").textContent = "Statisticile nu au putut fi încărcate.";
+  }
+}
+
+function closeProfile() {
+  closeProfileDialog(document.getElementById("userDialog"));
+  profileUser = null;
+}
+
+async function saveProfile() {
+  if (!profileUser) return;
+  const username = document.getElementById("editUsername").value.trim();
+  const role = document.getElementById("editRole").value;
+  const status = document.getElementById("userDialogStatus");
+  if (username.length < 3) { status.textContent = "Numele trebuie să aibă cel puțin 3 caractere."; return; }
+  const button = document.getElementById("saveUserBtn");
+  button.disabled = true;
+  button.textContent = "Se salvează…";
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    const response = await fetch("/.netlify/functions/update-user", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", ...(session?.access_token ? { Authorization: `Bearer ${session.access_token}` } : {}) },
+      body: JSON.stringify({ userId: profileUser.id, username, role }),
+    });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || "update");
+    const updated = { ...profileUser, username, role };
+    users = users.map((item) => item.id === updated.id ? updated : item);
+    profileUser = updated;
+    renderUsers();
+    setEditMode(false);
+    document.getElementById("userDialogTitle").textContent = username;
+    document.getElementById("userDialogMeta").textContent = roleNames[role];
+    document.getElementById("userDialogUsername").textContent = username;
+    document.getElementById("userDialogRole").textContent = roleNames[role];
+    status.textContent = "Modificările au fost salvate.";
+  } catch (error) {
+    console.error(error);
+    status.textContent = error.message === "update" ? "Utilizatorul nu a putut fi actualizat." : error.message;
+  } finally {
+    button.disabled = false;
+    button.textContent = "Salvează modificările";
+  }
 }
 
 async function deleteUser(user, button) {

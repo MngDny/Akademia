@@ -21,7 +21,10 @@
   "homepage": "https://github.com/MngDny/Akademia#readme",
   "dependencies": {
     "@supabase/supabase-js": "^2.96.0",
-    "pdf-parse": "^2.4.5"
+    "dejavu-fonts-ttf": "^2.37.3",
+    "docx": "^9.5.1",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.17.2"
   },
   "devDependencies": {
     "jsdom": "^30.1.0"
