@@ -9,6 +9,7 @@
 #result { margin-top: 16px; font-size: 13px; }
 .section-intro { margin: -8px 0 14px; color: var(--muted); font-size: 13px; }
 .user-actions { display: flex; align-items: center; justify-content: flex-end; gap: 7px; flex-wrap: wrap; }
+.user-category { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
 .user-actions .delete-btn { min-height: 36px; padding: 7px 11px; font-size: 12px; }
 .user-self-label { white-space: nowrap; }
 .profile-dialog { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; padding: 20px; background: #1d203a66; }
@@ -23,7 +24,7 @@
 .profile-stat-label { display: block; margin-bottom: 6px; color: var(--muted); font-size: 11px; }
 .profile-stat strong { display: block; font-size: 20px; line-height: 1.2; }
 .profile-stat small { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; }
-.profile-details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding: 16px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.profile-details { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; padding: 16px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .profile-details span { display: block; margin-bottom: 4px; color: var(--muted); font-size: 11px; }
 .profile-details strong { display: block; overflow-wrap: anywhere; font-size: 13px; }
 .profile-edit-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding-top: 18px; }

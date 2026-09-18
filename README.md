@@ -13,6 +13,10 @@ npm run dev
 
 Previzualizarea statică este disponibilă la http://localhost:4173. Autentificarea folosește integrarea Supabase existentă. Înregistrarea, administrarea conturilor, importul AI și mediul de învățare depind de funcțiile Netlify; pentru aceste fluxuri rulează `npx netlify-cli dev` cu variabilele de mediu ale proiectului. Serverul static nu simulează autentificarea sau datele.
 
+### Planul de studiu
+
+Pentru categoriile elevilor și bibliografia pe perioade, rulează o dată scriptul `final_json/study_plan.sql` în Supabase SQL Editor. Acesta adaugă `study_category` în `accounts` și atribuie categoria implicită `2-3` elevilor existenți fără categorie.
+
 ## Interfață
 
 - `assets/css/layout.css`: culori, spațiere, navigare și adaptarea la telefon.

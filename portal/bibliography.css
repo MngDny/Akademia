@@ -1,0 +1,19 @@
+.bibliography-header { align-items: flex-end; gap: 24px; }
+.study-filters { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; }
+.study-filter { min-width: 190px; }
+.study-filter .label { margin-bottom: 6px; }
+.study-filter .input { min-height: 42px; margin: 0; }
+.bibliography-card, .memorization-card { margin-bottom: 22px; }
+.bibliography-card .compact-section-head { align-items: flex-start; margin-bottom: 8px; }
+.bibliography-card h2, .memorization-card h2 { margin: 0; font-size: 20px; }
+.study-badge { flex-shrink: 0; padding: 8px 11px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 11px; font-weight: 700; }
+.bibliography-list { display: grid; gap: 10px; margin: 22px 0 0; padding: 0; list-style: none; }
+.bibliography-list li { display: flex; align-items: flex-start; gap: 11px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-soft); color: var(--ink); font-size: 14px; }
+.bibliography-list li::before { content: ""; flex: 0 0 7px; width: 7px; height: 7px; margin-top: 6px; border-radius: 50%; background: var(--accent); }
+.memorization-card h2 { margin-top: 8px; line-height: 1.4; }
+.memorization-card .muted { margin-bottom: 0; }
+@media (max-width: 720px) {
+  .bibliography-header { align-items: stretch; flex-direction: column; }
+  .study-filters { align-items: stretch; flex-direction: column; }
+  .study-filter { width: 100%; }
+}

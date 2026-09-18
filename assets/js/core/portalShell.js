@@ -27,6 +27,7 @@ export function mountPortal(role, { onLogout } = {}) {
   if (role === "student") {
     navigation = [
       ["dashboard", "Privire de ansamblu", "layout-dashboard"],
+      ["bibliography", "Bibliografie", "book-open"],
       ["learning", "Mediu de învățare", "book-open"],
       ["quiz", "Test nou", "clipboard-check"],
       ["results", "Rezultatele mele", "chart-no-axes-combined"],
@@ -35,6 +36,7 @@ export function mountPortal(role, { onLogout } = {}) {
     ].map(([page, title, symbol]) => link(`/portal/student/${page}.html`, title, symbol)).join("");
   } else if (role === "instructor") {
     navigation = link("/portal/instructor/dashboard.html", "Privire de ansamblu", "layout-dashboard") +
+      link("/portal/instructor/bibliography.html", "Bibliografie", "book-open") +
       group("list", "Biblioteca de întrebări", "book-open") + group("add", "Adaugă întrebare", "plus") +
       link("/portal/instructor/questions/import.html", "Import cu AI", "upload") +
       link("/portal/instructor/tests/create.html", "Generează test", "clipboard-check") +
@@ -48,6 +50,7 @@ export function mountPortal(role, { onLogout } = {}) {
     const manageActive = path === dashboardPath && adminSection === "manage-users";
     navigation = `<a class="menu-item${createActive ? " active" : ""}" data-section="create-user" href="${dashboardPath}#section=create-user" aria-controls="createUserSection"${createActive ? ' aria-current="page"' : ""}>${icon("plus")}<span>Creează utilizator</span></a>
       <a class="menu-item${manageActive ? " active" : ""}" data-section="manage-users" href="${dashboardPath}#section=manage-users" aria-controls="manageUsersSection"${manageActive ? ' aria-current="page"' : ""}>${icon("users")}<span>Utilizatori</span></a>
+      ${link("/portal/admin/bibliography.html", "Bibliografie", "book-open")}
       ${link("/portal/student/leaderboard.html", "Clasament", "trophy")}
       ${link("/portal/admin/reports.html", "Raportări", "shield-check")}`;
   }

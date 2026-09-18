@@ -4,6 +4,8 @@ const USERNAME_RE = /^[a-z0-9._-]{3,24}$/;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PASSWORD_RE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{10,72}$/;
 const MAX_BODY_CHARS = 8 * 1024;
+const DEFAULT_STUDY_CATEGORY = "2-3";
+const STUDY_CATEGORIES = new Set(["2-3", "4-5", "6-7", "8-9", "10-11", "12-plus"]);
 
 function respond(statusCode, payload) {
   return {
@@ -46,6 +48,7 @@ exports.handler = async (event) => {
       .trim()
       .toLowerCase();
     const password = String(payload?.password || "");
+    const studyCategory = String(payload?.studyCategory || DEFAULT_STUDY_CATEGORY).trim();
 
     if (!USERNAME_RE.test(username)) {
       return respond(400, { error: "Username invalid." });
@@ -57,6 +60,10 @@ exports.handler = async (event) => {
 
     if (!PASSWORD_RE.test(password)) {
       return respond(400, { error: "Parolă invalidă." });
+    }
+
+    if (!STUDY_CATEGORIES.has(studyCategory)) {
+      return respond(400, { error: "Categoria de studiu este invalidă." });
     }
 
     // Reject any attempt to elevate privileges through payload tampering.
@@ -98,6 +105,7 @@ exports.handler = async (event) => {
       user_metadata: {
         username,
         registration_source: "self-service",
+        study_category: studyCategory,
       },
       app_metadata: {
         role: "student",
@@ -120,6 +128,7 @@ exports.handler = async (event) => {
         id: userId,
         username,
         role: "student",
+        study_category: studyCategory,
       });
 
     if (accountError) {

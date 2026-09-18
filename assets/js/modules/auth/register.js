@@ -1,4 +1,5 @@
 import { initPasswordVisibility } from "../../core/passwordVisibility.js";
+import { DEFAULT_STUDY_CATEGORY, STUDY_CATEGORIES } from "../../core/studyPlan.js";
 
 const errorEl = document.getElementById("error");
 const successEl = document.getElementById("success");
@@ -11,6 +12,10 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PASSWORD_RE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{10,72}$/;
 
 initPasswordVisibility();
+
+const studyCategory = document.getElementById("studyCategory");
+STUDY_CATEGORIES.forEach(({ value, label }) => studyCategory.append(new Option(label, value)));
+studyCategory.value = DEFAULT_STUDY_CATEGORY;
 
 document.getElementById("authForm").addEventListener("submit", event => {
   event.preventDefault();
@@ -26,6 +31,7 @@ async function onRegister() {
   const email = String(document.getElementById("email").value || "").trim().toLowerCase();
   const password = String(document.getElementById("password").value || "");
   const confirmPassword = String(document.getElementById("confirmPassword").value || "");
+  const selectedCategory = String(studyCategory.value || DEFAULT_STUDY_CATEGORY);
 
   if (!USERNAME_RE.test(username)) {
     showError("Username invalid. Folosește 3-24 caractere: litere mici, cifre, . _ -");
@@ -53,7 +59,7 @@ async function onRegister() {
     const response = await fetch("/.netlify/functions/register-student", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, email, password }),
+      body: JSON.stringify({ username, email, password, studyCategory: selectedCategory }),
     });
 
     const data = await response.json();

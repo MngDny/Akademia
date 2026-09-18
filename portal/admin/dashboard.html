@@ -34,6 +34,10 @@
               </div>
               <label class="label" for="role">Rol în platformă</label>
               <select id="role"><option value="student">Student</option><option value="instructor">Îndrumător</option><option value="admin">Administrator</option></select>
+              <div id="createCategoryField">
+                <label class="label" for="studyCategory">Categoria de studiu</label>
+                <select id="studyCategory"></select>
+              </div>
               <button id="createUserBtn" class="primary" type="submit">Creează utilizator</button>
             </form>
             <div id="result" role="status"></div>
@@ -74,12 +78,14 @@
       <div class="profile-details">
         <div><span>Username</span><strong id="userDialogUsername">-</strong></div>
         <div><span>Rol</span><strong id="userDialogRole">-</strong></div>
-        <div><span>Cont creat</span><strong id="userDialogCreated">-</strong></div>
-      </div>
-      <form id="userEditForm" class="profile-edit-form" hidden>
-        <div class="field"><label class="label" for="editUsername">Nume utilizator</label><input id="editUsername" required minlength="3" maxlength="40" autocomplete="off"></div>
-        <div class="field"><label class="label" for="editRole">Rol în platformă</label><select id="editRole"><option value="student">Student</option><option value="instructor">Îndrumător</option><option value="admin">Administrator</option></select></div>
-      </form>
+          <div><span>Cont creat</span><strong id="userDialogCreated">-</strong></div>
+          <div><span>Categorie</span><strong id="userDialogCategory">-</strong></div>
+        </div>
+        <form id="userEditForm" class="profile-edit-form" hidden>
+          <div class="field"><label class="label" for="editUsername">Nume utilizator</label><input id="editUsername" required minlength="3" maxlength="40" autocomplete="off"></div>
+          <div class="field"><label class="label" for="editRole">Rol în platformă</label><select id="editRole"><option value="student">Student</option><option value="instructor">Îndrumător</option><option value="admin">Administrator</option></select></div>
+          <div class="field"><label class="label" for="editStudyCategory">Categoria de studiu</label><select id="editStudyCategory"></select></div>
+        </form>
       <div class="profile-dialog-actions">
         <button id="editUserBtn" class="btn" type="button">Editează</button>
         <button id="cancelEditBtn" class="btn" type="button" hidden>Anulează</button>

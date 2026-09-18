@@ -3,6 +3,7 @@ import { normalizeRole } from "../../core/authGuard.js";
 import { initPasswordVisibility } from "../../core/passwordVisibility.js";
 import { mountPortal } from "../../core/portalShell.js";
 import { closeProfileDialog, fetchUserStats, formatProfileDate, openProfileDialog, renderUserStats, roleNames } from "../../core/userStats.js";
+import { DEFAULT_STUDY_CATEGORY, STUDY_CATEGORIES, getStudyCategory } from "../../core/studyPlan.js";
 
 let isCreatingUser = false;
 let users = [];
@@ -16,6 +17,21 @@ mountPortal("admin", { onLogout: async () => {
 } });
 initPasswordVisibility();
 
+function fillStudyCategorySelect(select, selected = DEFAULT_STUDY_CATEGORY) {
+  select.replaceChildren();
+  STUDY_CATEGORIES.forEach(({ value, label }) => select.append(new Option(label, value)));
+  select.value = selected;
+}
+
+function studyCategoryLabel(value) {
+  return getStudyCategory(value).label;
+}
+
+function syncCreateCategoryField() {
+  const isStudent = document.getElementById("role").value === "student";
+  document.getElementById("createCategoryField").hidden = !isStudent;
+}
+
 async function init() {
   const { data: { session } } = await supabase.auth.getSession();
   if (!session) { window.location.href = "/login.html"; return; }
@@ -27,6 +43,11 @@ async function init() {
     return;
   }
   currentUserId = session.user.id;
+  fillStudyCategorySelect(document.getElementById("studyCategory"));
+  fillStudyCategorySelect(document.getElementById("editStudyCategory"));
+  document.getElementById("role").addEventListener("change", syncCreateCategoryField);
+  document.getElementById("editRole").addEventListener("change", syncEditCategoryField);
+  syncCreateCategoryField();
   document.querySelector("#createUserSection form").addEventListener("submit", createUser);
   document.querySelectorAll(".menu-item").forEach(item => {
     item.addEventListener("click", (event) => {
@@ -85,6 +106,7 @@ async function createUser(event) {
         password: document.getElementById("password").value,
         username: document.getElementById("username").value.trim(),
         role: document.getElementById("role").value,
+        studyCategory: document.getElementById("studyCategory").value,
       }),
     });
     const data = await response.json();
@@ -109,7 +131,7 @@ async function loadUsers() {
   const summary = document.getElementById("usersSummary");
   summary.textContent = "Se încarcă utilizatorii…";
   try {
-    const { data, error } = await supabase.from("accounts").select("id, username, role, created_at");
+    const { data, error } = await supabase.from("accounts").select("id, username, role, study_category, created_at");
     if (error) throw error;
     users = data || [];
     renderUsers();
@@ -141,6 +163,12 @@ function renderUsers() {
     const badge = document.createElement("span");
     badge.className = "user-role";
     badge.textContent = roleNames[normalizeRole(user.role)] || user.role;
+    if (normalizeRole(user.role) === "student") {
+      const category = document.createElement("span");
+      category.className = "user-category";
+      category.textContent = studyCategoryLabel(user.study_category);
+      info.append(category);
+    }
     info.append(name, badge);
     row.append(info);
     const actions = document.createElement("div");
@@ -184,6 +212,13 @@ function setEditMode(editing) {
   if (editing) document.getElementById("editUsername").focus();
 }
 
+function syncEditCategoryField() {
+  const isStudent = document.getElementById("editRole").value === "student";
+  const field = document.getElementById("editStudyCategory");
+  field.disabled = !isStudent;
+  field.closest(".field").hidden = !isStudent;
+}
+
 async function showProfile(user, editing = false) {
   profileUser = { ...user, role: normalizeRole(user.role) };
   document.getElementById("userDialogTitle").textContent = user.username || "Utilizator";
@@ -191,8 +226,11 @@ async function showProfile(user, editing = false) {
   document.getElementById("userDialogUsername").textContent = user.username || "-";
   document.getElementById("userDialogRole").textContent = roleNames[profileUser.role] || profileUser.role || "-";
   document.getElementById("userDialogCreated").textContent = formatProfileDate(user.created_at);
+  document.getElementById("userDialogCategory").textContent = profileUser.role === "student" ? studyCategoryLabel(user.study_category) : "Nu se aplică";
   document.getElementById("editUsername").value = user.username || "";
   document.getElementById("editRole").value = profileUser.role;
+  document.getElementById("editStudyCategory").value = user.study_category || DEFAULT_STUDY_CATEGORY;
+  syncEditCategoryField();
   document.getElementById("userDialogStatus").textContent = "Se încarcă statisticile…";
   document.getElementById("userDialogStats").replaceChildren();
   setEditMode(editing);
@@ -216,6 +254,7 @@ async function saveProfile() {
   if (!profileUser) return;
   const username = document.getElementById("editUsername").value.trim();
   const role = document.getElementById("editRole").value;
+  const studyCategory = document.getElementById("editStudyCategory").value;
   const status = document.getElementById("userDialogStatus");
   if (username.length < 3) { status.textContent = "Numele trebuie să aibă cel puțin 3 caractere."; return; }
   const button = document.getElementById("saveUserBtn");
@@ -226,11 +265,11 @@ async function saveProfile() {
     const response = await fetch("/.netlify/functions/update-user", {
       method: "POST",
       headers: { "Content-Type": "application/json", ...(session?.access_token ? { Authorization: `Bearer ${session.access_token}` } : {}) },
-      body: JSON.stringify({ userId: profileUser.id, username, role }),
+      body: JSON.stringify({ userId: profileUser.id, username, role, studyCategory }),
     });
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || "update");
-    const updated = { ...profileUser, username, role };
+    const updated = { ...profileUser, username, role, study_category: role === "student" ? studyCategory : null };
     users = users.map((item) => item.id === updated.id ? updated : item);
     profileUser = updated;
     renderUsers();
@@ -239,6 +278,7 @@ async function saveProfile() {
     document.getElementById("userDialogMeta").textContent = roleNames[role];
     document.getElementById("userDialogUsername").textContent = username;
     document.getElementById("userDialogRole").textContent = roleNames[role];
+    document.getElementById("userDialogCategory").textContent = role === "student" ? studyCategoryLabel(studyCategory) : "Nu se aplică";
     status.textContent = "Modificările au fost salvate.";
   } catch (error) {
     console.error(error);

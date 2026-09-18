@@ -54,7 +54,7 @@ async function page(file, { role = file.includes('instructor') ? 'instructor' : 
 
 const htmlFiles=['index.html','login.html','register.html','reset-password.html',...walk('portal').filter(p=>p.endsWith('.html'))];
 test('All portal pages have valid landmarks, unique IDs, labels and local resource targets',()=>{
-  assert.equal(htmlFiles.length,19);
+  assert.equal(htmlFiles.length,22);
   for(const file of htmlFiles) {
     const dom=new JSDOM(read(file)); const d=dom.window.document;
     assert.equal(d.querySelectorAll('main').length,1,file);
@@ -274,6 +274,31 @@ test('Student dashboard filters the summary by year and includes all years',asyn
     assert.match(p.d.querySelector('#performancePeriod').textContent,/Toți anii/);
     assert.equal(p.errors.length,0);
   } finally {p.close();}
+});
+
+test('Bibliografia folosește perioada 2026-2027 și filtrează categoria',async()=>{
+  const student=await page('portal/student/bibliography.html');
+  try {
+    await flush();
+    assert.equal(student.d.querySelector('#periodFilter').value,'2026-2027');
+    assert.equal(student.d.querySelector('#categoryFilterWrap'),null);
+    assert.match(student.d.querySelector('#categoryHeading').textContent,/Clasele 2/);
+    assert.match(student.d.querySelector('#bookList').textContent,/1 & 2 Samuel/);
+    assert.match(student.d.querySelector('#memorizationTitle').textContent,/Apocalipsa/);
+    assert.equal(student.errors.length,0);
+  } finally {student.close();}
+
+  const instructor=await page('portal/instructor/bibliography.html',{records:{accounts:[{id:'self',username:'andrei',role:'instructor',study_category:'10-11'}]}});
+  try {
+    await flush();
+    assert.equal(instructor.d.querySelector('#categoryFilterWrap').hidden,false);
+    assert.equal(instructor.d.querySelector('#categoryFilter').value,'2-3');
+    instructor.d.querySelector('#categoryFilter').value='10-11';
+    instructor.d.querySelector('#categoryFilter').dispatchEvent(new instructor.w.Event('change'));
+    assert.match(instructor.d.querySelector('#categoryHeading').textContent,/Clasele 10/);
+    assert.match(instructor.d.querySelector('#bookList').textContent,/Evrei/);
+    assert.equal(instructor.errors.length,0);
+  } finally {instructor.close();}
 });
 
 test('Student leaderboard uses one list with metric and period filters',async()=>{

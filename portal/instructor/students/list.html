@@ -50,6 +50,7 @@
                 <tr>
                   <th scope="col" style="width: 60px;">#</th>
                   <th scope="col">Nume utilizator</th>
+                  <th scope="col" style="width: 170px;">Categorie</th>
                   <th scope="col" style="width: 160px;">Rol</th>
                   <th scope="col" style="width: 220px;">Data creării</th>
                   <th scope="col" style="width: 130px;">Acțiuni</th>
@@ -78,8 +79,17 @@
         <div id="studentDialogStats" class="profile-stats" aria-live="polite"></div>
         <div class="profile-details">
           <div><span>Username</span><strong id="studentDialogUsername">-</strong></div>
+          <div><span>Categorie</span><strong id="studentDialogCategory">-</strong></div>
           <div><span>Rol</span><strong id="studentDialogRole">Student</strong></div>
           <div><span>Cont creat</span><strong id="studentDialogCreated">-</strong></div>
+        </div>
+        <form id="studentEditForm" class="profile-edit-form" hidden>
+          <div class="field"><label class="label" for="editStudentCategory">Categoria de studiu</label><select id="editStudentCategory"></select></div>
+        </form>
+        <div class="profile-dialog-actions">
+          <button id="editStudentBtn" class="btn" type="button">Editează categoria</button>
+          <button id="cancelStudentEditBtn" class="btn" type="button" hidden>Anulează</button>
+          <button id="saveStudentBtn" class="btn primary" type="button" hidden>Salvează modificările</button>
         </div>
         <p id="studentDialogStatus" class="form-status" role="status"></p>
       </div>

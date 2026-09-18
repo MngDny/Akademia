@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Îndrumător - Bibliografie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/instructor/instructor.css" />
+    <link rel="stylesheet" href="/portal/bibliography.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+      <main class="main">
+        <div class="main-content bibliography-page">
+          <div class="page-header bibliography-header">
+            <div>
+              <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
+              <h1 class="header">Bibliografie</h1>
+              <p id="bibliographyStatus" role="status" class="page-help">Se încarcă planul de studiu...</p>
+            </div>
+            <div class="study-filters">
+              <div class="study-filter">
+                <label class="label" for="periodFilter">Perioada de studiu</label>
+                <select id="periodFilter" class="input"></select>
+              </div>
+              <div id="categoryFilterWrap" class="study-filter">
+                <label class="label" for="categoryFilter">Categorie</label>
+                <select id="categoryFilter" class="input"></select>
+              </div>
+            </div>
+          </div>
+
+          <section class="card bibliography-card" aria-labelledby="categoryHeading">
+            <div class="section-head compact-section-head">
+              <div>
+                <p class="title-eyebrow">Plan pe categorie</p>
+                <h2 id="categoryHeading">-</h2>
+              </div>
+              <span id="categoryBadge" class="study-badge">-</span>
+            </div>
+            <p id="categoryBooksIntro" class="muted">Cărțile de studiu pentru perioada aleasă.</p>
+            <ul id="bookList" class="bibliography-list"></ul>
+          </section>
+
+          <section class="card memorization-card" aria-labelledby="memorizationTitle">
+            <p class="title-eyebrow">Versete de memorat</p>
+            <h2 id="memorizationTitle">-</h2>
+            <p class="muted">Tema comună de memorare pentru perioada aleasă.</p>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/bibliography.js"></script>
+  </body>
+</html>
