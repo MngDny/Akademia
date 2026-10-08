@@ -1,0 +1,1945 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:1"
+      ],
+      "status": "pending_review",
+      "text": "Chemarea lui Samuel ajunsese la cunoștința întregului Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:1"
+      ],
+      "status": "pending_review",
+      "text": "Israel a tăbărât la Afec, iar filistenii lângă Eben-Ezer.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:2"
+      ],
+      "status": "pending_review",
+      "text": "În prima luptă, filistenii au omorât pe câmpul de bătaie aproape patru mii de oameni din Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:3"
+      ],
+      "status": "pending_review",
+      "text": "După prima înfrângere, bătrânii lui Israel au propus să aducă chivotul de la Silo.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:3"
+      ],
+      "status": "pending_review",
+      "text": "Bătrânii au spus că vor să aducă chivotul în tabără ca să-i izbăvească din mâna vrăjmașilor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:4"
+      ],
+      "status": "pending_review",
+      "text": "Hofni și Fineas erau la Silo împreună cu chivotul legământului lui Dumnezeu.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:5"
+      ],
+      "status": "pending_review",
+      "text": "Când chivotul a intrat în tabără, tot Israelul a tăcut, iar pământul s-a cutremurat.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:6"
+      ],
+      "status": "pending_review",
+      "text": "Filistenii au auzit strigătele din tabăra evreilor și au aflat că sosise chivotul Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:7"
+      ],
+      "status": "pending_review",
+      "text": "Filistenii au spus că mai trecuseră printr-o asemenea situație înainte.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:8"
+      ],
+      "status": "pending_review",
+      "text": "În vorbirea lor, filistenii au amintit că dumnezeii aceștia îi loviseră pe egipteni cu urgii în pustie.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:9"
+      ],
+      "status": "pending_review",
+      "text": "Filistenii s-au îndemnat unii pe alții să lupte, ca să nu ajungă robi evreilor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:10"
+      ],
+      "status": "pending_review",
+      "text": "În a doua luptă, fiecare israelit a fugit în cortul lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:10"
+      ],
+      "status": "pending_review",
+      "text": "În a doua înfrângere au căzut treizeci de mii de oameni pedeștri din Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:11"
+      ],
+      "status": "pending_review",
+      "text": "După luptă, chivotul lui Dumnezeu a fost luat, iar Hofni și Fineas au murit.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:12"
+      ],
+      "status": "pending_review",
+      "text": "Omul care a adus vestea la Silo era din Beniamin și a ajuns în aceeași zi.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:13"
+      ],
+      "status": "pending_review",
+      "text": "Eli aștepta la drum fără să fie neliniștit pentru chivotul lui Dumnezeu.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:15"
+      ],
+      "status": "pending_review",
+      "text": "Eli avea nouăzeci și opt de ani și nu mai putea să vadă.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:16"
+      ],
+      "status": "pending_review",
+      "text": "Omul i-a spus lui Eli că venea de pe câmpul de bătaie și fugise în acea zi.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:17",
+        "4:18"
+      ],
+      "status": "pending_review",
+      "text": "Eli a căzut de pe scaun în momentul în care a auzit că chivotul lui Dumnezeu fusese luat.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:18"
+      ],
+      "status": "pending_review",
+      "text": "Eli a fost judecător în Israel timp de patruzeci de ani.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:19"
+      ],
+      "status": "pending_review",
+      "text": "Nevasta lui Fineas era însărcinată și stătea să nască atunci când a auzit vestea.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:20"
+      ],
+      "status": "pending_review",
+      "text": "Femeile i-au spus nurorii lui Eli să nu se teamă, pentru că născuse un fiu.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:21"
+      ],
+      "status": "pending_review",
+      "text": "Femeia a pus copilului numele I-Cabod și a spus că slava plecase din Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:22"
+      ],
+      "status": "pending_review",
+      "text": "Ultimul verset spune că slava plecase din Israel deoarece chivotul lui Dumnezeu fusese luat.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:1"
+      ],
+      "status": "pending_review",
+      "text": "Lângă ce loc a tăbărât Israel înainte de lupta cu filistenii?",
+      "correct": "Eben-Ezer",
+      "options": [
+        {
+          "text": "Afec",
+          "correct": false
+        },
+        {
+          "text": "Eben-Ezer",
+          "correct": true
+        },
+        {
+          "text": "Silo",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:1"
+      ],
+      "status": "pending_review",
+      "text": "Unde tăbărâseră filistenii înainte de luptă?",
+      "correct": "La Afec",
+      "options": [
+        {
+          "text": "La Afec",
+          "correct": true
+        },
+        {
+          "text": "La Silo",
+          "correct": false
+        },
+        {
+          "text": "La Eben-Ezer",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:2"
+      ],
+      "status": "pending_review",
+      "text": "Câți oameni au fost omorâți aproximativ în prima luptă?",
+      "correct": "Aproape patru mii",
+      "options": [
+        {
+          "text": "Aproape patru mii",
+          "correct": true
+        },
+        {
+          "text": "Treizeci de mii",
+          "correct": false
+        },
+        {
+          "text": "Patruzeci de mii",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:3",
+        "4:4"
+      ],
+      "status": "pending_review",
+      "text": "De unde au propus bătrânii să fie adus chivotul legământului?",
+      "correct": "De la Silo",
+      "options": [
+        {
+          "text": "De la Afec",
+          "correct": false
+        },
+        {
+          "text": "De la Silo",
+          "correct": true
+        },
+        {
+          "text": "De la Eben-Ezer",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:4"
+      ],
+      "status": "pending_review",
+      "text": "Care doi fii ai lui Eli se aflau acolo împreună cu chivotul?",
+      "correct": "Hofni și Fineas",
+      "options": [
+        {
+          "text": "Hofni și Fineas",
+          "correct": true
+        },
+        {
+          "text": "Samuel și Hofni",
+          "correct": false
+        },
+        {
+          "text": "Fineas și Eli",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat cu pământul când tot Israelul a strigat la intrarea chivotului în tabără?",
+      "correct": "S-a cutremurat",
+      "options": [
+        {
+          "text": "S-a cutremurat",
+          "correct": true
+        },
+        {
+          "text": "S-a acoperit cu țărână",
+          "correct": false
+        },
+        {
+          "text": "S-a despicat",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce au aflat filistenii după ce au auzit strigătele din tabăra evreilor?",
+      "correct": "Că sosise chivotul Domnului în tabără",
+      "options": [
+        {
+          "text": "Că sosise chivotul Domnului în tabără",
+          "correct": true
+        },
+        {
+          "text": "Că Eli venise la Afec",
+          "correct": false
+        },
+        {
+          "text": "Că Samuel preluase conducerea luptei",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:8"
+      ],
+      "status": "pending_review",
+      "text": "Pe cine au spus filistenii că loviseră cu urgii dumnezeii aceștia?",
+      "correct": "Pe egipteni",
+      "options": [
+        {
+          "text": "Pe egipteni",
+          "correct": true
+        },
+        {
+          "text": "Pe evrei",
+          "correct": false
+        },
+        {
+          "text": "Pe beniaminiți",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce îndemn le-au adresat filistenii tovarășilor lor înainte de luptă?",
+      "correct": "Să se întărească, să fie oameni și să lupte",
+      "options": [
+        {
+          "text": "Să se întărească, să fie oameni și să lupte",
+          "correct": true
+        },
+        {
+          "text": "Să se întoarcă la Afec și să aștepte",
+          "correct": false
+        },
+        {
+          "text": "Să ceară pace de la bătrânii lui Israel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:10"
+      ],
+      "status": "pending_review",
+      "text": "Câți oameni pedeștri au căzut din Israel în a doua înfrângere?",
+      "correct": "Treizeci de mii",
+      "options": [
+        {
+          "text": "Aproape patru mii",
+          "correct": false
+        },
+        {
+          "text": "Treizeci de mii",
+          "correct": true
+        },
+        {
+          "text": "Nouăzeci și opt",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:12"
+      ],
+      "status": "pending_review",
+      "text": "Din ce seminție era omul care a alergat la Silo cu vestea?",
+      "correct": "Beniamin",
+      "options": [
+        {
+          "text": "Beniamin",
+          "correct": true
+        },
+        {
+          "text": "Efraim",
+          "correct": false
+        },
+        {
+          "text": "Levi",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:13"
+      ],
+      "status": "pending_review",
+      "text": "Unde stătea Eli când aștepta vestea despre chivot?",
+      "correct": "Pe un scaun lângă drum",
+      "options": [
+        {
+          "text": "Pe un scaun lângă drum",
+          "correct": true
+        },
+        {
+          "text": "La poarta taberei din Afec",
+          "correct": false
+        },
+        {
+          "text": "În cortul lui Samuel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:15"
+      ],
+      "status": "pending_review",
+      "text": "Ce vârstă avea Eli când a primit vestea?",
+      "correct": "Nouăzeci și opt de ani",
+      "options": [
+        {
+          "text": "Nouăzeci și opt de ani",
+          "correct": true
+        },
+        {
+          "text": "Patruzeci de ani",
+          "correct": false
+        },
+        {
+          "text": "O sută de ani",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:16"
+      ],
+      "status": "pending_review",
+      "text": "Ce l-a întrebat Eli pe omul venit de pe câmpul de bătaie?",
+      "correct": "„Ce s-a întâmplat, fiule?”",
+      "options": [
+        {
+          "text": "„Ce s-a întâmplat, fiule?”",
+          "correct": true
+        },
+        {
+          "text": "„Unde este Samuel?”",
+          "correct": false
+        },
+        {
+          "text": "„Cine a luat chivotul?”",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:17",
+        "4:18"
+      ],
+      "status": "pending_review",
+      "text": "Ce i s-a întâmplat lui Eli lângă poartă după ce a auzit despre chivot?",
+      "correct": "A căzut pe spate, și-a rupt ceafa și a murit",
+      "options": [
+        {
+          "text": "A căzut pe spate, și-a rupt ceafa și a murit",
+          "correct": true
+        },
+        {
+          "text": "A fugit spre câmpul de bătaie",
+          "correct": false
+        },
+        {
+          "text": "A plecat la Silo să caute chivotul",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:18"
+      ],
+      "status": "pending_review",
+      "text": "Câți ani fusese Eli judecător în Israel?",
+      "correct": "Patruzeci de ani",
+      "options": [
+        {
+          "text": "Patruzeci de ani",
+          "correct": true
+        },
+        {
+          "text": "Treizeci de ani",
+          "correct": false
+        },
+        {
+          "text": "Nouăzeci și opt de ani",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:19"
+      ],
+      "status": "pending_review",
+      "text": "Al cui era bărbatul femeii care a născut după ce a auzit vestea?",
+      "correct": "Al lui Fineas",
+      "options": [
+        {
+          "text": "Al lui Fineas",
+          "correct": true
+        },
+        {
+          "text": "Al lui Hofni",
+          "correct": false
+        },
+        {
+          "text": "Al lui Samuel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:20"
+      ],
+      "status": "pending_review",
+      "text": "Cine i-a spus femeii, când era pe moarte, să nu se teamă și că născuse un fiu?",
+      "correct": "Femeile care erau lângă ea",
+      "options": [
+        {
+          "text": "Femeile care erau lângă ea",
+          "correct": true
+        },
+        {
+          "text": "Bătrânii lui Israel",
+          "correct": false
+        },
+        {
+          "text": "Omul din Beniamin",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 4,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:21"
+      ],
+      "status": "pending_review",
+      "text": "Ce nume a pus femeia copilului?",
+      "correct": "I-Cabod",
+      "options": [
+        {
+          "text": "I-Cabod",
+          "correct": true
+        },
+        {
+          "text": "Hofni",
+          "correct": false
+        },
+        {
+          "text": "Eben-Ezer",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:1"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii despre așezarea celor două tabere sunt precizate înaintea luptei?",
+      "options": [
+        {
+          "text": "Israel a tăbărât lângă Eben-Ezer.",
+          "correct": true
+        },
+        {
+          "text": "Filistenii au tăbărât la Afec.",
+          "correct": true
+        },
+        {
+          "text": "Israel a tăbărât la Afec.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:2"
+      ],
+      "status": "pending_review",
+      "text": "Ce se spune despre prima luptă dintre Israel și filisteni?",
+      "options": [
+        {
+          "text": "Filistenii s-au așezat în linie de bătaie împotriva lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "Israel a fost bătut.",
+          "correct": true
+        },
+        {
+          "text": "Aproape patru mii de oameni au fugit în corturile lor.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut și ce au spus bătrânii lui Israel după ce poporul s-a întors în tabără?",
+      "options": [
+        {
+          "text": "Au întrebat de ce Domnul îi lăsase să fie bătuți de filisteni.",
+          "correct": true
+        },
+        {
+          "text": "Au propus să trimită după chivotul legământului la Silo.",
+          "correct": true
+        },
+        {
+          "text": "Au propus să-l trimită pe Eli singur în tabăra filistenilor.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:3",
+        "4:4"
+      ],
+      "status": "pending_review",
+      "text": "Potrivit planului bătrânilor, ce sperau ei să facă prezența chivotului în tabără?",
+      "options": [
+        {
+          "text": "Să fie adus de la Silo și să vină în mijlocul poporului.",
+          "correct": true
+        },
+        {
+          "text": "Să-i izbăvească din mâna vrăjmașilor.",
+          "correct": true
+        },
+        {
+          "text": "Să-i ajute să-i învingă pe egipteni.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:4",
+        "4:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii sunt date despre sosirea chivotului în tabăra lui Israel?",
+      "options": [
+        {
+          "text": "A fost trimis după el la Silo.",
+          "correct": true
+        },
+        {
+          "text": "Hofni și Fineas erau acolo împreună cu chivotul.",
+          "correct": true
+        },
+        {
+          "text": "Tot Israelul a tăcut când chivotul a intrat în tabără.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut filistenii după ce au auzit strigătele din tabăra evreilor?",
+      "options": [
+        {
+          "text": "Au întrebat ce înseamnă strigătele.",
+          "correct": true
+        },
+        {
+          "text": "Au aflat că sosise chivotul Domnului în tabără.",
+          "correct": true
+        },
+        {
+          "text": "Au plecat la Silo ca să aducă ei chivotul.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:7"
+      ],
+      "status": "pending_review",
+      "text": "Cum au reacționat filistenii când au auzit că sosise chivotul?",
+      "options": [
+        {
+          "text": "S-au temut.",
+          "correct": true
+        },
+        {
+          "text": "Au crezut că Dumnezeu venise în tabără.",
+          "correct": true
+        },
+        {
+          "text": "Au spus că trecuseră de multe ori printr-o asemenea situație.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:8"
+      ],
+      "status": "pending_review",
+      "text": "Ce au afirmat filistenii în vorbirea lor despre dumnezeii de care se temeau?",
+      "options": [
+        {
+          "text": "I-au numit dumnezei puternici.",
+          "correct": true
+        },
+        {
+          "text": "Au spus că loviseră Egiptul cu tot felul de urgii în pustie.",
+          "correct": true
+        },
+        {
+          "text": "Au spus că îi loviseră pe filisteni la Afec.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:9"
+      ],
+      "status": "pending_review",
+      "text": "Cu ce îndemnuri s-au încurajat filistenii înaintea luptei?",
+      "options": [
+        {
+          "text": "Să se întărească și să fie oameni.",
+          "correct": true
+        },
+        {
+          "text": "Să lupte.",
+          "correct": true
+        },
+        {
+          "text": "Să se predea evreilor.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce rezultate ale celei de-a doua lupte sunt menționate?",
+      "options": [
+        {
+          "text": "Israel a fost bătut.",
+          "correct": true
+        },
+        {
+          "text": "Fiecare israelit a fugit în cortul lui.",
+          "correct": true
+        },
+        {
+          "text": "Din Israel au căzut aproape patru mii de oameni pedeștri.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat după luptă cu chivotul și cu fiii lui Eli?",
+      "options": [
+        {
+          "text": "Chivotul lui Dumnezeu a fost luat.",
+          "correct": true
+        },
+        {
+          "text": "Hofni și Fineas au murit.",
+          "correct": true
+        },
+        {
+          "text": "Chivotul a fost dus înapoi la Silo în aceeași zi.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:12"
+      ],
+      "status": "pending_review",
+      "text": "Cum este descris omul din Beniamin care a venit la Silo?",
+      "options": [
+        {
+          "text": "A alergat din tabăra de bătaie.",
+          "correct": true
+        },
+        {
+          "text": "A ajuns în aceeași zi.",
+          "correct": true
+        },
+        {
+          "text": "Avea haine curate și nu avea țărână pe cap.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:13"
+      ],
+      "status": "pending_review",
+      "text": "Unde aștepta Eli și pentru ce era neliniștit?",
+      "options": [
+        {
+          "text": "Aștepta pe un scaun lângă drum.",
+          "correct": true
+        },
+        {
+          "text": "Inima îi era neliniștită pentru chivotul lui Dumnezeu.",
+          "correct": true
+        },
+        {
+          "text": "Aștepta la Afec și se pregătea să-și întâmpine fiii.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:16",
+        "4:17"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-a relatat mesagerul lui Eli despre rezultatul luptei?",
+      "options": [
+        {
+          "text": "Israel fugise dinaintea filistenilor și poporul suferise o mare înfrângere.",
+          "correct": true
+        },
+        {
+          "text": "Hofni și Fineas muriseră, iar chivotul Domnului fusese luat.",
+          "correct": true
+        },
+        {
+          "text": "Israel îi învinsese pe filisteni și adusese prada la Silo.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:17",
+        "4:18"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii despre moartea lui Eli sunt precizate?",
+      "options": [
+        {
+          "text": "A căzut pe spate de pe scaun, lângă poartă.",
+          "correct": true
+        },
+        {
+          "text": "Și-a rupt ceafa și a murit.",
+          "correct": true
+        },
+        {
+          "text": "A murit pe câmpul de bătaie, lângă Afec.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:19"
+      ],
+      "status": "pending_review",
+      "text": "Ce împrejurări legate de naștere sunt consemnate despre nevasta lui Fineas?",
+      "options": [
+        {
+          "text": "Era însărcinată și stătea să nască.",
+          "correct": true
+        },
+        {
+          "text": "A auzit vestea luării chivotului și a morții socrului și a bărbatului ei.",
+          "correct": true
+        },
+        {
+          "text": "Născuse deja înainte să audă aceste vești.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:20"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-au spus femeile femeii care trăgea să moară și cum a reacționat ea?",
+      "options": [
+        {
+          "text": "I-au spus să nu se teamă.",
+          "correct": true
+        },
+        {
+          "text": "I-au spus că născuse un fiu.",
+          "correct": true
+        },
+        {
+          "text": "Ea le-a răspuns și a luat seama la ce i se spunea.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:21"
+      ],
+      "status": "pending_review",
+      "text": "Ce două împrejurări sunt menționate ca pricină pentru cuvintele femeii despre slava lui Israel?",
+      "options": [
+        {
+          "text": "Luarea chivotului lui Dumnezeu.",
+          "correct": true
+        },
+        {
+          "text": "Moartea socrului ei și a bărbatului ei.",
+          "correct": true
+        },
+        {
+          "text": "Cei patruzeci de ani în care Eli fusese judecător.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:21",
+        "4:22"
+      ],
+      "status": "pending_review",
+      "text": "Ce spune femeia în legătură cu slava lui Israel și chivotul?",
+      "options": [
+        {
+          "text": "Slava s-a dus din Israel.",
+          "correct": true
+        },
+        {
+          "text": "Chivotul lui Dumnezeu a fost luat.",
+          "correct": true
+        },
+        {
+          "text": "Chivotul s-a întors la Silo.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:18"
+      ],
+      "status": "pending_review",
+      "text": "Care afirmații despre Eli sunt susținute de relatare?",
+      "options": [
+        {
+          "text": "Era bătrân și greu.",
+          "correct": true
+        },
+        {
+          "text": "A fost judecător în Israel patruzeci de ani.",
+          "correct": true
+        },
+        {
+          "text": "A murit pe câmpul de bătaie.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:1",
+        "4:4",
+        "4:12",
+        "4:13"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Tabăra lui Israel înaintea luptei",
+          "right": "Lângă Eben-Ezer"
+        },
+        {
+          "left": "Tabăra filistenilor înaintea luptei",
+          "right": "La Afec"
+        },
+        {
+          "left": "Locul de unde a fost adus chivotul",
+          "right": "Silo"
+        },
+        {
+          "left": "Locul unde aștepta Eli",
+          "right": "Pe un scaun lângă drum"
+        },
+        {
+          "left": "Timpul sosirii mesagerului la Silo",
+          "right": "În aceeași zi"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:2",
+        "4:3",
+        "4:10"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Prima luptă",
+          "right": "Israel este bătut de filisteni"
+        },
+        {
+          "left": "Pierderile din prima luptă",
+          "right": "Aproape patru mii de oameni"
+        },
+        {
+          "left": "După prima înfrângere",
+          "right": "Poporul se întoarce în tabără"
+        },
+        {
+          "left": "A doua luptă",
+          "right": "Israel este din nou bătut"
+        },
+        {
+          "left": "Pierderile din a doua înfrângere",
+          "right": "Treizeci de mii de oameni pedeștri"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:3",
+        "4:4"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Întrebarea bătrânilor după prima înfrângere",
+          "right": "De ce i-a lăsat Domnul să fie bătuți?"
+        },
+        {
+          "left": "Locul de unde propun bătrânii să aducă chivotul",
+          "right": "Silo"
+        },
+        {
+          "left": "Ce urma să facă chivotul în tabără",
+          "right": "Să vină în mijlocul poporului"
+        },
+        {
+          "left": "Izbăvirea pe care o așteptau bătrânii",
+          "right": "Din mâna vrăjmașilor"
+        },
+        {
+          "left": "Fiii lui Eli aflați împreună cu chivotul",
+          "right": "Hofni și Fineas"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:5",
+        "4:6",
+        "4:7",
+        "4:9"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce aud filistenii din tabăra evreilor",
+          "right": "Strigăte de bucurie care cutremură pământul"
+        },
+        {
+          "left": "Ce întreabă după ce aud strigătele",
+          "right": "Ce înseamnă zarva?"
+        },
+        {
+          "left": "Ce află despre tabăra lui Israel",
+          "right": "A sosit chivotul Domnului"
+        },
+        {
+          "left": "Cum reacționează la veste",
+          "right": "Se tem"
+        },
+        {
+          "left": "Ce îndemn își dau înaintea luptei",
+          "right": "Să se întărească, să fie oameni și să lupte"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:7",
+        "4:8",
+        "4:9"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce au crezut filistenii despre Dumnezeu",
+          "right": "Că venise în tabără"
+        },
+        {
+          "left": "Pe cine spun că loviseră dumnezeii aceștia",
+          "right": "Pe egipteni"
+        },
+        {
+          "left": "Cu ce au fost loviți egiptenii",
+          "right": "Cu tot felul de urgii"
+        },
+        {
+          "left": "Unde au fost loviți egiptenii, potrivit cuvintelor lor",
+          "right": "În pustie"
+        },
+        {
+          "left": "De ce se îndeamnă filistenii să lupte",
+          "right": "Ca să nu fie robi evreilor"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:12",
+        "4:16"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Tribul mesagerului",
+          "right": "Beniamin"
+        },
+        {
+          "left": "De unde a alergat",
+          "right": "Din tabăra de bătaie"
+        },
+        {
+          "left": "Când a ajuns la Silo",
+          "right": "În aceeași zi"
+        },
+        {
+          "left": "Starea hainelor",
+          "right": "Sfâșiate"
+        },
+        {
+          "left": "Întrebarea lui Eli către mesager",
+          "right": "„Ce s-a întâmplat, fiule?”"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:13",
+        "4:14",
+        "4:15",
+        "4:18"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce neliniștea inima lui Eli",
+          "right": "Chivotul lui Dumnezeu"
+        },
+        {
+          "left": "Ce întreabă Eli auzind strigătele cetății",
+          "right": "Ce înseamnă zarva?"
+        },
+        {
+          "left": "Vârsta lui Eli",
+          "right": "Nouăzeci și opt de ani"
+        },
+        {
+          "left": "Vederea lui Eli",
+          "right": "Nu mai putea să vadă"
+        },
+        {
+          "left": "Câți ani fusese judecător",
+          "right": "Patruzeci de ani"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:17",
+        "4:18"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Vestea despre Israel",
+          "right": "A fugit dinaintea filistenilor"
+        },
+        {
+          "left": "Vestea despre popor",
+          "right": "A suferit o mare înfrângere"
+        },
+        {
+          "left": "Vestea despre Hofni și Fineas",
+          "right": "Au murit"
+        },
+        {
+          "left": "Vestea despre chivot",
+          "right": "A fost luat"
+        },
+        {
+          "left": "Reacția lui Eli la pomenirea chivotului",
+          "right": "A căzut de pe scaun și a murit"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:19",
+        "4:20"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Starea nevestei lui Fineas",
+          "right": "Însărcinată și stând să nască"
+        },
+        {
+          "left": "Vestea care o face să se încovoaie",
+          "right": "Luarea chivotului și moartea socrului și a bărbatului"
+        },
+        {
+          "left": "Ce o apucă după ce se încovoaie",
+          "right": "Durerile nașterii"
+        },
+        {
+          "left": "Ce îi spun femeile",
+          "right": "Să nu se teamă, fiindcă a născut un fiu"
+        },
+        {
+          "left": "Reacția ei la ce i se spune",
+          "right": "Nu răspunde și nu ia seama"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 4,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "4:21",
+        "4:22"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Numele pus copilului",
+          "right": "I-Cabod"
+        },
+        {
+          "left": "Ce spune numele între paranteze în relatare",
+          "right": "Nu mai e slavă"
+        },
+        {
+          "left": "Ce spune femeia despre slava lui Israel",
+          "right": "S-a dus"
+        },
+        {
+          "left": "Ce s-a întâmplat cu chivotul",
+          "right": "A fost luat"
+        },
+        {
+          "left": "De ce spune femeia că slava s-a dus",
+          "right": "Pentru că chivotul lui Dumnezeu este luat"
+        }
+      ],
+      "options": []
+    }
+  ]
+}
