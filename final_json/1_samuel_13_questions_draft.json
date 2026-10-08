@@ -1,0 +1,1219 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:1"
+      ],
+      "status": "pending_review",
+      "text": "Saul avea treizeci de ani când a ajuns împărat și a domnit doi ani peste Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:2"
+      ],
+      "status": "pending_review",
+      "text": "Saul și-a ales trei mii de bărbați: două mii au rămas cu el la Micmaș și pe muntele Betel, iar o mie a fost cu Ionatan la Ghibea lui Beniamin.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:3"
+      ],
+      "status": "pending_review",
+      "text": "Ionatan a bătut tabăra filistenilor de la Gheba, iar Saul a pus să sune cu trâmbița prin toată țara ca să audă evreii.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:4"
+      ],
+      "status": "pending_review",
+      "text": "Tot Israelul a auzit spunându-se că Saul bătuse tabăra filistenilor și că Israel se făcuse urât filistenilor, iar poporul s-a adunat la Saul în Ghilgal.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:5"
+      ],
+      "status": "pending_review",
+      "text": "Filistenii au venit cu o mie de care și șase mii de călăreți și au tăbărât la Micmaș, la răsărit de Bet-Aven.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:6"
+      ],
+      "status": "pending_review",
+      "text": "Bărbații lui Israel s-au ascuns, între altele, în peșteri, în tufişuri, în stânci, în turnuri și în gropi pentru apă.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:7"
+      ],
+      "status": "pending_review",
+      "text": "Unii evrei au trecut Iordanul spre țara lui Gad și Galaad, în timp ce Saul a rămas la Ghilgal și poporul de lângă el tremura.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:8"
+      ],
+      "status": "pending_review",
+      "text": "Saul a așteptat șapte zile, după timpul hotărât de Samuel, dar Samuel nu venea la Ghilgal și poporul se împrăștia de lângă Saul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:9"
+      ],
+      "status": "pending_review",
+      "text": "Saul a cerut să i se aducă arderea-de-tot și jertfele de mulțumire, apoi a jertfit arderea-de-tot.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:10"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a venit pe când Saul sfârșea de adus arderea-de-tot, iar Saul i-a ieșit înainte să-i ureze de bine.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:2"
+      ],
+      "status": "pending_review",
+      "text": "Dintre cei trei mii de bărbați aleși de Saul, o mie era cu el la Micmaș, iar două mii erau cu Ionatan la Ghibea lui Beniamin.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:3"
+      ],
+      "status": "pending_review",
+      "text": "Saul a bătut garnizoana filistenilor de la Gheba, iar Ionatan a sunat din trâmbiță prin toată țara.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:5"
+      ],
+      "status": "pending_review",
+      "text": "Filistenii aveau șase mii de care și o mie de călăreți când s-au strâns să lupte cu Israel.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:6"
+      ],
+      "status": "pending_review",
+      "text": "Bărbații lui Israel s-au ascuns numai în case și în corturi, nu și în peșteri, stânci ori gropi pentru apă.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:7"
+      ],
+      "status": "pending_review",
+      "text": "Tot poporul a trecut Iordanul spre țara lui Gad și Galaad, iar Saul a plecat și el de la Ghilgal.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:8"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a venit la Ghilgal în timpul așteptat, înainte ca poporul să se împrăștie de lângă Saul.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:9"
+      ],
+      "status": "pending_review",
+      "text": "Saul a jertfit jertfele de mulțumire, dar nu a adus arderea-de-tot.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:12"
+      ],
+      "status": "pending_review",
+      "text": "Saul i-a spus lui Samuel că se rugase Domnului înainte de a aduce arderea-de-tot și că nu se temuse de venirea filistenilor.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:13"
+      ],
+      "status": "pending_review",
+      "text": "Samuel i-a spus lui Saul că păzise porunca Domnului și că Domnul îi va întări pe vecie domnia peste Israel.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:22"
+      ],
+      "status": "pending_review",
+      "text": "În ziua luptei, toți bărbații aflați cu Saul și Ionatan aveau săbii și sulițe.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:1"
+      ],
+      "status": "pending_review",
+      "text": "Câți ani avea Saul când a ajuns împărat, potrivit relatării?",
+      "options": [
+        {
+          "text": "Treizeci de ani",
+          "correct": true
+        },
+        {
+          "text": "Patruzeci de ani",
+          "correct": false
+        },
+        {
+          "text": "Cincizeci de ani",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:2"
+      ],
+      "status": "pending_review",
+      "text": "Câți bărbați și-a ales Saul din Israel pentru a rămâne cu el și cu Ionatan?",
+      "options": [
+        {
+          "text": "Trei mii",
+          "correct": true
+        },
+        {
+          "text": "Șase sute",
+          "correct": false
+        },
+        {
+          "text": "Șase mii",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:2"
+      ],
+      "status": "pending_review",
+      "text": "Unde se aflau cei două mii de bărbați care erau cu Saul?",
+      "options": [
+        {
+          "text": "La Micmaș și pe muntele Betel",
+          "correct": true
+        },
+        {
+          "text": "La Ghibea lui Beniamin și la Ghilgal",
+          "correct": false
+        },
+        {
+          "text": "La Bet-Horon și la Ofra",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:2"
+      ],
+      "status": "pending_review",
+      "text": "Unde se aflau cei o mie de bărbați care erau cu Ionatan?",
+      "options": [
+        {
+          "text": "La Ghibea lui Beniamin",
+          "correct": true
+        },
+        {
+          "text": "La Micmaș",
+          "correct": false
+        },
+        {
+          "text": "La Ghilgal",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:2"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-a făcut Saul celorlalți oameni din popor, care nu rămăseseră cu el sau cu Ionatan?",
+      "options": [
+        {
+          "text": "I-a trimis pe fiecare la cortul lui",
+          "correct": true
+        },
+        {
+          "text": "I-a trimis la filisteni",
+          "correct": false
+        },
+        {
+          "text": "I-a așezat cu Ionatan la Ghibea",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce a făcut Ionatan cu tabăra filistenilor care era la Gheba?",
+      "options": [
+        {
+          "text": "A bătut-o",
+          "correct": true
+        },
+        {
+          "text": "A cerut să se alieze cu ea",
+          "correct": false
+        },
+        {
+          "text": "A trimis-o la Micmaș",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce a pus Saul să se facă prin toată țara după ce filistenii au auzit ce făcuse Ionatan?",
+      "options": [
+        {
+          "text": "Să sune cu trâmbița și să se audă vestea printre evrei",
+          "correct": true
+        },
+        {
+          "text": "Să se aprindă focuri pentru Samuel",
+          "correct": false
+        },
+        {
+          "text": "Să se numere carele filistenilor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:4"
+      ],
+      "status": "pending_review",
+      "text": "Unde s-a adunat poporul la Saul după ce a auzit despre tabăra filistenilor?",
+      "options": [
+        {
+          "text": "La Ghilgal",
+          "correct": true
+        },
+        {
+          "text": "La Micmaș",
+          "correct": false
+        },
+        {
+          "text": "La Ghibea lui Beniamin",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:5"
+      ],
+      "status": "pending_review",
+      "text": "Unde și-au așezat filistenii tabăra după ce s-au strâns să lupte cu Israel?",
+      "options": [
+        {
+          "text": "La Micmaș, la răsărit de Bet-Aven",
+          "correct": true
+        },
+        {
+          "text": "La Gheba, la apus de Betel",
+          "correct": false
+        },
+        {
+          "text": "La Ghilgal, lângă Iordan",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:6"
+      ],
+      "status": "pending_review",
+      "text": "Care dintre aceste locuri este menționat ca ascunzătoare pentru bărbații lui Israel?",
+      "options": [
+        {
+          "text": "Peșterile",
+          "correct": true
+        },
+        {
+          "text": "Palatele",
+          "correct": false
+        },
+        {
+          "text": "Sinagogile",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:7"
+      ],
+      "status": "pending_review",
+      "text": "Înspre ce țări s-au dus unii evrei după ce au trecut Iordanul?",
+      "options": [
+        {
+          "text": "Țara lui Gad și Galaad",
+          "correct": true
+        },
+        {
+          "text": "Țara lui Moab și Amon",
+          "correct": false
+        },
+        {
+          "text": "Țara filistenilor și Egipt",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:8"
+      ],
+      "status": "pending_review",
+      "text": "Câte zile a așteptat Saul la Ghilgal, după timpul hotărât de Samuel?",
+      "options": [
+        {
+          "text": "Șapte zile",
+          "correct": true
+        },
+        {
+          "text": "Trei zile",
+          "correct": false
+        },
+        {
+          "text": "Patruzeci de zile",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce a jertfit Saul după ce a cerut să i se aducă arderea-de-tot și jertfele de mulțumire?",
+      "options": [
+        {
+          "text": "Arderea-de-tot",
+          "correct": true
+        },
+        {
+          "text": "Jertfele de mulțumire, dar nu arderea-de-tot",
+          "correct": false
+        },
+        {
+          "text": "Nicio jertfă",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:10"
+      ],
+      "status": "pending_review",
+      "text": "Când a sosit Samuel la Ghilgal în raport cu jertfa lui Saul?",
+      "options": [
+        {
+          "text": "Pe când Saul sfârșea de adus arderea-de-tot",
+          "correct": true
+        },
+        {
+          "text": "Cu șapte zile înainte să înceapă jertfa",
+          "correct": false
+        },
+        {
+          "text": "După ce poporul plecase cu totul",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce se temea Saul că vor face filistenii, potrivit explicației date lui Samuel?",
+      "options": [
+        {
+          "text": "Se vor coborî împotriva lui la Ghilgal",
+          "correct": true
+        },
+        {
+          "text": "Vor trece Iordanul spre Galaad",
+          "correct": false
+        },
+        {
+          "text": "Vor ataca Ghibea lui Beniamin",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:13",
+        "13:14"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-a spus Samuel lui Saul despre porunca neascultată și urmarea pentru domnia lui?",
+      "options": [
+        {
+          "text": "Că nu păzise porunca, iar domnia lui nu va dăinui",
+          "correct": true
+        },
+        {
+          "text": "Că păzise porunca și domnia lui va fi întărită pe vecie",
+          "correct": false
+        },
+        {
+          "text": "Că nu trebuia să asculte de Samuel, iar poporul îl va alege din nou",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:13"
+      ],
+      "status": "pending_review",
+      "text": "Ce ar fi făcut Domnul cu domnia lui Saul dacă Saul ar fi păzit porunca?",
+      "options": [
+        {
+          "text": "Ar fi întărit-o pe vecie peste Israel",
+          "correct": true
+        },
+        {
+          "text": "Ar fi mutat-o la Ionatan imediat",
+          "correct": false
+        },
+        {
+          "text": "Ar fi dat-o filistenilor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:15"
+      ],
+      "status": "pending_review",
+      "text": "Câți oameni erau aproape cu Saul după ce a numărat poporul rămas cu el?",
+      "options": [
+        {
+          "text": "Aproape șase sute",
+          "correct": true
+        },
+        {
+          "text": "Trei mii",
+          "correct": false
+        },
+        {
+          "text": "Șase mii",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:20"
+      ],
+      "status": "pending_review",
+      "text": "La cine se cobora fiecare om din Israel ca să-și ascută uneltele de fier?",
+      "options": [
+        {
+          "text": "La filisteni",
+          "correct": true
+        },
+        {
+          "text": "La Samuel",
+          "correct": false
+        },
+        {
+          "text": "La locuitorii din Ghilgal",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 13,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:23"
+      ],
+      "status": "pending_review",
+      "text": "Unde s-a așezat ceata de filisteni menționată la sfârșitul capitolului?",
+      "options": [
+        {
+          "text": "La trecătoarea Micmașului",
+          "correct": true
+        },
+        {
+          "text": "La vadul Iordanului",
+          "correct": false
+        },
+        {
+          "text": "La poarta Ghilgalului",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "match",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:2",
+        "13:7",
+        "13:8",
+        "13:16"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cei două mii de oameni aflați cu Saul",
+          "right": "Erau la Micmaș și pe muntele Betel"
+        },
+        {
+          "left": "Cei o mie de oameni aflați cu Ionatan",
+          "right": "Erau la Ghibea lui Beniamin"
+        },
+        {
+          "left": "Ceilalți oameni din popor",
+          "right": "Au fost trimiși fiecare la cortul lui"
+        },
+        {
+          "left": "Timpul hotărât de Samuel",
+          "right": "Șapte zile de așteptare"
+        },
+        {
+          "left": "Saul, Ionatan și poporul care era cu ei",
+          "right": "Se așezaseră la Gheba lui Beniamin"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:17",
+        "13:18",
+        "13:20",
+        "13:23"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Prima ceată de filisteni",
+          "right": "A luat drumul spre Ofra și țara Șual"
+        },
+        {
+          "left": "A doua ceată de filisteni",
+          "right": "A luat drumul spre Bet-Horon"
+        },
+        {
+          "left": "A treia ceată de filisteni",
+          "right": "A mers spre hotarul văii Țeboim, înspre pustie"
+        },
+        {
+          "left": "Uneltele de fier ale israeliților",
+          "right": "Erau duse la filisteni ca să fie ascuțite"
+        },
+        {
+          "left": "Ceata filistenilor de la finalul capitolului",
+          "right": "S-a așezat la trecătoarea Micmașului"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 13,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce informații sunt date despre oastea filistenilor strânsă împotriva lui Israel?",
+      "options": [
+        {
+          "text": "Avea o mie de care",
+          "correct": true
+        },
+        {
+          "text": "Avea șase mii de călăreți",
+          "correct": true
+        },
+        {
+          "text": "Număra exact șase sute de oameni",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:6",
+        "13:7"
+      ],
+      "status": "pending_review",
+      "text": "Care afirmații descriu ce au făcut israeliții când s-au văzut la strâmtoare?",
+      "options": [
+        {
+          "text": "Unii s-au ascuns în locuri precum peșteri, tufişuri, stânci, turnuri și gropi pentru apă",
+          "correct": true
+        },
+        {
+          "text": "Unii evrei au trecut Iordanul spre țara lui Gad și Galaad",
+          "correct": true
+        },
+        {
+          "text": "Tot poporul a trecut Iordanul, iar Saul a plecat din Ghilgal",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:11",
+        "13:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce motive a dat Saul când i-a explicat lui Samuel de ce adusese arderea-de-tot?",
+      "options": [
+        {
+          "text": "A văzut că poporul se împrăștia și că Samuel nu venise la timpul hotărât",
+          "correct": true
+        },
+        {
+          "text": "Se temea că filistenii se vor coborî împotriva lui la Ghilgal și a spus că nu se rugase Domnului",
+          "correct": true
+        },
+        {
+          "text": "Samuel îi poruncise înainte să aducă arderea-de-tot",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:13"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-a spus Samuel lui Saul după ce acesta a adus arderea-de-tot?",
+      "options": [
+        {
+          "text": "Că lucrase ca un nebun și nu păzise porunca Domnului",
+          "correct": true
+        },
+        {
+          "text": "Că Domnul ar fi întărit pe vecie domnia lui dacă păzea porunca",
+          "correct": true
+        },
+        {
+          "text": "Că Domnul îi va întări de acum înainte domnia pentru totdeauna",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:17",
+        "13:18"
+      ],
+      "status": "pending_review",
+      "text": "Care afirmații redau drumurile luate de cetele filistenilor care au ieșit să pustiască țara?",
+      "options": [
+        {
+          "text": "Una a luat drumul spre Ofra, spre țara Șual, iar alta spre Bet-Horon",
+          "correct": true
+        },
+        {
+          "text": "A treia a mers spre hotarul văii Țeboim, înspre pustie",
+          "correct": true
+        },
+        {
+          "text": "Toate trei au mers împreună pe drumul spre Ghilgal",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 13,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "13:19",
+        "13:20",
+        "13:21",
+        "13:22"
+      ],
+      "status": "pending_review",
+      "text": "Ce afirmații sunt consemnate despre fierari, uneltele israeliților și armele din ziua luptei?",
+      "options": [
+        {
+          "text": "Filistenii au vrut să-i împiedice pe evrei să-și facă săbii sau sulițe, iar în țară nu se găsea niciun fierar",
+          "correct": true
+        },
+        {
+          "text": "Israeliții mergeau la filisteni ca să-și ascută uneltele agricole și alte unelte de fier",
+          "correct": true
+        },
+        {
+          "text": "În ziua luptei, toți oamenii lui Israel aveau săbii și sulițe, în afară de Saul și Ionatan",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    }
+  ]
+}
