@@ -1,0 +1,2002 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:1"
+      ],
+      "status": "pending_review",
+      "text": "Locuitorii din Chiriat-Iearim au dus chivotul Domnului în casa lui Abinadab, pe deal.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:1"
+      ],
+      "status": "pending_review",
+      "text": "Fiul lui Abinadab, Eleazar, a fost sfințit ca să păzească chivotul Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:2"
+      ],
+      "status": "pending_review",
+      "text": "După ce chivotul a ajuns la Chiriat-Iearim, toată casa lui Israel a plâns după Domnul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3"
+      ],
+      "status": "pending_review",
+      "text": "Samuel le-a spus israeliților să-și îndrepte inima spre Domnul și să-I slujească numai Lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a spus că întoarcerea la Domnul cerea îndepărtarea dumnezeilor străini și a Astarteelor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3"
+      ],
+      "status": "pending_review",
+      "text": "Samuel le-a promis că Domnul îi va izbăvi de filisteni dacă se întorc la El și Îi slujesc numai Lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:4"
+      ],
+      "status": "pending_review",
+      "text": "După cuvintele lui Samuel, copiii lui Israel au îndepărtat Baalii și Astarteele și au slujit Domnului numai Lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:5"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a chemat tot Israelul la Mițpa și a spus că se va ruga Domnului pentru ei.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:6"
+      ],
+      "status": "pending_review",
+      "text": "La Mițpa, poporul a scos apă, a vărsat-o înaintea Domnului, a postit și și-a mărturisit păcatul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:6"
+      ],
+      "status": "pending_review",
+      "text": "La Mițpa, Samuel a judecat pe copiii lui Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:7"
+      ],
+      "status": "pending_review",
+      "text": "Când filistenii au aflat că Israelul era adunat la Mițpa, domnitorii lor au pornit împotriva lui Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:7"
+      ],
+      "status": "pending_review",
+      "text": "Când au auzit că filistenii vin împotriva lor, copiii lui Israel s-au bucurat și nu s-au temut.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:8"
+      ],
+      "status": "pending_review",
+      "text": "Copiii lui Israel i-au cerut lui Samuel să nu înceteze să strige către Domnul pentru ca El să-i scape din mâna filistenilor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:9"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a adus ca ardere-de-tot un berbec adult și s-a rugat pentru Israel.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:9"
+      ],
+      "status": "pending_review",
+      "text": "Domnul l-a ascultat pe Samuel în timp ce acesta aducea arderea-de-tot.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:10"
+      ],
+      "status": "pending_review",
+      "text": "Domnul a făcut să răsune tunete împotriva filistenilor și i-a pus pe fugă înaintea lui Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:11"
+      ],
+      "status": "pending_review",
+      "text": "Bărbații lui Israel au urmărit filistenii până sub Bet-Car și i-au înfrânt acolo.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:12"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a pus piatra numită Eben-Ezer la Mițpa, chiar în mijlocul cetății.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:12"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a numit piatra dintre Mițpa și Șen Eben-Ezer și a spus că Domnul îi ajutase până aici.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:13"
+      ],
+      "status": "pending_review",
+      "text": "Filistenii au fost smeriți și nu au mai intrat în ținutul lui Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:13"
+      ],
+      "status": "pending_review",
+      "text": "Mâna Domnului a fost împotriva filistenilor în tot timpul vieții lui Samuel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:14"
+      ],
+      "status": "pending_review",
+      "text": "Cetățile luate de filisteni au rămas la ei, de la Ecron până la Gat.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:15"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a judecat pe Israel în toate zilele vieții lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:16",
+        "7:17"
+      ],
+      "status": "pending_review",
+      "text": "În fiecare an, Samuel făcea un circuit prin Betel, Ghilgal și Mițpa, apoi se întorcea la Rama.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:1"
+      ],
+      "status": "pending_review",
+      "text": "În casa cui a fost dus chivotul Domnului după ce l-au luat locuitorii din Chiriat-Iearim?",
+      "correct": "În casa lui Abinadab",
+      "options": [
+        {
+          "text": "În casa lui Abinadab",
+          "correct": true
+        },
+        {
+          "text": "În casa lui Samuel",
+          "correct": false
+        },
+        {
+          "text": "În casa lui Eleazar",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:1"
+      ],
+      "status": "pending_review",
+      "text": "Pe cine au sfințit locuitorii ca să păzească chivotul Domnului?",
+      "correct": "Pe Eleazar, fiul lui Abinadab",
+      "options": [
+        {
+          "text": "Pe Eleazar, fiul lui Abinadab",
+          "correct": true
+        },
+        {
+          "text": "Pe Samuel, fiul lui Elcana",
+          "correct": false
+        },
+        {
+          "text": "Pe unul dintre domnitorii filistenilor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:2"
+      ],
+      "status": "pending_review",
+      "text": "Unde a rămas chivotul Domnului după ce a fost adus de la filisteni?",
+      "correct": "La Chiriat-Iearim",
+      "options": [
+        {
+          "text": "La Chiriat-Iearim",
+          "correct": true
+        },
+        {
+          "text": "La Mițpa",
+          "correct": false
+        },
+        {
+          "text": "La Bet-Șemeș",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-a cerut Samuel lui Israel să îndepărteze dacă se întoarce la Domnul cu toată inima?",
+      "correct": "Dumnezeii străini și Astarteele",
+      "options": [
+        {
+          "text": "Dumnezeii străini și Astarteele",
+          "correct": true
+        },
+        {
+          "text": "Chivotul și altarul Domnului",
+          "correct": false
+        },
+        {
+          "text": "Cetățile dintre Ecron și Gat",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3"
+      ],
+      "status": "pending_review",
+      "text": "Cui trebuia să-I slujească Israel, potrivit îndemnului lui Samuel?",
+      "correct": "Domnului numai Lui",
+      "options": [
+        {
+          "text": "Domnului numai Lui",
+          "correct": true
+        },
+        {
+          "text": "Domnului și Baalilor",
+          "correct": false
+        },
+        {
+          "text": "Domnului și Astarteelor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3"
+      ],
+      "status": "pending_review",
+      "text": "De cine a spus Samuel că îi va izbăvi Domnul, dacă Israel se întoarce la El și Îi slujește?",
+      "correct": "De filisteni",
+      "options": [
+        {
+          "text": "De filisteni",
+          "correct": true
+        },
+        {
+          "text": "De amoriți",
+          "correct": false
+        },
+        {
+          "text": "De egipteni",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:4"
+      ],
+      "status": "pending_review",
+      "text": "Ce dumnezei au îndepărtat copiii lui Israel după ce Samuel i-a îndemnat să se întoarcă la Domnul?",
+      "correct": "Baalii și Astarteele",
+      "options": [
+        {
+          "text": "Baalii și Astarteele",
+          "correct": true
+        },
+        {
+          "text": "Dagon și Chemoș",
+          "correct": false
+        },
+        {
+          "text": "Dumnezeii egiptenilor și ai amoriților",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:5"
+      ],
+      "status": "pending_review",
+      "text": "Unde a chemat Samuel tot Israelul ca să se roage Domnului pentru popor?",
+      "correct": "La Mițpa",
+      "options": [
+        {
+          "text": "La Mițpa",
+          "correct": true
+        },
+        {
+          "text": "La Betel",
+          "correct": false
+        },
+        {
+          "text": "La Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Samuel că va face când Israel se va aduna la Mițpa?",
+      "correct": "Se va ruga Domnului pentru popor",
+      "options": [
+        {
+          "text": "Se va ruga Domnului pentru popor",
+          "correct": true
+        },
+        {
+          "text": "Va duce chivotul la Bet-Car",
+          "correct": false
+        },
+        {
+          "text": "Va cere cetățile de la amoriți",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce a vărsat poporul înaintea Domnului la Mițpa?",
+      "correct": "Apă",
+      "options": [
+        {
+          "text": "Apă",
+          "correct": true
+        },
+        {
+          "text": "Untdelemn",
+          "correct": false
+        },
+        {
+          "text": "Sângele mielului",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce mărturisire au făcut israeliții în ziua adunării de la Mițpa?",
+      "correct": "„Am păcătuit împotriva Domnului.”",
+      "options": [
+        {
+          "text": "„Am păcătuit împotriva Domnului.”",
+          "correct": true
+        },
+        {
+          "text": "„Am înfrânt pe filisteni.”",
+          "correct": false
+        },
+        {
+          "text": "„Am luat înapoi cetățile noastre.”",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:7"
+      ],
+      "status": "pending_review",
+      "text": "Cum au reacționat copiii lui Israel când filistenii au venit împotriva lor la Mițpa?",
+      "correct": "S-au temut de filisteni",
+      "options": [
+        {
+          "text": "S-au temut de filisteni",
+          "correct": true
+        },
+        {
+          "text": "I-au urmărit imediat până la Bet-Car",
+          "correct": false
+        },
+        {
+          "text": "Au dus chivotul la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:8"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-au cerut israeliții lui Samuel să facă în fața amenințării filistenilor?",
+      "correct": "Să strige către Domnul pentru ca El să-i scape",
+      "options": [
+        {
+          "text": "Să strige către Domnul pentru ca El să-i scape",
+          "correct": true
+        },
+        {
+          "text": "Să se întoarcă singur la Chiriat-Iearim",
+          "correct": false
+        },
+        {
+          "text": "Să încheie pace cu filistenii",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce animal a luat Samuel pentru arderea-de-tot adusă Domnului?",
+      "correct": "Un miel care încă sugea",
+      "options": [
+        {
+          "text": "Un miel care încă sugea",
+          "correct": true
+        },
+        {
+          "text": "Un berbec adult",
+          "correct": false
+        },
+        {
+          "text": "Două vaci tinere",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce a făcut Domnul când filistenii s-au apropiat în timp ce Samuel aducea arderea-de-tot?",
+      "correct": "A făcut să răsune tunete împotriva lor",
+      "options": [
+        {
+          "text": "A făcut să răsune tunete împotriva lor",
+          "correct": true
+        },
+        {
+          "text": "A trimis ploaie peste Mițpa",
+          "correct": false
+        },
+        {
+          "text": "A făcut să se deschidă porțile cetății",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:11"
+      ],
+      "status": "pending_review",
+      "text": "Până unde au urmărit bărbații lui Israel pe filisteni după ce aceștia au fugit de la Mițpa?",
+      "correct": "Până sub Bet-Car",
+      "options": [
+        {
+          "text": "Până sub Bet-Car",
+          "correct": true
+        },
+        {
+          "text": "Până la Ecron",
+          "correct": false
+        },
+        {
+          "text": "Până la Chiriat-Iearim",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:12"
+      ],
+      "status": "pending_review",
+      "text": "Cum a numit Samuel piatra așezată între Mițpa și Șen?",
+      "correct": "Eben-Ezer",
+      "options": [
+        {
+          "text": "Eben-Ezer",
+          "correct": true
+        },
+        {
+          "text": "Bet-Car",
+          "correct": false
+        },
+        {
+          "text": "Chiriat-Iearim",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Samuel când a pus piatra numită Eben-Ezer?",
+      "correct": "„Până aici Domnul ne-a ajutat.”",
+      "options": [
+        {
+          "text": "„Până aici Domnul ne-a ajutat.”",
+          "correct": true
+        },
+        {
+          "text": "„Domnul ne-a dat cetățile filistenilor.”",
+          "correct": false
+        },
+        {
+          "text": "„Israel va locui la Mițpa.”",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:14"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat cu cetățile luate de filisteni, de la Ecron până la Gat?",
+      "correct": "S-au întors la Israel împreună cu ținuturile lor",
+      "options": [
+        {
+          "text": "S-au întors la Israel împreună cu ținuturile lor",
+          "correct": true
+        },
+        {
+          "text": "Au fost date amoriților",
+          "correct": false
+        },
+        {
+          "text": "Au rămas sub stăpânirea filistenilor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:14"
+      ],
+      "status": "pending_review",
+      "text": "Între cine a fost pace după ce Israel a luat înapoi cetățile de la filisteni?",
+      "correct": "Între Israel și amoriți",
+      "options": [
+        {
+          "text": "Între Israel și amoriți",
+          "correct": true
+        },
+        {
+          "text": "Între Israel și filisteni",
+          "correct": false
+        },
+        {
+          "text": "Între Mițpa și Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:17"
+      ],
+      "status": "pending_review",
+      "text": "În ce cetate era casa lui Samuel și unde a ridicat el un altar Domnului?",
+      "correct": "La Rama",
+      "options": [
+        {
+          "text": "La Rama",
+          "correct": true
+        },
+        {
+          "text": "La Mițpa",
+          "correct": false
+        },
+        {
+          "text": "La Betel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:16"
+      ],
+      "status": "pending_review",
+      "text": "Ce cetăți vizita Samuel în fiecare an ca să judece pe Israel?",
+      "correct": "Betel, Ghilgal și Mițpa",
+      "options": [
+        {
+          "text": "Betel, Ghilgal și Mițpa",
+          "correct": true
+        },
+        {
+          "text": "Mițpa, Ecron și Gat",
+          "correct": false
+        },
+        {
+          "text": "Rama, Bet-Car și Șen",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:1"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii despre aducerea chivotului la Chiriat-Iearim sunt consemnate?",
+      "options": [
+        {
+          "text": "Chivotul a fost dus în casa lui Abinadab, pe deal.",
+          "correct": true
+        },
+        {
+          "text": "Eleazar, fiul lui Abinadab, a fost sfințit să-l păzească.",
+          "correct": true
+        },
+        {
+          "text": "Chivotul a fost dus în casa lui Samuel, iar Elcana a fost pus să-l păzească.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:2"
+      ],
+      "status": "pending_review",
+      "text": "Ce spune capitolul despre perioada în care chivotul a rămas la Chiriat-Iearim?",
+      "options": [
+        {
+          "text": "Au trecut douăzeci de ani de când fusese așezat acolo.",
+          "correct": true
+        },
+        {
+          "text": "Toată casa lui Israel plângea după Domnul.",
+          "correct": true
+        },
+        {
+          "text": "În acea perioadă, filistenii au dus chivotul la Mițpa.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-a cerut Samuel israeliților pentru întoarcerea lor la Domnul?",
+      "options": [
+        {
+          "text": "Să îndepărteze dumnezeii străini și Astarteele.",
+          "correct": true
+        },
+        {
+          "text": "Să-și îndrepte inima spre Domnul și să-I slujească numai Lui.",
+          "correct": true
+        },
+        {
+          "text": "Să păstreze Baalii, dar să nu se mai adune la Mițpa.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:4"
+      ],
+      "status": "pending_review",
+      "text": "Ce acțiuni ale lui Israel sunt relatate după îndemnul lui Samuel?",
+      "options": [
+        {
+          "text": "Au îndepărtat Baalii și Astarteele.",
+          "correct": true
+        },
+        {
+          "text": "Au slujit Domnului numai Lui.",
+          "correct": true
+        },
+        {
+          "text": "Au trimis chivotul înapoi la filisteni.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Samuel despre adunarea de la Mițpa?",
+      "options": [
+        {
+          "text": "A chemat tot Israelul să se adune acolo.",
+          "correct": true
+        },
+        {
+          "text": "A spus că se va ruga Domnului pentru popor.",
+          "correct": true
+        },
+        {
+          "text": "A cerut ca doar domnitorii lui Israel să vină, fără popor.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut israeliții în ziua adunării de la Mițpa?",
+      "options": [
+        {
+          "text": "Au scos apă și au vărsat-o înaintea Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Au postit și au spus că au păcătuit împotriva Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Au adus chivotul din casa lui Abinadab și l-au pus pe piatra cea mare.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat când filistenii au auzit că Israel era adunat la Mițpa?",
+      "options": [
+        {
+          "text": "Domnitorii filistenilor au pornit împotriva lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "Copiii lui Israel s-au temut de filisteni.",
+          "correct": true
+        },
+        {
+          "text": "Filistenii au cerut lui Samuel să se roage pentru ei.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:8"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-au cerut copiii lui Israel lui Samuel în timp ce se temeau de filisteni?",
+      "options": [
+        {
+          "text": "Să nu înceteze să strige către Domnul pentru ei.",
+          "correct": true
+        },
+        {
+          "text": "Să ceară Domnului să-i scape din mâna filistenilor.",
+          "correct": true
+        },
+        {
+          "text": "Să-i conducă pe filisteni la Chiriat-Iearim.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce a făcut Samuel în timpul jertfei aduse pentru Israel?",
+      "options": [
+        {
+          "text": "A luat un miel care încă sugea și l-a adus ca ardere-de-tot.",
+          "correct": true
+        },
+        {
+          "text": "A strigat către Domnul pentru Israel.",
+          "correct": true
+        },
+        {
+          "text": "A adus două vaci tinere și le-a trimis spre Bet-Șemeș.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce evenimente au avut loc în timp ce Samuel aducea arderea-de-tot?",
+      "options": [
+        {
+          "text": "Domnul a făcut să răsune tunete împotriva filistenilor.",
+          "correct": true
+        },
+        {
+          "text": "Filistenii au fost puși pe fugă și înfrânți înaintea lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "Samuel a dus piatra Eben-Ezer la Rama.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut bărbații lui Israel după fuga filistenilor?",
+      "options": [
+        {
+          "text": "Au ieșit din Mițpa și i-au urmărit.",
+          "correct": true
+        },
+        {
+          "text": "I-au înfrânt până sub Bet-Car.",
+          "correct": true
+        },
+        {
+          "text": "Au urmărit filistenii până la Gat și Ecron.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii sunt date despre piatra numită Eben-Ezer?",
+      "options": [
+        {
+          "text": "Samuel a așezat-o între Mițpa și Șen.",
+          "correct": true
+        },
+        {
+          "text": "Samuel a spus: „Până aici Domnul ne-a ajutat.”",
+          "correct": true
+        },
+        {
+          "text": "Piatra a fost ridicată de Eleazar lângă casa lui Abinadab.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:13"
+      ],
+      "status": "pending_review",
+      "text": "Ce spune capitolul despre urmările înfrângerii filistenilor?",
+      "options": [
+        {
+          "text": "Filistenii au fost smeriți și nu au mai intrat în ținutul lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "Mâna Domnului a fost împotriva filistenilor în tot timpul vieții lui Samuel.",
+          "correct": true
+        },
+        {
+          "text": "Filistenii au stăpânit toate cetățile dintre Ecron și Gat până la moartea lui Samuel.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:14"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat cu cetățile și ținuturile pe care filistenii le luaseră de la Israel?",
+      "options": [
+        {
+          "text": "Cetățile s-au întors la Israel, de la Ecron până la Gat.",
+          "correct": true
+        },
+        {
+          "text": "Israel a luat înapoi ținuturile lor din mâna filistenilor.",
+          "correct": true
+        },
+        {
+          "text": "Cetățile au fost împărțite între Israel și amoriți.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:15",
+        "7:17"
+      ],
+      "status": "pending_review",
+      "text": "Ce două detalii despre Samuel sunt menționate la sfârșitul capitolului?",
+      "options": [
+        {
+          "text": "A judecat pe Israel în toate zilele vieții lui.",
+          "correct": true
+        },
+        {
+          "text": "A ridicat la Rama un altar Domnului.",
+          "correct": true
+        },
+        {
+          "text": "A locuit la Bet-Car și a judecat doar în fiecare an.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:16",
+        "7:17"
+      ],
+      "status": "pending_review",
+      "text": "Care sunt locurile numite în legătură cu lucrarea de judecător a lui Samuel?",
+      "options": [
+        {
+          "text": "Betel, Ghilgal și Mițpa făceau parte din circuitul lui anual.",
+          "correct": true
+        },
+        {
+          "text": "La Rama, unde era casa lui, judeca pe Israel.",
+          "correct": true
+        },
+        {
+          "text": "Ecron și Gat erau cetățile în care își ținea judecata anuală.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:6",
+        "7:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce combinație descrie adunarea și mărturisirea poporului la Mițpa?",
+      "options": [
+        {
+          "text": "Poporul a postit în ziua aceea.",
+          "correct": true
+        },
+        {
+          "text": "Poporul a spus: „Am păcătuit împotriva Domnului.”",
+          "correct": true
+        },
+        {
+          "text": "Poporul a sărbătorit biruința asupra filistenilor înainte ca aceștia să vină.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 7,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:9",
+        "7:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce legătură face capitolul între rugăciunea lui Samuel și intervenția Domnului?",
+      "options": [
+        {
+          "text": "Samuel a strigat către Domnul pentru Israel, iar Domnul l-a ascultat.",
+          "correct": true
+        },
+        {
+          "text": "În timp ce Samuel aducea arderea-de-tot, Domnul a tunat împotriva filistenilor.",
+          "correct": true
+        },
+        {
+          "text": "Samuel a cerut filistenilor să se roage Domnului și ei au fost ascultați.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:1",
+        "7:2"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Locuitorii care au luat chivotul",
+          "right": "Cei din Chiriat-Iearim"
+        },
+        {
+          "left": "Casa în care au dus chivotul",
+          "right": "Casa lui Abinadab"
+        },
+        {
+          "left": "Fiul sfințit ca păzitor al chivotului",
+          "right": "Eleazar"
+        },
+        {
+          "left": "Locul unde a rămas chivotul",
+          "right": "Chiriat-Iearim"
+        },
+        {
+          "left": "Perioada menționată după așezarea chivotului",
+          "right": "Douăzeci de ani"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3",
+        "7:4"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce trebuia îndepărtat din mijlocul poporului",
+          "right": "Dumnezeii străini și Astarteele"
+        },
+        {
+          "left": "Încotro trebuia să-și îndrepte Israel inima",
+          "right": "Spre Domnul"
+        },
+        {
+          "left": "Cui trebuia să-I slujească Israel",
+          "right": "Domnului numai Lui"
+        },
+        {
+          "left": "De cine urma să-i izbăvească Domnul",
+          "right": "De filisteni"
+        },
+        {
+          "left": "Dumnezeii pe care Israel i-a îndepărtat",
+          "right": "Baalii și Astarteele"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:5",
+        "7:6"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Locul unde Samuel a chemat tot Israelul",
+          "right": "Mițpa"
+        },
+        {
+          "left": "Ce a spus Samuel că va face pentru popor",
+          "right": "Se va ruga Domnului"
+        },
+        {
+          "left": "Ce au vărsat israeliții înaintea Domnului",
+          "right": "Apă"
+        },
+        {
+          "left": "Ce au făcut israeliții în ziua aceea",
+          "right": "Au postit"
+        },
+        {
+          "left": "Mărturisirea făcută de popor",
+          "right": "„Am păcătuit împotriva Domnului.”"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:7",
+        "7:8"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cine a pornit împotriva lui Israel",
+          "right": "Domnitorii filistenilor"
+        },
+        {
+          "left": "Unde era adunat Israelul",
+          "right": "La Mițpa"
+        },
+        {
+          "left": "Cum s-a simțit Israel când a aflat de venirea filistenilor",
+          "right": "S-a temut"
+        },
+        {
+          "left": "Ce i-au cerut lui Samuel să nu înceteze să facă",
+          "right": "Să strige către Domnul"
+        },
+        {
+          "left": "Din mâna cui cereau să fie scăpați",
+          "right": "Din mâna filistenilor"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:9",
+        "7:10"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Animalul adus de Samuel ca ardere-de-tot",
+          "right": "Un miel care încă sugea"
+        },
+        {
+          "left": "Pentru cine a strigat Samuel către Domnul",
+          "right": "Pentru Israel"
+        },
+        {
+          "left": "Cum a răspuns Domnul la strigătul lui Samuel",
+          "right": "L-a ascultat"
+        },
+        {
+          "left": "Ce a făcut Domnul împotriva filistenilor",
+          "right": "A făcut să răsune tunete"
+        },
+        {
+          "left": "Ce li s-a întâmplat filistenilor înaintea lui Israel",
+          "right": "Au fost puși pe fugă și înfrânți"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:10",
+        "7:11"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Momentul în care Domnul a tunat împotriva filistenilor",
+          "right": "În timp ce Samuel aducea arderea-de-tot"
+        },
+        {
+          "left": "Reacția filistenilor la tunetul Domnului",
+          "right": "Au fost puși pe fugă"
+        },
+        {
+          "left": "Locul din care au ieșit bărbații lui Israel",
+          "right": "Mițpa"
+        },
+        {
+          "left": "Ce au făcut bărbații lui Israel cu filistenii",
+          "right": "I-au urmărit și i-au înfrânt"
+        },
+        {
+          "left": "Până unde au fost urmăriți filistenii",
+          "right": "Până sub Bet-Car"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:12",
+        "7:13"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Locul dintre care a fost așezată piatra",
+          "right": "Mițpa și Șen"
+        },
+        {
+          "left": "Numele dat pietrei de Samuel",
+          "right": "Eben-Ezer"
+        },
+        {
+          "left": "Ce a spus Samuel despre ajutorul primit",
+          "right": "„Până aici Domnul ne-a ajutat.”"
+        },
+        {
+          "left": "Ce s-a întâmplat cu filistenii după înfrângere",
+          "right": "Au fost smeriți"
+        },
+        {
+          "left": "Cât timp a fost mâna Domnului împotriva filistenilor",
+          "right": "În tot timpul vieții lui Samuel"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:13",
+        "7:14"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce s-a întâmplat cu filistenii",
+          "right": "Au fost smeriți"
+        },
+        {
+          "left": "Ce nu au mai făcut filistenii",
+          "right": "Nu au mai intrat în ținutul lui Israel"
+        },
+        {
+          "left": "Cât timp a fost mâna Domnului împotriva filistenilor",
+          "right": "În tot timpul vieții lui Samuel"
+        },
+        {
+          "left": "Intervalul cetăților întoarse la Israel",
+          "right": "De la Ecron până la Gat"
+        },
+        {
+          "left": "Cu cine a fost pace",
+          "right": "Cu amoriții"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:15",
+        "7:16",
+        "7:17"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cât timp a judecat Samuel pe Israel",
+          "right": "În toate zilele vieții lui"
+        },
+        {
+          "left": "Cât de des făcea Samuel circuitul cetăților",
+          "right": "În fiecare an"
+        },
+        {
+          "left": "Cetatea vizitată pe circuit, alături de Ghilgal și Mițpa",
+          "right": "Betel"
+        },
+        {
+          "left": "Unde era casa lui Samuel",
+          "right": "La Rama"
+        },
+        {
+          "left": "Ce a zidit Samuel la Rama",
+          "right": "Un altar Domnului"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:5",
+        "7:6",
+        "7:16",
+        "7:17"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Locul adunării chemate de Samuel",
+          "right": "Mițpa"
+        },
+        {
+          "left": "Locul unde Samuel judeca Israelul în circuitul anual",
+          "right": "Betel"
+        },
+        {
+          "left": "Un alt loc de judecată din circuitul anual",
+          "right": "Ghilgal"
+        },
+        {
+          "left": "Cetatea unde era casa lui Samuel și unde judeca",
+          "right": "Rama"
+        },
+        {
+          "left": "Ce a zidit Samuel în cetatea unde era casa sa",
+          "right": "Un altar Domnului"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 7,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "7:3",
+        "7:4",
+        "7:6",
+        "7:8"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Îndemnul despre închinare dat de Samuel",
+          "right": "Slujiți Domnului numai Lui"
+        },
+        {
+          "left": "Răspunsul poporului la chemarea de a îndepărta idolii",
+          "right": "A îndepărtat Baalii și Astarteele"
+        },
+        {
+          "left": "Atitudinea poporului în adunarea de la Mițpa",
+          "right": "A postit"
+        },
+        {
+          "left": "Ce a mărturisit poporul la Mițpa",
+          "right": "Că a păcătuit împotriva Domnului"
+        },
+        {
+          "left": "Cererea poporului către Samuel în fața filistenilor",
+          "right": "Să strige către Domnul pentru ei"
+        }
+      ],
+      "options": []
+    }
+  ]
+}
