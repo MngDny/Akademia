@@ -1,0 +1,2240 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "text": "În cântarea ei, Ana spune că inima i se bucură în Domnul și că puterea i-a fost înălțată de El.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana spune că există un alt Dumnezeu în afară de Domnul.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "În cântarea Anei, Domnul nu cunoaște faptele oamenilor.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana spune că arcul celor puternici s-a întărit, iar cei slabi au rămas fără putere.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:4"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "În cântarea Anei, cei flămânzi se închiriază pentru pâine, iar cei sătui se odihnesc.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana spune că femeia stearpă naște de șapte ori, iar femeia care avea mulți copii stă lâncezită.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana spune despre Domnul că omoară, dar nu înviază.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:6"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "În cântarea Anei, Domnul sărăcește și îmbogățește, smerește și înalță.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:7"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul ridică din pulbere pe cel sărac și din gunoi pe cel lipsit.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Cântarea spune că omul va birui prin puterea sa.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Cântarea spune că Domnul va judeca numai poporul Israel.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Elcana s-a dus acasă la Rama, iar Samuel a rămas în slujba Domnului înaintea preotului Eli.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:11"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Textul spune că fiii lui Eli Îl cunoșteau pe Domnul.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Slujitorul preotului venea când se fierbea carnea și ținea în mână o furculiță cu trei coarne.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:13"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Preotul lua doar grăsimea și lăsa carnea prinsă de furculiță.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Înainte de arderea grăsimii, sluga preotului cerea carne fiartă, nu carne crudă.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Când omul spunea să ia ce-i place după arderea grăsimii, sluga cerea să i se dea atunci și amenința că altfel ia cu sila.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Tinerii se făceau vinovați înaintea Domnului deoarece nesocoteau darurile Lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:17"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Samuel slujea înaintea Domnului și purta un efod de lână.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Mama lui Samuel îi făcea în fiecare an o mantie mică.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Mama îi aducea mantia lui Samuel când urca singură la jertfă, fără soțul ei.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli i-a binecuvântat pe Elcana și pe soția lui, cerând Domnului să le dea copii din femeia aceasta.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:20"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "După ce Domnul a cercetat-o pe Ana, ea a născut doi fii și trei fiice.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli a aflat că fiii lui se culcau cu femeile care slujeau la ușa cortului întâlnirii.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:22"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli le-a spus fiilor că faptele lor îi făceau pe slujitorii cortului să păcătuiască.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:24"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Fiii lui Eli au ascultat de glasul tatălui lor.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:25"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Tânărul Samuel creștea mereu și era plăcut Domnului și oamenilor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:26"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Omul lui Dumnezeu i-a spus lui Eli că Domnul Se descoperise casei tatălui său în Egipt, în casa lui Faraon.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:27"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Mesajul spune că Domnul îl alesese pe preot dintre toate semințiile lui Israel pentru slujba Sa.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:28"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul spune că dăduse casei tatălui lui Eli toate jertfele mistuite de foc aduse de copiii lui Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:28"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul l-a întrebat pe Eli de ce Îl cinstește pe El mai mult decât pe fiii săi.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:29"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul spune că îi va cinsti pe cei care Îl cinstesc, iar cei care Îl disprețuiesc vor fi disprețuiți.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:30"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Mesajul anunță că în casa lui Eli nu va mai fi niciun bătrân.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:31"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul a spus că Eli va vedea un potrivnic în locașul Domnului, în timp ce Israel va fi copleșit de bunătăți.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:32"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul va lăsa să rămână la altar numai unul din casa lui Eli, iar ceilalți vor muri în floarea vârstei.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:33"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Semnul anunțat pentru Hofni și Fineas era că amândoi vor muri într-o zi.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:34"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul va pune un preot credincios care va lucra după inima și sufletul Lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:35"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Cine va rămâne din casa lui Eli va cere o slujbă împărătească pentru a avea pâine de mâncat.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:36"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "În cântarea ei, Ana spune că ce anume se bucură în Domnul?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Inima ei",
+          "correct": true
+        },
+        {
+          "text": "Gura ei",
+          "correct": false
+        },
+        {
+          "text": "Casa ei",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce spune Ana că i-a fost înălțată de Domnul?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Puterea",
+          "correct": true
+        },
+        {
+          "text": "Casa",
+          "correct": false
+        },
+        {
+          "text": "Pâinea",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cum formulează Ana comparația cu stânca în cântarea ei?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Nu este stâncă asemenea Dumnezeului nostru.",
+          "correct": true
+        },
+        {
+          "text": "Există multe stânci mai tari decât Dumnezeul nostru.",
+          "correct": false
+        },
+        {
+          "text": "Dumnezeul nostru nu este numit stâncă.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce spune Ana că face Domnul cu toate faptele?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Le cântărește",
+          "correct": true
+        },
+        {
+          "text": "Le uită",
+          "correct": false
+        },
+        {
+          "text": "Le ascunde",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce se întâmplă cu arcul celor puternici în cântarea Anei?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Se sfărâmă",
+          "correct": true
+        },
+        {
+          "text": "Este înălțat",
+          "correct": false
+        },
+        {
+          "text": "Este pus deoparte",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:4"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce se întâmplă cu cei flămânzi în versul despre cei sătui și flămânzi?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Se odihnesc",
+          "correct": true
+        },
+        {
+          "text": "Se închiriază pentru pâine",
+          "correct": false
+        },
+        {
+          "text": "Sunt trimiși la Silo",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce face Domnul după ce coboară în Locuința morților, potrivit cântării?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Scoate de acolo",
+          "correct": true
+        },
+        {
+          "text": "Îi lasă acolo",
+          "correct": false
+        },
+        {
+          "text": "Îi cheamă la altar",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:6"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Pe ai cui pași spune cântarea că îi păzește Domnul?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Pe ai preaiubiților Lui",
+          "correct": true
+        },
+        {
+          "text": "Pe ai celor mândri",
+          "correct": false
+        },
+        {
+          "text": "Pe ai preoților lui Eli",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce va arunca Domnul asupra vrăjmașilor Săi din înălțimea cerului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Tunetul",
+          "correct": true
+        },
+        {
+          "text": "Putere asupra lor",
+          "correct": false
+        },
+        {
+          "text": "O furculiță",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cui spune cântarea că îi va da Domnul putere?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Împăratului Său",
+          "correct": true
+        },
+        {
+          "text": "Preotului Eli",
+          "correct": false
+        },
+        {
+          "text": "Fiului lui Elcana",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Unde s-a dus Elcana după ce copilul a rămas în slujba Domnului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Acasă, la Rama",
+          "correct": true
+        },
+        {
+          "text": "S-a întors la Silo",
+          "correct": false
+        },
+        {
+          "text": "La casa lui Eli",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:11"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "După ce Elcana s-a întors la Rama, înaintea cui a rămas Samuel în slujba Domnului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Preotului Eli",
+          "correct": true
+        },
+        {
+          "text": "Lui Hofni",
+          "correct": false
+        },
+        {
+          "text": "Lui Fineas",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:11"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce ținea în mână slujitorul preotului când venea, în timp ce carnea jertfei fierbea?",
+      "correct": false,
+      "options": [
+        {
+          "text": "O furculiță cu trei coarne",
+          "correct": true
+        },
+        {
+          "text": "Un cuțit cu două tăișuri",
+          "correct": false
+        },
+        {
+          "text": "Un vas cu pâine",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:13"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce lua preotul pentru el din vasul în care slujitorul vârâse furculița?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Tot ce apuca furculița",
+          "correct": true
+        },
+        {
+          "text": "Numai grăsimea",
+          "correct": false
+        },
+        {
+          "text": "Numai carnea fiartă",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce fel de carne cerea slujitorul pentru preot înainte să ardă grăsimea?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Carne crudă pentru fript",
+          "correct": true
+        },
+        {
+          "text": "Carne fiartă",
+          "correct": false
+        },
+        {
+          "text": "Carne păstrată pentru a doua zi",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "De ce spune textul că tinerii se făceau vinovați de un păcat foarte mare?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Nesocoteau darurile Domnului",
+          "correct": true
+        },
+        {
+          "text": "Nu aduceau furculițe",
+          "correct": false
+        },
+        {
+          "text": "Nu se întorceau la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:17"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce purta Samuel când făcea slujba înaintea Domnului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Un efod de in",
+          "correct": true
+        },
+        {
+          "text": "O mantie mică",
+          "correct": false
+        },
+        {
+          "text": "O haină de lână",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce îi aducea anual mama lui Samuel când urca împreună cu soțul ei pentru jertfă?",
+      "correct": false,
+      "options": [
+        {
+          "text": "O mantie mică",
+          "correct": true
+        },
+        {
+          "text": "O furculiță",
+          "correct": false
+        },
+        {
+          "text": "Un vas pentru jertfă",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce i-a cerut Eli Domnului pentru Elcana și soția lui după ce i-a binecuvântat?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Să aibă copii din femeia aceasta",
+          "correct": true
+        },
+        {
+          "text": "Să se mute la Silo",
+          "correct": false
+        },
+        {
+          "text": "Să-l ia pe Samuel înapoi",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:20"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Câți copii a născut Ana după ce Domnul a cercetat-o?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Trei fii și două fiice",
+          "correct": true
+        },
+        {
+          "text": "Doi fii și trei fiice",
+          "correct": false
+        },
+        {
+          "text": "Șapte fii",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Unde slujeau femeile despre care Eli a aflat că fiii lui se culcau cu ele?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Afară, la ușa cortului întâlnirii",
+          "correct": true
+        },
+        {
+          "text": "În casa lui Elcana",
+          "correct": false
+        },
+        {
+          "text": "La poarta cetății Rama",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:22"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Potrivit mustrării lui Eli, cine îl va judeca pe omul care păcătuiește împotriva altui om?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Dumnezeu",
+          "correct": true
+        },
+        {
+          "text": "Preotul",
+          "correct": false
+        },
+        {
+          "text": "Împăratul",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:25"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "După plecarea lui Elcana la Rama și în relatarea despre creșterea sa, ce se spune despre Samuel?",
+      "correct": false,
+      "options": [
+        {
+          "text": "A rămas în slujba Domnului înaintea lui Eli și creștea plăcut Domnului și oamenilor.",
+          "correct": true
+        },
+        {
+          "text": "A plecat cu Elcana la Rama și a încetat slujirea.",
+          "correct": false
+        },
+        {
+          "text": "A rămas la Silo, dar nu mai slujea înaintea Domnului.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:11",
+        "2:26"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce a spus Domnul că va face pentru omul care Îl cinstește?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Îl va cinsti",
+          "correct": true
+        },
+        {
+          "text": "Îl va disprețui",
+          "correct": false
+        },
+        {
+          "text": "Îl va trimite departe de altar",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:30"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce semn a fost anunțat pentru Hofni și Fineas?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Amândoi vor muri într-o zi",
+          "correct": true
+        },
+        {
+          "text": "Vor sluji împreună toată viața",
+          "correct": false
+        },
+        {
+          "text": "Vor pleca din Silo la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:34"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care afirmații despre Domnul sunt rostite de Ana la începutul cântării?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Nimeni nu este sfânt ca Domnul.",
+          "correct": true
+        },
+        {
+          "text": "Nu este alt Dumnezeu decât El.",
+          "correct": true
+        },
+        {
+          "text": "Nu este stâncă asemenea Dumnezeului nostru.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:1",
+        "2:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce contraste despre cei puternici, cei slabi, cei sătui și cei flămânzi apar în cântarea Anei?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Arcul celor puternici s-a sfărâmat.",
+          "correct": true
+        },
+        {
+          "text": "Cei slabi sunt încinși cu putere.",
+          "correct": true
+        },
+        {
+          "text": "Cei flămânzi se închiriază pentru pâine.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:4",
+        "2:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce afirmații din versetul despre cei sătui, cei flămânzi și femeile cu copii sunt corecte?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Cei sătui se închiriază pentru pâine.",
+          "correct": true
+        },
+        {
+          "text": "Cei flămânzi se odihnesc.",
+          "correct": true
+        },
+        {
+          "text": "Femeia care avea mulți copii naște de șapte ori.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce acțiuni îi atribuie cântarea Domnului în versetele despre viață și starea oamenilor?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Omoară și înviază.",
+          "correct": true
+        },
+        {
+          "text": "Coboară în Locuința morților și scoate de acolo.",
+          "correct": true
+        },
+        {
+          "text": "Sărăcește și îmbogățește.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:6",
+        "2:7"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce descrieri din cântarea Anei arată ce face Domnul cu cel sărac și cu cel lipsit?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Cel sărac este ridicat din pulbere.",
+          "correct": true
+        },
+        {
+          "text": "Cel lipsit este ridicat din gunoi.",
+          "correct": true
+        },
+        {
+          "text": "Sunt așezați alături de cei mari.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce spune cântarea despre cei preaiubiți ai Domnului și despre cei răi?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Domnul va păzi pașii preaiubiților Lui.",
+          "correct": true
+        },
+        {
+          "text": "Cei răi vor fi nimiciți în întuneric.",
+          "correct": true
+        },
+        {
+          "text": "Omul va birui prin putere.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:9",
+        "2:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care detalii sunt menționate despre slujitorul preotului când se fierbea carnea?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Venea în clipa când se fierbea carnea.",
+          "correct": true
+        },
+        {
+          "text": "Ținea în mână o furculiță cu trei coarne.",
+          "correct": true
+        },
+        {
+          "text": "Vârâa furculița în vasele folosite pentru gătit.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:13",
+        "2:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce cereri și răspunsuri apar în discuția dintre slujitor și omul care aducea jertfa?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Slujitorul cere carne de fript și spune că preotul nu va lua carne fiartă.",
+          "correct": true
+        },
+        {
+          "text": "Omul spune că slujitorul poate lua ce-i place după ce se arde grăsimea.",
+          "correct": true
+        },
+        {
+          "text": "Slujitorul acceptă să aștepte până se arde grăsimea.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:15",
+        "2:16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care afirmații despre fiii lui Eli și darurile Domnului sunt susținute de text?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Fiii lui Eli erau oameni răi.",
+          "correct": true
+        },
+        {
+          "text": "Ei nu-L cunoșteau pe Domnul.",
+          "correct": true
+        },
+        {
+          "text": "Tinerii nesocoteau darurile Domnului.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:12",
+        "2:17"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care detalii despre Samuel și mama lui apar în capitol?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Samuel făcea slujba înaintea Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Samuel purta un efod de in.",
+          "correct": true
+        },
+        {
+          "text": "Mama lui îi făcea în fiecare an o mantie mică.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:18",
+        "2:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care afirmații din relatarea despre mustrarea lui Eli și răspunsul fiilor sunt corecte?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Aflase de la popor despre faptele lor rele.",
+          "correct": true
+        },
+        {
+          "text": "Faptele lor făceau poporul Domnului să păcătuiască.",
+          "correct": true
+        },
+        {
+          "text": "Ei ascultaseră de glasul tatălui lor.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:23",
+        "2:24",
+        "2:25"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce slujiri ale preotului sunt amintite în mesajul omului lui Dumnezeu?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Să se suie la altarul Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Să ardă tămâia.",
+          "correct": true
+        },
+        {
+          "text": "Să poarte efodul înaintea Domnului.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:28"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce anunțuri despre casa lui Eli apar în mesajul Domnului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Nu va mai fi niciun bătrân în casa lui.",
+          "correct": true
+        },
+        {
+          "text": "Hofni și Fineas vor muri amândoi într-o zi.",
+          "correct": true
+        },
+        {
+          "text": "Cei rămași vor cere o slujbă preoțească pentru o bucată de pâine.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:31",
+        "2:34",
+        "2:36"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Arcul celor puternici",
+          "right": "S-a sfărâmat"
+        },
+        {
+          "left": "Cei slabi",
+          "right": "Sunt încinși cu putere"
+        },
+        {
+          "left": "Cei sătui",
+          "right": "Se închiriază pentru pâine"
+        },
+        {
+          "left": "Cei flămânzi",
+          "right": "Se odihnesc"
+        },
+        {
+          "left": "Femeia stearpă",
+          "right": "Naște de șapte ori"
+        }
+      ],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:4",
+        "2:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Domnul omoară",
+          "right": "Și înviază"
+        },
+        {
+          "left": "Domnul coboară în Locuința morților",
+          "right": "Scoate de acolo"
+        },
+        {
+          "left": "Domnul sărăcește",
+          "right": "Și îmbogățește"
+        },
+        {
+          "left": "Domnul smerește",
+          "right": "Și înalță"
+        },
+        {
+          "left": "Pașii preaiubiților Lui",
+          "right": "Domnul îi păzește"
+        }
+      ],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:6",
+        "2:7",
+        "2:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Cel sărac",
+          "right": "Este ridicat din pulbere"
+        },
+        {
+          "left": "Cel lipsit",
+          "right": "Este ridicat din gunoi"
+        },
+        {
+          "left": "Cei mari",
+          "right": "Alături de ei sunt așezați cei ridicați"
+        },
+        {
+          "left": "Moștenirea dată",
+          "right": "Un scaun de domnie îmbrăcat cu slavă"
+        },
+        {
+          "left": "Stâlpii pământului",
+          "right": "Ai Domnului sunt"
+        }
+      ],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Slujitorul preotului",
+          "right": "Venea când se fierbea carnea"
+        },
+        {
+          "left": "Furculița din mâna slujitorului",
+          "right": "Avea trei coarne"
+        },
+        {
+          "left": "Preotul",
+          "right": "Lua pentru el tot ce apuca furculița"
+        },
+        {
+          "left": "Înainte de arderea grăsimii",
+          "right": "Slujitorul cerea carne de fript"
+        },
+        {
+          "left": "„Dă-mi acum”, spunea slujitorul",
+          "right": "Altfel amenința că ia cu sila"
+        }
+      ],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:13",
+        "2:14",
+        "2:15",
+        "2:16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Elcana",
+          "right": "S-a dus acasă, la Rama"
+        },
+        {
+          "left": "Samuel",
+          "right": "A rămas în slujba Domnului înaintea lui Eli"
+        },
+        {
+          "left": "Mama lui Samuel",
+          "right": "Îi făcea în fiecare an o mantie mică"
+        },
+        {
+          "left": "Eli",
+          "right": "I-a binecuvântat pe Elcana și pe soția lui"
+        },
+        {
+          "left": "Ana",
+          "right": "A născut trei fii și două fiice după ce Domnul a cercetat-o"
+        }
+      ],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:11",
+        "2:19",
+        "2:20",
+        "2:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Fiii lui Eli",
+          "right": "Erau oameni răi și nu-L cunoșteau pe Domnul"
+        },
+        {
+          "left": "Hofni și Fineas",
+          "right": "Amândoi urmau să moară într-o zi"
+        },
+        {
+          "left": "Femeile de la ușa cortului",
+          "right": "Fiii lui Eli se culcau cu ele"
+        },
+        {
+          "left": "Darurile Domnului",
+          "right": "Erau nesocotite de tineri"
+        },
+        {
+          "left": "Tânărul Samuel",
+          "right": "Era plăcut Domnului și oamenilor"
+        }
+      ],
+      "chapter": 2,
+      "difficulty": 5,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:12",
+        "2:17",
+        "2:22",
+        "2:26",
+        "2:34"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Alesul Domnului",
+          "right": "Este ales dintre toate semințiile lui Israel"
+        },
+        {
+          "left": "Slujirea amintită",
+          "right": "Să fie preot în slujba Domnului"
+        },
+        {
+          "left": "Altarul Domnului",
+          "right": "La el se suie preotul ales"
+        },
+        {
+          "left": "Tămâia",
+          "right": "Este arsă înaintea Domnului"
+        },
+        {
+          "left": "Efodul",
+          "right": "Este purtat înaintea Domnului"
+        }
+      ],
+      "chapter": 2,
+      "difficulty": 5,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:28"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Casa lui Eli",
+          "right": "Nu va mai avea niciun bătrân"
+        },
+        {
+          "left": "Unul dintre cei rămași",
+          "right": "Va rămâne la altar"
+        },
+        {
+          "left": "Ceilalți din casa lui",
+          "right": "Vor muri în floarea vârstei"
+        },
+        {
+          "left": "Preotul credincios",
+          "right": "Va lucra după inima și sufletul Domnului"
+        },
+        {
+          "left": "Cei rămași din casa lui Eli",
+          "right": "Vor cere o slujbă preoțească și o bucată de pâine"
+        }
+      ],
+      "chapter": 2,
+      "difficulty": 5,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:31",
+        "2:33",
+        "2:35",
+        "2:36"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce i se promite preotului credincios în mesajul Domnului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Va lucra după inima și sufletul Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Domnul îi va zidi o casă stătătoare.",
+          "correct": true
+        },
+        {
+          "text": "Va umbla totdeauna înaintea Unsului Domnului.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 2,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "2:35"
+      ],
+      "status": "pending_review"
+    }
+  ]
+}

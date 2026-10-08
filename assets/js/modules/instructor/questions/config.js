@@ -1,7 +1,7 @@
 // config.js
 // Configurare centralizata pentru tipurile de intrebari.
 
-const baseListColumns = ["id", "chapter", "difficulty", "book", "status", "added_by", "created_at"];
+const baseListColumns = ["id", "chapter", "difficulty", "book", "source_references", "status", "added_by", "created_at"];
 
 export const questionConfig = {
   tf: {

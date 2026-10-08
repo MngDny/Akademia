@@ -180,9 +180,13 @@ function buildJsonSchema() {
               chapter: { anyOf: [{ type: "integer" }, { type: "string" }] },
               difficulty: { anyOf: [{ type: "integer" }, { type: "string" }] },
               book: { type: "string" },
-              status: { type: "string", enum: ["active", "draft", "archived"] },
+              source_references: {
+                type: "array",
+                items: { type: "string" },
+              },
+              status: { type: "string", enum: ["pending_review", "active", "draft", "archived"] },
             },
-            required: ["type", "text", "correct", "options", "pairs", "chapter", "difficulty", "book", "status"],
+            required: ["type", "text", "correct", "options", "pairs", "chapter", "difficulty", "book", "source_references", "status"],
             additionalProperties: false,
           },
         },
@@ -201,11 +205,14 @@ function normalizeItem(rawItem) {
   const common = {
     type,
     chapter: Number.isInteger(chapter) && chapter > 0 ? chapter : 1,
-    difficulty: Number.isInteger(difficulty) && difficulty > 0 ? difficulty : 1,
+    difficulty: Number.isInteger(difficulty) && difficulty > 0 ? Math.min(5, difficulty) : 1,
     book: String(rawItem?.book || "").trim() || "Import AI",
-    status: ["active", "draft", "archived"].includes(String(rawItem?.status || "").trim())
+    source_references: Array.isArray(rawItem?.source_references)
+      ? [...new Set(rawItem.source_references.map((value) => String(value || "").trim()).filter(Boolean))]
+      : [],
+    status: ["pending_review", "active", "draft", "archived"].includes(String(rawItem?.status || "").trim())
       ? String(rawItem?.status || "").trim()
-      : "draft",
+      : "pending_review",
   };
 
   if (type === "tf") {
@@ -283,16 +290,18 @@ function buildPrompt() {
     "Reguli:",
     "1) Răspunde EXCLUSIV JSON valid.",
     "2) Schema JSON: { \"items\": [ ... ] }.",
-    "3) Pentru tf: {type,text,correct,chapter,difficulty,book,status} unde correct este true/false.",
-    "4) Pentru abc_one / abc_multi: {type,text,options,chapter,difficulty,book,status}.",
+    "3) Pentru tf: {type,text,correct,chapter,difficulty,book,source_references,status} unde correct este true/false.",
+    "4) Pentru abc_one / abc_multi: {type,text,options,chapter,difficulty,book,source_references,status}.",
     "5) options trebuie să aibă exact 3 elemente cu forma {text,correct}.",
     "6) Pentru abc_one exact 1 opțiune corectă; pentru abc_multi minim 1 opțiune corectă.",
-    "7) Pentru match: {type,pairs,chapter,difficulty,book,status}, pairs este listă de {left,right}, minim 2 perechi.",
-    "8) status poate fi active, draft sau archived (preferat draft).",
+    "7) Pentru match: {type,pairs,chapter,difficulty,book,source_references,status}, pairs este listă de {left,right}, minim 2 perechi.",
+    "8) status poate fi pending_review, active, draft sau archived; pentru întrebările generate folosește pending_review.",
     "9) Nu include explicații, markdown sau text suplimentar.",
     "10) Dacă nu există întrebări suficiente, întoarce items gol.",
     "11) Include mereu câmpurile text, correct, options, pairs pentru fiecare item.",
     "12) Pentru câmpuri nefolosite pe tipul curent, pune valori implicite: text=\"\", correct=false, options=[], pairs=[].",
+    "13) source_references este lista tuturor referințelor explicite necesare pentru întrebare (de forma \"1:3\"). O întrebare poate combina informații din mai multe versete; include toate referințele folosite, inclusiv pentru fiecare exercițiu de asociere. Nu limita întrebarea la un singur verset și nu inventa referințe.",
+    "14) difficulty este un număr întreg între 1 și 5: 1 pentru un detaliu explicit, 5 pentru mai multe detalii explicite asociate. Nu folosi deducții pentru a crește dificultatea.",
   ].join("\n");
 }
 

@@ -1,0 +1,49 @@
+.review-queue { display: grid; gap: 18px; }
+.review-queue-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.review-queue-header .section-title { margin: 0 0 5px; }
+.review-queue-header p { margin: 0; }
+.review-filters { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(170px, 220px) minmax(180px, 230px); gap: 10px; }
+.review-message { min-height: 20px; margin: 0; color: var(--muted); font-size: 13px; }
+.review-message.success { color: var(--success); }
+.review-message.error { color: var(--danger); }
+.review-list { display: grid; gap: 16px; }
+.question-review-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.question-review-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 14px 16px; border-bottom: 1px solid var(--line); background: var(--surface-soft); }
+.review-type, .review-chip, .reference-chip { display: inline-flex; align-items: center; min-height: 27px; padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 12px; font-weight: 650; }
+.review-type { color: var(--accent); }
+.review-chip.pending { border-color: #f2d69a; background: #fff7e6; color: #815600; }
+.question-review-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; color: var(--muted); font-size: 12px; }
+.question-review-body { display: grid; gap: 16px; padding: 17px 16px; }
+.question-review-prompt { margin: 0; color: var(--ink); font-size: 17px; font-weight: 650; line-height: 1.5; }
+.question-review-subtitle { margin: -8px 0 0; color: var(--muted); font-size: 13px; }
+.question-review-section { display: grid; gap: 8px; }
+.question-review-section h3 { margin: 0; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.reference-list { display: flex; flex-wrap: wrap; gap: 7px; }
+.reference-chip { background: var(--accent-soft); border-color: #d9d3f5; color: var(--accent); }
+.answer-list { display: grid; gap: 8px; }
+.answer-review-row { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); line-height: 1.45; }
+.answer-review-row.is-correct { border-color: #b8dfc3; background: #f2fbf4; }
+.answer-marker { display: inline-flex; flex: 0 0 25px; align-items: center; justify-content: center; width: 25px; height: 25px; border-radius: 50%; background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 700; }
+.is-correct .answer-marker { background: #d8f0de; color: #176b32; }
+.answer-text { min-width: 0; flex: 1; white-space: pre-wrap; overflow-wrap: anywhere; }
+.correct-label { flex: 0 0 auto; color: #176b32; font-size: 11px; font-weight: 700; }
+.match-list { display: grid; gap: 8px; }
+.match-review-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 10px; padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); line-height: 1.45; }
+.match-review-side { min-width: 0; overflow-wrap: anywhere; }
+.match-review-arrow { color: var(--accent); font-weight: 700; }
+.question-review-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; padding: 13px 16px; border-top: 1px solid var(--line); background: var(--surface-soft); }
+.question-review-actions .spacer { flex: 1; }
+.btn.approve-review { background: var(--success); border-color: var(--success); color: #fff; }
+.btn.reject-review { color: var(--danger); border-color: #edc5c3; }
+.review-empty { display: grid; gap: 5px; padding: 30px 18px; border: 1px dashed var(--line); border-radius: 12px; color: var(--muted); text-align: center; }
+.review-empty[hidden] { display: none; }
+
+@media (max-width: 760px) {
+  .review-filters { grid-template-columns: 1fr; }
+  .question-review-meta { width: 100%; margin-left: 0; }
+  .question-review-top { align-items: flex-start; }
+  .match-review-row { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .match-review-arrow { transform: rotate(90deg); justify-self: start; margin-left: 5px; }
+  .question-review-actions .spacer { display: none; }
+  .question-review-actions > * { flex: 1 1 auto; }
+}

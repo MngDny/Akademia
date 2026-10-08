@@ -38,6 +38,7 @@ export function mountPortal(role, { onLogout } = {}) {
     navigation = link("/portal/instructor/dashboard.html", "Privire de ansamblu", "layout-dashboard") +
       link("/portal/instructor/bibliography.html", "Bibliografie", "book-open") +
       group("list", "Biblioteca de întrebări", "book-open") + group("add", "Adaugă întrebare", "plus") +
+      link("/portal/instructor/questions/review.html", "Verifică întrebări", "shield-check") +
       link("/portal/instructor/questions/import.html", "Import cu AI", "upload") +
       link("/portal/instructor/tests/create.html", "Generează test", "clipboard-check") +
       link("/portal/instructor/students/list.html", "Studenți", "users") +

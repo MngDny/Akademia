@@ -47,6 +47,11 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function normalizeSourceReferences(value) {
+  const values = Array.isArray(value) ? value : String(value || "").split(/[\n,;]+/);
+  return [...new Set(values.map((item) => String(item || "").trim()).filter(Boolean))];
+}
+
 function setSource(source) {
   activeSource = source;
   const tabs = Array.from(els.sourceTabs.querySelectorAll(".source-tab"));
@@ -151,6 +156,7 @@ function renderReview(items) {
       <div class="review-top">
         <label><input type="checkbox" data-field="selected" data-index="${index}" ${item.selected ? "checked" : ""} /> Selectează pentru adăugare</label>
         <span class="review-type">${typeLabel[item.type] || item.type}</span>
+        <span class="review-status">Va fi trimisă la verificare</span>
       </div>
 
       <div class="review-grid">
@@ -166,14 +172,11 @@ function renderReview(items) {
           <label class="label" for="book_${index}">Carte</label>
           <input id="book_${index}" class="input" type="text" data-field="book" data-index="${index}" value="${escapeHtml(item.book || "")}" />
         </div>
-        <div>
-          <label class="label" for="status_${index}">Status</label>
-          <select id="status_${index}" class="input" data-field="status" data-index="${index}">
-            <option value="active" ${item.status === "active" ? "selected" : ""}>Activ</option>
-            <option value="draft" ${item.status === "draft" ? "selected" : ""}>Ciornă</option>
-            <option value="archived" ${item.status === "archived" ? "selected" : ""}>Arhivat</option>
-          </select>
-        </div>
+      </div>
+
+      <div class="source-references-field">
+        <label class="label" for="source_references_${index}">Referințe biblice (una pe rând)</label>
+        <textarea id="source_references_${index}" class="textarea" rows="2" data-field="sourceReferences" data-index="${index}">${escapeHtml(normalizeSourceReferences(item.source_references).join("\n"))}</textarea>
       </div>
 
       ${titleInput}
@@ -212,11 +215,12 @@ function normalizeClientItems(items) {
     .map((item) => ({
       ...item,
       chapter: Number.isInteger(Number(item.chapter)) ? Number(item.chapter) : 1,
-      difficulty: Number.isInteger(Number(item.difficulty)) ? Number(item.difficulty) : 1,
+      difficulty: Number.isInteger(Number(item.difficulty))
+        ? Math.min(5, Math.max(1, Number(item.difficulty)))
+        : 1,
+      source_references: normalizeSourceReferences(item.source_references),
       book: String(item.book || "Import AI").trim() || "Import AI",
-      status: ["active", "draft", "archived"].includes(String(item.status || ""))
-        ? String(item.status)
-        : "draft",
+      status: "pending_review",
       selected: true,
     }));
 }
@@ -331,8 +335,8 @@ function updateItemFromField(target) {
     return;
   }
 
-  if (field === "status") {
-    item.status = String(target.value || "draft").trim();
+  if (field === "sourceReferences") {
+    item.source_references = normalizeSourceReferences(target.value);
     return;
   }
 
@@ -401,14 +405,12 @@ function buildInsertPayload(item) {
   const chapter = Number.parseInt(String(item.chapter || ""), 10);
   const difficulty = Number.parseInt(String(item.difficulty || ""), 10);
   const book = String(item.book || "").trim();
-  const status = String(item.status || "draft").trim();
-
   if (!Number.isInteger(chapter) || chapter <= 0) {
     throw new Error("Capitol invalid într-una dintre întrebări.");
   }
 
-  if (!Number.isInteger(difficulty) || difficulty <= 0) {
-    throw new Error("Dificultate invalidă într-una dintre întrebări.");
+  if (!Number.isInteger(difficulty) || difficulty < 1 || difficulty > 5) {
+    throw new Error("Dificultatea trebuie să fie între 1 și 5 într-una dintre întrebări.");
   }
 
   if (!book) {
@@ -419,7 +421,8 @@ function buildInsertPayload(item) {
     chapter,
     difficulty,
     book,
-    status,
+    source_references: normalizeSourceReferences(item.source_references),
+    status: "pending_review",
     added_by: activeUsername || "necunoscut",
     created_at: new Date().toISOString(),
   };
@@ -526,6 +529,9 @@ async function saveSelected() {
 
       const { error } = await supabase.from(table).insert(rows);
       if (error) {
+        if (String(error.message || "").toLowerCase().includes("source_references")) {
+          throw new Error("Coloana referințelor nu există încă în baza de date. Rulează migrarea question_source_references.sql.");
+        }
         throw new Error(`Eroare la inserare în ${table}: ${error.message}`);
       }
     }

@@ -56,9 +56,16 @@ function renderMetadataFields() {
         <label class="label" for="statusInput">Status</label>
         <select id="statusInput" class="input">
           <option value="active">Activ</option>
+          <option value="pending_review">De verificat</option>
           <option value="draft">Ciornă</option>
           <option value="archived">Arhivat</option>
         </select>
+      </div>
+
+      <div class="source-references-field">
+        <label class="label" for="sourceReferencesInput">Referințe biblice</label>
+        <textarea id="sourceReferencesInput" class="textarea" rows="3" placeholder="Ex: 1:1&#10;1:3"></textarea>
+        <p class="muted">Adaugă câte o referință pe rând. Pentru o întrebare din mai multe versete, adaugă toate referințele.</p>
       </div>
     </div>
   `;
@@ -301,10 +308,16 @@ function bindAnswerInteractions(type) {
 function setCommonValues(row) {
   document.getElementById("chapterInput").value = row.chapter ?? "";
   document.getElementById("difficultyInput").value = row.difficulty ?? "";
+  document.getElementById("sourceReferencesInput").value = normalizeSourceReferences(row.source_references).join("\n");
   const rowBook = String(row.book || "").trim();
   document.getElementById("bookInput").value = rowBook;
 
   document.getElementById("statusInput").value = row.status || "active";
+}
+
+function normalizeSourceReferences(value) {
+  const values = Array.isArray(value) ? value : String(value || "").split(/[\n,;]+/);
+  return [...new Set(values.map((item) => String(item || "").trim()).filter(Boolean))];
 }
 
 function setOptionsValues(row, type) {
@@ -394,8 +407,8 @@ function readCommonPayload() {
     throw new Error("Capitolul trebuie să fie un număr întreg mai mare decât 0.");
   }
 
-  if (!Number.isInteger(difficulty) || difficulty <= 0) {
-    throw new Error("Dificultatea trebuie să fie un număr întreg mai mare decât 0.");
+  if (!Number.isInteger(difficulty) || difficulty < 1 || difficulty > 5) {
+    throw new Error("Dificultatea trebuie să fie un număr întreg între 1 și 5.");
   }
 
   if (!matchedBook) {
@@ -406,6 +419,7 @@ function readCommonPayload() {
     chapter,
     difficulty,
     book: matchedBook,
+    source_references: normalizeSourceReferences(document.getElementById("sourceReferencesInput")?.value || ""),
     status,
     added_by: activeUsername || "necunoscut",
   };
@@ -524,7 +538,10 @@ async function save() {
     }
   } catch (error) {
     console.error(error);
-    els.result.textContent = error?.message || "Eroare la salvare.";
+    const message = String(error?.message || "");
+    els.result.textContent = message.toLowerCase().includes("source_references")
+      ? "Coloana referințelor nu există încă în baza de date. Rulează migrarea question_source_references.sql."
+      : message || "Eroare la salvare.";
   } finally {
     els.saveBtn.disabled = false;
   }

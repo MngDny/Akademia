@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Îndrumător - Verifică întrebări</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/portal/instructor/instructor.css" />
+    <link rel="stylesheet" href="/portal/instructor/questions/review.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+      <main class="main">
+        <div class="quick-links"><a class="quick-link" href="/portal/instructor/dashboard.html">← Privire de ansamblu</a></div>
+        <div class="page-header">
+          <div>
+            <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
+            <h1 class="header">Verifică întrebări</h1>
+            <p class="muted">Citește întrebarea și toate răspunsurile. Aprobarea o activează pentru teste și învățare; respingerea o arhivează.</p>
+          </div>
+        </div>
+
+        <section class="card review-queue" aria-labelledby="queueHeading">
+          <div class="review-queue-header">
+            <div>
+              <h2 id="queueHeading" class="section-title">Întrebări de verificat</h2>
+              <p id="queueSummary" class="muted" role="status">Se încarcă întrebările...</p>
+            </div>
+            <button id="refreshBtn" class="btn sm" type="button">Reîncarcă</button>
+          </div>
+
+          <div class="review-filters">
+            <label class="sr-only" for="searchInput">Caută în întrebări și răspunsuri</label>
+            <input id="searchInput" class="input" type="search" placeholder="Caută întrebare, răspuns sau referință..." autocomplete="off" />
+            <label class="sr-only" for="bookFilter">Filtrează după carte</label>
+            <select id="bookFilter" class="input"><option value="">Toate cărțile</option></select>
+            <label class="sr-only" for="typeFilter">Filtrează după tip</label>
+            <select id="typeFilter" class="input">
+              <option value="">Toate tipurile</option>
+              <option value="tf">Adevărat / Fals</option>
+              <option value="abc_one">Un singur răspuns</option>
+              <option value="abc_multi">Răspunsuri multiple</option>
+              <option value="match">Asociere</option>
+            </select>
+          </div>
+
+          <p id="reviewMessage" class="review-message" role="status" aria-live="polite"></p>
+          <div id="reviewList" class="review-list" aria-live="polite"></div>
+          <div id="emptyState" class="review-empty" hidden>
+            <strong>Nu sunt întrebări în această listă.</strong>
+            <span>Întrebările generate cu AI apar aici până sunt aprobate sau respinse.</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/assets/js/modules/instructor/navigation.js"></script>
+    <script type="module" src="/assets/js/modules/instructor/questions/reviewQuestions.js"></script>
+  </body>
+</html>

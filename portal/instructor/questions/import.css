@@ -7,7 +7,10 @@
 .section-title { margin: 0; font-size: 17px; }
 .review-host { display: grid; gap: 18px; }
 .review-card { border: 1px solid var(--line); border-radius: 12px; padding: 22px; background: var(--surface-soft); }
+.review-status { display: inline-flex; align-items: center; border: 1px solid #f2d69a; border-radius: 999px; background: #fff7e6; color: #815600; padding: 4px 9px; font-size: 11px; font-weight: 700; }
 .review-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.source-references-field { grid-column: 1 / -1; }
+.source-references-field .textarea { min-height: 72px; }
 .option-grid { display: grid; gap: 10px; margin-top: 10px; }
 .option-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; }
 .pairs-input { min-height: 120px; }

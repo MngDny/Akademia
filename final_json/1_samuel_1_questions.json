@@ -1,0 +1,1748 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "text": "Elcana provenea din Ramataim-Țofim, din zona muntelui Efraim.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cine era tatăl lui Elcana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Elihu",
+          "correct": false
+        },
+        {
+          "text": "Ieroham",
+          "correct": true
+        },
+        {
+          "text": "Tohu",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Elcana era numit efratit.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Câte neveste avea Elcana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Una",
+          "correct": false
+        },
+        {
+          "text": "Două",
+          "correct": true
+        },
+        {
+          "text": "Trei",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Care dintre cele două neveste avea copii?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Ana",
+          "correct": false
+        },
+        {
+          "text": "Penina",
+          "correct": true
+        },
+        {
+          "text": "Amândouă",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana avea copii.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "La ce loc se ducea Elcana în fiecare an?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Silo",
+          "correct": true
+        },
+        {
+          "text": "Rama",
+          "correct": false
+        },
+        {
+          "text": "Ramataim-Țofim",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce făcea Elcana la Silo?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Se închina înaintea Domnului oştirilor",
+          "correct": true
+        },
+        {
+          "text": "Aducea jertfe",
+          "correct": true
+        },
+        {
+          "text": "Mergea să vorbească cu Fineas",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Hofni și Fineas erau fiii lui Eli și preoți ai Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cui dădea Elcana părți când aducea jertfa?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Peninei și copiilor ei",
+          "correct": true
+        },
+        {
+          "text": "Anei și copiilor ei",
+          "correct": false
+        },
+        {
+          "text": "Lui Eli și fiilor lui",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:4"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Elcana dădea părți fiilor și fiicelor pe care îi avea cu Ana.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:2",
+        "1:4"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Elcana îi dădea Anei o parte îndoită.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "De ce îi dădea Elcana Anei o parte îndoită?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Pentru că o iubea",
+          "correct": true
+        },
+        {
+          "text": "Pentru că ea avea copii",
+          "correct": false
+        },
+        {
+          "text": "Pentru că Penina i-o cerea",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Textul spune că Domnul o făcuse pe Ana stearpă.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Potrivnica o necăjea pe Ana ca s-o facă să se mânie.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:6"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Potrivit textului, de ce o înțepa potrivnica pe Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Pentru că Domnul o făcuse stearpă",
+          "correct": true
+        },
+        {
+          "text": "Pentru că Ana pleca la Rama",
+          "correct": false
+        },
+        {
+          "text": "Pentru că Ana avea copii",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:6"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Când o necăjea Penina pe Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Când Ana se suia la Casa Domnului",
+          "correct": true
+        },
+        {
+          "text": "Când Ana rămânea acasă",
+          "correct": false
+        },
+        {
+          "text": "Când Elcana mergea la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:7"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana plângea și nu mânca.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:7"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce relație avea Elcana cu Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Era soțul ei",
+          "correct": true
+        },
+        {
+          "text": "Era tatăl ei",
+          "correct": false
+        },
+        {
+          "text": "Era fratele ei",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Elcana a întrebat-o pe Ana dacă el nu prețuia pentru ea mai mult decât zece fii.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cu câți fii și-a comparat Elcana valoarea pentru Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Cinci",
+          "correct": false
+        },
+        {
+          "text": "Zece",
+          "correct": true
+        },
+        {
+          "text": "Doisprezece",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana s-a ridicat după ce au mâncat și au băut la Silo.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli ședea pe un scaun lângă unul dintre ușorii Templului Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana se ruga Domnului cu sufletul amărât și plângea.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cui se ruga Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Domnului",
+          "correct": true
+        },
+        {
+          "text": "Lui Eli",
+          "correct": false
+        },
+        {
+          "text": "Lui Elcana",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce fel de copil i-a cerut Ana Domnului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Un copil de parte bărbătească",
+          "correct": true
+        },
+        {
+          "text": "Un copil de parte femeiască",
+          "correct": false
+        },
+        {
+          "text": "Doi copii",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:11"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a promis că îl va închina Domnului pe copil pentru toate zilele vieții lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:11"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a spus că un brici va trece peste capul copilului.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:11"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care două angajamente apar în juruința Anei?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Să-l închine Domnului toată viața lui",
+          "correct": true
+        },
+        {
+          "text": "Să nu treacă briciul peste capul lui",
+          "correct": true
+        },
+        {
+          "text": "Să-l ducă la Eli după înțărcare",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:11",
+        "1:22",
+        "1:24",
+        "1:25"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a stat multă vreme în rugăciune înaintea Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "La ce se uita Eli cu băgare de seamă?",
+      "correct": false,
+      "options": [
+        {
+          "text": "La gura Anei",
+          "correct": true
+        },
+        {
+          "text": "La mâinile Anei",
+          "correct": false
+        },
+        {
+          "text": "La ușa Templului",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana vorbea în inima ei, își mișca buzele, dar nu i se auzea glasul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:13"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce credea Eli despre Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Că era beată",
+          "correct": true
+        },
+        {
+          "text": "Că dormea",
+          "correct": false
+        },
+        {
+          "text": "Că nu auzea",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:13"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce i-a spus Eli Anei să facă?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Să se trezească",
+          "correct": true
+        },
+        {
+          "text": "Să mănânce",
+          "correct": false
+        },
+        {
+          "text": "Să se întoarcă la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli a întrebat-o pe Ana până când va fi beată.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a spus că nu băuse nici vin, nici băutură amețitoare.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cum s-a descris Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Ca o femeie care suferea în inima ei",
+          "correct": true
+        },
+        {
+          "text": "Ca o femeie bolnavă",
+          "correct": false
+        },
+        {
+          "text": "Ca o femeie care nu putea auzi",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a spus că își vărsa sufletul înaintea Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce motive a dat Ana pentru felul în care vorbise?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Durerea ei mare",
+          "correct": true
+        },
+        {
+          "text": "Supărarea ei",
+          "correct": true
+        },
+        {
+          "text": "Vinul pe care îl băuse",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:15",
+        "1:16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana i-a cerut lui Eli să nu o socotească o femeie stricată.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce i-a spus Eli Anei?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Să meargă în pace și ca Dumnezeul lui Israel să-i asculte rugăciunea",
+          "correct": true
+        },
+        {
+          "text": "Să se întoarcă la Rama",
+          "correct": false
+        },
+        {
+          "text": "Să-l ducă imediat pe copil la Silo",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:17"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli i-a spus Anei să meargă în pace.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:17"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "După ce a plecat, Ana a mâncat.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cum era fața Anei după ce a mâncat?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Nu mai era ca înainte",
+          "correct": true
+        },
+        {
+          "text": "Era plină de lacrimi",
+          "correct": false
+        },
+        {
+          "text": "Era acoperită",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "S-au sculat devreme, s-au închinat înaintea Domnului și s-au întors acasă, la Rama.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Unde au venit acasă Elcana și Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "La Rama",
+          "correct": true
+        },
+        {
+          "text": "La Silo",
+          "correct": false
+        },
+        {
+          "text": "La Ramataim-Țofim",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "De cine Și-a adus aminte Domnul?",
+      "correct": false,
+      "options": [
+        {
+          "text": "De Ana",
+          "correct": true
+        },
+        {
+          "text": "De Penina",
+          "correct": false
+        },
+        {
+          "text": "De Eli",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a rămas însărcinată și a născut un fiu.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:20"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce nume i-a pus Ana fiului ei?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Samuel",
+          "correct": true
+        },
+        {
+          "text": "Elcana",
+          "correct": false
+        },
+        {
+          "text": "Fineas",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:20"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a spus că îl ceruse de la Domnul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:20"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Elcana s-a dus cu toată casa lui să aducă jertfa de peste an și să-și împlinească juruința.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cu cine s-a suit Elcana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Cu toată casa lui",
+          "correct": true
+        },
+        {
+          "text": "Numai cu Ana",
+          "correct": false
+        },
+        {
+          "text": "Numai cu Eli",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana nu s-a suit atunci și a spus că îl va duce pe copil înaintea Domnului după ce îl va înțărca.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:22"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cât urma să rămână copilul acolo, potrivit spuselor Anei?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Pentru totdeauna",
+          "correct": true
+        },
+        {
+          "text": "Până la următoarea jertfă",
+          "correct": false
+        },
+        {
+          "text": "Până la un an",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:22"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Până când i-a spus Elcana Anei să aștepte?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Până la înțărcarea copilului",
+          "correct": true
+        },
+        {
+          "text": "Până la întoarcerea lui Eli",
+          "correct": false
+        },
+        {
+          "text": "Până la jertfa următoare",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:23"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a rămas acasă și și-a alăptat fiul până l-a înțărcat.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:23"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce a spus Elcana despre cuvântul Domnului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Să-Și împlinească Domnul cuvântul",
+          "correct": true
+        },
+        {
+          "text": "Să-l schimbe Domnul",
+          "correct": false
+        },
+        {
+          "text": "Să-l uite Domnul",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:23"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Câți tauri a luat Ana când l-a dus pe copil la Silo?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Doi",
+          "correct": false
+        },
+        {
+          "text": "Trei",
+          "correct": true
+        },
+        {
+          "text": "Cinci",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:24"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care dintre aceste lucruri se numără printre cele luate de Ana?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Trei tauri",
+          "correct": true
+        },
+        {
+          "text": "O efă de făină",
+          "correct": true
+        },
+        {
+          "text": "Două burdufuri cu vin",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:24"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana l-a dus pe copil la Casa Domnului, la Silo, când el era încă foarte mic.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:24"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "După ce au înjunghiat taurii, au dus copilul la Eli.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:25"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "La cine au dus copilul?",
+      "correct": false,
+      "options": [
+        {
+          "text": "La Eli",
+          "correct": true
+        },
+        {
+          "text": "La Fineas",
+          "correct": false
+        },
+        {
+          "text": "La Elcana",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:25"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana i-a spus lui Eli că ea era femeia care stătuse lângă el și se rugase Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:26"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce făcea Ana când stătea lângă Eli?",
+      "correct": false,
+      "options": [
+        {
+          "text": "Se ruga Domnului",
+          "correct": true
+        },
+        {
+          "text": "Îi vorbea lui Penina",
+          "correct": false
+        },
+        {
+          "text": "Îi aducea jertfe lui Elcana",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:26"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a spus că se rugase pentru copilul acesta și că Domnul îi ascultase rugăciunea.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:27"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce a făcut Domnul cu rugăciunea Anei?",
+      "correct": false,
+      "options": [
+        {
+          "text": "A ascultat-o",
+          "correct": true
+        },
+        {
+          "text": "A uitat-o",
+          "correct": false
+        },
+        {
+          "text": "A amânat-o",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:27"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Ana a spus că toată viața copilului va fi dată Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:28"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce au făcut acolo înaintea Domnului?",
+      "correct": false,
+      "options": [
+        {
+          "text": "S-au închinat",
+          "correct": true
+        },
+        {
+          "text": "Au mâncat",
+          "correct": false
+        },
+        {
+          "text": "S-au întors acasă",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 1,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:28"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "text": "",
+      "correct": false,
+      "options": [],
+      "pairs": [
+        {
+          "left": "Ramataim-Țofim",
+          "right": "Locul de proveniență al lui Elcana"
+        },
+        {
+          "left": "Silo",
+          "right": "Locul unde Elcana se ducea să se închine și să aducă jertfe"
+        },
+        {
+          "left": "Rama",
+          "right": "Locul unde s-au întors acasă"
+        },
+        {
+          "left": "Samuel",
+          "right": "Numele dat fiului Anei"
+        },
+        {
+          "left": "Eli",
+          "right": "Persoana la care au dus copilul"
+        }
+      ],
+      "chapter": 1,
+      "difficulty": 5,
+      "book": "1 Samuel",
+      "source_references": [
+        "1:1",
+        "1:3",
+        "1:19",
+        "1:20",
+        "1:25"
+      ],
+      "status": "pending_review"
+    }
+  ]
+}

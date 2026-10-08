@@ -27,6 +27,21 @@ function normalizeSearch(value) {
     .trim();
 }
 
+function escapeHtml(value) {
+  return String(value || "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function isMissingSourceReferencesColumn(error) {
+  const message = String(error?.message || "").toLowerCase();
+  return message.includes("source_references")
+    && (error?.code === "42703" || message.includes("does not exist") || message.includes("schema cache"));
+}
+
 function render(rows, cfg) {
   els.tableBody.innerHTML = "";
 
@@ -44,6 +59,9 @@ function render(rows, cfg) {
       row.chapter ? `Capitol ${row.chapter}` : null,
       row.difficulty ? `Dificultate ${row.difficulty}` : null,
       row.book || null,
+      Array.isArray(row.source_references) && row.source_references.length
+        ? `Versete ${row.source_references.join(", ")}`
+        : null,
       row.status || null,
     ]
       .filter(Boolean)
@@ -53,7 +71,7 @@ function render(rows, cfg) {
       <td title="${row.id ?? ""}">${shortId}</td>
       <td>
         <div>${preview}</div>
-        <small class="muted">${meta || "Fără metadate"}</small>
+        <small class="muted">${escapeHtml(meta || "Fără metadate")}</small>
       </td>
       <td>
         <a class="btn sm" href="/portal/instructor/questions/add.html?type=${typeFromCfg(cfg)}&edit=${row.id}">Editează</a>
@@ -77,6 +95,7 @@ function applySearch(cfg) {
     const status = String(r.status || "").toLowerCase();
     const chapter = String(r.chapter || "");
     const difficulty = String(r.difficulty || "");
+    const references = normalizeSearch((r.source_references || []).join?.(" ") || "");
 
     return (!bookQuery || (selectedBook ? normalizeBookKey(r.book) === selectedBook : book.includes(bookQuery))) && (
       preview.includes(q)
@@ -84,6 +103,7 @@ function applySearch(cfg) {
       || status.includes(q)
       || chapter.includes(q)
       || difficulty.includes(q)
+      || references.includes(normalizeSearch(q))
     );
   });
 
@@ -91,10 +111,19 @@ function applySearch(cfg) {
 }
 
 async function load(cfg) {
-  const { data, error } = await supabase
+  let { data, error } = await supabase
     .from(cfg.table)
     .select(cfg.listColumns.join(","))
     .order("created_at", { ascending: false });
+  let referencesMigrationMissing = false;
+
+  if (error && isMissingSourceReferencesColumn(error)) {
+    referencesMigrationMissing = true;
+    ({ data, error } = await supabase
+      .from(cfg.table)
+      .select(cfg.listColumns.filter((column) => column !== "source_references").join(","))
+      .order("created_at", { ascending: false }));
+  }
 
   if (error) {
     console.error(error);
@@ -109,7 +138,9 @@ async function load(cfg) {
     ...BIBLE_BOOKS,
     ...allRows.map((row) => row.book),
   ]));
-  els.pageSubtitle.textContent = `${allRows.length} întrebări`;
+  els.pageSubtitle.textContent = referencesMigrationMissing
+    ? `${allRows.length} întrebări · rulează migrarea pentru referințele biblice`
+    : `${allRows.length} întrebări`;
   if (els.bookFilter?.value) applySearch(cfg);
   else render(allRows, cfg);
 }

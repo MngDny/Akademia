@@ -84,7 +84,7 @@ function difficultyPercent(value) {
 
 function isAvailableQuestion(row) {
   const status = String(row?.status || "").trim().toLocaleLowerCase("ro").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  return !["draft", "ciorna", "archived", "arhivat"].includes(status);
+  return status === "active";
 }
 
 function prioritizeByDifficulty(rows, target) {

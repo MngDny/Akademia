@@ -17,6 +17,10 @@ Previzualizarea statică este disponibilă la http://localhost:4173. Autentifica
 
 Pentru categoriile elevilor și bibliografia pe perioade, rulează o dată scriptul `final_json/study_plan.sql` în Supabase SQL Editor. Acesta adaugă `study_category` în `accounts` și atribuie categoria implicită `2-3` elevilor existenți fără categorie.
 
+Pentru referințe biblice exacte la întrebări, rulează `final_json/question_source_references.sql` în Supabase SQL Editor înainte de a salva întrebări noi cu referințe.
+
+Întrebările generate de AI sunt salvate cu statusul `pending_review` și apar în meniul îndrumătorului „Verifică întrebări”. Aprobarea le schimbă statusul în `active`; respingerea le arhivează. Doar întrebările active sunt disponibile studenților și testelor. Pentru indexarea cozii, rulează `final_json/question_review_workflow.sql` în Supabase SQL Editor.
+
 ## Interfață
 
 - `assets/css/layout.css`: culori, spațiere, navigare și adaptarea la telefon.

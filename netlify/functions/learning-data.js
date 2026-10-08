@@ -65,7 +65,7 @@ async function getBooks(supabase) {
     const { data, error } = await supabase
       .from(table)
       .select("book")
-      .neq("status", "archived")
+      .eq("status", "active")
       .limit(5000);
 
     if (error) throw error;
@@ -95,7 +95,7 @@ async function getQuestionsByBooks(supabase, books) {
     const { data, error } = await supabase
       .from(table)
       .select(baseColumns)
-      .neq("status", "archived")
+      .eq("status", "active")
       .order("created_at", { ascending: false })
       .limit(5000);
 
