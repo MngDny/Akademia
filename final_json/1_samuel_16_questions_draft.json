@@ -1,0 +1,1240 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:1"
+      ],
+      "status": "pending_review",
+      "text": "Domnul l-a întrebat pe Samuel până când avea să-l plângă pe Saul, pe care îl lepădase ca să nu mai domnească peste Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:1"
+      ],
+      "status": "pending_review",
+      "text": "Domnul i-a spus lui Samuel să-și umple cornul cu untdelemn și să meargă la Isai Betleemitul, fiindcă alesese unul dintre fiii lui ca împărat.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:2"
+      ],
+      "status": "pending_review",
+      "text": "Samuel i-a spus Domnului că Saul nu-l va putea ucide, așa că putea merge la Isai fără teamă.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:2"
+      ],
+      "status": "pending_review",
+      "text": "Domnul i-a spus lui Samuel să ia un vițel și să spună că merge să aducă o jertfă Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:3"
+      ],
+      "status": "pending_review",
+      "text": "Samuel trebuia să-l poftească pe Isai la jertfă, iar Domnul avea să-i arate pe cine să ungă.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:4"
+      ],
+      "status": "pending_review",
+      "text": "Bătrânii Betleemului au alergat înspăimântați la Samuel și l-au întrebat dacă venirea lui vestește ceva bun.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:5"
+      ],
+      "status": "pending_review",
+      "text": "Samuel le-a spus celor veniți să se sfințească și să vină la jertfă; i-a sfințit pe Isai și pe fiii lui și i-a poftit.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:6"
+      ],
+      "status": "pending_review",
+      "text": "Văzându-l pe Eliab, Samuel s-a gândit că unsul Domnului era înaintea lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:7"
+      ],
+      "status": "pending_review",
+      "text": "Domnul i-a spus lui Samuel că omul se uită la inimă, iar Domnul la înfățișare și înălțime.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:7"
+      ],
+      "status": "pending_review",
+      "text": "Domnul i-a spus lui Samuel că El Se uită la inimă, în timp ce omul se uită la ceea ce izbește ochii.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:8"
+      ],
+      "status": "pending_review",
+      "text": "Domnul l-a ales pe Abinadab, fiul trecut înaintea lui Samuel după Eliab.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:9"
+      ],
+      "status": "pending_review",
+      "text": "Isai l-a trecut pe Șama înaintea lui Samuel, iar Samuel a spus că Domnul nici pe acesta nu-l alesese.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:10"
+      ],
+      "status": "pending_review",
+      "text": "Isai a trecut pe dinaintea lui Samuel șapte fii ai săi, iar Samuel a spus că Domnul nu alesese pe niciunul dintre ei.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:11"
+      ],
+      "status": "pending_review",
+      "text": "Cel mai tânăr fiu al lui Isai era la oi, iar Samuel a spus că nu vor ședea la masă până nu va veni.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:12"
+      ],
+      "status": "pending_review",
+      "text": "David avea păr bălai, ochi frumoși și față frumoasă; Domnul i-a spus lui Samuel să se scoale și să-l ungă.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:13"
+      ],
+      "status": "pending_review",
+      "text": "Samuel l-a uns pe David în mijlocul fraților lui, iar Duhul Domnului a venit peste David din ziua aceea.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:13"
+      ],
+      "status": "pending_review",
+      "text": "După ce l-a uns pe David, Samuel s-a dus înapoi la Betleem.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:14",
+        "16:15"
+      ],
+      "status": "pending_review",
+      "text": "Duhul Domnului se depărtase de Saul și un duh rău îl muncea; slujitorii lui Saul i-au spus acest lucru.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:16",
+        "16:17"
+      ],
+      "status": "pending_review",
+      "text": "Slujitorii au propus să caute un om care știe să cânte la harpă, iar Saul le-a cerut să găsească un om care cântă bine și să-l aducă.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:22",
+        "16:23"
+      ],
+      "status": "pending_review",
+      "text": "Saul i-a cerut lui Isai să-l lase pe David în slujba sa; când duhul venea peste Saul, David cânta la harpă, iar Saul se simțea ușurat.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:1"
+      ],
+      "status": "pending_review",
+      "text": "La cine i-a spus Domnul lui Samuel să meargă pentru a unge unul dintre fiii lui împărat?",
+      "options": [
+        {
+          "text": "La Isai Betleemitul",
+          "correct": true
+        },
+        {
+          "text": "La Saul, la Ghibea",
+          "correct": false
+        },
+        {
+          "text": "La Eliab, la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:1"
+      ],
+      "status": "pending_review",
+      "text": "Ce trebuia Samuel să-și umple cu untdelemn înainte de a pleca?",
+      "options": [
+        {
+          "text": "Cornul",
+          "correct": true
+        },
+        {
+          "text": "Un burduf",
+          "correct": false
+        },
+        {
+          "text": "Un potir",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:2"
+      ],
+      "status": "pending_review",
+      "text": "De ce s-a temut Samuel când Domnul l-a trimis la Isai?",
+      "options": [
+        {
+          "text": "Că Saul va afla și îl va ucide",
+          "correct": true
+        },
+        {
+          "text": "Că Isai va refuza să-l primească",
+          "correct": false
+        },
+        {
+          "text": "Că bătrânii din Betleem îl vor alunga",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:2"
+      ],
+      "status": "pending_review",
+      "text": "Ce trebuia Samuel să ia cu el și să spună despre venirea sa?",
+      "options": [
+        {
+          "text": "Un vițel și că venea să aducă o jertfă Domnului",
+          "correct": true
+        },
+        {
+          "text": "O oaie și că venea să-l întâlnească pe Saul",
+          "correct": false
+        },
+        {
+          "text": "Un măgar și că venea să cumpere pâine",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:3"
+      ],
+      "status": "pending_review",
+      "text": "Pe cine i-a spus Domnul lui Samuel să-l poftească la jertfă?",
+      "options": [
+        {
+          "text": "Pe Isai",
+          "correct": true
+        },
+        {
+          "text": "Pe Saul",
+          "correct": false
+        },
+        {
+          "text": "Pe Abinadab",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:4"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-au întrebat bătrânii Betleemului pe Samuel când au alergat înspăimântați înaintea lui?",
+      "options": [
+        {
+          "text": "Dacă venirea lui vestește ceva bun",
+          "correct": true
+        },
+        {
+          "text": "Dacă a venit să-l ungă pe Saul",
+          "correct": false
+        },
+        {
+          "text": "Dacă aduce vești despre amaleciți",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-a cerut Samuel celor poftiți la jertfă?",
+      "options": [
+        {
+          "text": "Să se sfințească și să vină cu el la jertfă",
+          "correct": true
+        },
+        {
+          "text": "Să se întoarcă la casele lor și să aștepte",
+          "correct": false
+        },
+        {
+          "text": "Să-l aleagă pe unul dintre fiii lui Isai",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:6"
+      ],
+      "status": "pending_review",
+      "text": "Pe care fiu al lui Isai l-a văzut Samuel primul și l-a socotit, în gândul lui, unsul Domnului?",
+      "options": [
+        {
+          "text": "Pe Eliab",
+          "correct": true
+        },
+        {
+          "text": "Pe Abinadab",
+          "correct": false
+        },
+        {
+          "text": "Pe Șama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:7"
+      ],
+      "status": "pending_review",
+      "text": "La ce a spus Domnul că Se uită El, în timp ce omul se uită la ceea ce izbește ochii?",
+      "options": [
+        {
+          "text": "La inimă",
+          "correct": true
+        },
+        {
+          "text": "La înălțimea staturii",
+          "correct": false
+        },
+        {
+          "text": "La înfățișare",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:8"
+      ],
+      "status": "pending_review",
+      "text": "Care fiu al lui Isai a fost trecut înaintea lui Samuel după Eliab?",
+      "options": [
+        {
+          "text": "Abinadab",
+          "correct": true
+        },
+        {
+          "text": "Șama",
+          "correct": false
+        },
+        {
+          "text": "David",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:9"
+      ],
+      "status": "pending_review",
+      "text": "Cum se numea fiul lui Isai trecut înaintea lui Samuel după Abinadab?",
+      "options": [
+        {
+          "text": "Șama",
+          "correct": true
+        },
+        {
+          "text": "Eliab",
+          "correct": false
+        },
+        {
+          "text": "Ionatan",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:10"
+      ],
+      "status": "pending_review",
+      "text": "Câți dintre fiii lui Isai au trecut înaintea lui Samuel înainte ca acesta să întrebe dacă mai este vreunul?",
+      "options": [
+        {
+          "text": "Șapte",
+          "correct": true
+        },
+        {
+          "text": "Trei",
+          "correct": false
+        },
+        {
+          "text": "Doisprezece",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce făcea fiul cel mai tânăr al lui Isai când ceilalți fuseseră aduși înaintea lui Samuel?",
+      "options": [
+        {
+          "text": "Păștea oile",
+          "correct": true
+        },
+        {
+          "text": "Păzea poarta Betleemului",
+          "correct": false
+        },
+        {
+          "text": "Pregătea jertfa",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:11"
+      ],
+      "status": "pending_review",
+      "text": "Până când a spus Samuel că nu se vor așeza la masă?",
+      "options": [
+        {
+          "text": "Până când va veni cel mai tânăr fiu al lui Isai",
+          "correct": true
+        },
+        {
+          "text": "Până când se va întoarce Saul din Ghibea",
+          "correct": false
+        },
+        {
+          "text": "Până când vor sosi toți bătrânii cetății",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce trăsături ale lui David sunt menționate când a fost adus la Samuel?",
+      "options": [
+        {
+          "text": "Păr bălai, ochi frumoși și față frumoasă",
+          "correct": true
+        },
+        {
+          "text": "Păr negru, statură înaltă și voce puternică",
+          "correct": false
+        },
+        {
+          "text": "Ochi negri, barbă lungă și statură mică",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:13"
+      ],
+      "status": "pending_review",
+      "text": "În mijlocul cui l-a uns Samuel pe David?",
+      "options": [
+        {
+          "text": "În mijlocul fraților lui",
+          "correct": true
+        },
+        {
+          "text": "În mijlocul bătrânilor Betleemului",
+          "correct": false
+        },
+        {
+          "text": "În mijlocul slujitorilor lui Saul",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:13"
+      ],
+      "status": "pending_review",
+      "text": "Unde s-a dus Samuel după ce s-a sculat, după ungerea lui David?",
+      "options": [
+        {
+          "text": "La Rama",
+          "correct": true
+        },
+        {
+          "text": "La Ghibea",
+          "correct": false
+        },
+        {
+          "text": "La Carmel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:15"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-au spus slujitorii lui Saul că îl muncea?",
+      "options": [
+        {
+          "text": "Un duh rău de la Dumnezeu",
+          "correct": true
+        },
+        {
+          "text": "Duhul Domnului care venise peste David",
+          "correct": false
+        },
+        {
+          "text": "O boală de la Betleem",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:16"
+      ],
+      "status": "pending_review",
+      "text": "Ce instrument au spus slujitorii că ar trebui să cânte omul căutat pentru Saul?",
+      "options": [
+        {
+          "text": "Harpa",
+          "correct": true
+        },
+        {
+          "text": "Trâmbița",
+          "correct": false
+        },
+        {
+          "text": "Toba",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 16,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:18"
+      ],
+      "status": "pending_review",
+      "text": "Cum l-a descris slujitorul pe fiul lui Isai din Betleem?",
+      "options": [
+        {
+          "text": "Știa să cânte, era tare și voinic, războinic, vorbea bine, era frumos la chip și Domnul era cu el",
+          "correct": true
+        },
+        {
+          "text": "Era păstor, nu știa să cânte și se temea de Saul",
+          "correct": false
+        },
+        {
+          "text": "Era preot la Silo, purta efodul și locuia la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:1",
+        "16:2",
+        "16:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce indicații i-a dat Domnul lui Samuel pentru plecarea la Isai?",
+      "options": [
+        {
+          "text": "Să meargă la Isai, betleemitul, și să-l ungă pe cel pe care Domnul i-l va arăta.",
+          "correct": true
+        },
+        {
+          "text": "Să ia un vițel, să spună că merge la jertfă și să-l poftească pe Isai.",
+          "correct": true
+        },
+        {
+          "text": "Să meargă la Saul și să-l roage să-l aleagă pe David.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:4",
+        "16:5",
+        "16:6",
+        "16:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce relatări sunt adevărate despre venirea lui Samuel la Betleem și despre cuvintele Domnului?",
+      "options": [
+        {
+          "text": "Bătrânii au alergat înspăimântați și l-au întrebat dacă venirea lui vestește ceva bun.",
+          "correct": true
+        },
+        {
+          "text": "Domnul i-a spus lui Samuel că Se uită la inimă, nu la ceea ce izbește ochii.",
+          "correct": true
+        },
+        {
+          "text": "Domnul i-a spus lui Samuel să-l ungă pe Eliab pentru că era înalt.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:8",
+        "16:9",
+        "16:10",
+        "16:11",
+        "16:12",
+        "16:13"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat când Isai și-a adus fiii înaintea lui Samuel?",
+      "options": [
+        {
+          "text": "După ce au trecut șapte fii, Samuel a spus că Domnul nu alesese pe niciunul dintre ei.",
+          "correct": true
+        },
+        {
+          "text": "Cel mai tânăr era la oi; după ce a fost adus, Samuel l-a uns în mijlocul fraților lui, iar Duhul Domnului a venit peste el.",
+          "correct": true
+        },
+        {
+          "text": "Samuel l-a uns pe Abinadab, iar David a fost lăsat să păzească oile.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:14",
+        "16:15",
+        "16:16",
+        "16:17",
+        "16:18"
+      ],
+      "status": "pending_review",
+      "text": "Ce afirmații corespund relatării despre starea lui Saul și despre sfatul slujitorilor?",
+      "options": [
+        {
+          "text": "Duhul Domnului se depărtase de Saul, iar slujitorii au spus că un duh rău de la Dumnezeu îl muncea.",
+          "correct": true
+        },
+        {
+          "text": "Slujitorii au propus să fie căutat un om care știa să cânte la harpă; unul dintre ei l-a descris pe David ca fiu al lui Isai din Betleem.",
+          "correct": true
+        },
+        {
+          "text": "Slujitorii i-au spus lui Saul să meargă el însuși la Betleem și să-l ungă pe Eliab.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:19",
+        "16:20"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii sunt date despre chemarea lui David și lucrurile trimise de Isai?",
+      "options": [
+        {
+          "text": "Saul a trimis oameni la Isai să-i trimită pe fiul său David, care era cu oile.",
+          "correct": true
+        },
+        {
+          "text": "Isai a trimis prin David un măgar cu pâine, un burduf cu vin și un ied.",
+          "correct": true
+        },
+        {
+          "text": "Isai i-a trimis lui Saul șapte oi și un corn cu untdelemn prin Samuel.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 16,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:21",
+        "16:22",
+        "16:23"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat după ce David a ajuns la Saul?",
+      "options": [
+        {
+          "text": "Saul l-a plăcut mult pe David și l-a pus să-i poarte armele; apoi i-a cerut lui Isai să-l lase în slujba lui.",
+          "correct": true
+        },
+        {
+          "text": "Când David cânta la harpă, Saul se simțea ușurat, iar duhul rău pleca de la el.",
+          "correct": true
+        },
+        {
+          "text": "Saul l-a trimis pe David înapoi la oi și i-a interzis să mai cânte la harpă.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "match",
+      "chapter": 16,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:1",
+        "16:2",
+        "16:3",
+        "16:4",
+        "16:5",
+        "16:6",
+        "16:7"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Misiunea lui Samuel",
+          "right": "Să ungă împărat pe unul dintre fiii lui Isai"
+        },
+        {
+          "left": "Temerea lui Samuel",
+          "right": "Saul ar putea afla și l-ar putea ucide"
+        },
+        {
+          "left": "Ce trebuia să ia Samuel",
+          "right": "Un vițel pentru jertfă"
+        },
+        {
+          "left": "Reacția bătrânilor din Betleem",
+          "right": "Au alergat înspăimântați și l-au întrebat dacă venirea lui vestește ceva bun"
+        },
+        {
+          "left": "La ce Se uită Domnul",
+          "right": "La inimă"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 16,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "16:8",
+        "16:9",
+        "16:10",
+        "16:11",
+        "16:12",
+        "16:13",
+        "16:21",
+        "16:22",
+        "16:23"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Eliab",
+          "right": "Primul fiu văzut de Samuel, socotit de el ca unsul Domnului"
+        },
+        {
+          "left": "Abinadab și Șama",
+          "right": "Fii pe care Domnul nu i-a ales"
+        },
+        {
+          "left": "Cel mai tânăr fiu al lui Isai",
+          "right": "Păștea oile când Samuel a întrebat dacă mai este vreunul"
+        },
+        {
+          "left": "Slujba lui David la Saul",
+          "right": "A fost pus să-i poarte armele"
+        },
+        {
+          "left": "Cântatul la harpă al lui David",
+          "right": "Saul se simțea ușurat și duhul rău pleca de la el"
+        }
+      ],
+      "options": []
+    }
+  ]
+}
