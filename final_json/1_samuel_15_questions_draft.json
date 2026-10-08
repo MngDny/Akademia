@@ -1,0 +1,1840 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:1"
+      ],
+      "status": "pending_review",
+      "text": "Samuel i-a spus lui Saul că Domnul îl trimisese să-l ungă împărat peste Israel și i-a cerut să asculte ce avea să-i spună Domnul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:2"
+      ],
+      "status": "pending_review",
+      "text": "Amalec îi astupase lui Israel drumul când poporul ieșea din Egipt.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:3"
+      ],
+      "status": "pending_review",
+      "text": "Porunca transmisă lui Saul cerea nimicirea amaleciților și enumeră bărbați, femei, copii, prunci și animale între cele care nu trebuiau cruțate.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:4"
+      ],
+      "status": "pending_review",
+      "text": "La Telaim, Saul a numărat două sute de mii de oameni pedeștri și zece mii de oameni din Iuda.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:5"
+      ],
+      "status": "pending_review",
+      "text": "Ajuns la cetatea lui Amalec, Saul a pus oameni la pândă pe munte.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:6"
+      ],
+      "status": "pending_review",
+      "text": "Saul le-a spus cheniților să iasă din mijlocul amaleciților, amintind bunăvoința lor față de Israel la ieșirea din Egipt; cheniții au plecat.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:7"
+      ],
+      "status": "pending_review",
+      "text": "Saul a lovit Amalec de la Havila până la Șur, în fața Egiptului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:8"
+      ],
+      "status": "pending_review",
+      "text": "Saul l-a prins viu pe Agag, împăratul lui Amalec, iar poporul amalecit a fost nimicit cu sabia.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:9"
+      ],
+      "status": "pending_review",
+      "text": "Saul și poporul au nimicit cele mai bune animale și au cruțat numai animalele slabe și fără valoare.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:10",
+        "15:11"
+      ],
+      "status": "pending_review",
+      "text": "După ce Domnul i-a vorbit lui Samuel despre Saul, Samuel s-a mâhnit și a strigat toată noaptea către Domnul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:12"
+      ],
+      "status": "pending_review",
+      "text": "Când Samuel s-a sculat dis-de-dimineață să meargă la Saul, a aflat că acesta fusese la Carmel, își ridicase un semn de biruință și se coborâse la Ghilgal.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:13"
+      ],
+      "status": "pending_review",
+      "text": "Când l-a întâlnit pe Samuel, Saul a recunoscut că nu păzise Cuvântul Domnului.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:14"
+      ],
+      "status": "pending_review",
+      "text": "Samuel l-a întrebat pe Saul despre behăitul oilor și mugetul boilor pe care le auzea.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:15"
+      ],
+      "status": "pending_review",
+      "text": "Saul i-a spus lui Samuel că poporul cruțase cele mai bune oi și vite ca să le jertfească Domnului, iar pe celelalte le nimicise.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:16"
+      ],
+      "status": "pending_review",
+      "text": "Samuel i-a spus lui Saul să aștepte ca să-i spună ce îi comunicase Domnul în noaptea precedentă, iar Saul i-a răspuns să vorbească.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:17"
+      ],
+      "status": "pending_review",
+      "text": "Samuel i-a amintit lui Saul că fusese căpetenia semințiilor lui Israel și că Domnul îl unsese împărat peste Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:18"
+      ],
+      "status": "pending_review",
+      "text": "Samuel i-a reamintit lui Saul că Domnul îi ceruse să lupte cu amaleciții până când aceștia aveau să fie nimiciți.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:19"
+      ],
+      "status": "pending_review",
+      "text": "Samuel l-a întrebat pe Saul de ce nu ascultase glasul Domnului și de ce se aruncase asupra prăzii.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:20"
+      ],
+      "status": "pending_review",
+      "text": "Saul a spus că el ascultase glasul Domnului, îl adusese pe Agag și nimicise amaleciții.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:21"
+      ],
+      "status": "pending_review",
+      "text": "Saul a spus că el și armata lui aleseseră oi și boi pentru jertfă, fără să dea vina pe popor.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:22"
+      ],
+      "status": "pending_review",
+      "text": "Samuel l-a învățat pe Saul că ascultarea de glasul Domnului și păzirea cuvântului Său prețuiesc mai mult decât jertfele și grăsimea berbecilor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:23"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a asemănat neascultarea cu ghicirea și împotrivirea cu închinarea la idoli și terafimi.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:24"
+      ],
+      "status": "pending_review",
+      "text": "Saul a mărturisit că se temuse de popor și îi ascultase glasul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:25",
+        "15:26"
+      ],
+      "status": "pending_review",
+      "text": "Saul i-a cerut lui Samuel să se întoarcă împreună cu el ca să se închine Domnului, dar Samuel a refuzat pentru că Saul lepădase Cuvântul Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:27"
+      ],
+      "status": "pending_review",
+      "text": "Când Samuel s-a întors să plece, Saul l-a apucat de pulpana hainei, iar aceasta s-a rupt.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:28"
+      ],
+      "status": "pending_review",
+      "text": "Samuel i-a spus lui Saul că Domnul îi dădea domnia altuia mai bun decât el.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:29"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a spus că Tăria lui Israel minte și Se căiește, fiindcă este un om ca să-I pară rău.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:30",
+        "15:31"
+      ],
+      "status": "pending_review",
+      "text": "Saul i-a cerut lui Samuel să-l cinstească înaintea bătrânilor și a lui Israel; apoi Samuel s-a întors după Saul, iar Saul s-a închinat Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:32",
+        "15:33"
+      ],
+      "status": "pending_review",
+      "text": "Agag a înaintat vesel spre Samuel, iar Samuel l-a tăiat în bucăți înaintea Domnului, la Ghilgal.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:34",
+        "15:35"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a plecat la Rama, Saul s-a suit acasă la Ghibea, iar Samuel l-a plâns pe Saul și nu s-a mai dus să-l vadă până la moartea sa.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:1"
+      ],
+      "status": "pending_review",
+      "text": "Cine i-a spus lui Saul că Domnul îl trimisese să-l ungă împărat peste Israel?",
+      "options": [
+        {
+          "text": "Samuel",
+          "correct": true
+        },
+        {
+          "text": "Ionatan",
+          "correct": false
+        },
+        {
+          "text": "Ahia",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:2"
+      ],
+      "status": "pending_review",
+      "text": "Ce faptă a lui Amalec față de Israel a amintit Domnul?",
+      "options": [
+        {
+          "text": "Că îi astupase drumul la ieșirea din Egipt",
+          "correct": true
+        },
+        {
+          "text": "Că îi condusese prin pustie",
+          "correct": false
+        },
+        {
+          "text": "Că îi dăduse hrană în Egipt",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:3"
+      ],
+      "status": "pending_review",
+      "text": "Care variantă reproduce lista completă de animale din porunca adresată lui Saul despre nimicirea amaleciților?",
+      "options": [
+        {
+          "text": "Cămile, măgari, boi și oi",
+          "correct": true
+        },
+        {
+          "text": "Cai, cămile, porumbei și capre",
+          "correct": false
+        },
+        {
+          "text": "Numai boi și oi",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:4"
+      ],
+      "status": "pending_review",
+      "text": "Unde a numărat Saul poporul înainte de lupta cu Amalec?",
+      "options": [
+        {
+          "text": "La Telaim",
+          "correct": true
+        },
+        {
+          "text": "La Carmel",
+          "correct": false
+        },
+        {
+          "text": "La Ghilgal",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:4"
+      ],
+      "status": "pending_review",
+      "text": "Câți oameni din Iuda au fost numărați la Telaim?",
+      "options": [
+        {
+          "text": "Zece mii",
+          "correct": true
+        },
+        {
+          "text": "Douăzeci de mii",
+          "correct": false
+        },
+        {
+          "text": "Două sute de mii",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:5"
+      ],
+      "status": "pending_review",
+      "text": "Unde a pus Saul oameni la pândă când a ajuns la cetatea lui Amalec?",
+      "options": [
+        {
+          "text": "În vale",
+          "correct": true
+        },
+        {
+          "text": "Pe munte",
+          "correct": false
+        },
+        {
+          "text": "La porțile cetății",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce motiv le-a dat Saul cheniților ca să plece din mijlocul amaleciților?",
+      "options": [
+        {
+          "text": "Se purtaseră cu bunăvoință față de Israel la ieșirea din Egipt",
+          "correct": true
+        },
+        {
+          "text": "Îi ajutaseră pe amaleciți în luptă",
+          "correct": false
+        },
+        {
+          "text": "Îi ceruseră lui Samuel să-i scape",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:7"
+      ],
+      "status": "pending_review",
+      "text": "Între ce locuri a lovit Saul pe Amalec?",
+      "options": [
+        {
+          "text": "De la Havila până la Șur, în fața Egiptului",
+          "correct": true
+        },
+        {
+          "text": "De la Carmel până la Ghilgal",
+          "correct": false
+        },
+        {
+          "text": "De la Telaim până la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:8"
+      ],
+      "status": "pending_review",
+      "text": "Cine era Agag, pe care Saul l-a prins viu?",
+      "options": [
+        {
+          "text": "Împăratul lui Amalec",
+          "correct": true
+        },
+        {
+          "text": "Căpetenia oștirii lui Israel",
+          "correct": false
+        },
+        {
+          "text": "Unul dintre cheniți",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce au cruțat Saul și poporul dintre prada amaleciților?",
+      "options": [
+        {
+          "text": "Pe Agag și animalele cele mai bune",
+          "correct": true
+        },
+        {
+          "text": "Numai animalele slabe",
+          "correct": false
+        },
+        {
+          "text": "Numai oile, fără vite",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:11"
+      ],
+      "status": "pending_review",
+      "text": "Cum a reacționat Samuel după ce Domnul i-a spus că Saul se abătuse și nu-I păzise cuvintele?",
+      "options": [
+        {
+          "text": "S-a mâhnit și a strigat toată noaptea către Domnul",
+          "correct": true
+        },
+        {
+          "text": "A plecat imediat la Ghilgal",
+          "correct": false
+        },
+        {
+          "text": "A strâns poporul la Telaim",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce a înălțat Saul la Carmel, potrivit celor spuse lui Samuel?",
+      "options": [
+        {
+          "text": "Un semn de biruință",
+          "correct": true
+        },
+        {
+          "text": "Un altar pentru Agag",
+          "correct": false
+        },
+        {
+          "text": "Un cort pentru cheniți",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:13"
+      ],
+      "status": "pending_review",
+      "text": "Ce a afirmat Saul când Samuel a ajuns la el?",
+      "options": [
+        {
+          "text": "Că păzise Cuvântul Domnului",
+          "correct": true
+        },
+        {
+          "text": "Că nu îl întâlnise pe Agag",
+          "correct": false
+        },
+        {
+          "text": "Că poporul nu adusese pradă",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:14"
+      ],
+      "status": "pending_review",
+      "text": "Ce sunete i-au atras atenția lui Samuel când a vorbit cu Saul?",
+      "options": [
+        {
+          "text": "Behăitul oilor și mugetul boilor",
+          "correct": true
+        },
+        {
+          "text": "Răgetul cămilelor și nechezatul cailor",
+          "correct": false
+        },
+        {
+          "text": "Strigătele poporului și sunetul trâmbițelor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:15"
+      ],
+      "status": "pending_review",
+      "text": "Potrivit explicației lui Saul, de ce au fost cruțate cele mai bune oi și vite?",
+      "options": [
+        {
+          "text": "Ca să fie jertfite Domnului",
+          "correct": true
+        },
+        {
+          "text": "Ca să fie date cheniților",
+          "correct": false
+        },
+        {
+          "text": "Ca să hrănească armata la întoarcere",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:17"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Samuel despre cum se vedea Saul când Domnul l-a pus căpetenia semințiilor lui Israel?",
+      "options": [
+        {
+          "text": "Ca fiind mic în ochii lui",
+          "correct": true
+        },
+        {
+          "text": "Ca fiind mai bun decât toți împărații",
+          "correct": false
+        },
+        {
+          "text": "Ca fiind conducătorul cheniților",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:18"
+      ],
+      "status": "pending_review",
+      "text": "Până când trebuia Saul să se războiască cu amaleciții, potrivit poruncii amintite de Samuel?",
+      "options": [
+        {
+          "text": "Până îi nimicea",
+          "correct": true
+        },
+        {
+          "text": "Până se retrăgeau în Egipt",
+          "correct": false
+        },
+        {
+          "text": "Până când Samuel îl chema înapoi",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:19"
+      ],
+      "status": "pending_review",
+      "text": "Ce l-a întrebat Samuel pe Saul că făcuse cu prada?",
+      "options": [
+        {
+          "text": "De ce se aruncase asupra ei",
+          "correct": true
+        },
+        {
+          "text": "De ce o dăduse cheniților",
+          "correct": false
+        },
+        {
+          "text": "De ce o dusese la Carmel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:29"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Samuel despre Tăria lui Israel când Saul i-a cerut să se întoarcă?",
+      "options": [
+        {
+          "text": "Că nu minte și nu Se căiește, fiindcă nu este un om",
+          "correct": true
+        },
+        {
+          "text": "Că minte și Se căiește ca un om",
+          "correct": false
+        },
+        {
+          "text": "Că Își schimbă cuvântul când un împărat Îi cere",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:21"
+      ],
+      "status": "pending_review",
+      "text": "Unde a spus Saul că poporul urma să aducă oi și boi ca jertfă?",
+      "options": [
+        {
+          "text": "La Ghilgal",
+          "correct": true
+        },
+        {
+          "text": "La Rama",
+          "correct": false
+        },
+        {
+          "text": "La Havila",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:22"
+      ],
+      "status": "pending_review",
+      "text": "Potrivit lui Samuel, ce face mai mult decât jertfele?",
+      "options": [
+        {
+          "text": "Ascultarea de glasul Domnului",
+          "correct": true
+        },
+        {
+          "text": "Ridicarea unui semn de biruință",
+          "correct": false
+        },
+        {
+          "text": "Păstrarea celor mai bune animale",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:23"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Samuel că va face Domnul cu Saul după ce acesta a lepădat Cuvântul Domnului?",
+      "options": [
+        {
+          "text": "Îl va lepăda ca împărat",
+          "correct": true
+        },
+        {
+          "text": "Îl va trimite din nou împotriva Amalecului",
+          "correct": false
+        },
+        {
+          "text": "Îl va pune căpetenie peste Iuda",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:24"
+      ],
+      "status": "pending_review",
+      "text": "De ce a spus Saul că nu ascultase porunca Domnului?",
+      "options": [
+        {
+          "text": "Se temuse de popor și îi ascultase glasul",
+          "correct": true
+        },
+        {
+          "text": "Se temuse de cheniți și plecase din vale",
+          "correct": false
+        },
+        {
+          "text": "Nu auzise porunca lui Samuel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:25"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-a cerut Saul lui Samuel după ce i-a cerut iertare?",
+      "options": [
+        {
+          "text": "Să se întoarcă împreună cu el ca să se închine Domnului",
+          "correct": true
+        },
+        {
+          "text": "Să-i aducă pe cheniți înapoi",
+          "correct": false
+        },
+        {
+          "text": "Să-l lase pe Agag să plece",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:26"
+      ],
+      "status": "pending_review",
+      "text": "De ce a refuzat Samuel să se întoarcă împreună cu Saul?",
+      "options": [
+        {
+          "text": "Pentru că Saul lepădase Cuvântul Domnului",
+          "correct": true
+        },
+        {
+          "text": "Pentru că Samuel nu plecase încă la Carmel",
+          "correct": false
+        },
+        {
+          "text": "Pentru că poporul îl alesese pe Agag",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:28"
+      ],
+      "status": "pending_review",
+      "text": "Cui urma Domnul să-i dea domnia, potrivit cuvintelor lui Samuel?",
+      "options": [
+        {
+          "text": "Unui om mai bun decât Saul",
+          "correct": true
+        },
+        {
+          "text": "Lui Agag",
+          "correct": false
+        },
+        {
+          "text": "Căpeteniei cheniților",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:30"
+      ],
+      "status": "pending_review",
+      "text": "Înaintea cui i-a cerut Saul lui Samuel să-l cinstească?",
+      "options": [
+        {
+          "text": "Înaintea bătrânilor poporului și a lui Israel",
+          "correct": true
+        },
+        {
+          "text": "Înaintea amaleciților și a cheniților",
+          "correct": false
+        },
+        {
+          "text": "Înaintea preoților din Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:32"
+      ],
+      "status": "pending_review",
+      "text": "Cum a înaintat Agag spre Samuel când a fost chemat?",
+      "options": [
+        {
+          "text": "Vesel, crezând că amărăciunea morții trecuse",
+          "correct": true
+        },
+        {
+          "text": "Furios, cerându-i lui Saul să-l elibereze",
+          "correct": false
+        },
+        {
+          "text": "Plângând și cerând să fie trimis în Egipt",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:33"
+      ],
+      "status": "pending_review",
+      "text": "Unde l-a tăiat Samuel pe Agag în bucăți?",
+      "options": [
+        {
+          "text": "La Ghilgal, înaintea Domnului",
+          "correct": true
+        },
+        {
+          "text": "La Rama, înaintea lui Saul",
+          "correct": false
+        },
+        {
+          "text": "La Carmel, înaintea bătrânilor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:33"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Samuel despre mama lui Agag, comparând cu urmările sabiei lui Agag?",
+      "options": [
+        {
+          "text": "Că și mama lui va fi lăsată fără copii între femei",
+          "correct": true
+        },
+        {
+          "text": "Că mama lui îl va însoți la Ghibea",
+          "correct": false
+        },
+        {
+          "text": "Că mama lui va fi cruțată și trimisă la Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:3",
+        "15:4"
+      ],
+      "status": "pending_review",
+      "text": "Care afirmații sunt susținute de porunca și numărătoarea făcute înaintea luptei?",
+      "options": [
+        {
+          "text": "Porunca cerea să nu fie cruțate nici femeile, nici copiii și pruncii.",
+          "correct": true
+        },
+        {
+          "text": "La Telaim au fost numărați 200.000 de oameni pedeștri și 10.000 din Iuda.",
+          "correct": true
+        },
+        {
+          "text": "La Telaim au fost numărați 10.000 de oameni în total.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:5",
+        "15:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii sunt relatate despre plecarea cheniților și pregătirea atacului?",
+      "options": [
+        {
+          "text": "Saul a pus oameni la pândă în vale, lângă cetatea lui Amalec.",
+          "correct": true
+        },
+        {
+          "text": "Cheniții au plecat după ce Saul le-a amintit bunăvoința arătată lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "Cheniții au rămas cu amaleciții, iar Saul i-a atacat primii.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:8",
+        "15:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut Saul și poporul cu Agag și cu prada?",
+      "options": [
+        {
+          "text": "Agag, împăratul lui Amalec, a fost prins viu.",
+          "correct": true
+        },
+        {
+          "text": "Au cruțat cele mai bune oi, boi, vite grase și miei grași.",
+          "correct": true
+        },
+        {
+          "text": "Au cruțat doar animalele slabe și fără valoare.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:11",
+        "15:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce este relatat despre Samuel și Saul în dimineața de după cuvintele Domnului?",
+      "options": [
+        {
+          "text": "Samuel a strigat către Domnul toată noaptea, fiind mâhnit.",
+          "correct": true
+        },
+        {
+          "text": "Saul se dusese la Carmel, unde își înălțase un semn de biruință, apoi coborâse la Ghilgal.",
+          "correct": true
+        },
+        {
+          "text": "Samuel a aflat că Saul se retrăsese la Rama și își dărâmase semnul de biruință.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:13",
+        "15:14",
+        "15:15"
+      ],
+      "status": "pending_review",
+      "text": "Ce afirmații apar în dialogul dintre Saul și Samuel la întâlnirea lor?",
+      "options": [
+        {
+          "text": "Saul i-a spus lui Samuel că păzise Cuvântul Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Samuel l-a întrebat despre behăitul oilor și mugetul boilor.",
+          "correct": true
+        },
+        {
+          "text": "Saul i-a spus că Agag adusese oile și boii ca să fie jertfiți.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:17",
+        "15:18",
+        "15:19"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-a reamintit Samuel lui Saul despre însărcinarea și acțiunile lui?",
+      "options": [
+        {
+          "text": "Domnul îl unsese împărat peste Israel când era mic în ochii lui.",
+          "correct": true
+        },
+        {
+          "text": "Domnul îi poruncise să lupte cu amaleciții până la nimicirea lor.",
+          "correct": true
+        },
+        {
+          "text": "Domnul îi poruncise să păstreze prada pentru jertfe.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:20",
+        "15:21"
+      ],
+      "status": "pending_review",
+      "text": "Ce afirmații a făcut Saul despre ascultarea sa și despre animalele luate din pradă?",
+      "options": [
+        {
+          "text": "A susținut că ascultase glasul Domnului și adusese viu pe Agag.",
+          "correct": true
+        },
+        {
+          "text": "A spus că poporul luase oi și boi pentru jertfă la Ghilgal.",
+          "correct": true
+        },
+        {
+          "text": "A spus că Samuel îl îndemnase să păstreze prada.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:22",
+        "15:23",
+        "15:24"
+      ],
+      "status": "pending_review",
+      "text": "Care idei apar în cuvintele lui Samuel și în mărturisirea lui Saul?",
+      "options": [
+        {
+          "text": "Samuel a spus că ascultarea și păzirea Cuvântului valorează mai mult decât jertfele.",
+          "correct": true
+        },
+        {
+          "text": "Samuel a asemănat neascultarea cu ghicirea și împotrivirea cu închinarea la idoli.",
+          "correct": true
+        },
+        {
+          "text": "Saul a spus că se temuse de Samuel și nu îi ascultase glasul.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 15,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:25",
+        "15:26",
+        "15:27",
+        "15:28",
+        "15:30",
+        "15:31"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii sunt consemnate după ce Samuel a refuzat să se întoarcă împreună cu Saul?",
+      "options": [
+        {
+          "text": "Saul a apucat de pulpana hainei lui Samuel, iar haina s-a rupt.",
+          "correct": true
+        },
+        {
+          "text": "Samuel a spus că domnia va fi dată altuia mai bun decât Saul.",
+          "correct": true
+        },
+        {
+          "text": "Samuel i-a promis lui Saul că nu va pierde domnia dacă îl cinstește înaintea bătrânilor.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "match",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:2",
+        "15:3",
+        "15:4",
+        "15:5",
+        "15:6"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Amalec",
+          "right": "Astupase drumul lui Israel la ieșirea din Egipt"
+        },
+        {
+          "left": "Locul numărării poporului",
+          "right": "Telaim"
+        },
+        {
+          "left": "Oamenii din Iuda numărați",
+          "right": "Zece mii"
+        },
+        {
+          "left": "Locul unde au fost puși oameni la pândă",
+          "right": "Valea de lângă cetatea lui Amalec"
+        },
+        {
+          "left": "Motivul pentru care cheniții au fost cruțați",
+          "right": "Bunăvoința arătată lui Israel la ieșirea din Egipt"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:7",
+        "15:8",
+        "15:9",
+        "15:12",
+        "15:14"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Întinderea luptei cu Amalec",
+          "right": "De la Havila până la Șur, în fața Egiptului"
+        },
+        {
+          "left": "Agag",
+          "right": "Împăratul lui Amalec, prins viu"
+        },
+        {
+          "left": "Ce a fost cruțat din pradă",
+          "right": "Agag și animalele cele mai bune"
+        },
+        {
+          "left": "Carmel",
+          "right": "Locul unde Saul și-a înălțat un semn de biruință"
+        },
+        {
+          "left": "Samuel auzea",
+          "right": "Behăitul oilor și mugetul boilor"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 15,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "15:17",
+        "15:22",
+        "15:23",
+        "15:24",
+        "15:28"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Samuel îi amintește lui Saul",
+          "right": "Saul fusese mic în ochii lui, iar Domnul îl unsese împărat peste Israel"
+        },
+        {
+          "left": "Ce prețuiește mai mult decât jertfele",
+          "right": "Ascultarea de glasul Domnului"
+        },
+        {
+          "left": "Neascultarea",
+          "right": "Asemănată cu ghicirea"
+        },
+        {
+          "left": "Motivul mărturisit de Saul",
+          "right": "Se temuse de popor și îi ascultase glasul"
+        },
+        {
+          "left": "Soarta domniei lui Saul",
+          "right": "Dată unui om mai bun decât el"
+        }
+      ],
+      "options": []
+    }
+  ]
+}
