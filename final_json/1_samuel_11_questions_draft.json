@@ -1,0 +1,2713 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1"
+      ],
+      "status": "pending_review",
+      "text": "Nahaș, Amonitul, a împresurat Iabesul din Galaad.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1"
+      ],
+      "status": "pending_review",
+      "text": "Locuitorii din Iabes i-au cerut lui Nahaș să facă legământ cu ei și i-au spus că îi vor fi supuși.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:2"
+      ],
+      "status": "pending_review",
+      "text": "Nahaș a spus că va face legământ dacă îi va lăsa pe locuitorii din Iabes să-și păstreze ochiul drept.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:2"
+      ],
+      "status": "pending_review",
+      "text": "Nahaș a cerut să scoată tuturor ochiul drept și a spus că astfel va arunca o ocară asupra întregului Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:3"
+      ],
+      "status": "pending_review",
+      "text": "Bătrânii din Iabes au cerut un răgaz de șapte zile pentru a trimite soli prin tot ținutul lui Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:3"
+      ],
+      "status": "pending_review",
+      "text": "Bătrânii din Iabes au spus că se vor supune lui Nahaș chiar dacă va veni ajutor din Israel.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:4"
+      ],
+      "status": "pending_review",
+      "text": "Solii din Iabes au ajuns la Ghibea, cetatea lui Saul, și au spus cele întâmplate în auzul poporului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:4"
+      ],
+      "status": "pending_review",
+      "text": "După ce a auzit vestea, tot poporul din Ghibea și-a ridicat glasul și a plâns.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5"
+      ],
+      "status": "pending_review",
+      "text": "Saul tocmai se întorcea de la câmp, venind în urma boilor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5"
+      ],
+      "status": "pending_review",
+      "text": "Saul a întrebat de ce plânge poporul, iar oamenii i-au istorisit ce spuseseră cei din Iabes.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:6"
+      ],
+      "status": "pending_review",
+      "text": "După ce a auzit vestea, Saul s-a temut și a fugit din Ghibea.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:6"
+      ],
+      "status": "pending_review",
+      "text": "Duhul lui Dumnezeu a venit peste Saul când a auzit aceste lucruri, iar Saul s-a mâniat foarte tare.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Saul a luat o pereche de boi, i-a tăiat în bucăți și a trimis bucățile prin soli în tot ținutul lui Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Saul a trimis în tot Israelul solia să-l urmeze doar pe Samuel.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Saul a spus că oricine nu va merge după el și Samuel își va vedea boii tăiați la fel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Groaza Domnului a apucat poporul, iar oamenii au pornit ca un singur om.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:8"
+      ],
+      "status": "pending_review",
+      "text": "Numărătoarea făcută de Saul la Bezec a dat trei sute de mii de oameni din Israel și treizeci de mii de bărbați din Iuda.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:8"
+      ],
+      "status": "pending_review",
+      "text": "La Bezec au fost numărați treizeci de mii de oameni din Israel și trei sute de mii din Iuda.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:9"
+      ],
+      "status": "pending_review",
+      "text": "Solii au vestit locuitorilor din Iabes că vor avea ajutor a doua zi, când va dogori soarele.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:9"
+      ],
+      "status": "pending_review",
+      "text": "Locuitorii din Iabes s-au umplut de bucurie când au primit vestea ajutorului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:10"
+      ],
+      "status": "pending_review",
+      "text": "Locuitorii din Iabes le-au spus amoniților că a doua zi li se vor supune și că amoniții le pot face ce le va plăcea.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "A doua zi, Saul a împărțit poporul în trei cete.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "Cetele au pătruns în tabăra amoniților în straja dimineții și i-au bătut până la căldura zilei.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "După luptă, cei ce scăpaseră dintre amoniți au rămas împreună în aceeași tabără.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:12"
+      ],
+      "status": "pending_review",
+      "text": "După izbândă, poporul i-a cerut lui Samuel să-i dea încoace pe oamenii aceia ca să-i omoare.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:13"
+      ],
+      "status": "pending_review",
+      "text": "Saul a spus că nimeni nu va fi omorât în ziua aceea, fiindcă Domnul dăduse o izbăvire lui Israel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:14"
+      ],
+      "status": "pending_review",
+      "text": "Samuel i-a chemat pe oameni să meargă la Ghilgal pentru a întări acolo împărăția.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:15"
+      ],
+      "status": "pending_review",
+      "text": "La Ghilgal, tot poporul l-a pus pe Saul împărat înaintea Domnului și a adus jertfe de mulțumire.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:15"
+      ],
+      "status": "pending_review",
+      "text": "Saul și toți oamenii lui Israel s-au întristat foarte mult la Ghilgal.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1"
+      ],
+      "status": "pending_review",
+      "text": "Cine a împresurat Iabesul din Galaad?",
+      "options": [
+        {
+          "text": "Nahaș, Amonitul",
+          "correct": true
+        },
+        {
+          "text": "Saul, fiul lui Chis",
+          "correct": false
+        },
+        {
+          "text": "Samuel din Rama",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1"
+      ],
+      "status": "pending_review",
+      "text": "Unde se afla cetatea pe care a împresurat-o Nahaș?",
+      "options": [
+        {
+          "text": "În ținutul lui Iuda",
+          "correct": false
+        },
+        {
+          "text": "În țara filistenilor",
+          "correct": false
+        },
+        {
+          "text": "În Galaad",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-au cerut locuitorii din Iabes lui Nahaș când au fost împresurați?",
+      "options": [
+        {
+          "text": "Să-i ducă la Ghibea",
+          "correct": false
+        },
+        {
+          "text": "Să facă legământ cu ei, iar ei să-i fie supuși",
+          "correct": true
+        },
+        {
+          "text": "Să plece și să le lase cetatea",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:2"
+      ],
+      "status": "pending_review",
+      "text": "Ce condiție a pus Nahaș pentru a face legământ cu locuitorii din Iabes?",
+      "options": [
+        {
+          "text": "Să li se scoată tuturor ochiul drept",
+          "correct": true
+        },
+        {
+          "text": "Să-i lase să plece în Ghilgal",
+          "correct": false
+        },
+        {
+          "text": "Să trimită o pereche de boi",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:2"
+      ],
+      "status": "pending_review",
+      "text": "Asupra cui a spus Nahaș că va arunca ocară prin condiția pusă locuitorilor din Iabes?",
+      "options": [
+        {
+          "text": "Numai asupra bătrânilor din Iabes",
+          "correct": false
+        },
+        {
+          "text": "Asupra cetății Ghibea",
+          "correct": false
+        },
+        {
+          "text": "Asupra întregului Israel",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:3"
+      ],
+      "status": "pending_review",
+      "text": "Câte zile de răgaz au cerut bătrânii din Iabes?",
+      "options": [
+        {
+          "text": "Treizeci de zile",
+          "correct": false
+        },
+        {
+          "text": "Șapte zile",
+          "correct": true
+        },
+        {
+          "text": "Trei zile",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce voiau bătrânii din Iabes să facă în răgazul cerut de la Nahaș?",
+      "options": [
+        {
+          "text": "Să trimită soli în tot ținutul lui Israel",
+          "correct": true
+        },
+        {
+          "text": "Să se mute la Bezec",
+          "correct": false
+        },
+        {
+          "text": "Să adune jertfe la Ghilgal",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce au spus bătrânii că vor face dacă nu va fi nimeni să-i ajute?",
+      "options": [
+        {
+          "text": "Îl vor pune pe Saul împărat la Ghibea",
+          "correct": false
+        },
+        {
+          "text": "Vor ataca tabăra amoniților",
+          "correct": false
+        },
+        {
+          "text": "Se vor supune lui Nahaș",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:4"
+      ],
+      "status": "pending_review",
+      "text": "În ce cetate au ajuns solii trimiși de locuitorii din Iabes?",
+      "options": [
+        {
+          "text": "La Bezec, cetatea lui Nahaș",
+          "correct": false
+        },
+        {
+          "text": "La Ghibea, cetatea lui Saul",
+          "correct": true
+        },
+        {
+          "text": "La Ghilgal, cetatea lui Samuel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:4"
+      ],
+      "status": "pending_review",
+      "text": "Cum a reacționat poporul din Ghibea când a auzit vestea solilor?",
+      "options": [
+        {
+          "text": "Și-a ridicat glasul și a plâns",
+          "correct": true
+        },
+        {
+          "text": "A plecat imediat la Ghilgal",
+          "correct": false
+        },
+        {
+          "text": "A cerut să fie omorât Saul",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5"
+      ],
+      "status": "pending_review",
+      "text": "De unde se întorcea Saul când a auzit că poporul plânge?",
+      "options": [
+        {
+          "text": "Din tabăra amoniților",
+          "correct": false
+        },
+        {
+          "text": "De la Ghilgal, după jertfe",
+          "correct": false
+        },
+        {
+          "text": "De la câmp, în urma boilor",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-a întrebat Saul pe oamenii care plângeau în Ghibea?",
+      "options": [
+        {
+          "text": "Unde sunt solii din Iabes?",
+          "correct": false
+        },
+        {
+          "text": "Ce are poporul de plânge?",
+          "correct": true
+        },
+        {
+          "text": "Cine a spus că el nu va domni?",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce i-au istorisit oamenii lui Saul când acesta a întrebat de ce plânge poporul?",
+      "options": [
+        {
+          "text": "Ce spuseseră cei din Iabes",
+          "correct": true
+        },
+        {
+          "text": "Ce hotărâse Samuel la Ghilgal",
+          "correct": false
+        },
+        {
+          "text": "Ce răspuns dăduse Nahaș solilor din Israel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat cu Saul după ce a auzit vestea din Iabes?",
+      "options": [
+        {
+          "text": "A fugit din cetate și s-a ascuns",
+          "correct": false
+        },
+        {
+          "text": "A trimis solii să ceară răgaz",
+          "correct": false
+        },
+        {
+          "text": "Duhul lui Dumnezeu a venit peste el și s-a mâniat foarte tare",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce a luat Saul și a tăiat în bucăți pentru a trimite soli prin Israel?",
+      "options": [
+        {
+          "text": "Două pâini",
+          "correct": false
+        },
+        {
+          "text": "O pereche de boi",
+          "correct": true
+        },
+        {
+          "text": "Trei cete de oameni",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce urma să li se întâmple boilor celor care nu mergeau după Saul și Samuel?",
+      "options": [
+        {
+          "text": "Să fie tăiați la fel",
+          "correct": true
+        },
+        {
+          "text": "Să fie duși la Ghilgal",
+          "correct": false
+        },
+        {
+          "text": "Să fie dați bătrânilor din Iabes",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Cum a pornit poporul după ce groaza Domnului l-a apucat?",
+      "options": [
+        {
+          "text": "În grupuri care se întorceau la case",
+          "correct": false
+        },
+        {
+          "text": "Numai după ce a ajuns la Ghilgal",
+          "correct": false
+        },
+        {
+          "text": "Ca un singur om",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:8"
+      ],
+      "status": "pending_review",
+      "text": "Unde a făcut Saul numărătoarea poporului?",
+      "options": [
+        {
+          "text": "La Iabes",
+          "correct": false
+        },
+        {
+          "text": "La Bezec",
+          "correct": true
+        },
+        {
+          "text": "La Ghibea",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:8"
+      ],
+      "status": "pending_review",
+      "text": "Câți oameni din Israel au fost numărați la Bezec?",
+      "options": [
+        {
+          "text": "Trei sute de mii",
+          "correct": true
+        },
+        {
+          "text": "Treizeci de mii",
+          "correct": false
+        },
+        {
+          "text": "Trei sute de oameni",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:8"
+      ],
+      "status": "pending_review",
+      "text": "Câți bărbați din Iuda au fost numărați la Bezec?",
+      "options": [
+        {
+          "text": "Trei sute de mii",
+          "correct": false
+        },
+        {
+          "text": "Șapte mii",
+          "correct": false
+        },
+        {
+          "text": "Treizeci de mii",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:9"
+      ],
+      "status": "pending_review",
+      "text": "Când urma să primească Iabesul ajutorul anunțat de soli?",
+      "options": [
+        {
+          "text": "În aceeași zi, în straja dimineții",
+          "correct": false
+        },
+        {
+          "text": "A doua zi, când dogorea soarele",
+          "correct": true
+        },
+        {
+          "text": "După șapte zile, la apus",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:9"
+      ],
+      "status": "pending_review",
+      "text": "Cum au reacționat locuitorii din Iabes după ce solii le-au dus vestea?",
+      "options": [
+        {
+          "text": "S-au umplut de bucurie",
+          "correct": true
+        },
+        {
+          "text": "Au plâns și mai mult",
+          "correct": false
+        },
+        {
+          "text": "Au pornit singuri spre Bezec",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-au spus locuitorii din Iabes amoniților despre ziua următoare?",
+      "options": [
+        {
+          "text": "Că vor veni cu oastea la Ghibea",
+          "correct": false
+        },
+        {
+          "text": "Că Nahaș trebuie să meargă la Samuel",
+          "correct": false
+        },
+        {
+          "text": "Că li se vor supune și amoniții le vor putea face ce le place",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "În câte cete a împărțit Saul poporul înainte de atac?",
+      "options": [
+        {
+          "text": "Șapte",
+          "correct": false
+        },
+        {
+          "text": "Trei",
+          "correct": true
+        },
+        {
+          "text": "Două",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "Când au pătruns cetele în tabăra amoniților?",
+      "options": [
+        {
+          "text": "În straja dimineții",
+          "correct": true
+        },
+        {
+          "text": "La apusul soarelui",
+          "correct": false
+        },
+        {
+          "text": "După căldura zilei",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "Până când i-au bătut israeliții pe amoniți?",
+      "options": [
+        {
+          "text": "Până la miezul nopții",
+          "correct": false
+        },
+        {
+          "text": "Până la apusul soarelui din ziua următoare",
+          "correct": false
+        },
+        {
+          "text": "Până la căldura zilei",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat cu amoniții care au scăpat?",
+      "options": [
+        {
+          "text": "Au fost numărați la Bezec",
+          "correct": false
+        },
+        {
+          "text": "Au fost risipiți și n-au mai rămas doi laolaltă",
+          "correct": true
+        },
+        {
+          "text": "Au rămas împreună în tabără",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce a cerut poporul lui Samuel după izbânda asupra amoniților?",
+      "options": [
+        {
+          "text": "Să le dea încoace pe oamenii despre care întreba: «Cine zicea: Saul să domnească peste noi?», ca să-i omoare.",
+          "correct": true
+        },
+        {
+          "text": "Să-l îndepărteze pe Saul și să-l pună pe Nahaș împărat",
+          "correct": false
+        },
+        {
+          "text": "Să-i trimită pe solii din Iabes la Bezec",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:13"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Saul despre oamenii pe care poporul voia să-i omoare și de ce?",
+      "options": [
+        {
+          "text": "Toți trebuie omorâți înainte de apus, pentru că Saul a poruncit",
+          "correct": false
+        },
+        {
+          "text": "Vor fi trimiși la Nahaș, pentru că au ajutat amoniții",
+          "correct": false
+        },
+        {
+          "text": "Nimeni nu va fi omorât în ziua aceea, pentru că Domnul a dat o izbăvire lui Israel",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1"
+      ],
+      "status": "pending_review",
+      "text": "Ce afirmații sunt consemnate despre începutul crizei de la Iabes?",
+      "options": [
+        {
+          "text": "Nahaș era Amonit și a împresurat Iabesul din Galaad.",
+          "correct": true
+        },
+        {
+          "text": "Locuitorii din Iabes i-au cerut să facă legământ cu ei și au spus că îi vor fi supuși.",
+          "correct": true
+        },
+        {
+          "text": "Nahaș a venit din țara filistenilor și a împresurat Ghibea.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:2"
+      ],
+      "status": "pending_review",
+      "text": "Ce cuprinde condiția pe care Nahaș a pus-o pentru legământ?",
+      "options": [
+        {
+          "text": "Să arunce o ocară asupra întregului Israel.",
+          "correct": true
+        },
+        {
+          "text": "Să le lase ochiul drept și să-i ducă la Ghilgal.",
+          "correct": false
+        },
+        {
+          "text": "Să li se scoată tuturor locuitorilor ochiul drept.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce au cerut bătrânii din Iabes în răgazul de șapte zile?",
+      "options": [
+        {
+          "text": "Să poată pleca la Ghilgal și să-l încoroneze pe Saul.",
+          "correct": false
+        },
+        {
+          "text": "Să poată trimite soli în tot ținutul lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "Dacă nimeni nu îi ajută, se vor supune lui Nahaș.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:4",
+        "11:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce este relatat despre sosirea solilor și reacția din Ghibea?",
+      "options": [
+        {
+          "text": "Solii au ajuns în cetatea lui Saul.",
+          "correct": true
+        },
+        {
+          "text": "Ei au spus lucrurile în auzul poporului, iar poporul a ridicat glasul și a plâns.",
+          "correct": true
+        },
+        {
+          "text": "Poporul i-a trimis pe soli înapoi fără să-i asculte.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce este spus despre Saul înainte ca el să afle motivul plânsului?",
+      "options": [
+        {
+          "text": "Mergea în urma boilor.",
+          "correct": true
+        },
+        {
+          "text": "Se întorcea de la lupta cu amoniții.",
+          "correct": false
+        },
+        {
+          "text": "Se întorcea de la câmp.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut Saul și poporul în dialogul despre plânsul din Ghibea?",
+      "options": [
+        {
+          "text": "Saul i-a întrebat cine a fost ales la sorți.",
+          "correct": false
+        },
+        {
+          "text": "Saul a întrebat ce are poporul de plânge.",
+          "correct": true
+        },
+        {
+          "text": "Oamenii i-au istorisit ce spuseseră cei din Iabes.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat cu Saul după ce a auzit cuvintele celor din Iabes?",
+      "options": [
+        {
+          "text": "Duhul lui Dumnezeu a venit peste el.",
+          "correct": true
+        },
+        {
+          "text": "Saul s-a mâniat foarte tare.",
+          "correct": true
+        },
+        {
+          "text": "Saul s-a ascuns între vase.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Cum a răspândit Saul chemarea prin ținutul lui Israel?",
+      "options": [
+        {
+          "text": "A trimis bucățile prin soli în tot ținutul lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "A trimis câte o pâine fiecărui bătrân din Israel.",
+          "correct": false
+        },
+        {
+          "text": "A tăiat în bucăți o pereche de boi.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce cuprindea mesajul trimis în Israel împreună cu bucățile de boi?",
+      "options": [
+        {
+          "text": "Să se supună lui Nahaș după șapte zile.",
+          "correct": false
+        },
+        {
+          "text": "Să meargă după Saul și Samuel.",
+          "correct": true
+        },
+        {
+          "text": "Cine nu merge după Saul și Samuel își va vedea boii tăiați la fel.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce două lucruri sunt consemnate despre reacția poporului la chemarea lui Saul?",
+      "options": [
+        {
+          "text": "Poporul a pornit ca un singur om.",
+          "correct": true
+        },
+        {
+          "text": "Groaza Domnului a apucat poporul.",
+          "correct": true
+        },
+        {
+          "text": "Poporul s-a întors fiecare la casa lui.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:8"
+      ],
+      "status": "pending_review",
+      "text": "Ce cifre sunt date pentru numărătoarea făcută la Bezec?",
+      "options": [
+        {
+          "text": "Bărbații lui Iuda erau treizeci de mii.",
+          "correct": true
+        },
+        {
+          "text": "Bărbații lui Iuda erau trei sute de mii.",
+          "correct": false
+        },
+        {
+          "text": "Copiii lui Israel erau trei sute de mii.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce mesaj au transmis solii locuitorilor din Iabes?",
+      "options": [
+        {
+          "text": "Ajutorul va veni după răgazul unei luni.",
+          "correct": false
+        },
+        {
+          "text": "A doua zi vor avea ajutor.",
+          "correct": true
+        },
+        {
+          "text": "Ajutorul va veni când va dogori soarele.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:9",
+        "11:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut locuitorii din Iabes după ce au primit vestea ajutorului?",
+      "options": [
+        {
+          "text": "S-au umplut de bucurie.",
+          "correct": true
+        },
+        {
+          "text": "Le-au spus amoniților că a doua zi li se vor supune.",
+          "correct": true
+        },
+        {
+          "text": "Au fugit din cetate înainte de sosirea solilor.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce afirmații redau cuvintele locuitorilor din Iabes adresate amoniților?",
+      "options": [
+        {
+          "text": "Au spus că amoniții le vor putea face ce le va plăcea.",
+          "correct": true
+        },
+        {
+          "text": "Au cerut să le fie cruțat ochiul drept.",
+          "correct": false
+        },
+        {
+          "text": "Au spus că a doua zi li se vor supune.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce este consemnat despre pregătirea și începutul atacului lui Saul?",
+      "options": [
+        {
+          "text": "Saul a împărțit poporul în șapte cete care au intrat la apus.",
+          "correct": false
+        },
+        {
+          "text": "Saul a împărțit poporul în trei cete.",
+          "correct": true
+        },
+        {
+          "text": "Cetele au pătruns în tabăra amoniților în straja dimineții.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce rezultat al luptei este relatat pentru ziua atacului?",
+      "options": [
+        {
+          "text": "Amoniții au fost bătuți până la căldura zilei.",
+          "correct": true
+        },
+        {
+          "text": "Cei care au scăpat au fost risipiți.",
+          "correct": true
+        },
+        {
+          "text": "Amoniții au fost lăsați să rămână împreună în tabără.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11",
+        "11:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat după înfrângerea amoniților?",
+      "options": [
+        {
+          "text": "Poporul i-a cerut lui Samuel să-i dea pe oamenii despre care întreba: «Cine zicea: Saul să domnească peste noi?», ca să-i omoare.",
+          "correct": true
+        },
+        {
+          "text": "Poporul a cerut să-l omoare pe Samuel.",
+          "correct": false
+        },
+        {
+          "text": "Nu au mai rămas doi laolaltă dintre cei care scăpaseră.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce cuprinde cererea pe care poporul i-a adresat-o lui Samuel?",
+      "options": [
+        {
+          "text": "A cerut ca Saul să fie trimis înapoi la câmp.",
+          "correct": false
+        },
+        {
+          "text": "A întrebat cine spusese «Saul să domnească peste noi?»",
+          "correct": true
+        },
+        {
+          "text": "A cerut să fie aduși oamenii aceia pentru a fi omorâți.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:13"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Saul când poporul a cerut: «Dați încoace pe oamenii aceia, ca să-i omorâm»?",
+      "options": [
+        {
+          "text": "Nimeni nu va fi omorât în ziua aceea.",
+          "correct": true
+        },
+        {
+          "text": "Domnul a dat în ziua aceea o izbăvire lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "Oamenii aceia trebuie omorâți înainte de a merge la Ghilgal.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:14"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-a propus Samuel israeliților după cuvintele lui Saul?",
+      "options": [
+        {
+          "text": "Să întărească acolo împărăția.",
+          "correct": true
+        },
+        {
+          "text": "Să se întoarcă la Bezec pentru o nouă numărătoare.",
+          "correct": false
+        },
+        {
+          "text": "Să meargă la Ghilgal.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:15"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat la Ghilgal înaintea Domnului?",
+      "options": [
+        {
+          "text": "Au cerut lui Nahaș să încheie un legământ.",
+          "correct": false
+        },
+        {
+          "text": "Tot poporul a mers la Ghilgal și l-a pus pe Saul împărat.",
+          "correct": true
+        },
+        {
+          "text": "Au adus jertfe de mulțumire înaintea Domnului.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:15"
+      ],
+      "status": "pending_review",
+      "text": "Cum este descrisă încheierea capitolului la Ghilgal?",
+      "options": [
+        {
+          "text": "Saul și toți oamenii lui Israel s-au veselit foarte mult.",
+          "correct": true
+        },
+        {
+          "text": "Jertfele au fost aduse înaintea Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Poporul s-a întors acasă plângând.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7",
+        "11:8",
+        "11:9",
+        "11:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce fapte sunt relatate despre mobilizarea și atacul armatei lui Saul?",
+      "options": [
+        {
+          "text": "După numărătoarea de la Bezec, cetele au atacat tabăra amoniților în straja dimineții.",
+          "correct": true
+        },
+        {
+          "text": "Saul a atacat fără să numere poporul, în miezul nopții.",
+          "correct": false
+        },
+        {
+          "text": "Saul a trimis în Israel bucăți dintr-o pereche de boi prin soli.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 11,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:12",
+        "11:13",
+        "11:14",
+        "11:15"
+      ],
+      "status": "pending_review",
+      "text": "Ce hotărâri și acțiuni sunt consemnate după izbăvirea lui Israel?",
+      "options": [
+        {
+          "text": "Poporul a ales să se întoarcă la Iabes și să-l lase pe Saul în Ghibea.",
+          "correct": false
+        },
+        {
+          "text": "Saul a spus că nimeni nu va fi omorât în ziua aceea.",
+          "correct": true
+        },
+        {
+          "text": "Samuel a chemat poporul să meargă la Ghilgal pentru a întări împărăția.",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1",
+        "11:2",
+        "11:3"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cine a împresurat Iabesul",
+          "right": "Nahaș, Amonitul"
+        },
+        {
+          "left": "Unde se afla Iabesul",
+          "right": "În Galaad"
+        },
+        {
+          "left": "Ce i-au cerut locuitorii din Iabes lui Nahaș",
+          "right": "Să facă legământ"
+        },
+        {
+          "left": "Ce au spus locuitorii că vor fi",
+          "right": "Supuși lui Nahaș"
+        },
+        {
+          "left": "Câte zile au cerut bătrânii pentru a trimite soli",
+          "right": "Șapte zile"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1",
+        "11:2"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cine a pus condiția legământului",
+          "right": "Nahaș"
+        },
+        {
+          "left": "Ce trebuia scos tuturor locuitorilor",
+          "right": "Ochiul drept"
+        },
+        {
+          "left": "Asupra cui urma să fie aruncată ocara",
+          "right": "Asupra întregului Israel"
+        },
+        {
+          "left": "Ce au cerut locuitorii din Iabes",
+          "right": "Un legământ"
+        },
+        {
+          "left": "Ce au spus că vor face față de Nahaș",
+          "right": "Îi vor fi supuși"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:3",
+        "11:4"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cine a cerut răgazul de șapte zile",
+          "right": "Bătrânii din Iabes"
+        },
+        {
+          "left": "Unde urmau să trimită soli?",
+          "right": "În tot ținutul lui Israel"
+        },
+        {
+          "left": "Ce aveau să facă dacă nu primeau ajutor",
+          "right": "Să se supună lui Nahaș"
+        },
+        {
+          "left": "Unde au ajuns solii",
+          "right": "La Ghibea"
+        },
+        {
+          "left": "A cui cetate era Ghibea",
+          "right": "A lui Saul"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:4",
+        "11:5"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Unde au ajuns solii din Iabes",
+          "right": "La Ghibea"
+        },
+        {
+          "left": "În auzul cui au spus ei lucrurile",
+          "right": "Al poporului"
+        },
+        {
+          "left": "Ce a făcut poporul după ce a auzit",
+          "right": "A ridicat glasul și a plâns"
+        },
+        {
+          "left": "De unde se întorcea Saul",
+          "right": "De la câmp"
+        },
+        {
+          "left": "În urma cui venea Saul",
+          "right": "Boii"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5",
+        "11:6"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce a întrebat Saul despre popor",
+          "right": "De ce plângea"
+        },
+        {
+          "left": "Ce i-au istorisit oamenii",
+          "right": "Ce spuseseră cei din Iabes"
+        },
+        {
+          "left": "Cine a venit peste Saul după ce a auzit",
+          "right": "Duhul lui Dumnezeu"
+        },
+        {
+          "left": "Cum s-a mâniat Saul",
+          "right": "Foarte tare"
+        },
+        {
+          "left": "Ce eveniment a precedat mânia lui Saul",
+          "right": "A auzit vestea din Iabes"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:6",
+        "11:7"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Peste cine a venit Duhul lui Dumnezeu",
+          "right": "Peste Saul"
+        },
+        {
+          "left": "Ce a luat Saul pentru a trimite un semn prin Israel",
+          "right": "O pereche de boi"
+        },
+        {
+          "left": "Ce a făcut Saul cu boii",
+          "right": "I-a tăiat în bucăți"
+        },
+        {
+          "left": "Prin cine au fost trimise bucățile",
+          "right": "Prin soli"
+        },
+        {
+          "left": "Unde au fost trimise bucățile",
+          "right": "În tot ținutul lui Israel"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:7"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cui trebuia să-i urmeze poporul",
+          "right": "Lui Saul și lui Samuel"
+        },
+        {
+          "left": "Ce pățeau boii celui care nu mergea",
+          "right": "Erau tăiați la fel"
+        },
+        {
+          "left": "Ce a apucat poporul",
+          "right": "Groaza Domnului"
+        },
+        {
+          "left": "Cum a pornit poporul",
+          "right": "Ca un singur om"
+        },
+        {
+          "left": "Ce a făcut Saul cu perechea de boi",
+          "right": "A tăiat-o în bucăți"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:8",
+        "11:9"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Unde a numărat Saul poporul",
+          "right": "La Bezec"
+        },
+        {
+          "left": "Numărul copiilor lui Israel",
+          "right": "Trei sute de mii"
+        },
+        {
+          "left": "Numărul bărbaților lui Iuda",
+          "right": "Treizeci de mii"
+        },
+        {
+          "left": "Când urma Iabesul să aibă ajutor",
+          "right": "A doua zi"
+        },
+        {
+          "left": "În ce moment al zilei urma ajutorul",
+          "right": "Când dogorea soarele"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:9",
+        "11:10"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce le-au vestit solii locuitorilor din Iabes",
+          "right": "Vor avea ajutor"
+        },
+        {
+          "left": "Când va veni ajutorul",
+          "right": "A doua zi, când va dogori soarele"
+        },
+        {
+          "left": "Cum au primit locuitorii vestea",
+          "right": "S-au umplut de bucurie"
+        },
+        {
+          "left": "Ce le-au spus amoniților despre ziua următoare",
+          "right": "Se vor supune"
+        },
+        {
+          "left": "Ce au spus că le pot face amoniții",
+          "right": "Ce le va plăcea"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:10",
+        "11:11"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cine a împărțit poporul în cete",
+          "right": "Saul"
+        },
+        {
+          "left": "În câte cete a fost împărțit poporul",
+          "right": "Trei"
+        },
+        {
+          "left": "În ce tabără au pătruns cetele",
+          "right": "În tabăra amoniților"
+        },
+        {
+          "left": "Când au pătruns în tabără",
+          "right": "În straja dimineții"
+        },
+        {
+          "left": "Până când i-au bătut pe amoniți",
+          "right": "Până la căldura zilei"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce s-a întâmplat cu cei care au scăpat",
+          "right": "Au fost risipiți"
+        },
+        {
+          "left": "Ce spune textul despre cei rămași doi laolaltă",
+          "right": "N-au mai rămas doi laolaltă"
+        },
+        {
+          "left": "Cine a împărțit poporul",
+          "right": "Saul"
+        },
+        {
+          "left": "Numărul cetelor",
+          "right": "Trei"
+        },
+        {
+          "left": "Ținta atacului",
+          "right": "Tabăra amoniților"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:11",
+        "11:12"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Până când i-au bătut pe amoniți",
+          "right": "Până la căldura zilei"
+        },
+        {
+          "left": "Cum au fost împrăștiați cei care au scăpat",
+          "right": "Risipiți"
+        },
+        {
+          "left": "Cui i-a vorbit poporul după izbândă",
+          "right": "Lui Samuel"
+        },
+        {
+          "left": "Pe cine a cerut poporul să aducă",
+          "right": "Oamenii despre care poporul întreba: «Cine zicea: Saul să domnească peste noi?»"
+        },
+        {
+          "left": "Ce voia poporul să li se întâmple acelor oameni",
+          "right": "Să fie omorâți"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:12",
+        "11:13"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cine a cerut să fie omorâți oamenii aceia",
+          "right": "Poporul"
+        },
+        {
+          "left": "Cui i-a adresat poporul cererea",
+          "right": "Lui Samuel"
+        },
+        {
+          "left": "Ce i-a cerut să facă cu oamenii aceia",
+          "right": "Să-i dea încoace"
+        },
+        {
+          "left": "Ce a hotărât Saul pentru ziua aceea",
+          "right": "Nimeni nu va fi omorât"
+        },
+        {
+          "left": "Cine dăduse o izbăvire lui Israel",
+          "right": "Domnul"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:13",
+        "11:14",
+        "11:15"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce a dat Domnul lui Israel în ziua aceea",
+          "right": "O izbăvire"
+        },
+        {
+          "left": "Cine i-a chemat pe israeliți să meargă la Ghilgal",
+          "right": "Samuel"
+        },
+        {
+          "left": "Ce urmau să întărească acolo",
+          "right": "Împărăția"
+        },
+        {
+          "left": "Unde l-au pus pe Saul împărat",
+          "right": "La Ghilgal"
+        },
+        {
+          "left": "Înaintea cui a fost pus Saul împărat",
+          "right": "Înaintea Domnului"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:14",
+        "11:15"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cine a chemat poporul să meargă la Ghilgal",
+          "right": "Samuel"
+        },
+        {
+          "left": "Unde a fost întărită împărăția",
+          "right": "La Ghilgal"
+        },
+        {
+          "left": "Cine a mers la Ghilgal",
+          "right": "Tot poporul"
+        },
+        {
+          "left": "Ce jertfe au adus înaintea Domnului",
+          "right": "Jertfe de mulțumire"
+        },
+        {
+          "left": "Cum s-au veselit Saul și Israel",
+          "right": "Foarte mult"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:15"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Unde s-a dus tot poporul",
+          "right": "La Ghilgal"
+        },
+        {
+          "left": "Pe cine au pus împărat",
+          "right": "Pe Saul"
+        },
+        {
+          "left": "Înaintea cui l-au pus împărat",
+          "right": "Înaintea Domnului"
+        },
+        {
+          "left": "Ce au adus înaintea Domnului",
+          "right": "Jertfe de mulțumire"
+        },
+        {
+          "left": "Cum s-au veselit Saul și oamenii lui Israel",
+          "right": "Foarte mult"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1",
+        "11:2",
+        "11:7",
+        "11:8",
+        "11:15"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Cetatea împresurată la început",
+          "right": "Iabes din Galaad"
+        },
+        {
+          "left": "Condiția pusă de Nahaș",
+          "right": "Să scoată ochiul drept"
+        },
+        {
+          "left": "Animalul pe care Saul l-a tăiat în bucăți",
+          "right": "O pereche de boi"
+        },
+        {
+          "left": "Locul unde a numărat Saul poporul",
+          "right": "Bezec"
+        },
+        {
+          "left": "Locul unde l-au pus pe Saul împărat",
+          "right": "Ghilgal"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:1",
+        "11:3",
+        "11:4",
+        "11:8",
+        "11:11",
+        "11:14"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Locul unde au ajuns solii din Iabes",
+          "right": "Ghibea"
+        },
+        {
+          "left": "Locul unde a fost făcută numărătoarea",
+          "right": "Bezec"
+        },
+        {
+          "left": "Unde a venit Nahaș și a împresurat cetatea",
+          "right": "Iabes din Galaad"
+        },
+        {
+          "left": "Momentul intrării în tabăra amoniților",
+          "right": "Straja dimineții"
+        },
+        {
+          "left": "Locul ales pentru întărirea împărăției",
+          "right": "Ghilgal"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 11,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "11:5",
+        "11:6",
+        "11:9",
+        "11:13",
+        "11:15"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce i-au istorisit oamenii lui Saul",
+          "right": "Ce spuseseră cei din Iabes"
+        },
+        {
+          "left": "Ce a venit peste Saul după ce a auzit vestea",
+          "right": "Duhul lui Dumnezeu"
+        },
+        {
+          "left": "Ce ajutor li s-a promis locuitorilor din Iabes?",
+          "right": "Ajutor a doua zi, când va dogori soarele"
+        },
+        {
+          "left": "Ce a hotărât Saul pentru oamenii pe care poporul voia să-i omoare",
+          "right": "Nimeni nu va fi omorât în ziua aceea"
+        },
+        {
+          "left": "Cum s-au veselit Saul și Israel după ce l-au pus împărat",
+          "right": "Foarte mult"
+        }
+      ],
+      "options": []
+    }
+  ]
+}
