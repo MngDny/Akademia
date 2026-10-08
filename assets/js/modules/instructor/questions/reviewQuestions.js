@@ -263,9 +263,10 @@ async function loadBookFilters() {
 function buildQueueQuery() {
   let query = supabase
     .from("question_review_queue")
-    .select("type,id,text,options,pairs,chapter,difficulty,book,source_references,status,added_by,created_at", { count: "exact" })
+    .select("type,id,text,options,pairs,chapter,sort_verse,difficulty,book,source_references,status,added_by,created_at", { count: "exact" })
     .order("book", { ascending: true, nullsFirst: false })
     .order("chapter", { ascending: true, nullsFirst: false })
+    .order("sort_verse", { ascending: true, nullsFirst: false })
     .order("created_at", { ascending: true, nullsFirst: false })
     .order("type", { ascending: true })
     .order("id", { ascending: true });

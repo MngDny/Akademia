@@ -101,7 +101,12 @@ as
     translate(lower(concat_ws(
       ' ', question.text, question.book, question.chapter::text, question.added_by,
       array_to_string(question.source_references, ' '), question.options::text
-    )), 'ăâîșț', 'aaist') as search_text
+    )), 'ăâîșț', 'aaist') as search_text,
+    (
+      select min((regexp_match(reference.value, '^[0-9]+:([0-9]+)$'))[1]::integer)
+      from unnest(coalesce(question.source_references, '{}'::text[])) as reference(value)
+      where reference.value ~ '^[0-9]+:[0-9]+$'
+    ) as sort_verse
   from public.questions_tf as question
   where question.status = 'pending_review'
 
@@ -114,7 +119,12 @@ as
     translate(lower(concat_ws(
       ' ', question.text, question.book, question.chapter::text, question.added_by,
       array_to_string(question.source_references, ' '), question.options::text
-    )), 'ăâîșț', 'aaist')
+    )), 'ăâîșț', 'aaist'),
+    (
+      select min((regexp_match(reference.value, '^[0-9]+:([0-9]+)$'))[1]::integer)
+      from unnest(coalesce(question.source_references, '{}'::text[])) as reference(value)
+      where reference.value ~ '^[0-9]+:[0-9]+$'
+    )
   from public.questions_abc_one as question
   where question.status = 'pending_review'
 
@@ -127,7 +137,12 @@ as
     translate(lower(concat_ws(
       ' ', question.text, question.book, question.chapter::text, question.added_by,
       array_to_string(question.source_references, ' '), question.options::text
-    )), 'ăâîșț', 'aaist')
+    )), 'ăâîșț', 'aaist'),
+    (
+      select min((regexp_match(reference.value, '^[0-9]+:([0-9]+)$'))[1]::integer)
+      from unnest(coalesce(question.source_references, '{}'::text[])) as reference(value)
+      where reference.value ~ '^[0-9]+:[0-9]+$'
+    )
   from public.questions_abc_multi as question
   where question.status = 'pending_review'
 
@@ -140,7 +155,12 @@ as
     translate(lower(concat_ws(
       ' ', question.book, question.chapter::text, question.added_by,
       array_to_string(question.source_references, ' '), question.pairs::text
-    )), 'ăâîșț', 'aaist')
+    )), 'ăâîșț', 'aaist'),
+    (
+      select min((regexp_match(reference.value, '^[0-9]+:([0-9]+)$'))[1]::integer)
+      from unnest(coalesce(question.source_references, '{}'::text[])) as reference(value)
+      where reference.value ~ '^[0-9]+:[0-9]+$'
+    )
   from public.questions_match as question
   where question.status = 'pending_review';
 
