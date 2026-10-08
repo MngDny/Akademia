@@ -21,7 +21,7 @@
           <div>
             <p class="title-eyebrow">Spațiu de lucru îndrumător</p>
             <h1 class="header">Verifică întrebări</h1>
-            <p class="muted">Citește întrebarea și toate răspunsurile. Aprobarea o activează pentru teste și învățare; respingerea o arhivează.</p>
+            <p class="muted">Citește întrebarea și răspunsurile, editează câmpurile direct aici și aprobă sau arhivează. Lista se încarcă în pagini de câte 50 de întrebări.</p>
           </div>
         </div>
 
@@ -51,6 +51,12 @@
 
           <p id="reviewMessage" class="review-message" role="status" aria-live="polite"></p>
           <div id="reviewList" class="review-list" aria-live="polite"></div>
+          <nav id="reviewPagination" class="review-pagination" aria-label="Paginarea întrebărilor de verificat" hidden>
+            <button id="previousPageBtn" class="btn sm" type="button">← Pagina anterioară</button>
+            <span id="pageSummary" class="muted" aria-live="polite"></span>
+            <button id="nextPageBtn" class="btn sm" type="button">Pagina următoare →</button>
+          </nav>
+          <datalist id="reviewBookSuggestions"></datalist>
           <div id="emptyState" class="review-empty" hidden>
             <strong>Nu sunt întrebări în această listă.</strong>
             <span>Întrebările generate cu AI apar aici până sunt aprobate sau respinse.</span>
