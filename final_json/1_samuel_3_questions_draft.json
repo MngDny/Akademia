@@ -1,0 +1,1911 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "text": "În vremea când Samuel slujea Domnului înaintea lui Eli, Cuvântul Domnului era rar, iar vedeniile nu erau dese.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli vedea limpede și nu avea probleme cu ochii.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Când Samuel era culcat în Templu, candela lui Dumnezeu se stinsese deja.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Samuel era culcat în Templul Domnului, în locul unde se afla chivotul lui Dumnezeu.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "La prima chemare a Domnului, Samuel a răspuns: „Iată-mă!”",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:4"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "După ce a auzit chemarea, Samuel a alergat la Eli, crezând că Eli îl chemase.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Când Samuel a venit prima oară la Eli, Eli i-a spus că îl chemase și i-a cerut să rămână acolo.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "La a doua chemare, Samuel s-a sculat și s-a dus la Eli, iar Eli i-a spus să se întoarcă și să se culce.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:6"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Textul spune că Samuel Îl cunoștea deja pe Domnul și că primise Cuvântul Lui.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:7"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "După a treia chemare, Eli a înțeles că Domnul chema copilul.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli l-a învățat pe Samuel să răspundă la următoarea chemare: „Vorbește, Doamne, căci robul Tău ascultă.”",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "După ce a primit îndrumarea lui Eli, Samuel s-a dus să se culce la locul lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul l-a chemat pe Samuel rostindu-i numele o singură dată.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Când Domnul a venit și S-a înfățișat, Samuel a răspuns că robul Domnului ascultă.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul i-a spus lui Samuel că va face în Israel un lucru care va asurzi urechile celor care îl vor auzi.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:11"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul a spus că va împlini asupra casei lui Eli doar o parte din ceea ce rostise.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul a spus că va începe și va isprăvi împlinirea celor rostite împotriva casei lui Eli.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli nu știa despre fărădelegea pentru care fiii lui s-au făcut vrednici de lepădat.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:13"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Pedepsirea casei lui Eli era legată de fărădelegea cunoscută de el și de faptul că nu și-a oprit fiii.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:13"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul a jurat că fărădelegea casei lui Eli va fi ispășită prin jertfe și daruri de mâncare.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Samuel a rămas culcat până dimineața, apoi a deschis ușile Casei Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Samuel nu s-a temut să-i istorisească lui Eli vedenia.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli l-a chemat pe Samuel cu apelativul „fiule”, iar Samuel a răspuns: „Iată-mă!”",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Eli i-a cerut lui Samuel să-i spună cuvântul rostit de Domnul și să nu-i ascundă nimic.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:17"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Samuel i-a ascuns lui Eli o parte din ceea ce îi vorbise Domnul.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "După ce Samuel i-a istorisit totul, Eli a spus: „Domnul este Acesta, să facă ce va crede!”",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:17",
+        "3:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Pe măsură ce Samuel creștea, Domnul era cu el și nu lăsa să cadă la pământ niciunul dintre cuvintele lui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Tot Israelul, de la Dan până la Beer-Șeba, a cunoscut că Domnul îl pusese pe Samuel proroc al Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:20"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "Domnul Se arăta lui Samuel la Betel și îl pusese preot al Domnului.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:20",
+        "3:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "tf",
+      "text": "La Silo, Domnul Se descoperea lui Samuel prin Cuvântul Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce era rar în vremea când tânărul Samuel slujea Domnului înaintea lui Eli?",
+      "correct": "Cuvântul Domnului.",
+      "options": [
+        {
+          "text": "Cuvântul Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Candela lui Dumnezeu.",
+          "correct": false
+        },
+        {
+          "text": "Chivotul lui Dumnezeu.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cum sunt descrise vedeniile în vremea aceea?",
+      "correct": "Nu erau dese.",
+      "options": [
+        {
+          "text": "Se arătau în fiecare noapte.",
+          "correct": false
+        },
+        {
+          "text": "Erau auzite de tot Israelul în fiecare zi.",
+          "correct": false
+        },
+        {
+          "text": "Nu erau dese.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce problemă avea Eli în timp ce stătea culcat la locul lui?",
+      "correct": "Avea ochii tulburi și nu mai putea să vadă.",
+      "options": [
+        {
+          "text": "Avea ochii tulburi și nu mai putea să vadă.",
+          "correct": true
+        },
+        {
+          "text": "Nu mai putea să vorbească.",
+          "correct": false
+        },
+        {
+          "text": "Nu se putea ridica din locul lui.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Unde era culcat Samuel în timp ce candela lui Dumnezeu nu se stinsese încă?",
+      "correct": "În Templul Domnului, unde era chivotul lui Dumnezeu.",
+      "options": [
+        {
+          "text": "În Templul Domnului, unde era chivotul lui Dumnezeu.",
+          "correct": true
+        },
+        {
+          "text": "La poarta cetății Silo.",
+          "correct": false
+        },
+        {
+          "text": "În casa lui Elcana, la Rama.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cum diferă răspunsul lui Samuel la prima chemare de răspunsul dat după ce Domnul i S-a înfățișat?",
+      "correct": "La prima a spus „Iată-mă!”, iar apoi: „Vorbește, căci robul Tău ascultă.”",
+      "options": [
+        {
+          "text": "A răspuns în ambele ocazii numai: „Iată-mă!”",
+          "correct": false
+        },
+        {
+          "text": "La prima a spus „Iată-mă!”, iar apoi: „Vorbește, căci robul Tău ascultă.”",
+          "correct": true
+        },
+        {
+          "text": "La prima a spus „Vorbește, căci robul Tău ascultă”, iar apoi: „Iată-mă!”",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:4",
+        "3:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "La cine a alergat Samuel după ce a auzit prima chemare, crezând că acea persoană îl chemase?",
+      "correct": "La Eli.",
+      "options": [
+        {
+          "text": "La Elcana.",
+          "correct": false
+        },
+        {
+          "text": "La bătrânii lui Israel.",
+          "correct": false
+        },
+        {
+          "text": "La Eli.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce i-a spus Eli lui Samuel când acesta a venit prima dată la el?",
+      "correct": "„Nu te-am chemat; întoarce-te și te culcă.”",
+      "options": [
+        {
+          "text": "„Vorbește, Doamne, căci robul Tău ascultă.”",
+          "correct": false
+        },
+        {
+          "text": "„Nu te-am chemat; întoarce-te și te culcă.”",
+          "correct": true
+        },
+        {
+          "text": "„Spune-mi tot ce ai auzit.”",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cum i-a răspuns Eli lui Samuel după a doua chemare?",
+      "correct": "I-a spus că nu îl chemase și i-a cerut să se întoarcă și să se culce.",
+      "options": [
+        {
+          "text": "I-a spus că nu îl chemase și i-a cerut să se întoarcă și să se culce.",
+          "correct": true
+        },
+        {
+          "text": "I-a spus că îl chemase și i-a cerut să rămână cu el.",
+          "correct": false
+        },
+        {
+          "text": "L-a trimis să vorbească cu bătrânii lui Israel.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:6"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce a înțeles Eli după ce Domnul l-a chemat pe Samuel a treia oară?",
+      "correct": "Că Domnul chema copilul.",
+      "options": [
+        {
+          "text": "Că Samuel voia să plece la Rama.",
+          "correct": false
+        },
+        {
+          "text": "Că fusese stinsă candela lui Dumnezeu.",
+          "correct": false
+        },
+        {
+          "text": "Că Domnul chema copilul.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce cuvinte i-a spus Eli să folosească dacă Domnul îl mai chema?",
+      "correct": "„Vorbește, Doamne, căci robul Tău ascultă.”",
+      "options": [
+        {
+          "text": "„Iată-mă, căci m-ai chemat.”",
+          "correct": false
+        },
+        {
+          "text": "„Vorbește, Doamne, căci robul Tău ascultă.”",
+          "correct": true
+        },
+        {
+          "text": "„Samuele, fiule, nu-mi ascunde nimic.”",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:8",
+        "3:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cum l-a chemat Domnul pe Samuel când a venit și S-a înfățișat înaintea lui?",
+      "correct": "„Samuele, Samuele!”",
+      "options": [
+        {
+          "text": "„Samuele, Samuele!”",
+          "correct": true
+        },
+        {
+          "text": "„Eli, Eli!”",
+          "correct": false
+        },
+        {
+          "text": "„Samuel, vino la Silo!”",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce efect urma să aibă asupra celor care îl auzeau lucrul pe care Domnul îl va face în Israel?",
+      "correct": "Le va asurzi urechile.",
+      "options": [
+        {
+          "text": "Le va asurzi urechile.",
+          "correct": true
+        },
+        {
+          "text": "Le va întuneca ochii.",
+          "correct": false
+        },
+        {
+          "text": "Îi va face să uite cuvintele lui Samuel.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:11"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce a spus Domnul că va împlini în ziua aceea asupra casei lui Eli?",
+      "correct": "Tot ce rostise împotriva casei lui; va începe și va isprăvi.",
+      "options": [
+        {
+          "text": "Doar o parte din cuvintele rostite împotriva casei lui.",
+          "correct": false
+        },
+        {
+          "text": "Numai cuvintele spuse de Eli împotriva lui Samuel.",
+          "correct": false
+        },
+        {
+          "text": "Tot ce rostise împotriva casei lui; va începe și va isprăvi.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:11",
+        "3:12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Potrivit mesajului Domnului, de ce urma să fie pedepsită casa lui Eli?",
+      "correct": "Din pricina fărădelegii cunoscute de Eli și pentru că nu și-a oprit fiii.",
+      "options": [
+        {
+          "text": "Din pricina fărădelegii cunoscute de Eli și pentru că nu și-a oprit fiii.",
+          "correct": true
+        },
+        {
+          "text": "Pentru că Samuel deschisese ușile Casei Domnului.",
+          "correct": false
+        },
+        {
+          "text": "Pentru că Eli nu mai putea să vadă.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:13"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Prin ce nu avea să fie ispășită fărădelegea casei lui Eli, potrivit jurământului Domnului?",
+      "correct": "Nici prin jertfe, nici prin daruri de mâncare.",
+      "options": [
+        {
+          "text": "Prin deschiderea ușilor Casei Domnului.",
+          "correct": false
+        },
+        {
+          "text": "Nici prin jertfe, nici prin daruri de mâncare.",
+          "correct": true
+        },
+        {
+          "text": "Prin faptul că Samuel îi va vorbi lui Eli.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce a făcut Samuel după ce a rămas culcat până dimineața?",
+      "correct": "A deschis ușile Casei Domnului.",
+      "options": [
+        {
+          "text": "A deschis ușile Casei Domnului.",
+          "correct": true
+        },
+        {
+          "text": "A plecat la Dan.",
+          "correct": false
+        },
+        {
+          "text": "A adunat bătrânii lui Israel.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "De ce se temea Samuel în dimineața aceea?",
+      "correct": "Să-i istorisească lui Eli vedenia.",
+      "options": [
+        {
+          "text": "Să deschidă ușile Casei Domnului.",
+          "correct": false
+        },
+        {
+          "text": "Să se culce din nou la locul lui.",
+          "correct": false
+        },
+        {
+          "text": "Să-i istorisească lui Eli vedenia.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:15"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce i-a cerut Eli lui Samuel după ce l-a chemat și l-a întrebat despre cuvântul Domnului?",
+      "correct": "Să nu-i ascundă nimic din tot ce îi spusese Domnul.",
+      "options": [
+        {
+          "text": "Să nu-i ascundă nimic din tot ce îi spusese Domnul.",
+          "correct": true
+        },
+        {
+          "text": "Să plece imediat la Hebron.",
+          "correct": false
+        },
+        {
+          "text": "Să-i răspundă doar cu „Iată-mă!”",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:16",
+        "3:17"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Cum a reacționat Samuel când Eli i-a cerut să-i spună tot ce auzise?",
+      "correct": "I-a istorisit tot, fără să-i ascundă nimic.",
+      "options": [
+        {
+          "text": "I-a spus numai prima parte a vedeniei.",
+          "correct": false
+        },
+        {
+          "text": "A refuzat să-i răspundă.",
+          "correct": false
+        },
+        {
+          "text": "I-a istorisit tot, fără să-i ascundă nimic.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:17",
+        "3:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce a spus Eli după ce Samuel i-a istorisit totul?",
+      "correct": "„Domnul este Acesta, să facă ce va crede!”",
+      "options": [
+        {
+          "text": "„Vorbește, Doamne, căci robul Tău ascultă.”",
+          "correct": false
+        },
+        {
+          "text": "„Domnul este Acesta, să facă ce va crede!”",
+          "correct": true
+        },
+        {
+          "text": "„Nu te-am chemat, întoarce-te și te culcă.”",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce nu a lăsat Domnul să se întâmple cu niciunul dintre cuvintele lui Samuel?",
+      "correct": "Să cadă la pământ.",
+      "options": [
+        {
+          "text": "Să cadă la pământ.",
+          "correct": true
+        },
+        {
+          "text": "Să fie auzit la Silo.",
+          "correct": false
+        },
+        {
+          "text": "Să fie spus înaintea lui Eli.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:19"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Ce a ajuns să cunoască tot Israelul, de la Dan până la Beer-Șeba?",
+      "correct": "Că Domnul îl pusese pe Samuel proroc al Domnului.",
+      "options": [
+        {
+          "text": "Că Eli nu mai putea să vadă.",
+          "correct": false
+        },
+        {
+          "text": "Că Samuel deschisese ușile Casei Domnului.",
+          "correct": false
+        },
+        {
+          "text": "Că Domnul îl pusese pe Samuel proroc al Domnului.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:19",
+        "3:20"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_one",
+      "text": "Unde Se descoperea Domnul lui Samuel prin Cuvântul Domnului?",
+      "correct": "La Silo.",
+      "options": [
+        {
+          "text": "La Beer-Șeba.",
+          "correct": false
+        },
+        {
+          "text": "La Silo.",
+          "correct": true
+        },
+        {
+          "text": "La Rama.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:20",
+        "3:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care afirmații descriu vremea în care Samuel slujea înaintea lui Eli?",
+      "options": [
+        {
+          "text": "Cuvântul Domnului era rar.",
+          "correct": true
+        },
+        {
+          "text": "Samuel slujea în casa lui Elcana.",
+          "correct": false
+        },
+        {
+          "text": "Vedenii nu erau dese.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:1"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce detalii despre Eli sunt menționate când stătea culcat la locul lui?",
+      "options": [
+        {
+          "text": "Stătea în picioare la ușile Casei Domnului.",
+          "correct": false
+        },
+        {
+          "text": "Ochii lui începuseră să fie tulburi.",
+          "correct": true
+        },
+        {
+          "text": "Nu mai putea să vadă.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:2"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce spune textul despre locul și momentul în care Samuel era culcat?",
+      "options": [
+        {
+          "text": "Samuel era în Templul Domnului, unde era chivotul.",
+          "correct": true
+        },
+        {
+          "text": "Candela lui Dumnezeu nu se stinsese încă.",
+          "correct": true
+        },
+        {
+          "text": "Samuel dormea în casa lui Eli.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce detalii apar după prima chemare auzită de Samuel?",
+      "options": [
+        {
+          "text": "Samuel a răspuns: „Iată-mă!”",
+          "correct": true
+        },
+        {
+          "text": "Eli i-a spus că îl chemase el.",
+          "correct": false
+        },
+        {
+          "text": "A alergat la Eli, crezând că Eli îl chemase.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:4",
+        "3:5"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce se întâmplă în relatarea despre a doua chemare a lui Samuel?",
+      "options": [
+        {
+          "text": "Eli îi spune că Samuel nu mai trebuie să se culce.",
+          "correct": false
+        },
+        {
+          "text": "Samuel se scoală și merge la Eli.",
+          "correct": true
+        },
+        {
+          "text": "Eli îi spune: „Nu te-am chemat, fiule.”",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:6"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce afirmații despre chemările repetate și reacția lui Eli sunt susținute de text?",
+      "options": [
+        {
+          "text": "Eli înțelege că Domnul cheamă copilul.",
+          "correct": true
+        },
+        {
+          "text": "Domnul îl cheamă pe Samuel a treia oară.",
+          "correct": true
+        },
+        {
+          "text": "Samuel îi cere lui Eli să se ducă la Hebron.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:8"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce cuprinde îndrumarea pe care Eli i-o dă lui Samuel pentru următoarea chemare?",
+      "options": [
+        {
+          "text": "Să se ducă să se culce.",
+          "correct": true
+        },
+        {
+          "text": "Să spună că Eli l-a chemat.",
+          "correct": false
+        },
+        {
+          "text": "Să spună: „Vorbește, Doamne, căci robul Tău ascultă.”",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:8",
+        "3:9"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Care detalii sunt menționate despre chemarea Domnului și răspunsul lui Samuel?",
+      "options": [
+        {
+          "text": "Samuel a răspuns: „Nu te-am chemat.”",
+          "correct": false
+        },
+        {
+          "text": "Domnul a venit și S-a înfățișat.",
+          "correct": true
+        },
+        {
+          "text": "Domnul l-a chemat spunându-i de două ori numele.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce a anunțat Domnul că va face în Israel și asupra casei lui Eli?",
+      "options": [
+        {
+          "text": "Va împlini tot ce rostise împotriva casei lui Eli.",
+          "correct": true
+        },
+        {
+          "text": "Va face un lucru care va asurzi urechile celor care îl aud.",
+          "correct": true
+        },
+        {
+          "text": "Va lăsa fără împlinire cuvintele rostite împotriva lui Eli.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:11",
+        "3:12"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce elemente sunt incluse în motivul pedepsei anunțate pentru casa lui Eli?",
+      "options": [
+        {
+          "text": "Eli știa despre fărădelege.",
+          "correct": true
+        },
+        {
+          "text": "Eli îi oprise pe fiii lui.",
+          "correct": false
+        },
+        {
+          "text": "Fiii lui se făcuseră vrednici de lepădat.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:13"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce precizează Domnul despre ispășirea fărădelegii casei lui Eli?",
+      "options": [
+        {
+          "text": "Va fi ispășită prin faptul că Samuel deschide ușile.",
+          "correct": false
+        },
+        {
+          "text": "Nu va fi ispășită prin jertfe.",
+          "correct": true
+        },
+        {
+          "text": "Nu va fi ispășită prin daruri de mâncare.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce detalii despre dimineața de după vedenie sunt menționate?",
+      "options": [
+        {
+          "text": "A deschis ușile Casei Domnului.",
+          "correct": true
+        },
+        {
+          "text": "Samuel a rămas culcat până dimineața.",
+          "correct": true
+        },
+        {
+          "text": "I-a istorisit vedenia lui Eli înainte ca acesta să-l cheme.",
+          "correct": false
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:15",
+        "3:16"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce i-a spus Eli lui Samuel când l-a chemat să afle cuvântul Domnului?",
+      "options": [
+        {
+          "text": "L-a strigat: „Samuele, fiule!”",
+          "correct": true
+        },
+        {
+          "text": "I-a cerut să-i spună numai ce era ușor de auzit.",
+          "correct": false
+        },
+        {
+          "text": "I-a cerut să nu-i ascundă nimic.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:16",
+        "3:17"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "abc_multi",
+      "text": "Ce se întâmplă după ce Samuel crește și Domnul este cu el?",
+      "options": [
+        {
+          "text": "Domnul încetează să Se arate în Silo.",
+          "correct": false
+        },
+        {
+          "text": "Domnul nu lasă să cadă la pământ niciunul dintre cuvintele lui Samuel.",
+          "correct": true
+        },
+        {
+          "text": "Tot Israelul, de la Dan până la Beer-Șeba, îl recunoaște ca proroc al Domnului.",
+          "correct": true
+        }
+      ],
+      "pairs": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:19",
+        "3:20",
+        "3:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        {
+          "left": "Cuvântul Domnului în vremea aceea",
+          "right": "Era rar"
+        },
+        {
+          "left": "Vedenii",
+          "right": "Nu erau dese"
+        },
+        {
+          "left": "Ochii lui Eli",
+          "right": "Începuseră să fie tulburi"
+        },
+        {
+          "left": "Candela lui Dumnezeu",
+          "right": "Nu se stinsese încă"
+        },
+        {
+          "left": "Samuel culcat în Templu",
+          "right": "Era în locul unde se afla chivotul lui Dumnezeu"
+        }
+      ],
+      "options": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:1",
+        "3:2",
+        "3:3"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        {
+          "left": "Prima chemare a Domnului",
+          "right": "Samuel răspunde: „Iată-mă!”"
+        },
+        {
+          "left": "După ce aude chemarea",
+          "right": "Samuel aleargă la Eli"
+        },
+        {
+          "left": "A treia chemare",
+          "right": "Eli înțelege că Domnul cheamă copilul"
+        },
+        {
+          "left": "Îndrumarea lui Eli",
+          "right": "Samuel să spună: „Vorbește, Doamne, căci robul Tău ascultă”"
+        },
+        {
+          "left": "Chemarea în care Domnul Se înfățișează",
+          "right": "Samuel răspunde că robul Lui ascultă"
+        }
+      ],
+      "options": [],
+      "chapter": 3,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:4",
+        "3:5",
+        "3:8",
+        "3:9",
+        "3:10"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        {
+          "left": "Lucrul pe care Domnul îl va face în Israel",
+          "right": "Va asurzi urechile oricui îl va auzi"
+        },
+        {
+          "left": "În ziua aceea",
+          "right": "Domnul va împlini ce a rostit împotriva casei lui Eli"
+        },
+        {
+          "left": "Fiii lui Eli",
+          "right": "S-au făcut vrednici de lepădat prin fărădelegea lor"
+        },
+        {
+          "left": "Eli",
+          "right": "Știa despre fărădelege și nu și-a oprit fiii"
+        },
+        {
+          "left": "Fărădelegea casei lui Eli",
+          "right": "Nu va fi ispășită prin jertfe sau daruri de mâncare"
+        }
+      ],
+      "options": [],
+      "chapter": 3,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:11",
+        "3:12",
+        "3:13",
+        "3:14"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        {
+          "left": "Samuel până dimineața",
+          "right": "Rămâne culcat"
+        },
+        {
+          "left": "După ce se scoală dimineața",
+          "right": "Deschide ușile Casei Domnului"
+        },
+        {
+          "left": "Samuel după vedenie",
+          "right": "Se teme să i-o istorisească lui Eli"
+        },
+        {
+          "left": "Eli către Samuel",
+          "right": "Îi cere să nu-i ascundă nimic"
+        },
+        {
+          "left": "Samuel către Eli",
+          "right": "Îi istorisește totul fără să ascundă nimic"
+        }
+      ],
+      "options": [],
+      "chapter": 3,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:15",
+        "3:16",
+        "3:17",
+        "3:18"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        {
+          "left": "Samuel pe măsură ce crește",
+          "right": "Domnul este cu el"
+        },
+        {
+          "left": "Cuvintele lui Samuel",
+          "right": "Niciunul nu cade la pământ"
+        },
+        {
+          "left": "Dan până la Beer-Șeba",
+          "right": "Tot Israelul cunoaște că Samuel este proroc"
+        },
+        {
+          "left": "Silo",
+          "right": "Domnul Se arată și Se descoperă lui Samuel"
+        },
+        {
+          "left": "Felul descoperirii la Silo",
+          "right": "Prin Cuvântul Domnului"
+        }
+      ],
+      "options": [],
+      "chapter": 3,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:19",
+        "3:20",
+        "3:21"
+      ],
+      "status": "pending_review"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        {
+          "left": "Răspunsul lui Samuel la chemarea Domnului",
+          "right": "„Iată-mă!”"
+        },
+        {
+          "left": "Răspunsul lui Eli când Samuel vine la el",
+          "right": "„Nu te-am chemat; întoarce-te și te culcă.”"
+        },
+        {
+          "left": "Răspunsul recomandat de Eli la o nouă chemare",
+          "right": "„Vorbește, Doamne, căci robul Tău ascultă.”"
+        },
+        {
+          "left": "Răspunsul lui Samuel după ce Domnul îl cheamă din nou",
+          "right": "„Vorbește, căci robul Tău ascultă.”"
+        },
+        {
+          "left": "Răspunsul lui Eli după ce află vedenia",
+          "right": "„Domnul este Acesta, să facă ce va crede!”"
+        }
+      ],
+      "options": [],
+      "chapter": 3,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "3:4",
+        "3:5",
+        "3:9",
+        "3:10",
+        "3:18"
+      ],
+      "status": "pending_review"
+    }
+  ]
+}
