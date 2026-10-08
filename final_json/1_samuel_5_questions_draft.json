@@ -1,0 +1,1827 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:1"
+      ],
+      "status": "pending_review",
+      "text": "Filistenii au luat chivotul lui Dumnezeu de la Eben-Ezer și l-au dus la Asdod.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:1",
+        "5:8"
+      ],
+      "status": "pending_review",
+      "text": "Filistenii au dus chivotul la Gat înainte să-l ducă la Asdod.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:2"
+      ],
+      "status": "pending_review",
+      "text": "În Asdod, filistenii au așezat chivotul în casa lui Dagon, lângă Dagon.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:3"
+      ],
+      "status": "pending_review",
+      "text": "Dis-de-dimineață, asdodenii l-au găsit pe Dagon întins cu fața la pământ înaintea chivotului Domnului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:3"
+      ],
+      "status": "pending_review",
+      "text": "După ce l-au găsit pe Dagon căzut, asdodenii l-au scos din casă și nu l-au mai pus la loc.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:4"
+      ],
+      "status": "pending_review",
+      "text": "A doua dimineață, Dagon a fost găsit din nou cu fața la pământ înaintea chivotului.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:4"
+      ],
+      "status": "pending_review",
+      "text": "Capul și amândouă mâinile lui Dagon erau tăiate pe prag, iar trunchiul îi rămăsese.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:5"
+      ],
+      "status": "pending_review",
+      "text": "Până în ziua de azi, preoții lui Dagon și cei ce intră în casa lui din Asdod nu calcă pe prag.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:6"
+      ],
+      "status": "pending_review",
+      "text": "Mâna Domnului a apăsat asupra celor din Asdod și i-a lovit numai pe cei din cetate, nu și din ținutul ei.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:7"
+      ],
+      "status": "pending_review",
+      "text": "Oamenii din Asdod au spus că mâna Dumnezeului lui Israel apăsa asupra lor și asupra lui Dagon.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:8"
+      ],
+      "status": "pending_review",
+      "text": "Domnitorii filistenilor au hotărât ca chivotul să rămână la Asdod.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:8"
+      ],
+      "status": "pending_review",
+      "text": "Domnitorii filistenilor au spus să fie dus chivotul Dumnezeului lui Israel la Gat.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:9"
+      ],
+      "status": "pending_review",
+      "text": "După ce chivotul a ajuns la Gat, mâna Domnului a apăsat asupra cetății și s-a făcut o mare groază.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:9"
+      ],
+      "status": "pending_review",
+      "text": "La Gat, oamenii de la mic până la mare au fost loviți cu o spuzeală de bube la șezut.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:10"
+      ],
+      "status": "pending_review",
+      "text": "După Gat, filistenii au trimis chivotul lui Dumnezeu la Ecron.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:10"
+      ],
+      "status": "pending_review",
+      "text": "Ecroniții au strigat că li se adusese chivotul Dumnezeului lui Israel ca să-i omoare pe ei și poporul lor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:11"
+      ],
+      "status": "pending_review",
+      "text": "Domnitorii filistenilor au cerut ca chivotul să fie trimis înapoi la locul lui, pentru ca ei și poporul lor să nu moară.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:11"
+      ],
+      "status": "pending_review",
+      "text": "În toată Ecronul era o groază de moarte, iar mâna lui Dumnezeu apăsa cu putere.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:12"
+      ],
+      "status": "pending_review",
+      "text": "Oamenii care nu mureau erau loviți cu bube la șezut, iar țipetele cetății se înălțau până la cer.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:10",
+        "5:12"
+      ],
+      "status": "pending_review",
+      "text": "La sfârșitul capitolului, țipetele cetății au încetat după ce filistenii au mutat chivotul.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:1"
+      ],
+      "status": "pending_review",
+      "text": "Din ce loc au luat filistenii chivotul lui Dumnezeu înainte să-l ducă la Asdod?",
+      "correct": "Eben-Ezer",
+      "options": [
+        {
+          "text": "Eben-Ezer",
+          "correct": true
+        },
+        {
+          "text": "Silo",
+          "correct": false
+        },
+        {
+          "text": "Gat",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:1"
+      ],
+      "status": "pending_review",
+      "text": "În care cetate au dus filistenii chivotul prima dată?",
+      "correct": "La Asdod",
+      "options": [
+        {
+          "text": "La Ecron",
+          "correct": false
+        },
+        {
+          "text": "La Asdod",
+          "correct": true
+        },
+        {
+          "text": "La Gat",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:2"
+      ],
+      "status": "pending_review",
+      "text": "Unde au așezat filistenii chivotul după ce l-au adus în Asdod?",
+      "correct": "În casa lui Dagon, lângă Dagon",
+      "options": [
+        {
+          "text": "În casa lui Dagon, lângă Dagon",
+          "correct": true
+        },
+        {
+          "text": "La poarta cetății",
+          "correct": false
+        },
+        {
+          "text": "În casa domnitorilor filistenilor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:3"
+      ],
+      "status": "pending_review",
+      "text": "Cum l-au găsit asdodenii pe Dagon în dimineața de după aducerea chivotului?",
+      "correct": "Întins cu fața la pământ înaintea chivotului",
+      "options": [
+        {
+          "text": "Întins cu fața la pământ înaintea chivotului",
+          "correct": true
+        },
+        {
+          "text": "Stând în picioare lângă prag",
+          "correct": false
+        },
+        {
+          "text": "Cu fața spre poarta cetății",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut asdodenii după ce l-au găsit pe Dagon căzut la pământ în prima dimineață?",
+      "correct": "L-au ridicat și l-au pus la locul lui",
+      "options": [
+        {
+          "text": "L-au ridicat și l-au pus la locul lui",
+          "correct": true
+        },
+        {
+          "text": "L-au dus la Gat",
+          "correct": false
+        },
+        {
+          "text": "L-au lăsat întins înaintea chivotului",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:4"
+      ],
+      "status": "pending_review",
+      "text": "Ce părți ale lui Dagon au fost găsite tăiate pe prag a doua zi?",
+      "correct": "Capul și cele două mâini",
+      "options": [
+        {
+          "text": "Capul și cele două mâini",
+          "correct": true
+        },
+        {
+          "text": "Capul și un picior",
+          "correct": false
+        },
+        {
+          "text": "Amândouă picioarele",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:4"
+      ],
+      "status": "pending_review",
+      "text": "Ce nu mai rămăsese din Dagon după ce au fost găsite capul și mâinile tăiate?",
+      "correct": "Decât trunchiul",
+      "options": [
+        {
+          "text": "Decât trunchiul",
+          "correct": true
+        },
+        {
+          "text": "Decât capul",
+          "correct": false
+        },
+        {
+          "text": "Decât mâinile",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce obicei țineau preoții lui Dagon și cei ce intrau în casa lui din Asdod?",
+      "correct": "Nu călcau pe prag",
+      "options": [
+        {
+          "text": "Nu călcau pe prag",
+          "correct": true
+        },
+        {
+          "text": "Nu intrau dimineața în casă",
+          "correct": false
+        },
+        {
+          "text": "Nu se apropiau de chivot",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:6"
+      ],
+      "status": "pending_review",
+      "text": "Unde s-a răspândit lovitura cu bube pe care au primit-o cei din Asdod?",
+      "correct": "În Asdod și în ținutul lui",
+      "options": [
+        {
+          "text": "În Asdod și în ținutul lui",
+          "correct": true
+        },
+        {
+          "text": "Numai în casa lui Dagon",
+          "correct": false
+        },
+        {
+          "text": "Numai asupra domnitorilor filistenilor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce au spus oamenii din Asdod că nu trebuie să rămână la ei?",
+      "correct": "Chivotul Dumnezeului lui Israel",
+      "options": [
+        {
+          "text": "Chivotul Dumnezeului lui Israel",
+          "correct": true
+        },
+        {
+          "text": "Dagon",
+          "correct": false
+        },
+        {
+          "text": "Domnitorii filistenilor",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:8"
+      ],
+      "status": "pending_review",
+      "text": "Ce cetate au ales domnitorii filistenilor pentru a primi chivotul după Asdod?",
+      "correct": "Gat",
+      "options": [
+        {
+          "text": "Gat",
+          "correct": true
+        },
+        {
+          "text": "Ecron",
+          "correct": false
+        },
+        {
+          "text": "Silo",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a petrecut în cetatea Gat după sosirea chivotului?",
+      "correct": "Mâna Domnului a apăsat asupra cetății și s-a făcut mare groază",
+      "options": [
+        {
+          "text": "Mâna Domnului a apăsat asupra cetății și s-a făcut mare groază",
+          "correct": true
+        },
+        {
+          "text": "Dagon a fost pus din nou la locul lui",
+          "correct": false
+        },
+        {
+          "text": "Oamenii au trimis imediat chivotul la Silo",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:9"
+      ],
+      "status": "pending_review",
+      "text": "De la ce categorie de oameni au fost loviți locuitorii Gatului?",
+      "correct": "De la mic până la mare",
+      "options": [
+        {
+          "text": "De la mic până la mare",
+          "correct": true
+        },
+        {
+          "text": "Numai domnitorii",
+          "correct": false
+        },
+        {
+          "text": "Numai preoții lui Dagon",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:10"
+      ],
+      "status": "pending_review",
+      "text": "În ce cetate au trimis filistenii chivotul după ce fusese la Gat?",
+      "correct": "Ecron",
+      "options": [
+        {
+          "text": "Ecron",
+          "correct": true
+        },
+        {
+          "text": "Asdod",
+          "correct": false
+        },
+        {
+          "text": "Eben-Ezer",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce spuneau ecroniții că le-ar putea face sosirea chivotului?",
+      "correct": "Să-i omoare pe ei și poporul lor",
+      "options": [
+        {
+          "text": "Să-i omoare pe ei și poporul lor",
+          "correct": true
+        },
+        {
+          "text": "Să-i trimită înapoi la Gat",
+          "correct": false
+        },
+        {
+          "text": "Să-i facă să calce pe prag",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-au cerut domnitorii filistenilor să facă cu chivotul?",
+      "correct": "Să-l trimită înapoi la locul lui",
+      "options": [
+        {
+          "text": "Să-l trimită înapoi la locul lui",
+          "correct": true
+        },
+        {
+          "text": "Să-l ducă la Asdod",
+          "correct": false
+        },
+        {
+          "text": "Să-l așeze din nou lângă Dagon",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:12"
+      ],
+      "status": "pending_review",
+      "text": "Până unde se înălțau țipetele cetății?",
+      "correct": "Până la cer",
+      "options": [
+        {
+          "text": "Până la cer",
+          "correct": true
+        },
+        {
+          "text": "Până la poarta cetății",
+          "correct": false
+        },
+        {
+          "text": "Până la casa lui Dagon",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 5,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce se întâmpla cu oamenii care nu mureau?",
+      "correct": "Erau loviți cu bube la șezut",
+      "options": [
+        {
+          "text": "Erau loviți cu bube la șezut",
+          "correct": true
+        },
+        {
+          "text": "Erau duși la Silo",
+          "correct": false
+        },
+        {
+          "text": "Erau puși să păzească pragul",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:1"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii despre mutarea chivotului la începutul capitolului sunt menționate?",
+      "options": [
+        {
+          "text": "Filistenii au luat chivotul lui Dumnezeu.",
+          "correct": true
+        },
+        {
+          "text": "L-au dus din Eben-Ezer la Asdod.",
+          "correct": true
+        },
+        {
+          "text": "L-au dus din Gat la Silo.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:2"
+      ],
+      "status": "pending_review",
+      "text": "Cum au așezat filistenii chivotul când l-au adus în Asdod?",
+      "options": [
+        {
+          "text": "L-au dus în casa lui Dagon.",
+          "correct": true
+        },
+        {
+          "text": "L-au așezat lângă Dagon.",
+          "correct": true
+        },
+        {
+          "text": "L-au așezat în afara cetății, lângă poartă.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:2",
+        "5:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut asdodenii în prima dimineață după ce chivotul fusese așezat lângă Dagon?",
+      "options": [
+        {
+          "text": "S-au sculat dis-de-dimineață.",
+          "correct": true
+        },
+        {
+          "text": "L-au găsit pe Dagon întins cu fața la pământ înaintea chivotului.",
+          "correct": true
+        },
+        {
+          "text": "Au găsit chivotul întins înaintea lui Dagon.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut asdodenii după ce l-au găsit pe Dagon întins cu fața la pământ?",
+      "options": [
+        {
+          "text": "L-au luat pe Dagon.",
+          "correct": true
+        },
+        {
+          "text": "L-au pus înapoi la locul lui.",
+          "correct": true
+        },
+        {
+          "text": "L-au scos din casa lui și l-au trimis la Ecron.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:3",
+        "5:4"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat cu Dagon în prima dimineață și în dimineața următoare?",
+      "options": [
+        {
+          "text": "În prima dimineață a fost găsit cu fața la pământ și a fost pus la locul lui.",
+          "correct": true
+        },
+        {
+          "text": "În dimineața următoare a fost găsit din nou căzut, cu capul și mâinile tăiate pe prag.",
+          "correct": true
+        },
+        {
+          "text": "În prima dimineață a fost găsit cu capul și mâinile tăiate pe prag.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:4"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii sunt menționate despre ce au găsit în casa lui Dagon a doua dimineață?",
+      "options": [
+        {
+          "text": "Capul și amândouă mâinile lui Dagon au fost tăiate pe prag.",
+          "correct": true
+        },
+        {
+          "text": "Nu-i mai rămăsese decât trunchiul.",
+          "correct": true
+        },
+        {
+          "text": "I-au fost tăiate și picioarele, iar capul a rămas neatins.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:5"
+      ],
+      "status": "pending_review",
+      "text": "Cine respecta obiceiul legat de pragul casei lui Dagon și ce făceau?",
+      "options": [
+        {
+          "text": "Preoții lui Dagon nu călcau pe prag.",
+          "correct": true
+        },
+        {
+          "text": "Toți cei ce intrau în casa lui Dagon nu călcau pe prag.",
+          "correct": true
+        },
+        {
+          "text": "Oamenii din Gat nu intrau în casa lui Dagon.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:6"
+      ],
+      "status": "pending_review",
+      "text": "Ce spune textul despre pedeapsa care a venit asupra celor din Asdod?",
+      "options": [
+        {
+          "text": "Mâna Domnului a apăsat asupra lor și i-a pustiit.",
+          "correct": true
+        },
+        {
+          "text": "Au fost loviți cu bube la șezut.",
+          "correct": true
+        },
+        {
+          "text": "Au fost loviți numai preoții care intrau în casa lui Dagon.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:7"
+      ],
+      "status": "pending_review",
+      "text": "Ce au afirmat oamenii din Asdod despre chivot și apăsarea mâinii Domnului?",
+      "options": [
+        {
+          "text": "Au spus că chivotul Dumnezeului lui Israel nu trebuie să rămână la ei.",
+          "correct": true
+        },
+        {
+          "text": "Au spus că mâna Lui apăsa asupra lor și asupra lui Dagon.",
+          "correct": true
+        },
+        {
+          "text": "Au spus că mâna lui Dagon apăsa asupra Domnului.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:7",
+        "5:8"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut domnitorii filistenilor în legătură cu chivotul după ce oamenii din Asdod au vorbit?",
+      "options": [
+        {
+          "text": "Au fost strânși laolaltă.",
+          "correct": true
+        },
+        {
+          "text": "Au spus să fie dus la Gat.",
+          "correct": true
+        },
+        {
+          "text": "Au hotărât să fie dus la Silo.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:8",
+        "5:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce s-a întâmplat după ce chivotul a fost dus la Gat?",
+      "options": [
+        {
+          "text": "Mâna Domnului a apăsat asupra cetății.",
+          "correct": true
+        },
+        {
+          "text": "A fost o mare groază.",
+          "correct": true
+        },
+        {
+          "text": "Dagon a fost ridicat și pus înapoi la locul lui.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:9"
+      ],
+      "status": "pending_review",
+      "text": "Ce efecte asupra locuitorilor Gatului sunt precizate?",
+      "options": [
+        {
+          "text": "Oamenii de la mic până la mare au fost loviți.",
+          "correct": true
+        },
+        {
+          "text": "Au avut o spuzeală de bube la șezut.",
+          "correct": true
+        },
+        {
+          "text": "Numai domnitorii filistenilor au fost loviți.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce au făcut filistenii când au trimis chivotul în Ecron și ce au strigat ecroniții?",
+      "options": [
+        {
+          "text": "Au trimis chivotul lui Dumnezeu la Ecron.",
+          "correct": true
+        },
+        {
+          "text": "Ecroniții au strigat că fusese adus ca să-i omoare pe ei și poporul lor.",
+          "correct": true
+        },
+        {
+          "text": "Ecroniții au cerut să fie dus la Eben-Ezer ca să-l așeze lângă Dagon.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce au cerut domnitorii filistenilor după ce au strâns adunarea?",
+      "options": [
+        {
+          "text": "Să trimită înapoi chivotul Dumnezeului lui Israel.",
+          "correct": true
+        },
+        {
+          "text": "Să se întoarcă la locul lui.",
+          "correct": true
+        },
+        {
+          "text": "Să-l ducă înapoi la casa lui Dagon din Asdod.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:11"
+      ],
+      "status": "pending_review",
+      "text": "Ce motive și împrejurări sunt menționate când domnitorii cer întoarcerea chivotului?",
+      "options": [
+        {
+          "text": "Ca să nu-i omoare pe ei și poporul lor.",
+          "correct": true
+        },
+        {
+          "text": "În toată cetatea era o groază de moarte.",
+          "correct": true
+        },
+        {
+          "text": "Ca să-i ajute pe cei din Gat să ridice statuia lui Dagon.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:11",
+        "5:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce se spune despre mâna lui Dumnezeu și despre oamenii din Ecron?",
+      "options": [
+        {
+          "text": "Mâna lui Dumnezeu apăsa cu putere.",
+          "correct": true
+        },
+        {
+          "text": "Oamenii care nu mureau erau loviți cu bube la șezut.",
+          "correct": true
+        },
+        {
+          "text": "Toți oamenii muriseră înainte să se strângă domnitorii.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:11",
+        "5:12"
+      ],
+      "status": "pending_review",
+      "text": "Ce detalii apar la sfârșitul capitolului despre cei rămași în viață și despre cetate?",
+      "options": [
+        {
+          "text": "Cei care nu mureau erau loviți cu bube la șezut.",
+          "correct": true
+        },
+        {
+          "text": "Țipetele cetății se înălțau până la cer.",
+          "correct": true
+        },
+        {
+          "text": "Locuitorii au tăcut și au sărbătorit întoarcerea chivotului.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:8",
+        "5:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce două cetăți sunt menționate după plecarea chivotului din Asdod?",
+      "options": [
+        {
+          "text": "Gat, unde domnitorii l-au trimis.",
+          "correct": true
+        },
+        {
+          "text": "Ecron, unde a ajuns după aceea.",
+          "correct": true
+        },
+        {
+          "text": "Silo, unde l-au dus domnitorii filistenilor.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:2",
+        "5:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce lucruri despre casa lui Dagon sunt menționate în capitol?",
+      "options": [
+        {
+          "text": "Chivotul a fost așezat în ea, lângă Dagon.",
+          "correct": true
+        },
+        {
+          "text": "Cei ce intrau în ea nu călcau pe prag.",
+          "correct": true
+        },
+        {
+          "text": "Casa se afla în cetatea Gat.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:7",
+        "5:10"
+      ],
+      "status": "pending_review",
+      "text": "Ce reacții ale locuitorilor sunt legate de sosirea sau prezența chivotului în cetățile filistenilor?",
+      "options": [
+        {
+          "text": "Oamenii din Asdod au spus că chivotul nu trebuie să rămână la ei.",
+          "correct": true
+        },
+        {
+          "text": "Ecroniții au strigat când chivotul a intrat în cetatea lor.",
+          "correct": true
+        },
+        {
+          "text": "Locuitorii Gatului au cerut ca Dagon să fie dus la Silo.",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:1",
+        "5:2",
+        "5:8",
+        "5:10"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Locul de unde au luat filistenii chivotul",
+          "right": "Eben-Ezer"
+        },
+        {
+          "left": "Prima cetate unde au dus chivotul",
+          "right": "Asdod"
+        },
+        {
+          "left": "Locul unde l-au așezat în Asdod",
+          "right": "Casa lui Dagon"
+        },
+        {
+          "left": "Cetatea aleasă apoi de domnitorii filistenilor",
+          "right": "Gat"
+        },
+        {
+          "left": "Cetatea unde au trimis chivotul după Gat",
+          "right": "Ecron"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:3",
+        "5:4"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Dimineața după așezarea chivotului lângă Dagon",
+          "right": "Dagon este găsit cu fața la pământ"
+        },
+        {
+          "left": "După ce îl găsesc căzut",
+          "right": "Asdodenii îl pun înapoi la locul lui"
+        },
+        {
+          "left": "Dimineața următoare",
+          "right": "Îl găsesc din nou căzut înaintea chivotului"
+        },
+        {
+          "left": "Capul și mâinile lui Dagon",
+          "right": "Sunt tăiate pe prag"
+        },
+        {
+          "left": "Ce îi mai rămăsese lui Dagon",
+          "right": "Trunchiul"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:2",
+        "5:5"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Persoanele vizate de obiceiul pragului",
+          "right": "Preoții lui Dagon și toți cei ce intră"
+        },
+        {
+          "left": "Casa în care a fost dus chivotul",
+          "right": "Casa lui Dagon"
+        },
+        {
+          "left": "Cetatea în care se afla casa lui Dagon",
+          "right": "Asdod"
+        },
+        {
+          "left": "Locul pe care nu îl calcă",
+          "right": "Pragul"
+        },
+        {
+          "left": "Până când se ține obiceiul",
+          "right": "Până în ziua de azi"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:6",
+        "5:7"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Asupra cui a apăsat mâna Domnului în Asdod",
+          "right": "Asdodenilor"
+        },
+        {
+          "left": "Până unde a ajuns lovitura din Asdod",
+          "right": "În cetate și în ținutul ei"
+        },
+        {
+          "left": "Cu ce au fost loviți oamenii",
+          "right": "Bube la șezut"
+        },
+        {
+          "left": "Ce au cerut oamenii despre chivot",
+          "right": "Să nu rămână la ei"
+        },
+        {
+          "left": "Asupra cui au spus că apăsa mâna Domnului, alături de ei",
+          "right": "Asupra lui Dagon"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:8",
+        "5:9"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Pe cine au strâns oamenii din Asdod",
+          "right": "Pe domnitorii filistenilor"
+        },
+        {
+          "left": "Ce i-au întrebat despre chivot",
+          "right": "Ce să facă cu el"
+        },
+        {
+          "left": "Ce cetate au ales domnitorii",
+          "right": "Gat"
+        },
+        {
+          "left": "Ce s-a întâmplat după aducerea chivotului acolo",
+          "right": "Mâna Domnului a apăsat asupra cetății"
+        },
+        {
+          "left": "Starea care a cuprins cetatea",
+          "right": "O mare groază"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:8",
+        "5:9"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Grupul de oameni lovit în Gat",
+          "right": "De la mic până la mare"
+        },
+        {
+          "left": "Cum este descrisă groaza din Gat",
+          "right": "A fost o mare groază"
+        },
+        {
+          "left": "Apariția pe care au avut-o oamenii",
+          "right": "O spuzeală de bube"
+        },
+        {
+          "left": "Locul bubei menționat în text",
+          "right": "La șezut"
+        },
+        {
+          "left": "Cetatea în care s-au petrecut acestea",
+          "right": "Gat"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:10",
+        "5:11"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Chivotul intră în Ecron",
+          "right": "Ecroniții strigă"
+        },
+        {
+          "left": "Ce cred ecroniții că li s-a adus",
+          "right": "Chivotul Dumnezeului lui Israel"
+        },
+        {
+          "left": "Ce spun că li se va întâmpla",
+          "right": "Vor fi omorâți"
+        },
+        {
+          "left": "Cine se tem ecroniții că va fi omorât alături de ei",
+          "right": "Poporul lor"
+        },
+        {
+          "left": "Ce cereau domnitorii după aceea",
+          "right": "Trimiterea înapoi a chivotului"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:11",
+        "5:12"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce s-a cerut să fie trimis înapoi",
+          "right": "Chivotul Dumnezeului lui Israel"
+        },
+        {
+          "left": "Unde trebuia să se întoarcă",
+          "right": "La locul lui"
+        },
+        {
+          "left": "Ce voiau să evite domnitorii",
+          "right": "Moartea lor și a poporului"
+        },
+        {
+          "left": "Ce se simțea în toată cetatea",
+          "right": "O groază de moarte"
+        },
+        {
+          "left": "Ce se întâmplă cu oamenii care nu mor",
+          "right": "Sunt loviți cu bube la șezut"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 4,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:10",
+        "5:11",
+        "5:12"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Ce au făcut ecroniții când chivotul a intrat în cetate",
+          "right": "Au strigat"
+        },
+        {
+          "left": "Ce credeau ecroniții că le-a fost adus",
+          "right": "Chivotul Dumnezeului lui Israel"
+        },
+        {
+          "left": "Ce au cerut domnitorii filistenilor să se facă cu chivotul",
+          "right": "Să fie trimis înapoi la locul lui"
+        },
+        {
+          "left": "Cu ce erau loviți cei care nu mureau",
+          "right": "Cu bube la șezut"
+        },
+        {
+          "left": "Până unde se înălțau țipetele cetății",
+          "right": "Până la cer"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 5,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "5:1",
+        "5:2",
+        "5:5",
+        "5:8",
+        "5:10"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Asdod",
+          "right": "Chivotul este dus acolo de la Eben-Ezer"
+        },
+        {
+          "left": "Gat",
+          "right": "Domnitorii îl trimit acolo din Asdod"
+        },
+        {
+          "left": "Ecron",
+          "right": "Chivotul este dus acolo după Gat"
+        },
+        {
+          "left": "Casa lui Dagon",
+          "right": "Locul unde este pus chivotul la Asdod"
+        },
+        {
+          "left": "Pragul casei lui Dagon",
+          "right": "Loc pe care cei ce intră nu-l calcă"
+        }
+      ],
+      "options": []
+    }
+  ]
+}
