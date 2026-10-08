@@ -1,0 +1,1210 @@
+{
+  "items": [
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:1"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a spus că i-a ascultat pe israeliți în tot ce i-au cerut și că a pus un împărat peste ei.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:2"
+      ],
+      "status": "pending_review",
+      "text": "Samuel era bătrân și cărunt, fiii lui erau cu poporul, iar el umblase înaintea poporului din tinerețe până atunci.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:3"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a cerut ca poporul să mărturisească înaintea Domnului și a unsului Lui dacă luase boul sau măgarul cuiva, apăsase ori năpăstuit pe cineva sau luase mită.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:4"
+      ],
+      "status": "pending_review",
+      "text": "Poporul i-a răspuns lui Samuel că nu îi apăsase, nu îi năpăstuise și nu primise nimic din mâna nimănui.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:5"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a spus că Domnul și unsul Lui sunt martori că nu s-a găsit nimic în mâinile lui, iar poporul a răspuns: «Sunt martori!»",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:6"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a spus că Domnul i-a pus pe Moise și pe Aaron și i-a scos pe părinții poporului din Egipt.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:8"
+      ],
+      "status": "pending_review",
+      "text": "După ce Iacov a venit în Egipt, părinții poporului au strigat către Domnul, iar Domnul i-a trimis pe Moise și pe Aaron.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:10"
+      ],
+      "status": "pending_review",
+      "text": "Poporul a mărturisit că părăsise pe Domnul și slujise baalilor și astarteelor, cerând apoi izbăvire de vrăjmași.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:12"
+      ],
+      "status": "pending_review",
+      "text": "Când au văzut că Nahaș mergea împotriva lor, israeliții au cerut un împărat, deși Domnul Dumnezeul lor era Împăratul lor.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:18"
+      ],
+      "status": "pending_review",
+      "text": "Domnul a trimis tunete și ploaie chiar în ziua în care Samuel a strigat către El, iar poporul a avut o mare frică de Domnul și de Samuel.",
+      "correct": true,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": true
+        },
+        {
+          "text": "Fals",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:2"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a spus că împăratul era bătrân și cărunt, iar fiii împăratului umblaseră înaintea poporului din tinerețe.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:3"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a mărturisit că luase măgarul cuiva și s-a oferit să îl dea înapoi.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:4"
+      ],
+      "status": "pending_review",
+      "text": "Poporul a spus că Samuel îi apăsase, îi năpăstuise și primise ceva din mâna oamenilor.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:5"
+      ],
+      "status": "pending_review",
+      "text": "Când Samuel a spus că Domnul și unsul Lui sunt martori, poporul a răspuns că nu poate depune mărturie.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:9"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a spus că Domnul i-a vândut în mâinile lui Barac, ale filistenilor și ale împăratului Moabului.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:11"
+      ],
+      "status": "pending_review",
+      "text": "În lista celor trimiși de Domnul să izbăvească poporul, Samuel l-a menționat pe Moise, dar nu și pe Ierubaal.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:12"
+      ],
+      "status": "pending_review",
+      "text": "Când au văzut că Nahaș mergea împotriva lor, israeliții i-au cerut lui Samuel să domnească peste ei în locul unui împărat.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:14"
+      ],
+      "status": "pending_review",
+      "text": "Samuel le-a spus că se vor alipi de Domnul dacă se vor împotrivi Cuvântului Lui și nu-I vor asculta glasul.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:17"
+      ],
+      "status": "pending_review",
+      "text": "La seceratul grânelor, Samuel a spus că Domnul va trimite zăpadă și vânt, nu tunete și ploaie.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "tf",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:25"
+      ],
+      "status": "pending_review",
+      "text": "Samuel a spus că, dacă vor face răul, va pieri numai împăratul, iar poporul va rămâne în viață.",
+      "correct": false,
+      "options": [
+        {
+          "text": "Adevărat",
+          "correct": false
+        },
+        {
+          "text": "Fals",
+          "correct": true
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:2"
+      ],
+      "status": "pending_review",
+      "text": "Potrivit lui Samuel, cine urma să meargă înaintea poporului?",
+      "options": [
+        {
+          "text": "Împăratul",
+          "correct": true
+        },
+        {
+          "text": "Samuel",
+          "correct": false
+        },
+        {
+          "text": "Aaron",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:3"
+      ],
+      "status": "pending_review",
+      "text": "Ce animale a menționat Samuel când a întrebat dacă luase ceva de la cineva?",
+      "options": [
+        {
+          "text": "Un bou sau un măgar",
+          "correct": true
+        },
+        {
+          "text": "O oaie sau o capră",
+          "correct": false
+        },
+        {
+          "text": "Un cal sau o cămilă",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:4"
+      ],
+      "status": "pending_review",
+      "text": "Ce au răspuns israeliții când Samuel i-a întrebat dacă îi apăsase ori îi năpăstuise?",
+      "options": [
+        {
+          "text": "Că nu făcuse niciuna dintre acestea și nu primise nimic de la nimeni",
+          "correct": true
+        },
+        {
+          "text": "Că îi apăsase, dar nu primise nimic",
+          "correct": false
+        },
+        {
+          "text": "Că nu îi apăsase, dar luase mită",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:5"
+      ],
+      "status": "pending_review",
+      "text": "Ce a răspuns poporul după ce Samuel a spus că Domnul și unsul Lui sunt martori?",
+      "options": [
+        {
+          "text": "«Sunt martori!»",
+          "correct": true
+        },
+        {
+          "text": "«Nu suntem martori!»",
+          "correct": false
+        },
+        {
+          "text": "«Samuel este singurul martor!»",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:7"
+      ],
+      "status": "pending_review",
+      "text": "Pentru ce le-a cerut Samuel israeliților să se înfățișeze înaintea Domnului?",
+      "options": [
+        {
+          "text": "Ca să-i judece pentru binefacerile făcute lor și părinților lor",
+          "correct": true
+        },
+        {
+          "text": "Ca să aleagă un alt împărat",
+          "correct": false
+        },
+        {
+          "text": "Ca să numere oștirea lui Israel",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:8"
+      ],
+      "status": "pending_review",
+      "text": "Pe cine a trimis Domnul după ce părinții poporului au strigat către El în Egipt?",
+      "options": [
+        {
+          "text": "Pe Moise și pe Aaron",
+          "correct": true
+        },
+        {
+          "text": "Pe Ierubaal și pe Barac",
+          "correct": false
+        },
+        {
+          "text": "Pe Samuel și pe Iefta",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:9"
+      ],
+      "status": "pending_review",
+      "text": "Cine era căpetenia oștii Hațorului în relatarea lui Samuel?",
+      "options": [
+        {
+          "text": "Sisera",
+          "correct": true
+        },
+        {
+          "text": "Nahaș",
+          "correct": false
+        },
+        {
+          "text": "Ierubaal",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:9"
+      ],
+      "status": "pending_review",
+      "text": "În mâinile cui, pe lângă Sisera, au fost vânduți israeliții?",
+      "options": [
+        {
+          "text": "Ale filistenilor și ale împăratului Moabului",
+          "correct": true
+        },
+        {
+          "text": "Ale egiptenilor și ale amaleciților",
+          "correct": false
+        },
+        {
+          "text": "Ale lui Barac și ale lui Iefta",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:10"
+      ],
+      "status": "pending_review",
+      "text": "Cărui grup de dumnezei au spus israeliții că slujiseră după ce Îl părăsiseră pe Domnul?",
+      "options": [
+        {
+          "text": "Baalilor și astarteelor",
+          "correct": true
+        },
+        {
+          "text": "Dagonului și lui Chemoș",
+          "correct": false
+        },
+        {
+          "text": "Lui Baal și lui Moloh",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:11"
+      ],
+      "status": "pending_review",
+      "text": "Cum spune Samuel că au locuit israeliții după ce Domnul i-a izbăvit de vrăjmași?",
+      "options": [
+        {
+          "text": "În liniște",
+          "correct": true
+        },
+        {
+          "text": "În Egipt",
+          "correct": false
+        },
+        {
+          "text": "În pustie",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:12"
+      ],
+      "status": "pending_review",
+      "text": "Cine era Nahaș, cel care mergea împotriva israeliților?",
+      "options": [
+        {
+          "text": "Împăratul fiilor lui Amon",
+          "correct": true
+        },
+        {
+          "text": "Căpetenia oștii Hațorului",
+          "correct": false
+        },
+        {
+          "text": "Împăratul Moabului",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:13"
+      ],
+      "status": "pending_review",
+      "text": "Cine a pus peste Israel împăratul pe care poporul îl alesese și îl ceruse?",
+      "options": [
+        {
+          "text": "Domnul",
+          "correct": true
+        },
+        {
+          "text": "Samuel",
+          "correct": false
+        },
+        {
+          "text": "Nahaș",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:14"
+      ],
+      "status": "pending_review",
+      "text": "Potrivit lui Samuel, cine urma să se alipească de Domnul dacă poporul Îl asculta și nu I se împotrivea?",
+      "options": [
+        {
+          "text": "Poporul și împăratul care domnea peste el",
+          "correct": true
+        },
+        {
+          "text": "Numai împăratul",
+          "correct": false
+        },
+        {
+          "text": "Numai bătrânii poporului",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:15"
+      ],
+      "status": "pending_review",
+      "text": "Ce urma să fie împotriva poporului dacă nu asculta de glasul Domnului și se împotrivea Cuvântului Lui?",
+      "options": [
+        {
+          "text": "Mâna Domnului",
+          "correct": true
+        },
+        {
+          "text": "Oștirea filistenilor",
+          "correct": false
+        },
+        {
+          "text": "Mâna împăratului Moabului",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:16"
+      ],
+      "status": "pending_review",
+      "text": "Ce le-a spus Samuel să aștepte ca să vadă sub ochii lor?",
+      "options": [
+        {
+          "text": "Minunea pe care o va face Domnul",
+          "correct": true
+        },
+        {
+          "text": "Venirea lui Nahaș",
+          "correct": false
+        },
+        {
+          "text": "Alegerea unui alt judecător",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:17"
+      ],
+      "status": "pending_review",
+      "text": "În ce perioadă a anului a spus Samuel că va striga către Domnul?",
+      "options": [
+        {
+          "text": "La seceratul grânelor",
+          "correct": true
+        },
+        {
+          "text": "La culesul măslinilor",
+          "correct": false
+        },
+        {
+          "text": "La semănatul grâului",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:19"
+      ],
+      "status": "pending_review",
+      "text": "De ce i-a cerut tot poporul lui Samuel să se roage Domnului pentru ei?",
+      "options": [
+        {
+          "text": "Ca să nu moară",
+          "correct": true
+        },
+        {
+          "text": "Ca să nu vină ploaia",
+          "correct": false
+        },
+        {
+          "text": "Ca să li se dea un alt împărat",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 1,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:20"
+      ],
+      "status": "pending_review",
+      "text": "Cu ce le-a spus Samuel să-I slujească Domnului?",
+      "options": [
+        {
+          "text": "Cu toată inima",
+          "correct": true
+        },
+        {
+          "text": "Numai prin jertfe",
+          "correct": false
+        },
+        {
+          "text": "Doar când erau în primejdie",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:22"
+      ],
+      "status": "pending_review",
+      "text": "Din ce pricină a spus Samuel că Domnul nu-Și va părăsi poporul?",
+      "options": [
+        {
+          "text": "Din pricina Numelui Lui celui mare",
+          "correct": true
+        },
+        {
+          "text": "Pentru că poporul nu păcătuise",
+          "correct": false
+        },
+        {
+          "text": "Pentru că împăratul Îi poruncise",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_one",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:24"
+      ],
+      "status": "pending_review",
+      "text": "Cum le-a cerut Samuel să-I slujească Domnului?",
+      "options": [
+        {
+          "text": "Cu credincioșie și din toată inima",
+          "correct": true
+        },
+        {
+          "text": "Numai când veneau tunete și ploaie",
+          "correct": false
+        },
+        {
+          "text": "Prin împotrivirea față de Cuvântul Lui",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "match",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:8",
+        "12:9",
+        "12:11"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Iacov",
+          "right": "A venit în Egipt"
+        },
+        {
+          "left": "Moise și Aaron",
+          "right": "Au scos părinții poporului din Egipt"
+        },
+        {
+          "left": "Sisera",
+          "right": "Era căpetenia oștii Hațorului"
+        },
+        {
+          "left": "Nahaș",
+          "right": "Era împăratul fiilor lui Amon"
+        },
+        {
+          "left": "Samuel",
+          "right": "A fost numit printre cei trimiși să izbăvească poporul"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "match",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:23",
+        "12:24",
+        "12:25"
+      ],
+      "status": "pending_review",
+      "pairs": [
+        {
+          "left": "Rugăciunea lui Samuel",
+          "right": "Nu va înceta să se roage pentru popor"
+        },
+        {
+          "left": "Învățătura promisă de Samuel",
+          "right": "Îi va învăța calea bună și dreaptă"
+        },
+        {
+          "left": "Domnul",
+          "right": "Își desfășoară puterea printre popor"
+        },
+        {
+          "left": "Poporul",
+          "right": "Trebuie să se teamă numai de Domnul și să-I slujească cu credincioșie"
+        },
+        {
+          "left": "Poporul și împăratul",
+          "right": "Vor pieri dacă vor face răul"
+        }
+      ],
+      "options": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:3"
+      ],
+      "status": "pending_review",
+      "text": "Despre care fapte îl întreabă Samuel pe popor dacă le-a făcut?",
+      "options": [
+        {
+          "text": "Dacă luase boul sau măgarul cuiva, ori apăsase și năpăstuit pe cineva",
+          "correct": true
+        },
+        {
+          "text": "Dacă luase mită ca să închidă ochii asupra cuiva",
+          "correct": true
+        },
+        {
+          "text": "Dacă refuzase să mai judece poporul",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:9"
+      ],
+      "status": "pending_review",
+      "text": "Cine, pe lângă Sisera, este menționat printre cei în ale căror mâini Domnul i-a vândut pe israeliți?",
+      "options": [
+        {
+          "text": "Filistenii",
+          "correct": true
+        },
+        {
+          "text": "Împăratul Moabului",
+          "correct": true
+        },
+        {
+          "text": "Nahaș, împăratul fiilor lui Amon",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:14"
+      ],
+      "status": "pending_review",
+      "text": "Ce le cere Samuel să facă israeliților pentru a rămâne alipiți de Domnul, împreună cu împăratul lor?",
+      "options": [
+        {
+          "text": "Să se teamă de Domnul și să-I slujească",
+          "correct": true
+        },
+        {
+          "text": "Să asculte de glasul Lui și să nu se împotrivească Cuvântului Lui",
+          "correct": true
+        },
+        {
+          "text": "Să se alipească numai de împărat și să nu mai asculte de Domnul",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 12,
+      "difficulty": 3,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:17"
+      ],
+      "status": "pending_review",
+      "text": "Ce a spus Samuel că se va întâmpla când va striga către Domnul la seceratul grânelor?",
+      "options": [
+        {
+          "text": "Domnul va trimite tunete și ploaie",
+          "correct": true
+        },
+        {
+          "text": "Poporul va vedea cât de rău a făcut înaintea Domnului cerând un împărat",
+          "correct": true
+        },
+        {
+          "text": "Domnul va trimite zăpadă, dovedind că cererea poporului fusese bună",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:21"
+      ],
+      "status": "pending_review",
+      "text": "Ce spune Samuel despre lucrurile de nimic după care poporul nu trebuia să umble?",
+      "options": [
+        {
+          "text": "Nu aduc niciun folos",
+          "correct": true
+        },
+        {
+          "text": "Nu aduc izbăvire",
+          "correct": true
+        },
+        {
+          "text": "Aduc izbăvire și folos celor care le urmează",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    },
+    {
+      "type": "abc_multi",
+      "chapter": 12,
+      "difficulty": 2,
+      "book": "1 Samuel",
+      "source_references": [
+        "12:23"
+      ],
+      "status": "pending_review",
+      "text": "Ce spune Samuel că va face pentru popor, chiar dacă a făcut rău cerând un împărat?",
+      "options": [
+        {
+          "text": "Nu va înceta să se roage pentru popor",
+          "correct": true
+        },
+        {
+          "text": "Îl va învăța calea cea bună și dreaptă",
+          "correct": true
+        },
+        {
+          "text": "Va înceta să se roage și îl va lăsa fără îndrumare",
+          "correct": false
+        }
+      ],
+      "pairs": []
+    }
+  ]
+}
