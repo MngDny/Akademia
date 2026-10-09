@@ -9,6 +9,7 @@ const TYPE_META = {
   match: { table: "questions_match", label: "Asociere" },
   abc_multi: { table: "questions_abc_multi", label: "Răspunsuri multiple" },
 };
+const QUESTION_PAGE_SIZE = 500;
 
 const els = {
   bookSearch: document.getElementById("bookSearch"),
@@ -85,6 +86,31 @@ function difficultyPercent(value) {
 function isAvailableQuestion(row) {
   const status = String(row?.status || "").trim().toLocaleLowerCase("ro").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   return status === "active";
+}
+
+function questionQuery(type, books, chapters, columns = "*", options = {}) {
+  let query = supabase.from(TYPE_META[type].table)
+    .select(columns, options)
+    .in("book", books)
+    .eq("status", "active");
+  if (chapters.length) query = query.in("chapter", chapters);
+  return query;
+}
+
+async function fetchActiveQuestions(type, books, chapters, columns = "*") {
+  const rows = [];
+  for (let offset = 0; ; offset += QUESTION_PAGE_SIZE) {
+    const { data, error } = await questionQuery(type, books, chapters, columns)
+      .order("created_at", { ascending: false })
+      .order("id", { ascending: true })
+      .range(offset, offset + QUESTION_PAGE_SIZE - 1);
+    if (error) throw error;
+    const page = data || [];
+    rows.push(...page);
+    if (page.length < QUESTION_PAGE_SIZE) break;
+  }
+  return rows.filter((row) => isAvailableQuestion(row)
+    && books.some((book) => normalizeBookKey(book) === normalizeBookKey(row.book)));
 }
 
 function prioritizeByDifficulty(rows, target) {
@@ -190,13 +216,13 @@ async function checkAvailability() {
   const chapters = books.length === 1 ? selectedChapters() : [];
   try {
     const results = await Promise.all(TYPE_ORDER.map(async (type) => {
-      const { table } = TYPE_META[type];
-      let query = supabase.from(table).select("*").in("book", books).limit(500);
-      if (chapters.length) query = query.in("chapter", chapters);
-      const { data, error } = await query;
+      if (type === "match") {
+        const rows = await fetchActiveQuestions(type, books, chapters);
+        return [type, rows.filter(hasEnoughMatchPairs).length];
+      }
+      const { count, error } = await questionQuery(type, books, chapters, "id", { count: "exact", head: true });
       if (error) throw error;
-      const rows = (data || []).filter((row) => isAvailableQuestion(row) && books.some((book) => normalizeBookKey(book) === normalizeBookKey(row.book)));
-      return [type, type === "match" ? rows.filter(hasEnoughMatchPairs).length : rows.length];
+      return [type, count || 0];
     }));
     if (request !== state.availabilityRequest) return;
     state.availabilityCounts = Object.fromEntries(results);
@@ -318,12 +344,7 @@ function hasEnoughMatchPairs(row) {
 }
 
 async function fetchQuestions(type, books, chapters) {
-  const { table } = TYPE_META[type];
-  let query = supabase.from(table).select("*").in("book", books).order("created_at", { ascending: false }).limit(500);
-  if (chapters.length) query = query.in("chapter", chapters);
-  const { data, error } = await query;
-  if (error) throw error;
-  const rows = (data || []).filter((row) => isAvailableQuestion(row) && books.some((book) => normalizeBookKey(book) === normalizeBookKey(row.book)));
+  const rows = await fetchActiveQuestions(type, books, chapters);
   const valid = type === "match" ? rows.filter(hasEnoughMatchPairs) : rows;
   const needed = TEST_STRUCTURE[type];
   if (valid.length < needed) {
