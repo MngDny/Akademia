@@ -1,4 +1,5 @@
 const path = require("path");
+const fs = require("fs");
 const { createClient } = require("@supabase/supabase-js");
 const PDFDocument = require("pdfkit");
 const {
@@ -20,8 +21,19 @@ const ALLOWED_ROLES = new Set(["admin", "instructor", "indrumator"]);
 const COLORS = { black: "000000", white: "FFFFFF" };
 const PUBLIC_SUPABASE_URL = "https://pdkfqytododevpilpxet.supabase.co";
 const PUBLIC_SUPABASE_KEY = "sb_publishable_9SE72Dov4XTRfAGoXhL1Nw_kbdPfK4z";
-const PDF_FONT = path.join(__dirname, "../../node_modules/dejavu-fonts-ttf/ttf/DejaVuSerif.ttf");
-const PDF_FONT_BOLD = path.join(__dirname, "../../node_modules/dejavu-fonts-ttf/ttf/DejaVuSerif-Bold.ttf");
+const PDF_FONT_DIRECTORY_CANDIDATES = [
+  path.join(process.cwd(), "node_modules/dejavu-fonts-ttf/ttf"),
+  path.join(__dirname, "../../node_modules/dejavu-fonts-ttf/ttf"),
+  path.join(__dirname, "node_modules/dejavu-fonts-ttf/ttf"),
+];
+
+function pdfFontPath(fileName) {
+  const candidates = PDF_FONT_DIRECTORY_CANDIDATES.map((directory) => path.join(directory, fileName));
+  return candidates.find((candidate) => fs.existsSync(candidate)) || candidates[0];
+}
+
+const PDF_FONT = pdfFontPath("DejaVuSerif.ttf");
+const PDF_FONT_BOLD = pdfFontPath("DejaVuSerif-Bold.ttf");
 
 function respond(statusCode, payload, headers = {}) {
   return {

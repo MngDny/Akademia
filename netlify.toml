@@ -1,2 +1,8 @@
 [build]
   functions = "netlify/functions"
+
+[functions."generate-test"]
+  included_files = [
+    "node_modules/dejavu-fonts-ttf/ttf/DejaVuSerif.ttf",
+    "node_modules/dejavu-fonts-ttf/ttf/DejaVuSerif-Bold.ttf"
+  ]
