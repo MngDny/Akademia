@@ -25,7 +25,7 @@ const payload = {
     },
 };
 
-test("generate-test builds a PDF with clear references below each question", async () => {
+test("generate-test keeps compact references beside each PDF question", async () => {
   const pdf = await buildPdf(payload);
 
   assert.ok(Buffer.isBuffer(pdf));
@@ -35,27 +35,28 @@ test("generate-test builds a PDF with clear references below each question", asy
   const parser = new PDFParse({ data: pdf });
   try {
     const parsed = await parser.getText();
-    assert.match(parsed.text, /Referințe biblice: 1 Samuel 1:1, 1 Samuel 1:2/);
-    assert.match(parsed.text, /Referințe biblice: 1 Samuel 1:2, 1 Samuel 1:4/);
-    assert.match(parsed.text, /Referințe biblice: 1 Samuel 1:3, 1 Samuel 1:5/);
-    assert.match(parsed.text, /Referințe biblice: 1 Samuel 2/);
+    assert.match(parsed.text, /Elcana locuia la Rama\. \(1 Samuel 1:1, 1:2\)/);
+    assert.match(parsed.text, /Cum se numea soția lui Elcana\? \(1 Samuel 1:2, 1:4\)/);
+    assert.match(parsed.text, /Faceți asocierea dintre cele două coloane: \(1 Samuel 1:3,\s*1:5\)/);
+    assert.match(parsed.text, /Ce afirmații sunt corecte\? \(1 Samuel 2\)/);
   } finally {
     await parser.destroy();
   }
 });
 
-test("generate-test includes references in both Word formats", async () => {
+test("generate-test keeps compact references beside questions in both Word formats", async () => {
   const html = buildWordHtml(payload);
-  assert.match(html, /<p class="references">Referințe biblice: 1 Samuel 1:1, 1 Samuel 1:2<\/p>/);
-  assert.match(html, /<p class="references">Referințe biblice: 1 Samuel 1:2, 1 Samuel 1:4<\/p>/);
-  assert.match(html, /<p class="references">Referințe biblice: 1 Samuel 1:3, 1 Samuel 1:5<\/p>/);
-  assert.match(html, /<p class="references">Referințe biblice: 1 Samuel 2<\/p>/);
+  assert.match(html, /Elcana locuia la Rama\. \(1 Samuel 1:1, 1:2\)/);
+  assert.match(html, /Cum se numea soția lui Elcana\? \(1 Samuel 1:2, 1:4\)/);
+  assert.match(html, /Faceți asocierea dintre cele două coloane: \(1 Samuel 1:3, 1:5\)/);
+  assert.match(html, /Ce afirmații sunt corecte\? \(1 Samuel 2\)/);
+  assert.doesNotMatch(html, /class="references"/);
 
   const docxBuffer = await Packer.toBuffer(buildDocument(payload));
   const archive = await JSZip.loadAsync(docxBuffer);
   const documentXml = await archive.file("word/document.xml").async("string");
-  assert.match(documentXml, /Referințe biblice: 1 Samuel 1:1, 1 Samuel 1:2/);
-  assert.match(documentXml, /Referințe biblice: 1 Samuel 1:2, 1 Samuel 1:4/);
-  assert.match(documentXml, /Referințe biblice: 1 Samuel 1:3, 1 Samuel 1:5/);
-  assert.match(documentXml, /Referințe biblice: 1 Samuel 2/);
+  assert.match(documentXml, /Elcana locuia la Rama\. \(1 Samuel 1:1, 1:2\)/);
+  assert.match(documentXml, /Cum se numea soția lui Elcana\? \(1 Samuel 1:2, 1:4\)/);
+  assert.match(documentXml, /Faceți asocierea dintre cele două coloane: \(1 Samuel 1:3, 1:5\)/);
+  assert.match(documentXml, /Ce afirmații sunt corecte\? \(1 Samuel 2\)/);
 });
