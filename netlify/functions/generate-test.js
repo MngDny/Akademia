@@ -15,6 +15,7 @@ const {
   VerticalAlign,
   WidthType,
 } = require("docx");
+const { BIBLE_BOOKS, normalizeBookKey } = require("./bibleBooks.cjs");
 
 const MAX_BODY_CHARS = 180 * 1024;
 const ALLOWED_ROLES = new Set(["admin", "instructor", "indrumator"]);
@@ -62,12 +63,57 @@ function line(value, size = 24, bold = false, indent = 0, keepNext = false) {
   });
 }
 
+function referenceLine(question) {
+  return new Paragraph({
+    children: [new TextRun({
+      text: referenceLabel(question),
+      font: "Times New Roman",
+      size: 18,
+      color: "555555",
+      italics: true,
+    })],
+    indent: { left: 360 },
+    spacing: { before: 0, after: 110, line: 210 },
+  });
+}
+
 function heading(value) {
   return line(value, 26, true, 0, true);
 }
 
 function questionText(question) {
   return text(question?.text || question?.prompt || "Întrebare fără text");
+}
+
+function referenceText(question) {
+  const book = text(question?.book);
+  const sourceReferences = Array.isArray(question?.source_references)
+    ? question.source_references
+    : typeof question?.source_references === "string"
+      ? question.source_references.split(/[\n,;]+/)
+      : [];
+  const references = [...new Set(sourceReferences
+    .map((reference) => text(reference).replace(/[‐‑‒–—]/g, "-"))
+    .filter(Boolean))];
+
+  if (references.length) {
+    return references.map((reference) => {
+      const normalizedReference = normalizeBookKey(reference);
+      const isQualified = BIBLE_BOOKS.some((knownBook) => {
+        const normalizedBook = normalizeBookKey(knownBook);
+        return normalizedReference === normalizedBook || normalizedReference.startsWith(`${normalizedBook} `);
+      }) || /^(?:[1-3]\s*)?[\p{L}][\p{L}.\s]*\s+\d+:\d+/u.test(reference);
+      return isQualified || !book ? reference : `${book} ${reference}`;
+    }).join(", ");
+  }
+
+  const chapter = text(question?.chapter);
+  if (book && chapter) return `${book} ${chapter}`;
+  return book || "Nespecificată";
+}
+
+function referenceLabel(question) {
+  return `Referințe biblice: ${referenceText(question)}`;
 }
 
 function optionText(option) {
@@ -93,10 +139,11 @@ function normalizedPairs(question) {
 }
 
 function answerLines(question, number) {
-  const children = [line(`${number}. ${questionText(question)}`)];
+  const children = [line(`${number}. ${questionText(question)}`, 24, false, 0, true)];
   normalizedOptions(question).forEach((option, index) => {
-    children.push(line(`${"     "}${String.fromCharCode(97 + index)}) ${optionText(option)}`));
+    children.push(line(`${"     "}${String.fromCharCode(97 + index)}) ${optionText(option)}`, 24, false, 0, true));
   });
+  children.push(referenceLine(question));
   return children;
 }
 
@@ -150,11 +197,14 @@ function buildDocument(payload) {
     heading("I. Puneți A (adevărat) sau F (fals) în dreptul fiecărei afirmații:"),
   ];
 
-  tf.forEach((question, index) => children.push(line(`_ ${index + 1}. ${questionText(question)}`)));
+  tf.forEach((question, index) => children.push(
+    line(`_ ${index + 1}. ${questionText(question)}`, 24, false, 0, true),
+    referenceLine(question),
+  ));
   children.push(heading("II. Încercuiți litera corespunzătoare răspunsului corect (doar un singur răspuns corect)"));
   abcOne.forEach((question, index) => children.push(...answerLines(question, index + 1)));
   children.push(heading("III. Faceți asocierea dintre cele două coloane:"));
-  if (match[0]) children.push(matchingTable(match[0]));
+  if (match[0]) children.push(matchingTable(match[0]), referenceLine(match[0]));
   children.push(heading("IV. Încercuiți litera corespunzătoare răspunsului corect (pot fi unul, două, trei sau nici un răspuns corect)"));
   abcMulti.forEach((question, index) => children.push(...answerLines(question, index + 1)));
 
@@ -184,8 +234,8 @@ function contentSections(payload) {
   };
 }
 
-function pdfWrite(document, value, { size = 12, bold = false, align = "left", indent = 0 } = {}) {
-  document.font(bold ? PDF_FONT_BOLD : PDF_FONT).fontSize(size).text(String(value ?? ""), {
+function pdfWrite(document, value, { size = 12, bold = false, align = "left", indent = 0, color = COLORS.black } = {}) {
+  document.font(bold ? PDF_FONT_BOLD : PDF_FONT).fontSize(size).fillColor(color).text(String(value ?? ""), {
     align,
     indent,
     lineGap: 0,
@@ -193,11 +243,49 @@ function pdfWrite(document, value, { size = 12, bold = false, align = "left", in
   });
 }
 
+function pdfMeasureText(document, value, { size = 12, bold = false, indent = 0 } = {}) {
+  document.font(bold ? PDF_FONT_BOLD : PDF_FONT).fontSize(size);
+  const width = document.page.width - document.page.margins.left - document.page.margins.right - indent;
+  return document.heightOfString(String(value ?? ""), { width, lineGap: 0, paragraphGap: 0 }) + 3;
+}
+
+function pdfQuestionHeight(document, question, statement, includeOptions = false) {
+  let height = pdfMeasureText(document, statement);
+  if (includeOptions) {
+    normalizedOptions(question).forEach((option, optionIndex) => {
+      height += pdfMeasureText(document, `${"     "}${String.fromCharCode(97 + optionIndex)}) ${optionText(option)}`);
+    });
+  }
+  height += pdfMeasureText(document, referenceLabel(question), { size: 9, indent: 12 }) + 3;
+  return height;
+}
+
+function pdfWriteQuestion(document, question, statement, includeOptions = false) {
+  const options = includeOptions ? normalizedOptions(question) : [];
+  pdfEnsureSpace(document, pdfQuestionHeight(document, question, statement, includeOptions));
+  pdfWrite(document, statement);
+  options.forEach((option, optionIndex) => {
+    pdfWrite(document, `${"     "}${String.fromCharCode(97 + optionIndex)}) ${optionText(option)}`);
+  });
+  pdfReference(document, question);
+}
+
+function pdfSectionHeading(document, value, nextQuestionHeight = 0) {
+  pdfEnsureSpace(document, pdfMeasureText(document, value, { size: 13, bold: true }) + nextQuestionHeight + 3);
+  pdfWrite(document, value, { size: 13, bold: true });
+}
+
+function pdfReference(document, question) {
+  pdfEnsureSpace(document, 22);
+  pdfWrite(document, referenceLabel(question), { size: 9, indent: 12, color: "555555" });
+  document.moveDown(0.35);
+}
+
 function pdfEnsureSpace(document, height = 20) {
   if (document.y + height > document.page.height - 10) document.addPage();
 }
 
-function writePdfMatchingTable(document, question) {
+function pdfMatchingMeasurements(document, question) {
   const pairs = normalizedPairs(question);
   const left = document.page.margins.left;
   const gap = 18;
@@ -215,6 +303,17 @@ function writePdfMatchingTable(document, question) {
       ),
     };
   });
+  return { measurements, left, gap, width };
+}
+
+function pdfMatchingHeight(document, question) {
+  const { measurements } = pdfMatchingMeasurements(document, question);
+  const tableHeight = measurements.reduce((total, row) => total + row.height + 2, 0);
+  return tableHeight + pdfMeasureText(document, referenceLabel(question), { size: 9, indent: 12 }) + 6;
+}
+
+function writePdfMatchingTable(document, question) {
+  const { measurements, left, gap, width } = pdfMatchingMeasurements(document, question);
   pdfEnsureSpace(document, measurements.reduce((total, row) => total + row.height + 2, 0));
   measurements.forEach(({ leftText, rightText, height }) => {
     const y = document.y;
@@ -240,20 +339,30 @@ function buildPdf(payload) {
 
     pdfWrite(document, title, { size: 15, bold: true, align: "center" });
     document.moveDown(1.4);
-    pdfWrite(document, "I. Puneți A (adevărat) sau F (fals) în dreptul fiecărei afirmații:", { size: 13, bold: true });
-    tf.forEach((question, index) => pdfWrite(document, `_ ${index + 1}. ${questionText(question)}`));
-    pdfWrite(document, "II. Încercuiți litera corespunzătoare răspunsului corect (doar un singur răspuns corect)", { size: 13, bold: true });
-    abcOne.forEach((question, index) => {
-      pdfWrite(document, `${index + 1}. ${questionText(question)}`);
-      normalizedOptions(question).forEach((option, optionIndex) => pdfWrite(document, `${"     "}${String.fromCharCode(97 + optionIndex)}) ${optionText(option)}`));
+    pdfSectionHeading(document, "I. Puneți A (adevărat) sau F (fals) în dreptul fiecărei afirmații:", tf[0]
+      ? pdfQuestionHeight(document, tf[0], `_ 1. ${questionText(tf[0])}`)
+      : 0);
+    tf.forEach((question, index) => {
+      pdfWriteQuestion(document, question, `_ ${index + 1}. ${questionText(question)}`);
     });
-    pdfWrite(document, "III. Faceți asocierea dintre cele două coloane:", { size: 13, bold: true });
-    if (match[0]) writePdfMatchingTable(document, match[0]);
-    pdfEnsureSpace(document, 34);
-    pdfWrite(document, "IV. Încercuiți litera corespunzătoare răspunsului corect (pot fi unul, două, trei sau nici un răspuns corect)", { size: 13, bold: true });
+    pdfSectionHeading(document, "II. Încercuiți litera corespunzătoare răspunsului corect (doar un singur răspuns corect)", abcOne[0]
+      ? pdfQuestionHeight(document, abcOne[0], `1. ${questionText(abcOne[0])}`, true)
+      : 0);
+    abcOne.forEach((question, index) => {
+      pdfWriteQuestion(document, question, `${index + 1}. ${questionText(question)}`, true);
+    });
+    pdfSectionHeading(document, "III. Faceți asocierea dintre cele două coloane:", match[0]
+      ? pdfMatchingHeight(document, match[0])
+      : 0);
+    if (match[0]) {
+      writePdfMatchingTable(document, match[0]);
+      pdfReference(document, match[0]);
+    }
+    pdfSectionHeading(document, "IV. Încercuiți litera corespunzătoare răspunsului corect (pot fi unul, două, trei sau nici un răspuns corect)", abcMulti[0]
+      ? pdfQuestionHeight(document, abcMulti[0], `1. ${questionText(abcMulti[0])}`, true)
+      : 0);
     abcMulti.forEach((question, index) => {
-      pdfWrite(document, `${index + 1}. ${questionText(question)}`);
-      normalizedOptions(question).forEach((option, optionIndex) => pdfWrite(document, `${"     "}${String.fromCharCode(97 + optionIndex)}) ${optionText(option)}`));
+      pdfWriteQuestion(document, question, `${index + 1}. ${questionText(question)}`, true);
     });
     document.end();
   });
@@ -274,21 +383,27 @@ function htmlLine(value, className = "") {
 function buildWordHtml(payload) {
   const { title, tf, abcOne, match, abcMulti } = contentSections(payload);
   const parts = [htmlLine(title, "title"), htmlLine("I. Puneți A (adevărat) sau F (fals) în dreptul fiecărei afirmații:", "heading")];
-  tf.forEach((question, index) => parts.push(htmlLine(`_ ${index + 1}. ${questionText(question)}`)));
+  tf.forEach((question, index) => parts.push(
+    htmlLine(`_ ${index + 1}. ${questionText(question)}`),
+    htmlLine(referenceLabel(question), "references"),
+  ));
   parts.push(htmlLine("II. Încercuiți litera corespunzătoare răspunsului corect (doar un singur răspuns corect)", "heading"));
   abcOne.forEach((question, index) => {
     parts.push(htmlLine(`${index + 1}. ${questionText(question)}`));
     normalizedOptions(question).forEach((option, optionIndex) => parts.push(htmlLine(`${"     "}${String.fromCharCode(97 + optionIndex)}) ${optionText(option)}`, "option")));
+    parts.push(htmlLine(referenceLabel(question), "references"));
   });
   parts.push(htmlLine("III. Faceți asocierea dintre cele două coloane:", "heading"));
   if (match[0]) {
     const rows = normalizedPairs(match[0]).map((pair, index) => `<tr><td>${htmlEscape(`__${index + 1}. ${pair.left}`)}</td><td>${htmlEscape(`${String.fromCharCode(97 + index)}. ${pair.right}`)}</td></tr>`).join("");
     parts.push(`<table class="matching"><tbody>${rows}</tbody></table>`);
+    parts.push(htmlLine(referenceLabel(match[0]), "references"));
   }
   parts.push(htmlLine("IV. Încercuiți litera corespunzătoare răspunsului corect (pot fi unul, două, trei sau nici un răspuns corect)", "heading"));
   abcMulti.forEach((question, index) => {
     parts.push(htmlLine(`${index + 1}. ${questionText(question)}`));
     normalizedOptions(question).forEach((option, optionIndex) => parts.push(htmlLine(`${"     "}${String.fromCharCode(97 + optionIndex)}) ${optionText(option)}`, "option")));
+    parts.push(htmlLine(referenceLabel(question), "references"));
   });
   return `<!doctype html><html><head><meta charset="utf-8"><style>
     @page { size: Letter; margin: 0.14in 1in; }
@@ -297,6 +412,7 @@ function buildWordHtml(payload) {
     .title { margin-bottom: 16pt; text-align: center; font-size: 15pt; font-weight: 700; }
     .heading { margin-top: 0; page-break-after: avoid; font-size: 13pt; font-weight: 700; }
     .option { padding-left: 0.35in; }
+    .references { margin: 1pt 0 7pt 0.35in; font-size: 9pt; line-height: 1.05; color: #555; font-style: italic; }
     .matching { width: 100%; border: 0; border-collapse: collapse; margin: 0; page-break-inside: avoid; }
     .matching td { width: 50%; border: 0; padding: 0; vertical-align: top; }
   </style></head><body>${parts.join("")}</body></html>`;
